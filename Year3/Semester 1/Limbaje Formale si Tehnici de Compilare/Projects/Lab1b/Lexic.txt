@@ -1,0 +1,27 @@
+Alphabet
+a. Upper (A-Z) and lower case letters (a-z) of the English alphabet;
+b. Underline character '_';
+c. Decimal digits (0-9);
+
+1. Lexic:
+a. Special symbols, representing:
+- operators + - * / -> < <= = >= ! !=
+- separators () <{}> . space ~
+- reserved words: MORE char const perform otherwise when then choose nr scan write while var
+
+b. Identifiers
+identifier ::= letter | letter{letter}{digit}{symbol}
+letter ::= "A" | "B" | . ..| "Z"
+digit ::= "0" | "1" |...| "9"
+symbols ::= "@" | "#" | "&" | "~" 
+
+c. Constants
+1. Integer - rule:
+noconst:="+"no|"-"no|no
+n:=digit{no}
+2. Character
+character:= 'letter'|'digit'
+3. String
+constchar:="string"
+string:=char{string}
+char:=letter|digit
