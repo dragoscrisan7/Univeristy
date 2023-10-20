@@ -1,0 +1,6 @@
+# ninja log v5
+6	2238	7192768634726186	CMakeFiles/Lab1.dir/main.cpp.obj	522bf87c202656e2
+2	992	7195110253697184	build.ninja	5e80bfb65372f678
+1770	2056	7192769616802246	Lab1.exe	8f88057d40ab8afc
+22	1964	7192768631483920	CMakeFiles/Lab1.dir/utils/Utils.cpp.obj	2805b6bec496aa43
+7	1769	7192769613983623	CMakeFiles/Lab1.dir/checks/Checks.cpp.obj	9b20b24e5aefdc98
