@@ -49,32 +49,50 @@ int getRandomAccountIndex(int numAccounts) {
     return distribution(gen);
 }
 
-void add_balance(int amount, std::shared_ptr<Account> receiver)
+void add_balance(int amount, std::shared_ptr<Account> receiver, int serial_number, int senderId)
 {
     std::unique_lock<std::mutex> lock(addBalanceMutex);
     receiver->balance += amount;
+    Operation receiver_operation{
+            serial_number,
+            senderId,
+            receiver->id,
+            amount
+    };
+    receiver->log.push_back(receiver_operation);
+    addBalanceMutex.unlock();
 }
-void subtract_balance(int amount, std::shared_ptr<Account> sender)
+void subtract_balance(int amount, std::shared_ptr<Account> sender, int serial_number, int receiverId)
 {
     std::unique_lock<std::mutex> lock(subtractBalanceMutex);
     sender->balance -= amount;
-}
-void change_log(int amount, int serial_number, std::shared_ptr<Account> sender, std::shared_ptr<Account> receiver)
-{
-    std::unique_lock<std::mutex> lock(changeLogMutex);
     Operation sender_operation{
             serial_number,
             sender->id,
-            receiver->id,
+            receiverId,
             amount
     };
-    Operation receiver_operation{
-            serial_number,
-            sender->id,
-            receiver->id,
-            amount
-    };
-
     sender->log.push_back(sender_operation);
-    receiver->log.push_back(receiver_operation);
+    subtractBalanceMutex.unlock();
 }
+//void change_log(int amount, int serial_number, std::shared_ptr<Account> sender, std::shared_ptr<Account> receiver)
+//{
+//    std::unique_lock<std::mutex> lock(changeLogMutex);
+//    Operation sender_operation{
+//            serial_number,
+//            sender->id,
+//            receiver->id,
+//            amount
+//    };
+//    Operation receiver_operation{
+//            serial_number,
+//            sender->id,
+//            receiver->id,
+//            amount
+//    };
+//
+//    sender->log.push_back(sender_operation);
+//    receiver->log.push_back(receiver_operation);
+//
+//    changeLogMutex.unlock();
+//}

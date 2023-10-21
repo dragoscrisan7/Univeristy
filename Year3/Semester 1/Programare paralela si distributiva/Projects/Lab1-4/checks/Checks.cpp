@@ -18,11 +18,10 @@ void consistencyCheck(const std::list<std::shared_ptr<Account>>& accounts) {
             } else if (op.accountReceiverId == account->id) {
                 currentBalance += op.amount;
             }
-
-            if (currentBalance != account->balance) {
-                std::cout << "Account ID: " << account->id << " has inconsistencies in its log." << std::endl;
-                break;
-            }
+        }
+        if (currentBalance != account->balance) {
+            std::cout << "Account ID: " << account->id << " has inconsistencies in its log." << std::endl;
+            break;
         }
     }
 }

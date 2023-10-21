@@ -30,16 +30,16 @@ int main() {
 
         int amount = getRandomAmount(sender->balance);
 
-        std::unique_lock<std::mutex> lock(mtx);
+        //std::unique_lock<std::mutex> lock(mtx);
 
-        add_balance(amount, receiver);
+        add_balance(amount, receiver, i, sender->id);
 
-        subtract_balance(amount, sender);
+        subtract_balance(amount, sender, i, receiver->id);
 
-        change_log(amount, i, sender, receiver);
+        //change_log(amount, i, sender, receiver);
 
         // Release the mutex
-        lock.unlock();
+        //lock.unlock();
 
     }
 
