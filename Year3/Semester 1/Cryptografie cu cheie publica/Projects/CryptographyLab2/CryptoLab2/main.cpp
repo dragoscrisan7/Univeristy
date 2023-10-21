@@ -1,0 +1,54 @@
+#include <iostream>
+
+// Function to calculate (a^b) % m using repeated squaring
+long long power(long long a, long long b, long long m) {
+    long long result = 1;
+    a %= m;
+
+    while (b > 0) {
+        if (b % 2 == 1) {
+            result = (result * a) % m;
+        }
+
+        a = (a * a) % m;
+        b /= 2;
+    }
+
+    return result;
+}
+
+// Function to check if 'n' is a pseudoprime for base 'b'
+bool isPseudoprime(long long n, long long b) {
+    if (n <= 1 || n % 2 == 0) {
+        return false;
+    }
+
+    // Calculate (b^(n-1)) % n
+    long long result = power(b, n - 1, n);
+
+    return result == 1;
+}
+
+int main() {
+    long long n;
+
+    // Input composite odd number 'n'
+    std::cout << "Enter a composite odd number 'n': ";
+    std::cin >> n;
+
+    if (n <= 1 || n % 2 == 0) {
+        std::cout << "Invalid input. 'n' must be a composite odd number." << std::endl;
+        return 1;
+    }
+
+    std::cout << "Bases 'b' for which " << n << " is pseudoprime: ";
+    for (long long b = 2; b < n; ++b) {
+        if (isPseudoprime(n, b)) {
+            std::cout << b << " ";
+        }
+    }
+
+    std::cout << std::endl;
+
+    return 0;
+}
