@@ -1,16 +1,16 @@
 #include <list>
 #include <thread>
 #include <mutex>
-#include <random>
 #include <memory>
 #include "utils/Utils.h"
 #include "checks//Checks.h"
 
+std::mutex mtx;
+
 int main() {
-    std::string filename = R"(C:\Users\Dragos\Facultate_no-Onedrive\Year3\Programare paralela si distributiva\Projects\Lab1\accounts.txt)"; // Replace with your file name
+    std::string filename = R"(C:\Users\Dragos\Facultate_no-Onedrive\UniveristyGithub\Year3\Semester 1\Programare paralela si distributiva\Projects\Lab1-4\accounts.txt)";
     std::list<std::shared_ptr<Account>> accounts = readAllAccounts(filename);
 
-    std::vector<std::mutex> accountMutexes(accounts.size());
     int nrChecks;
 
     printAccounts(accounts);
@@ -25,18 +25,29 @@ int main() {
             receiverIdx = getRandomAccountIndex(accounts.size());
         } while (senderIdx == receiverIdx);
 
-        Account& sender = *accounts.front();
-        Account& receiver = *accounts.front();
-        int amount = getRandomAmount(sender.balance);
+        std::shared_ptr<Account> sender = *std::next(accounts.begin(), senderIdx);
+        std::shared_ptr<Account> receiver = *std::next(accounts.begin(), receiverIdx);
 
-        transferThreads.emplace_back(transfer, amount, i, std::ref(sender), std::ref(receiver), std::ref(accountMutexes));
+        int amount = getRandomAmount(sender->balance);
+
+        std::unique_lock<std::mutex> lock(mtx);
+
+        add_balance(amount, receiver);
+
+        subtract_balance(amount, sender);
+
+        change_log(amount, i, sender, receiver);
+
+        // Release the mutex
+        lock.unlock();
+
     }
 
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<int> distribution(1, 4);
     nrChecks = distribution(gen);
-    std::thread consistencyThread(periodicConsistencyCheck, std::ref(accounts), nrChecks, std::ref(accountMutexes));
+    std::thread consistencyThread(periodicConsistencyCheck, std::ref(accounts), std::ref(nrChecks));
 
     // Wait for all transfer threads to finish
     for (std::thread& t : transferThreads) {
@@ -46,7 +57,7 @@ int main() {
 
     printAccounts(accounts);
 
-    consistencyCheck(accounts, std::ref(accountMutexes));
+    consistencyCheck(accounts);
 
     return 0;
 }

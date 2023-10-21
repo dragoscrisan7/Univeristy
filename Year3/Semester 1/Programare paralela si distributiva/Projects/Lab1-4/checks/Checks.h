@@ -1,7 +1,3 @@
-//
-// Created by Dragos on 10/17/2023.
-//
-
 #ifndef LAB1_CHECKS_H
 #define LAB1_CHECKS_H
 
@@ -9,13 +5,13 @@
 #include <thread>
 #include <atomic>
 #include <list>
-#include <string>
-#include <fstream>
+#include <vector>
 #include <mutex>
-#include "..\utils\Utils.h"
+#include "../utils/Utils.h" // Include the updated Utils.h
 
-void consistencyCheck(const std::list<std::shared_ptr<Account>> accounts, std::vector<std::mutex>& accountMutexes);
-void periodicConsistencyCheck(std::list<std::shared_ptr<Account>> accounts, int var, std::vector<std::mutex>& accountMutexes);
-void printAccounts(std::list<std::shared_ptr<Account>> accounts);
 
-#endif //LAB1_CHECKS_H
+void consistencyCheck(const std::list<std::shared_ptr<Account>>& accounts);
+void periodicConsistencyCheck(std::list<std::shared_ptr<Account>> accounts, int var);
+void printAccounts(const std::list<std::shared_ptr<Account>>& accounts);
+
+#endif // LAB1_CHECKS_H

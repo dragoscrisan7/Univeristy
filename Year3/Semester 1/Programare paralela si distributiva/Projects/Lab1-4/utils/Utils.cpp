@@ -5,6 +5,10 @@
 #include <memory>
 #include "Utils.h"
 
+std::mutex addBalanceMutex;
+std::mutex subtractBalanceMutex;
+std::mutex changeLogMutex;
+
 std::list<std::shared_ptr<Account>> readAllAccounts(const std::string& fileName)
 {
     std::list<std::shared_ptr<Account>> accounts_list;
@@ -19,10 +23,11 @@ std::list<std::shared_ptr<Account>> readAllAccounts(const std::string& fileName)
     int id, balance;
     while (fileRead >> id >> balance)
     {
+        // Create a new shared_ptr<Account> and add it to the list
         auto account = std::make_shared<Account>();
         account->id = id;
         account->balance = balance;
-        account->initialBalance = balance;
+        account->initialBalance = balance; // Assuming initialBalance is the same as balance
         accounts_list.push_back(account);
     }
 
@@ -44,35 +49,32 @@ int getRandomAccountIndex(int numAccounts) {
     return distribution(gen);
 }
 
-void transfer(int amount, int serial_number, Account& sender, Account& receiver, std::vector<std::mutex>& accountMutexes)
+void add_balance(int amount, std::shared_ptr<Account> receiver)
 {
-    sender.lock();
-    receiver.lock();
+    std::unique_lock<std::mutex> lock(addBalanceMutex);
+    receiver->balance += amount;
+}
+void subtract_balance(int amount, std::shared_ptr<Account> sender)
+{
+    std::unique_lock<std::mutex> lock(subtractBalanceMutex);
+    sender->balance -= amount;
+}
+void change_log(int amount, int serial_number, std::shared_ptr<Account> sender, std::shared_ptr<Account> receiver)
+{
+    std::unique_lock<std::mutex> lock(changeLogMutex);
+    Operation sender_operation{
+            serial_number,
+            sender->id,
+            receiver->id,
+            amount
+    };
+    Operation receiver_operation{
+            serial_number,
+            sender->id,
+            receiver->id,
+            amount
+    };
 
-    if(sender.balance < amount)
-        return;
-
-    sender.balance -= amount;
-    receiver.balance += amount;
-
-    Operation sender_operation
-            {
-                    serial_number,
-                    sender.id,
-                    receiver.id,
-                    amount
-            };
-    Operation receiver_operation
-            {
-                    serial_number,
-                    sender.id,
-                    receiver.id,
-                    amount
-            };
-
-    sender.log.push_back(sender_operation);
-    receiver.log.push_back(receiver_operation);
-
-    sender.unlock();
-    receiver.unlock();
+    sender->log.push_back(sender_operation);
+    receiver->log.push_back(receiver_operation);
 }

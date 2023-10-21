@@ -1,5 +1,3 @@
-// Utils.h
-
 #ifndef LAB1_UTILS_H
 #define LAB1_UTILS_H
 
@@ -19,17 +17,22 @@ typedef struct
     int amount;
 }Operation;
 
-typedef struct Account : public std::mutex
-{
+struct Account {
     int id;
     int balance;
     int initialBalance;
     std::list<Operation> log;
-}Account;
+};
+
+extern std::mutex addBalanceMutex;
+extern std::mutex subtractBalanceMutex;
+extern std::mutex changeLogMutex;
 
 std::list<std::shared_ptr<Account>> readAllAccounts(const std::string& fileName);
 int getRandomAmount(int balance);
 int getRandomAccountIndex(int numAccounts);
-void transfer(int amount, int serial_number, Account& sender, Account& receiver, std::vector<std::mutex>& accountMutexes);
 
+void add_balance(int amount, std::shared_ptr<Account> sender);
+void subtract_balance(int amount, std::shared_ptr<Account> receiver);
+void change_log(int amount, int serial_number, std::shared_ptr<Account> sender, std::shared_ptr<Account> receiver);
 #endif // LAB1_UTILS_H
