@@ -1,0 +1,17 @@
+# ninja log v5
+1	1365	7198027433370681	CMakeFiles/Lab6.dir/main.cpp.obj	fcc77a67119c9b0b
+19	1551	7198042218208033	CMakeFiles/Lab6.dir/threadsPool/ThreadPool.cpp.obj	bbb5b6f96de5c8a
+26	1589	7198042218814322	CMakeFiles/Lab6.dir/multiThreads/MultiThreads.cpp.obj	9942708caa0e4ff
+34	1704	7198042220026657	CMakeFiles/Lab6.dir/utils/Utils.cpp.obj	2396f7860e97b1c4
+7	2008	7198042223048018	CMakeFiles/Lab6.dir/main.cpp.obj	fcc77a67119c9b0b
+5	954	7198042731731265	CMakeFiles/Lab6.dir/multiThreads/MultiThreads.cpp.obj	9942708caa0e4ff
+7	1786	7198043182813767	CMakeFiles/Lab6.dir/main.cpp.obj	fcc77a67119c9b0b
+13	1483	7198043752069768	CMakeFiles/Lab6.dir/threadsPool/ThreadPool.cpp.obj	bbb5b6f96de5c8a
+21	1507	7198043753385031	CMakeFiles/Lab6.dir/multiThreads/MultiThreads.cpp.obj	9942708caa0e4ff
+4	2034	7198043758506302	CMakeFiles/Lab6.dir/main.cpp.obj	fcc77a67119c9b0b
+2034	2238	7198043760510516	Lab6.exe	e7d5d3d663584bad
+7	1615	7198043915663504	CMakeFiles/Lab6.dir/main.cpp.obj	fcc77a67119c9b0b
+1616	2008	7198043919563594	Lab6.exe	e7d5d3d663584bad
+18	2378	7198048425847002	CMakeFiles/Lab6.dir/threadsPool/ThreadPool.cpp.obj	bbb5b6f96de5c8a
+7	2598	7198048428287248	CMakeFiles/Lab6.dir/main.cpp.obj	fcc77a67119c9b0b
+2598	2877	7198048431009494	Lab6.exe	e7d5d3d663584bad
