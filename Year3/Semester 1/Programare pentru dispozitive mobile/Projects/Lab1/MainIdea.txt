@@ -1,0 +1,46 @@
+Project Idea:
+Our mobile app, called "Future Life," is made to give users a special and happy feeling. 
+It's for people who want to create their own goals for the future and send themselves 
+cheerful messages that arrive at a set time. The app should be simple and easy to use.
+
+Domain Details (Entity):
+The primary entity in our app is "Goals." Each goal includes the following fields:
+1. Title: A brief title for the goal.
+2. Description: A detailed description of the goal.
+3. Deadline: The date by which the user aims to achieve the goal.
+4. Privacy Setting: A choice to set the goal as private or public.
+5. Mini-Goals: A list of sub-goals or steps to reach the main goal.
+
+The primary entity for our app is "Future Messages." Each future message includes the following details:
+
+Message Content: The encouraging or supportive message that users want to send to themselves in the future.
+Delivery Date and Time: The specific date and time when the user wants to receive the message.
+Privacy Setting: An option to keep the message private or make it visible to others.
+Repeat Option: Choose whether the message should be sent repeatedly or just once.
+
+CRUD Operations:
+
+- Create:
+  Users can create new goals with titles, descriptions, deadlines, and privacy settings. Mini-goals can be added to the main goal.
+
+- Read:
+  Users can view their existing goals, view details, and check their progress.
+
+- Update:
+  Users can edit goal details, including the title, description, and deadlines.
+
+- Delete:
+  Users can delete goals they no longer wish to pursue.
+
+Persistence Details:
+
+On the Local DB:
+- All CRUD operations are persisted locally for users to access and modify their goals even when offline.
+
+On the Server:
+- Create, Read, and Update operations are persisted on the server, ensuring that users can access 
+their goals across multiple devices.
+
+Offline Access Scenarios:
+- When offline, users can create, read, update, and delete goals. The changes will be synced with 
+the server when an internet connection is restored.
