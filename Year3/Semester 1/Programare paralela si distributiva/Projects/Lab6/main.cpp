@@ -7,43 +7,41 @@
 #include "multiThreads/MultiThreads.h"
 
 int main() {
-    int numRowsA = 9;
-    int numColsA = 9;
-    int numRowsB = 9;
-    int numColsB = 9;
+    int numRowsA = 3;
+    int numColsA = 3;
+    int numRowsB = 3;
+    int numColsB = 3;
 
     // Generate random matrices
     std::vector<std::vector<int>> matrixA = generateRandomMatrix(numRowsA, numColsA);
     std::vector<std::vector<int>> matrixB = generateRandomMatrix(numRowsB, numColsB);
 
     int numTasks = 4;
-    int numRows = matrixA.size();
-    int numCols = matrixB[0].size();
+    std::vector<std::vector<int>> result(numRowsA, std::vector<int>(numColsB, 0));
 
 ///--------------------------------------------------------------------------------------------------------------
 
-    std::vector<std::thread> threads;
-    std::vector<std::vector<int>> result(numRows, std::vector<int>(numCols, 0));
-
-    for (int i = 0; i < numTasks; i++) {
-        threads.push_back(std::thread(MTparallelMatrixProduct, std::ref(matrixA), std::ref(matrixB), std::ref(result), i, numTasks));
-    }
-
-    for (int i = 0; i < numTasks; i++) {
-        threads[i].join();
-    }
-
-///--------------------------------------------------------------------------------------------------------------
-
-//    ThreadPool pool(numTasks);
-//
-//    std::vector<std::vector<int>> result(numRows, std::vector<int>(numCols, 0));
+//    std::vector<std::thread> threads;
 //
 //    for (int i = 0; i < numTasks; i++) {
-//        pool.enqueue(TPparallelMatrixProduct, matrixA, matrixB, std::ref(result), i, numTasks);
+//        threads.push_back(std::thread(MTparallelMatrixProduct, std::ref(matrixA), std::ref(matrixB), std::ref(result), i, numTasks));
 //    }
 //
-//    pool.wait();
+//    for (int i = 0; i < numTasks; i++) {
+//        threads[i].join();
+//    }
+
+///--------------------------------------------------------------------------------------------------------------
+
+    ThreadPool pool(numTasks);
+
+    for (int i = 0; i < numTasks; i++) {
+        pool.enqueue([i, &matrixA, &matrixB, &result, numTasks]() {
+            TPparallelMatrixProduct(matrixA, matrixB, result, i, numTasks);
+        }); // Debugging output
+    }
+
+    pool.close();
 
 ///--------------------------------------------------------------------------------------------------------------
 

@@ -88,7 +88,7 @@ if __name__ == "__main__":
     pos2 = (-1, -1)
     pos3 = (-1, -1)
     try:
-        pos = symbol_table.add("apple")
+        pos = symbol_table.add('apple', 'fruit')
         print(f"apple {pos}")
         print(f"banana {symbol_table.add('banana')}")
         print(f"cherry {symbol_table.add('cherry')}")
