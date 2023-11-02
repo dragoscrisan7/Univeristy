@@ -1,7 +1,7 @@
 1)Max of a or b
 COD
-   a: ALBA_NEAGRA~
-   b: ALBA_NEAGRA~
+   a: DINAIA~
+   b: DINAIA~
 ONWARD
    SCAN(a)~
    SCAN(b)~
@@ -66,12 +66,12 @@ AT_EASE.
 1err)
 1)Max of a or b
 COD
-   a= ALBA_NEAGRA~
-   b: ALBA_NEAGRA~
+   a# DINAIA~
+   b: DINAIA~
 ONWARD
    SCAN(a)~
-   SCAN(b)~
-   CHOOSE(a > b) (
+   SCAN(b)?
+   CHOOSE(a > b) <{
       CASE TRUE: WRITE(a)~
       CASE FALSE: WRITE(b)~
    }>

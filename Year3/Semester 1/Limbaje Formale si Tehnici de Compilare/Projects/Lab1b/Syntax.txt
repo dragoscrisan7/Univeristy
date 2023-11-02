@@ -1,6 +1,6 @@
 program ::= "COD" decllist "~" cmpdstmt "."
 decllist ::= declaration | declaration "~" decllist
-declaration ::= IDENTIFIER ":" type
+declaration ::= IDENTIFIER "$" type
 type1 ::= "ALBA_NEAGRA" | "VORBE" | "DINAIA" | "DITOATE"
 arraydecl ::= "MORE" "[" nr "]" "OF" type1
 type  ::= type1|arraydecl

@@ -64,6 +64,7 @@ void add_balance(int amount, std::shared_ptr<Account> receiver, int serial_numbe
 }
 void subtract_balance(int amount, std::shared_ptr<Account> sender, int serial_number, int receiverId)
 {
+    ///TODO: defer lock
     std::unique_lock<std::mutex> lock(subtractBalanceMutex);
     sender->balance -= amount;
     Operation sender_operation{

@@ -1,0 +1,11 @@
+COD
+   a$ DINAIA~
+   b$ DINAIA~
+ONWARD
+   SCAN(a)~
+   SCAN(b)~
+   CHOOSE(a > b) <{
+      CASE TRUE: WRITE(a)~
+      CASE FALSE: WRITE(b)~
+   }>
+AT_EASE.

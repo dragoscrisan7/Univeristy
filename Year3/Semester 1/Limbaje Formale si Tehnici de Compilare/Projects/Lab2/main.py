@@ -1,89 +1,11 @@
-class HashTable:
-    def __init__(self, size=100, load_factor=0.7):
-        self.size = size
-        self.load_factor = load_factor
-        self.table = [None] * self.size
-        self.count = 0
-
-    def resize(self, new_size):
-        old_table = self.table
-        self.size = new_size
-        self.table = [None] * self.size
-        self.count = 0
-        for entry in old_table:
-            if entry is not None:
-                for key, value in entry:
-                    self.add(key, value)
-
-    def hash(self, key):
-        if isinstance(key, int):
-            return key % self.size
-        elif isinstance(key, str):
-            return sum(ord(char) for char in key) % self.size
-        else:
-            raise ValueError("Unsupported key type")
-
-    def getSize(self):
-        return self.size
-
-    def getHashValue(self, key):
-        return self.hash(key)
-
-    def add(self, key, value=None):
-        if self.count / self.size >= self.load_factor:
-            self.resize(2 * self.size)
-
-        index = self.hash(key)
-        if self.table[index] is None:
-            self.table[index] = []
-        for i, entry in enumerate(self.table[index]):
-            if entry[0] == key:
-                if value is not None:
-                    self.table[index][i] = (key, value)
-                return (index, i)
-        self.table[index].append((key, value))
-        self.count += 1
-        return (index, len(self.table[index]) - 1)
-
-    def contains(self, key):
-        index = self.hash(key)
-        if self.table[index] is not None:
-            for entry in self.table[index]:
-                if entry[0] == key:
-                    return True
-        return False
-
-    def getPosition(self, key):
-        index = self.hash(key)
-        if self.table[index] is not None:
-            for i, entry in enumerate(self.table[index]):
-                if entry[0] == key:
-                    return (index, i)
-        return (-1, -1)
-
-    def __str__(self):
-        return str(self.table)
-
-
-class SymbolTable:
-    def __init__(self, size=100):
-        self.table = HashTable(size)
-
-    def add(self, key, value=None):
-        return self.table.add(key, value)
-
-    def has(self, key):
-        return self.table.contains(key)
-
-    def getPosition(self, key):
-        return self.table.getPosition(key)
-
-    def __str__(self):
-        return f"Symbol Table: {self.table}"
-
+from Utils.SymbolTable import SymbolTable
+from Utils.Scanner import Scanner
 
 if __name__ == "__main__":
     symbol_table = SymbolTable(size=77)
+
+    # Tests:
+    """
     pos = (-1, -1)
     pos2 = (-1, -1)
     pos3 = (-1, -1)
@@ -137,3 +59,17 @@ if __name__ == "__main__":
         assert symbol_table.has('elderberry') == pos, f"elderberry does not have position {pos}"
     except AssertionError as e:
         print(e)
+    """
+
+    output_fip_file = "output_fip.txt"
+    output_symbol_table_file = "output_symbol_table.txt"
+
+    scanner = Scanner(symbol_table)
+    scanner.buffering_from_file("Utils/CodeBeingRead")
+    print("FIP Table:")
+    for code, position in scanner.get_fip_table():
+        print(f"{code} {position}")
+
+    print(symbol_table.__str__())
+
+    scanner.write_tables_to_files("output_fip.txt", "output_symbol_table.txt")

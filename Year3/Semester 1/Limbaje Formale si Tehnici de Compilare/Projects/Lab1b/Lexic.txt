@@ -5,7 +5,7 @@ c. Decimal digits (0-9);
 
 1. Lexic:
 a. Special symbols, representing:
-- operators + - * / -> < <= = >= ! !=
+- operators + - * % / -> < > <= == = >= ! != : $
 - separators () <{}> . space ~
 - reserved words: MORE char const perform otherwise when then choose nr scan write while var
 

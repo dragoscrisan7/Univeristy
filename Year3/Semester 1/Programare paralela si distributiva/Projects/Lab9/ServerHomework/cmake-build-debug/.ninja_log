@@ -1,0 +1,6 @@
+# ninja log v5
+18	8358	7203251619675734	CMakeFiles/ServerHomework.dir/Utils/Parser.cpp.obj	4a2522e57fc12cae
+26	8517	7203251620885712	CMakeFiles/ServerHomework.dir/Utils/Callback.cpp.obj	577ea1dacb595cfa
+8	8727	7203251623712908	CMakeFiles/ServerHomework.dir/main.cpp.obj	b30bcc573c968860
+38	8499	7203251621155708	CMakeFiles/ServerHomework.dir/SocketHandler/SocketHandler.cpp.obj	8903fc7d9e6374d7
+8727	9222	7203251628620769	ServerHomework.exe	9fef08ab81571946
