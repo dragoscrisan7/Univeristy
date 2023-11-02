@@ -35,18 +35,22 @@ class Scanner:
         while i < len(source_code):
             char = source_code[i]
 
-            if char.isalpha() or char == '_':
+            if char == '$':
+                match = self.identifiers.match(source_code[i + 1:])
+                if match:
+                    token = match.group(0)
+                    self.symbol_table.add(token)
+                    self.add_element(token)
+                    i += len(token) + 1
+                else:
+                    print("Lexical error: Invalid identifier")
+                    i += 1
+
+            elif char.isalpha() or char == '_':
                 match = self.identifiers.match(source_code[i:])
                 if match:
                     token = match.group(0)
-                    if source_code[i + len(token)] == "$":
-                        # Handle variable declaration
-                        i += len(token)  # Move past the identifier
-                        i += 1  # Move past the colon
-                        self.symbol_table.add(token)
-                        self.add_element(token)
-                    else:
-                        self.add_element(token)
+                    self.add_element(token)
                     i += len(token)
                 else:
                     print("Lexical error: Invalid identifier")
