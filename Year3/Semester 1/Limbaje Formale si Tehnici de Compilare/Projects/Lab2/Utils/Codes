@@ -80,3 +80,19 @@ ONWARD
    }>
 AT_EASE.
 AT_EASE."""
+
+
+
+
+
+COD
+   $56tuti DINAIA~
+   $frutti DINAIA~
+ONWARD
+   SCAN(0tuti)~
+   frutti->56
+   CHOOSE(0tuti > frutti) <{
+      CASE TRUE: WRITE(0tutti)~
+      CASE FALSE: WRITE(frutti)~
+   }>
+AT_EASE.

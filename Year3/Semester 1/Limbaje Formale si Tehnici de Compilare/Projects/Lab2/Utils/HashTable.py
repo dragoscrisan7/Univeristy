@@ -56,10 +56,18 @@ class HashTable:
     def contains(self, key):
         index = self.hash(key)
         if self.table[index] is not None:
-            for entry in self.table[index]:
-                if entry[0] == key:
-                    return True
+            if self.match_characters(self.table[index][0], key):
+                return True
         return False
+
+    def match_characters(self, entry, key):
+        type1 = type(entry)
+        type2 = type(key)
+        for char1, char2 in zip(entry, key):
+            if char1 != char2:
+                return False
+
+        return True
 
     def getVariableCount(self, key):
         index = self.hash(key)

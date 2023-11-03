@@ -12,206 +12,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e29205dd-4a4e-48b6-a5c9-0d0b663f2824" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Async/ServerExample/.idea/Lab9Server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ServerExample/.idea/Server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ServerHomework.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parser/Parser.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Parser/Parser.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Session/Session.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Session/Session.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socket/HttpSocketHandler.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Socket/HttpSocketHandler.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ClientHomework/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ClientHomework/.idea/ClientHomework.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ClientHomework/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ClientHomework/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ClientHomework/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ClientHomework/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../ClientHomework/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Lab9Client/.idea/Lab9Client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lab1-4/cmake-build-debug/.cmake/api/v1/reply/cache-v2-172655c05cf5e502d476.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lab1-4/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-931bff38706af27aeb09.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lab1-4/cmake-build-debug/.cmake/api/v1/reply/index-2023-10-20T13-17-05-0734.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lab1-4/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab1-4/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lab1-4/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab1-4/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lab1-4/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab1-4/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lab1-4/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab1-4/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lab1-4/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab1-4/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Lab1-4/utils/Utils.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab1-4/utils/Utils.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Cryptografie cu cheie publica/Courses/Course1_2023.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Cryptografie cu cheie publica/Courses/Course2_2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Cryptografie cu cheie publica/Courses/Course2_2023.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Cryptografie cu cheie publica/Courses/Course3_2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Cryptografie cu cheie publica/Courses/Course3_2023.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Cryptografie cu cheie publica/Courses/Course4_2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Cryptografie cu cheie publica/Courses/Course4_2023.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Cryptografie cu cheie publica/Courses/Course5_2023.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Cryptografie cu cheie publica/Courses/Course5_2023.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Cryptografie cu cheie publica/Projects/CryptographyLab2/CryptoLab2/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Cryptografie cu cheie publica/Projects/CryptographyLab2/CryptoLab2/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2/Utils/CodeBeingRead" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2/Utils/CodeBeingRead" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2/Utils/HashTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2/Utils/HashTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2/Utils/Scanner.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2/Utils/Scanner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2/Utils/SymbolTable.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2/Utils/SymbolTable.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2/output_fip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2/output_fip.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2/output_symbol_table.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2/output_symbol_table.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Lab5/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab5/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Lab6/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab6/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/BufferOverflows_v4.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/Lab2/FileContentIndex/06627acd-1d04-4788-86f8-36a28b4cbc86.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/Lab2/FileContentIndex/read.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/Lab2/v17/.wsuo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/Lab2/v17/Browse.VC.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/Lab2/v17/ipch/AutoPCH/86676d683b5cb736/CLIENT.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/ProjectSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware/FileContentIndex/51f4a6aa-9e8f-415b-84cc-079ffcd697b3.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware/FileContentIndex/fbe6c888-a8cb-49c0-880a-567fc43d32a8.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware/FileContentIndex/read.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware/v17/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware/v17/Browse.VC.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware/v17/Solution.VC.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware/v17/ipch/AutoPCH/20e0961ad97578af/DATA.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware/v17/ipch/AutoPCH/21c82abbe48de817/COMMANDS.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware/v17/ipch/AutoPCH/2c41c96b8f056ec8/SERVER.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware/v17/ipch/AutoPCH/2c934fe7ead264e2/SERVER.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware/v17/ipch/AutoPCH/645d488b2553725e/UTILS.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware/v17/ipch/AutoPCH/73fe0b60488e657d/COMMANDS.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware/v17/ipch/AutoPCH/eb6702821bef01e8/CLIENT.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware2/FileContentIndex/ef3e514d-cf04-4f34-a9c9-29edf6bbdf21.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware2/FileContentIndex/read.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware2/v17/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware2/v17/.wsuo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware2/v17/Browse.VC.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/SecuritateSoftware2/v17/Solution.VC.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/VSWorkspaceState.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/.vs/slnx.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/Backup/SecuritateSoftware.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/Debug/server.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/Debug/server.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/Release/0/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/Release/0/120.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/Release/2/222.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/Release/3/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/Release/client.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/Release/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/Release/server.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/Release/serverlib.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/SecuritateSoftware.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/SecuritateSoftware2.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/UpgradeLog.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/cleanup.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/client/client.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/client/client.vcproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/client/client.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/client/client.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/client/client2.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/client/client2.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/commands.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/data.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/server.exe.recipe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/server.ilk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/server.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/server.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/server.tlog/CL.command.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/server.tlog/CL.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/server.tlog/CL.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/server.tlog/link.command.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/server.tlog/link.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/server.tlog/link.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/server.tlog/server.lastbuildstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/utils.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/vc143.idb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/Debug/vc143.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/commands.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/commands.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/data.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/data.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/server.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/server.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/server.vcproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/server.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/server.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/server.vcxproj.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/server2.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/server2.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/serverlib.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/server/utils.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/serverlib/dllmain.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/serverlib/dllmain.c.malware" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/serverlib/dllmain.c.malware2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/serverlib/serverlib.vcproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/serverlib/serverlib.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/serverlib/serverlib2.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/temp/serverlib.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/temp/serverlib_lab7.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/utils/utils.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab2/Project/utils/utils.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/.vs/SecuritateSoftware2/FileContentIndex/1bde8450-44ec-4595-8988-e8330bd41bd5.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/.vs/SecuritateSoftware2/FileContentIndex/read.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/.vs/SecuritateSoftware2/v17/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/.vs/SecuritateSoftware2/v17/Browse.VC.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/.vs/SecuritateSoftware2/v17/Solution.VC.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/.vs/SecuritateSoftware2/v17/ipch/AutoPCH/183689600b710984/SERVER.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/.vs/SecuritateSoftware2/v17/ipch/AutoPCH/7d6e60ffc7a5efca/UTILS.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/.vs/SecuritateSoftware2/v17/ipch/AutoPCH/8e2e78e7f53213b3/DATA.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/.vs/SecuritateSoftware2/v17/ipch/AutoPCH/aa582a168a27569/COMMANDS.ipch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Debug/server.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Debug/server.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Release/.vs/server/v15/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Release/0/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Release/0/1000.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Release/0/120.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Release/2/222.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Release/2/log.txt.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Release/3/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Release/TOCTOU.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Release/client.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Release/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Release/server.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Release/serverlib.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/Release/serverlib.dll.orig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/SecuritateSoftware2.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/cleanup.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/client/client.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/client/client.vcproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/client/client.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/client/client.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/client/client2.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/client/client2.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/client/client2.vcxproj.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/commands.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/data.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/server.exe.recipe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/server.ilk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/server.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/server.tlog/CL.command.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/server.tlog/CL.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/server.tlog/CL.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/server.tlog/link.command.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/server.tlog/link.read.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/server.tlog/link.write.1.tlog" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/server.tlog/server.lastbuildstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/server2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/utils.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/vc143.idb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/Debug/vc143.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/commands.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/commands.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/data.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/data.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/server.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/server.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/server.vcproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/server.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/server.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/server2.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/server2.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/server2.vcxproj.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/server/utils.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/serverlib/dllmain.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/serverlib/dllmain.c.malware" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/serverlib/serverlib.vcproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/serverlib/serverlib.vcxproj.filters" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/serverlib/serverlib2.vcxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/serverlib/serverlib2.vcxproj.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/temp/aici se pune client.exe/client.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/temp/serverlib.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/utils/utils.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/Project/SecuritateSoftware/utils/utils.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/implementation-sins-c-language-issues-beamer.version.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../Securitate Software/Lab3/ss_c.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ServerHomework.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ServerHomework.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ClientHomework/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../ClientHomework/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ServerHomework/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../ServerHomework/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,6 +69,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ServerHomework" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -256,12 +78,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="ServerHomework" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="12345" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ServerHomework" TARGET_NAME="ServerHomework" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ServerHomework" RUN_TARGET_NAME="ServerHomework">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServerHomework" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="12345" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ServerHomework" TARGET_NAME="ServerHomework" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ServerHomework" RUN_TARGET_NAME="ServerHomework">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -276,6 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698492551492</updated>
       <workItem from="1698492554685" duration="8449000" />
+      <workItem from="1699022040199" duration="219000" />
     </task>
     <servers />
   </component>

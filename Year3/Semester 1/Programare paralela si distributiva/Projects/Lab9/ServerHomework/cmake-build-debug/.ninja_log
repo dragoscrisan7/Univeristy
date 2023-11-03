@@ -4,3 +4,14 @@
 8	8727	7203251623712908	CMakeFiles/ServerHomework.dir/main.cpp.obj	b30bcc573c968860
 38	8499	7203251621155708	CMakeFiles/ServerHomework.dir/SocketHandler/SocketHandler.cpp.obj	8903fc7d9e6374d7
 8727	9222	7203251628620769	ServerHomework.exe	9fef08ab81571946
+9	7278	7207254909728351	CMakeFiles/ServerHomework.dir/Utils/Parser.cpp.obj	4a2522e57fc12cae
+66	7334	7207254910548332	CMakeFiles/ServerHomework.dir/SocketHandler/SocketHandler.cpp.obj	8903fc7d9e6374d7
+51	7349	7207254910948290	CMakeFiles/ServerHomework.dir/Utils/Callback.cpp.obj	577ea1dacb595cfa
+43	7971	7207254917468290	CMakeFiles/ServerHomework.dir/main.cpp.obj	b30bcc573c968860
+7	3673	7207257560175871	CMakeFiles/ServerHomework.dir/Utils/TaskSolution.cpp.obj	46758d8a3f4af7c6
+3674	3996	7207257563345878	ServerHomework.exe	17279e9f80f689a1
+58	4079	7207258270634684	CMakeFiles/ServerHomework.dir/main.cpp.obj	b30bcc573c968860
+4084	4327	7207258273064684	ServerHomework.exe	17279e9f80f689a1
+19	4341	7207301187929659	CMakeFiles/ServerHomework.dir/Utils/Callback.cpp.obj	577ea1dacb595cfa
+8	4629	7207301190809626	CMakeFiles/ServerHomework.dir/main.cpp.obj	b30bcc573c968860
+4630	4879	7207301193259612	ServerHomework.exe	17279e9f80f689a1

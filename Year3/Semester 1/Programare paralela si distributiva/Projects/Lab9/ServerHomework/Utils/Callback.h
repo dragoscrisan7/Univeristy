@@ -42,6 +42,4 @@ private:
     }
 };
 
-
-
 #endif //SERVERHOMEWORK_CALLBACK_H

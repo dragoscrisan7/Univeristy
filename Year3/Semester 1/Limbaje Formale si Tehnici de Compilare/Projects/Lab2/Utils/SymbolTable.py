@@ -15,8 +15,8 @@ class SymbolTable:
             self.table.add(key, value)
 
     def has(self, key):
-        if key.endswith('$'):
-            key = key[:-1]
+        if key.startswith('$'):
+            key = key[1:]
         return self.table.contains(key)
 
     def get_position(self, key):

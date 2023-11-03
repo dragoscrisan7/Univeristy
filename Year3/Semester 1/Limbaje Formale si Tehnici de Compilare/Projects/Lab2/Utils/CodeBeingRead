@@ -1,11 +1,11 @@
 COD
-   $a DINAIA~
-   $b DINAIA~
+   $56tuti DINAIA~
+   $frutti DINAIA~
 ONWARD
-   SCAN(a)~
-   SCAN(b)~
-   CHOOSE(a > b) <{
-      CASE TRUE: WRITE(a)~
-      CASE FALSE: WRITE(b)~
+   SCAN(0tuti)~
+   frutti->56
+   CHOOSE(0tuti > frutti) <{
+      CASE TRUE: WRITE(0tutti)~
+      CASE FALSE: WRITE(frutti)~
    }>
 AT_EASE.

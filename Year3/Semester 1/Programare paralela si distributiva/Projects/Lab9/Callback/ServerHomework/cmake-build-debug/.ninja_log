@@ -3,3 +3,5 @@
 4362	4937	7202777009230122	ServerHomework.exe	6434d7385a54196
 52	1045	7202096282114123	CMakeFiles/ServerHomework.dir/Parser/Parser.cpp.obj	ca67b697fb3f6b82
 21	4173	7202777001680012	CMakeFiles/ServerHomework.dir/Session/Session.cpp.obj	9415f05b941b59ca
+111	4498	7207252613315520	CMakeFiles/ServerHomework.dir/Socket/HttpSocketHandler.cpp.obj	88733d7d877a0731
+4499	5668	7207252624235498	ServerHomework.exe	739108db67b8d6f1

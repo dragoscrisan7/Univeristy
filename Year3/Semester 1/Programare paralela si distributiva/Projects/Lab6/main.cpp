@@ -7,10 +7,10 @@
 #include "multiThreads/MultiThreads.h"
 
 int main() {
-    int numRowsA = 3;
-    int numColsA = 3;
-    int numRowsB = 3;
-    int numColsB = 3;
+    int numRowsA = 9;
+    int numColsA = 9;
+    int numRowsB = 9;
+    int numColsB = 9;
 
     // Generate random matrices
     std::vector<std::vector<int>> matrixA = generateRandomMatrix(numRowsA, numColsA);

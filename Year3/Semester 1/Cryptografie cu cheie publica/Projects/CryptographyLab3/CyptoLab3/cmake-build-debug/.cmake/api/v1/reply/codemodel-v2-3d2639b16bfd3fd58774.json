@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CyptoLab3",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CyptoLab3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CyptoLab3-Debug-b1e101bcc482cad39389.json",
+					"name" : "CyptoLab3",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/Year3/Semester 1/Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug",
+		"source" : "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/Year3/Semester 1/Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

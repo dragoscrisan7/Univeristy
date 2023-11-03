@@ -8,7 +8,7 @@ int main() {
         perror("WSAStartup failed");
         return 1; // Return a non-zero value to indicate an error
     }
-    std::vector<std::string> urls = { "www.apache.org/", "github.github.io/", "www.wikipedia.org/" };
+    std::vector<std::string> urls = { "www.apache.org/", "www.wikipedia.org/" };
 
     CallbackSolution parser(urls);
     parser.Run();
