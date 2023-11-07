@@ -9,8 +9,13 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.mobileapplicationproject.data.components.GoalCreationScreen
+import com.example.mobileapplicationproject.data.components.GoalList
+import com.example.mobileapplicationproject.data.model.Goal
 import com.example.mobileapplicationproject.ui.theme.MobileApplicationProjectTheme
 
 class MainActivity : AppCompatActivity() {
@@ -18,9 +23,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MobileApplicationProjectTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    GoalApp()
                 }
             }
         }
@@ -28,17 +35,16 @@ class MainActivity : AppCompatActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-            text = "Hello $name!",
-            modifier = modifier
-    )
-}
+fun GoalApp() {
+    val goals = remember { mutableStateListOf<Goal>() }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MobileApplicationProjectTheme {
-        Greeting("Android")
+    GoalList(goals)
+
+    GoalList(goals) { goal ->
+        goals.remove(goal) // Remove the goal from the list
+    }
+
+    GoalCreationScreen { newGoal ->
+        goals.add(newGoal)
     }
 }
