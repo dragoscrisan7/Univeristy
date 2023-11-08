@@ -18,10 +18,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.mobileapplicationproject.data.model.Goal
+import com.example.mobileapplicationproject.data.model.GoalViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun GoalUpdateScreen(
+    viewModel: GoalViewModel,
     goal: Goal,
     onUpdate: (Goal) -> Unit
 ) {
@@ -73,7 +75,7 @@ fun GoalUpdateScreen(
         onClick = {
             // Validate input and update the goal
             if (updatedTitle.isNotEmpty() && updatedDescription.isNotEmpty() && updatedDeadline.isNotEmpty()) {
-                val updatedGoal = Goal(updatedTitle, updatedDescription, updatedDeadline, updatedIsPrivate, updatedMiniGoals.split("\n"))
+                val updatedGoal = Goal(viewModel.getGoalId(updatedTitle), updatedTitle, updatedDescription, updatedDeadline, updatedIsPrivate, updatedMiniGoals.split("\n"))
                 onUpdate(updatedGoal)
             }
         },

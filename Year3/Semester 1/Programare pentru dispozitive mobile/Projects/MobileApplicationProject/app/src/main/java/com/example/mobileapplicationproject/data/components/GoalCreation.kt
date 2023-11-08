@@ -18,10 +18,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.mobileapplicationproject.data.model.Goal
+import com.example.mobileapplicationproject.data.model.GoalViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun GoalCreationScreen(
+    viewModel: GoalViewModel,
     onGoalCreated: (Goal) -> Unit
 ) {
     var title by remember { mutableStateOf("") }
@@ -75,7 +77,8 @@ fun GoalCreationScreen(
         onClick = {
             // Validate input and create a new goal
             if (title.isNotEmpty() && description.isNotEmpty() && deadline.isNotEmpty()) {
-                val newGoal = Goal(title, description, deadline, isPrivate, miniGoals.split("\n"))
+                val newGoalId = viewModel.getNewGoalId()
+                val newGoal = Goal(newGoalId, title, description, deadline, isPrivate, miniGoals.split("\n"))
                 onGoalCreated(newGoal)
             }
         },
