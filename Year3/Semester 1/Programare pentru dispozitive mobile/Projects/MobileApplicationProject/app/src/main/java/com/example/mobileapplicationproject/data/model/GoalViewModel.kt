@@ -21,8 +21,6 @@ class GoalViewModel : ViewModel() {
         return goals.size
     }
 
-    val goalsStateValue: State<List<Goal>> get() = goalsState
-
     fun getGoals(): List<Goal> {
         goalsState.value = goals
         return goals
@@ -61,9 +59,5 @@ class GoalViewModel : ViewModel() {
 
     fun getGoalByTitle(title: String): Goal? {
         return goals.firstOrNull { it.title == title }
-    }
-
-    fun getLastGoalTitle(): String {
-        return goals.last().title
     }
 }

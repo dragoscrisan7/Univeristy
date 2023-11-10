@@ -77,8 +77,7 @@ fun GoalRepo(
     viewModel: GoalViewModel,
     navController: NavController
 ) {
-    val goals: List<Goal> = viewModel.getGoals()
-    var deletingGoal by remember { mutableStateOf<Goal?>(null) }
+    val deletingGoalTitle by remember { mutableStateOf ("") }
     var showDeleteDialog by remember { mutableStateOf(false) }
 
     Column(
@@ -94,7 +93,7 @@ fun GoalRepo(
                     fontSize = 30.sp
                 )
             }
-            items(goals) { goal ->
+            items(viewModel.getGoals()) { goal ->
                 GoalDisplayItem(
                     goal = goal,
                     onEditClick = {
@@ -102,7 +101,6 @@ fun GoalRepo(
                         navController.navigate("updateGoal/${goal.title}")
                     },
                     onDeleteClick = {
-                        deletingGoal = goal
                         showDeleteDialog = true
                     }
                 )
@@ -124,10 +122,9 @@ fun GoalRepo(
 
     if (showDeleteDialog) {
         DeleteConfirmationDialog(
-            goal = deletingGoal!!,
             onConfirmDelete = {
                 // Handle goal deletion here (e.g., delete it in the ViewModel)
-                viewModel.deleteGoal(deletingGoal!!.title)
+                viewModel.deleteGoal(deletingGoalTitle)
                 // Close the confirmation dialog
                 showDeleteDialog = false
             },
@@ -138,3 +135,4 @@ fun GoalRepo(
         )
     }
 }
+

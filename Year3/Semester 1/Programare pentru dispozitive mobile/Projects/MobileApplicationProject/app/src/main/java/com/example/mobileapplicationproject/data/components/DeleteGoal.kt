@@ -4,11 +4,9 @@ import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import com.example.mobileapplicationproject.data.model.Goal
 
 @Composable
 fun DeleteConfirmationDialog(
-    goal: Goal,
     onConfirmDelete: () -> Unit,
     onDismiss: () -> Unit
 ) {
