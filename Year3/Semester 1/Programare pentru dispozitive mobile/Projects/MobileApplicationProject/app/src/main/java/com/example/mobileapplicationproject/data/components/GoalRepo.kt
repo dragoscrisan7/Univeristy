@@ -2,7 +2,9 @@ package com.example.mobileapplicationproject.data.components
 
 import android.util.Log
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -21,24 +23,50 @@ import androidx.navigation.NavController
 import com.example.mobileapplicationproject.data.model.Goal
 import com.example.mobileapplicationproject.data.model.GoalViewModel
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 
 
 @Composable
 fun GoalDisplayItem(
     goal: Goal,
-    onClick: () -> Unit
+    onEditClick: () -> Unit,
+    onDeleteClick: () -> Unit
 ) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .clickable { onClick() } // Handle item click
             .padding(16.dp)
     ) {
-        Column {
-            Text(text = goal.title, fontSize = 18.sp, fontWeight = FontWeight.Bold)
-            Text(text = goal.description, fontSize = 16.sp)
-            Text(text = "Deadline: ${goal.deadline}", fontSize = 16.sp)
-            // Add more details as needed
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(8.dp),
+            horizontalArrangement = Arrangement.SpaceBetween
+        ) {
+            Column {
+                Text(text = goal.title, fontSize = 18.sp, fontWeight = FontWeight.Bold)
+                Text(text = goal.description, fontSize = 16.sp)
+                Text(text = "Deadline: ${goal.deadline}", fontSize = 16.sp)
+                // Add more details as needed
+            }
+
+            Column {
+                IconButton(onClick = onEditClick) {
+                    Icon(Icons.Default.Edit, contentDescription = "Edit")
+                }
+
+                IconButton(onClick = onDeleteClick) {
+                    Icon(Icons.Default.Delete, contentDescription = "Delete")
+                }
+            }
         }
     }
 }
@@ -50,6 +78,8 @@ fun GoalRepo(
     navController: NavController
 ) {
     val goals: List<Goal> = viewModel.getGoals()
+    var deletingGoal by remember { mutableStateOf<Goal?>(null) }
+    var showDeleteDialog by remember { mutableStateOf(false) }
 
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -67,9 +97,13 @@ fun GoalRepo(
             items(goals) { goal ->
                 GoalDisplayItem(
                     goal = goal,
-                    onClick = {
+                    onEditClick = {
                         // Handle item click: Navigate to goal details
-                        navController.navigate("goalDetail/${goal.id}")
+                        navController.navigate("updateGoal/${goal.title}")
+                    },
+                    onDeleteClick = {
+                        deletingGoal = goal
+                        showDeleteDialog = true
                     }
                 )
             }
@@ -86,5 +120,21 @@ fun GoalRepo(
                 }
             }
         }
+    }
+
+    if (showDeleteDialog) {
+        DeleteConfirmationDialog(
+            goal = deletingGoal!!,
+            onConfirmDelete = {
+                // Handle goal deletion here (e.g., delete it in the ViewModel)
+                viewModel.deleteGoal(deletingGoal!!.title)
+                // Close the confirmation dialog
+                showDeleteDialog = false
+            },
+            onDismiss = {
+                // Close the confirmation dialog
+                showDeleteDialog = false
+            }
+        )
     }
 }

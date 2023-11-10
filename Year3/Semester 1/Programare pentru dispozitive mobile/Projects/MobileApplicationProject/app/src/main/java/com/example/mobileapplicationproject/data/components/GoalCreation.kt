@@ -64,7 +64,6 @@ fun GoalCreationScreen(
             .padding(16.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
-
     ) {
         var isPrivate by remember { mutableStateOf(false) }
         val regexPattern = """^\d{2}/\d{2}/\d{4}$""".toRegex()
@@ -96,7 +95,7 @@ fun GoalCreationScreen(
         TextField(
             value = deadline,
             onValueChange = { deadline = it
-                            isDeadlineError = deadline.matches(regexPattern)
+                            isDeadlineError = !deadline.matches(regexPattern)
                             updateButtonEnabled()
                             },
             label = { Text("Deadline") },
@@ -142,7 +141,6 @@ fun GoalCreationScreen(
     }
 }
 
-
 @Preview
 @Composable
 fun GoalCreationScreenPreview() {
@@ -152,7 +150,3 @@ fun GoalCreationScreenPreview() {
         onGoalCreated = {}
     )
 }
-
-
-
-
