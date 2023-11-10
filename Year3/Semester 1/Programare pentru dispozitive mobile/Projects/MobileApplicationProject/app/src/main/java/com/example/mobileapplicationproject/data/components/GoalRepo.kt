@@ -1,7 +1,5 @@
 package com.example.mobileapplicationproject.data.components
 
-import android.util.Log
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -33,7 +31,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 
-
 @Composable
 fun GoalDisplayItem(
     goal: Goal,
@@ -55,7 +52,6 @@ fun GoalDisplayItem(
                 Text(text = goal.title, fontSize = 18.sp, fontWeight = FontWeight.Bold)
                 Text(text = goal.description, fontSize = 16.sp)
                 Text(text = "Deadline: ${goal.deadline}", fontSize = 16.sp)
-                // Add more details as needed
             }
 
             Column {
@@ -71,13 +67,12 @@ fun GoalDisplayItem(
     }
 }
 
-
 @Composable
 fun GoalRepo(
     viewModel: GoalViewModel,
     navController: NavController
 ) {
-    val deletingGoalTitle by remember { mutableStateOf ("") }
+    var deletingGoalTitle by remember { mutableStateOf ("") }
     var showDeleteDialog by remember { mutableStateOf(false) }
 
     Column(
@@ -101,6 +96,7 @@ fun GoalRepo(
                         navController.navigate("updateGoal/${goal.title}")
                     },
                     onDeleteClick = {
+                        deletingGoalTitle = goal.title
                         showDeleteDialog = true
                     }
                 )
