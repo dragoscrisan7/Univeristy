@@ -1,0 +1,7 @@
+# ninja log v5
+1	4163	7216572427702859	CMakeFiles/MyFtpServer.dir/main.cpp.obj	8a8effb22d57dfe7
+4	213	7216573420273158	MyFtpServer.exe	1d6a5e2c66659ab0
+6	3501	7216573808594620	CMakeFiles/MyFtpServer.dir/main.cpp.obj	8a8effb22d57dfe7
+3539	4160	7216573815204642	MyFtpServer.exe	1d6a5e2c66659ab0
+6	1792	7216574117144631	CMakeFiles/MyFtpServer.dir/main.cpp.obj	8a8effb22d57dfe7
+1793	2107	7216574120264722	MyFtpServer.exe	1d6a5e2c66659ab0

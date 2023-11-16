@@ -1,10 +1,8 @@
 package com.example.mobileapplicationproject.data.model
 
-
 import androidx.lifecycle.ViewModel
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.State
-
 
 class GoalViewModel : ViewModel() {
     private val goals: MutableList<Goal> = mutableListOf()

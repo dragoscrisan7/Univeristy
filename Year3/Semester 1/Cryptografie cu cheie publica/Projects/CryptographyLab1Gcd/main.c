@@ -86,32 +86,35 @@ int average_time(int a, int b, int (*func)(int, int))
 // Driver program to test above function
 int main()
 {
-    int pairs[10][2] = {
-            {2147483642, 982451652},
-            {123, 456},
-            {789, 1011},
-            {555, 333},
-            {777, 999},
-            {111, 222},
-            {98575, 123},
-            {9999, 1111},
-            {54321, 12345},
-            {987654, 123456}
-    };
-    for (int i = 0; i < 10; i++) {
-        int a = pairs[i][0];
-        int b = pairs[i][1];
-        printf("%d, %d\n",a,b);
-
-        double average_time_result = average_time(a, b, gcd1);
-        printf("Average Time elapsed for gcd1 over %d runs: %.5f seconds\n", 100, average_time_result);
-
-        double average_time_result2 = average_time(a, b, gcd2);
-        printf("Average Time elapsed for gcd2 over %d runs: %.5f seconds\n", 100, average_time_result2);
-
-        double average_time_result3 = average_time(a, b, gcd3);
-        printf("Average Time elapsed for gcd3 over %d runs: %.5f seconds\n", 100, average_time_result3);
-    }
+    int a=943;
+    int b=6583;
+    printf("2: %d, 3: %d",gcd2(a,b),gcd3(a,b));
+//    int pairs[10][2] = {
+//            {2147483642, 982451652},
+//            {123, 456},
+//            {789, 1011},
+//            {555, 333},
+//            {777, 999},
+//            {111, 222},
+//            {98575, 123},
+//            {9999, 1111},
+//            {54321, 12345},
+//            {987654, 123456}
+//    };
+//    for (int i = 0; i < 10; i++) {
+//        int a = pairs[i][0];
+//        int b = pairs[i][1];
+//        printf("%d, %d\n",a,b);
+//
+//        double average_time_result = average_time(a, b, gcd1);
+//        printf("Average Time elapsed for gcd1 over %d runs: %.5f seconds\n", 100, average_time_result);
+//
+//        double average_time_result2 = average_time(a, b, gcd2);
+//        printf("Average Time elapsed for gcd2 over %d runs: %.5f seconds\n", 100, average_time_result2);
+//
+//        double average_time_result3 = average_time(a, b, gcd3);
+//        printf("Average Time elapsed for gcd3 over %d runs: %.5f seconds\n", 100, average_time_result3);
+//    }
 
     return 0;
 }

@@ -3,59 +3,96 @@
 #include <cstdlib>
 #include <ctime>
 
-long long modExp(long long base, long long exp, long long mod) {
+using namespace std;
+
+// Function to perform modular exponentiation a^b % m
+long long modExp(long long a, long long b, long long m) {
     long long result = 1;
-    while (exp > 0) {
-        if (exp % 2 == 1) {
-            result = (result * base) % mod;
+    a = a % m;
+
+    while (b > 0) {
+        if (b % 2 == 1) {
+            result = (result * a) % m;
         }
-        base = (base * base) % mod;
-        exp /= 2;
+        a = (a * a) % m;
+        b /= 2;
     }
+
     return result;
 }
 
-bool isPrimeMillerRabin(long long n, int k) {
-    if (n <= 1 || n == 4) return false;
-    if (n <= 3) return true;
+// Miller-Rabin primality test
+bool millerRabinTest(long long n, int k) {
+    if (n <= 1 || n == 4) {
+        return false;
+    }
+    if (n <= 3) {
+        return true;
+    }
 
-    // Find r and d such that n = 2^r * d + 1
+    // Find d such that n-1 = 2^r * d
     long long d = n - 1;
     while (d % 2 == 0) {
         d /= 2;
     }
 
-    // Repeat the test 'k' times for accuracy
-    for (int i = 0; i < k; i++) {
-        long long a = 2 + rand() % (n - 4);
+    // Repeat the test k times
+    for (int i = 0; i < k; ++i) {
+        // Randomly choose a witness 'a' in the range [2, n-2]
+        long long a = 2 + rand() % (n - 3);
+
+        // Compute a^d % n
         long long x = modExp(a, d, n);
 
+        // If x is 1 or n-1, then 'a' is probably a witness
         if (x == 1 || x == n - 1) {
             continue;
         }
 
-        for (long long r = 1; r < d; r *= 2) {
+        // Repeat the squaring process
+        for (int r = 1; r < (int)log2(n - 1); ++r) {
             x = modExp(x, 2, n);
-            if (x == 1) return false;
-            if (x == n - 1) break;
+            if (x == n - 1) {
+                break;
+            }
         }
 
-        if (x != n - 1) return false;
+        // If we didn't find a non-trivial square root of 1, then 'a' is a witness
+        if (x != n - 1) {
+            return false;
+        }
     }
 
+    // If the test passed for all witnesses, n is probably prime
     return true;
 }
 
 int main() {
-    srand(static_cast<unsigned>(time(nullptr))); // Seed the random number generator
-    long long number = 17; // Change this to the number you want to test
-    int iterations = 5; // Number of iterations
+    srand(time(NULL));
 
-    if (isPrimeMillerRabin(number, iterations)) {
-        std::cout << number << " is probably prime." << std::endl;
+    long long number;
+    int iterations;
+
+    // Input the number to test for primality
+    cout << "Enter a number to test for primality: ";
+    cin >> number;
+
+    // Input the number of iterations for the Miller-Rabin test
+    cout << "Enter the number of iterations: ";
+    cin >> iterations;
+
+    // Perform the Miller-Rabin primality test
+    if (millerRabinTest(number, iterations)) {
+        cout << number << " is probably prime." << endl;
     } else {
-        std::cout << number << " is composite." << std::endl;
+        cout << number << " is composite." << endl;
     }
 
     return 0;
 }
+/*
+ * 17-5
+ * 15-5
+ * 104729-10
+ * 104731-10
+ */
