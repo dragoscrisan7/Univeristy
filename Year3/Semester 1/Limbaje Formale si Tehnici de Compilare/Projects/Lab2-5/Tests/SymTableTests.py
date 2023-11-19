@@ -38,16 +38,16 @@ def SymTableTests():
 
     try:
         assert symbol_table_tests.has("apple") == pos, f"apple does not have position {pos}"
-        assert symbol_table_tests.getPosition(50) == pos2, f"50 does not have position {pos2}"
-        assert symbol_table_tests.getPosition("str5") == pos3, f"str5 does not have position {pos3}"
+        assert symbol_table_tests.get_position(50) == pos2, f"50 does not have position {pos2}"
+        assert symbol_table_tests.get_psition("str5") == pos3, f"str5 does not have position {pos3}"
         assert symbol_table_tests.has("aaaa") == (-1, -1), "aaaa exists in the table"
-        assert symbol_table_tests.getPosition(95) == (2, 2), "95 does not have position (2, 2)"
+        assert symbol_table_tests.get_position(95) == (2, 2), "95 does not have position (2, 2)"
     except AssertionError as e:
         print(e)
 
     try:
-        print(f"77 {symbol_table_tests.getPosition(77)}")
-        assert symbol_table_tests.getPosition(77) == (2, 2), "77 does not have position (2, 2)"
+        print(f"77 {symbol_table_tests.get_position(77)}")
+        assert symbol_table_tests.get_position(77) == (2, 2), "77 does not have position (2, 2)"
     except AssertionError as e:
         print(e)
 

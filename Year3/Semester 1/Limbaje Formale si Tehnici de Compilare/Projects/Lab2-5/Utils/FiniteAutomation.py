@@ -1,44 +1,26 @@
-class FiniteAutomata:
-    def __init__(self, fa_file_path):
-        self.states = set()
-        self.alphabet = set()
-        self.transitions = []
-        self.initial_state = None
-        self.final_states = set()
+class FiniteAutomaton:
+    def __init__(self, states, alphabet, transition_rules, initial_state, accepting_states):
+        self.states = states
+        self.alphabet = alphabet
+        self.transition_rules = transition_rules
+        self.current_state = initial_state
+        self.accepting_states = accepting_states
+        self.initial_state = initial_state
 
-        self.read_fa_from_file(fa_file_path)
+    def reset(self):
+        self.current_state = self.initial_state
 
-    def read_fa_from_file(self, fa_file_path):
-        with open(fa_file_path, 'r') as file:
-            lines = file.readlines()
+    def process_input(self, input_symbol):
+        if input_symbol not in self.alphabet:
+            raise ValueError(f"Input symbol '{input_symbol}' not in the alphabet.")
 
-        current_section = None
+        if self.current_state not in self.states:
+            raise ValueError(f"Invalid current state: {self.current_state}")
 
-        for line in lines:
-            line = line.strip()
+        if (self.current_state, input_symbol) in self.transition_rules:
+            self.current_state = self.transition_rules[(self.current_state, input_symbol)]
+        else:
+            raise ValueError(f"No transition rule defined for current state {self.current_state} and input symbol {input_symbol}")
 
-            if line.startswith('States'):
-                current_section = 'states'
-            elif line.startswith('Alphabet'):
-                current_section = 'alphabet'
-            elif line.startswith('Transitions'):
-                current_section = 'transitions'
-            elif line.startswith('Initial'):
-                current_section = 'initial'
-            elif line.startswith('Final'):
-                current_section = 'final'
-            elif line:
-                if current_section == 'states':
-                    self.states.add(line)
-                elif current_section == 'alphabet':
-                    self.alphabet.add(line)
-                elif current_section == 'transitions':
-                    parts = line.split('->')
-                    if len(parts) == 2:
-                        from_state, transition = parts[0].strip(), parts[1].strip()
-                        symbol, to_state = transition.split()
-                        self.transitions.append((from_state, symbol, to_state))
-                elif current_section == 'initial':
-                    self.initial_state = line
-                elif current_section == 'final':
-                    self.final_states.add(line)
+    def is_accepting(self):
+        return self.current_state in self.accepting_states
