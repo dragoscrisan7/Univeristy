@@ -50,16 +50,6 @@ class _GoalListState extends State<GoalList> {
                     });
                   },
                 ),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: ElevatedButton(
-                  onPressed: () {
-                    // Navigate to the "Add Goal" screen
-                    // Assuming you have a navigation setup
-                  },
-                  child: Text("Add"),
-                ),
-              ),
             ],
           ),
         ),
