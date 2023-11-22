@@ -1,4 +1,4 @@
-package com.example.mobileapplicationproject.data.future_message
+package com.example.mobileapplicationproject.feature_goal.data.model
 data class FutureMessage(
     val messageContent: String,
     val deliveryDateTime: String,

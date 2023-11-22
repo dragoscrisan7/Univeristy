@@ -1,4 +1,4 @@
-package com.example.mobileapplicationproject.storage.display
+package com.example.mobileapplicationproject.feature_goal.ui_layer.goal_ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -18,9 +18,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import com.example.mobileapplicationproject.data.goal.Goal
-import com.example.mobileapplicationproject.storage.structure.GoalViewModel
-import androidx.compose.foundation.lazy.items
+import com.example.mobileapplicationproject.feature_goal.data.GoalViewModel
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
@@ -30,11 +28,13 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import com.example.mobileapplicationproject.ui_layer.goal_ui.DeleteConfirmationDialog
+import androidx.compose.runtime.livedata.observeAsState
+import androidx.compose.runtime.getValue
+import com.example.mobileapplicationproject.feature_goal.data.model.GoalEntity
 
 @Composable
 fun GoalDisplayItem(
-    goal: Goal,
+    goal: GoalEntity,
     onEditClick: () -> Unit,
     onDeleteClick: () -> Unit
 ) {
@@ -69,12 +69,14 @@ fun GoalDisplayItem(
 }
 
 @Composable
-fun GoalRepo(
+fun GoalDisplayList(
     viewModel: GoalViewModel,
     navController: NavController
 ) {
     var deletingGoalTitle by remember { mutableStateOf ("") }
     var showDeleteDialog by remember { mutableStateOf(false) }
+
+    val goals: State<List<GoalEntity>> = goalRepository.getAllGoals().stateIn(viewModelScope, SharingStarted.Lazily, emptyList())
 
     Column(
         modifier = Modifier.fillMaxSize(),
@@ -89,7 +91,7 @@ fun GoalRepo(
                     fontSize = 30.sp
                 )
             }
-            items(viewModel.getGoals()) { goal ->
+            items(goals) { goal ->
                 GoalDisplayItem(
                     goal = goal,
                     onEditClick = {

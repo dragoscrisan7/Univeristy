@@ -1,4 +1,4 @@
-package com.example.mobileapplicationproject.ui_layer.goal_ui
+package com.example.mobileapplicationproject.feature_goal.ui_layer.goal_ui
 
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button

@@ -1,4 +1,4 @@
-package com.example.mobileapplicationproject.data.user
+package com.example.mobileapplicationproject.feature_goal.data.model
 
 data class User(
     val username: String,

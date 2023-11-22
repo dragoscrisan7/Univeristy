@@ -1,13 +1,13 @@
-package com.example.mobileapplicationproject.ui_layer.pages
+package com.example.mobileapplicationproject.feature_goal.ui_layer.pages
 
-import com.example.mobileapplicationproject.storage.display.GoalRepo
-import com.example.mobileapplicationproject.storage.structure.GoalViewModel
+import com.example.mobileapplicationproject.ui_layer.goal_ui.GoalRepo
+import com.example.mobileapplicationproject.feature_goal.data.GoalViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.compose.*
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import com.example.mobileapplicationproject.ui_layer.goal_ui.GoalCreationScreen
-import com.example.mobileapplicationproject.ui_layer.goal_ui.GoalUpdateScreen
+import com.example.mobileapplicationproject.feature_goal.ui_layer.goal_ui.GoalCreationScreen
+import com.example.mobileapplicationproject.feature_goal.ui_layer.goal_ui.GoalUpdateScreen
 
 @Composable
 fun GoalsPage()

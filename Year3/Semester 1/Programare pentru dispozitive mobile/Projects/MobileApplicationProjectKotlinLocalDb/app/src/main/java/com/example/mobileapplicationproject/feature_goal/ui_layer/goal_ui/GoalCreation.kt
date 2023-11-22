@@ -1,4 +1,4 @@
-package com.example.mobileapplicationproject.ui_layer.goal_ui
+package com.example.mobileapplicationproject.feature_goal.ui_layer.goal_ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -20,29 +20,27 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.mobileapplicationproject.data.goal.Goal
-import com.example.mobileapplicationproject.storage.structure.GoalViewModel
+import com.example.mobileapplicationproject.data.model.Goal
+import com.example.mobileapplicationproject.feature_goal.data.GoalViewModel
 
 @Composable
-fun GoalUpdateScreen(
+fun GoalCreationScreen(
     viewModel: GoalViewModel,
-    goal: Goal,
-    onUpdate: (Goal) -> Unit
+    onGoalCreated: (Goal) -> Unit
 ) {
-    var updatedTitle by remember { mutableStateOf(goal.title) }
+    var title by remember { mutableStateOf("") }
     var isTitleError by remember { mutableStateOf(false) }
-    var updatedDescription by remember { mutableStateOf(goal.description) }
+    var description by remember { mutableStateOf("") }
     var isDescriptionError by remember { mutableStateOf(false) }
-    var updatedDeadline by remember { mutableStateOf(goal.deadline) }
+    var deadline by remember { mutableStateOf("") }
     var isDeadlineError by remember { mutableStateOf(false) }
-    var updatedIsPrivate by remember { mutableStateOf(goal.isPrivate) }
+    var isPrivate by remember { mutableStateOf(false) }
     var miniGoals by remember { mutableStateOf("") }
-    var updatedMiniGoals by remember { mutableStateOf(goal.miniGoals.joinToString("\n")) }
 
     var isButtonEnabled by remember { mutableStateOf(true) }
 
     fun updateButtonEnabled() {
-        isButtonEnabled = updatedTitle.isNotEmpty() && updatedDescription.isNotEmpty() && updatedDeadline.isNotEmpty() && !isTitleError && !isDescriptionError && !isDeadlineError
+        isButtonEnabled = title.isNotEmpty() && description.isNotEmpty() && deadline.isNotEmpty() && !isTitleError && !isDescriptionError && !isDeadlineError
     }
 
     Column(
@@ -52,7 +50,7 @@ fun GoalUpdateScreen(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Update a Goal",
+            text = "Create a New Goal",
             fontWeight = FontWeight.Bold,
             fontSize = 24.sp,
             modifier = Modifier.padding(vertical = 16.dp)
@@ -65,24 +63,25 @@ fun GoalUpdateScreen(
             .padding(16.dp),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
-
     ) {
+        var isPrivate by remember { mutableStateOf(false) }
         val regexPattern = """^\d{2}/\d{2}/\d{4}$""".toRegex()
 
-        // Input fields for updating goal details
+        // Input fields for goal details
         TextField(
-            value = updatedTitle,
-            onValueChange = { updatedTitle = it
+            value = title,
+            onValueChange = { title = it
                             isTitleError = it.isEmpty() || it.length > 20
-                            updateButtonEnabled()},
+                            updateButtonEnabled()
+                            },
             label = { Text("Title") },
             supportingText = { Text(text = "*required")},
             isError = isTitleError,
             modifier = Modifier.padding(vertical = 8.dp)
         )
         TextField(
-            value = updatedDescription,
-            onValueChange = { updatedDescription = it
+            value = description,
+            onValueChange = { description = it
                             isDescriptionError = it.isEmpty()
                             updateButtonEnabled()
                             },
@@ -91,12 +90,13 @@ fun GoalUpdateScreen(
             isError = isDescriptionError,
             modifier = Modifier.padding(vertical = 8.dp)
         )
+
         TextField(
-            value = updatedDeadline,
-            onValueChange = { updatedDeadline = it
-                        isDeadlineError = !updatedDeadline.matches(regexPattern)
-                        updateButtonEnabled()
-                        },
+            value = deadline,
+            onValueChange = { deadline = it
+                            isDeadlineError = !deadline.matches(regexPattern)
+                            updateButtonEnabled()
+                            },
             label = { Text("Deadline") },
             suffix = { Text("dd/mm/yyyy") },
             supportingText = { Text(text = "*required")},
@@ -104,28 +104,30 @@ fun GoalUpdateScreen(
             modifier = Modifier.padding(vertical = 8.dp)
         )
         Checkbox(
-            checked = updatedIsPrivate,
-            onCheckedChange = { updatedIsPrivate = it },
+            checked = isPrivate,
+            onCheckedChange = { isPrivate = it }
         )
+
         Text(
             "Private Goal",
-            modifier = Modifier.padding(top = 8.dp)
+            modifier = Modifier.padding(vertical = 8.dp)
         )
 
         TextField(
-            value = updatedMiniGoals,
-            onValueChange = { updatedMiniGoals = it },
+            value = miniGoals,
+            onValueChange = { miniGoals = it },
             label = { Text("Mini-Goals") },
             modifier = Modifier.padding(vertical = 8.dp)
         )
 
-        // Button to update the goal
+        // Button to create the goal
         Button(
             onClick = {
-                // Validate input and update the goal
-                if (updatedTitle.isNotEmpty() && updatedDescription.isNotEmpty() && updatedDeadline.isNotEmpty()) {
-                    val updatedGoal = Goal(viewModel.getGoalId(goal.title), updatedTitle, updatedDescription, updatedDeadline, updatedIsPrivate, updatedMiniGoals.split("\n"))
-                    onUpdate(updatedGoal)
+                // Validate input and create a new goal
+                if (isButtonEnabled) {
+                    val newGoalId = viewModel.getNewGoalId()
+                    val newGoal = Goal(newGoalId, title, description, deadline, isPrivate, miniGoals.split("\n"))
+                    onGoalCreated(newGoal)
                 }
             },
             modifier = Modifier
@@ -133,25 +135,17 @@ fun GoalUpdateScreen(
                 .fillMaxWidth(),
             enabled = isButtonEnabled
         ) {
-            Text("Update Goal")
+            Text("Create Goal")
         }
     }
 }
 
 @Preview
 @Composable
-fun GoalUpdateScreenPreview() {
+fun GoalCreationScreenPreview() {
     // Provide sample data for the parameters used in Preview
-    GoalUpdateScreen(
+    GoalCreationScreen(
         viewModel = GoalViewModel(), // Provide an instance of your ViewModel
-        goal = Goal(
-            id = 1,
-            title = "Sample Goal",
-            description = "Sample Description",
-            deadline = "01/01/2023",
-            isPrivate = false,
-            miniGoals = listOf("Mini Goal 1", "Mini Goal 2")
-        ),
-        onUpdate = {}
+        onGoalCreated = {}
     )
 }

@@ -1,4 +1,4 @@
-package com.example.mobileapplicationproject.data.goal
+package com.example.mobileapplicationproject.feature_goal.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
