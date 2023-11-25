@@ -1,29 +1,33 @@
 package com.example.mobileapplicationproject.di
 
-import android.app.Application
+import android.content.Context
 import androidx.room.Room
 import com.example.mobileapplicationproject.feature_goal.data.db.GoalDatabase
 import com.example.mobileapplicationproject.feature_goal.data.repository.GoalRepo
 import com.example.mobileapplicationproject.feature_goal.data.repository.GoalRepoImpl
+import com.example.mobileapplicationproject.feature_goal.data.use_cases.AddGoal
 import com.example.mobileapplicationproject.feature_goal.data.use_cases.DeleteGoal
+import com.example.mobileapplicationproject.feature_goal.data.use_cases.GetGoal
 import com.example.mobileapplicationproject.feature_goal.data.use_cases.GetGoals
 import com.example.mobileapplicationproject.feature_goal.data.use_cases.GoalUseCases
-import com.google.android.datatransport.runtime.dagger.Module
-import com.google.android.datatransport.runtime.dagger.Provides
+import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module
-@InstallIn(Singleton::class)
+@InstallIn(SingletonComponent::class)
 object AppModule {
 
     @Provides
     @Singleton
-    fun provideGoalDatabase(app: Application): GoalDatabase{
+    fun provideGoalDatabase(@ApplicationContext context: Context): GoalDatabase {
         return Room.databaseBuilder(
-            app,
+            context,
             GoalDatabase::class.java,
-            GoalDatabase.DATABASE_NAME
+            "goals_db"
         ).build()
     }
 
@@ -38,7 +42,10 @@ object AppModule {
     fun provideGoalUseCases(repository: GoalRepo): GoalUseCases{
         return GoalUseCases(
             getGoals = GetGoals(repository),
-            deleteGoal = DeleteGoal(repository)
+            deleteGoal = DeleteGoal(repository),
+            addGoal = AddGoal(repository),
+            getGoal = GetGoal(repository),
+            updateGoal = AddGoal(repository)
         )
     }
 }
