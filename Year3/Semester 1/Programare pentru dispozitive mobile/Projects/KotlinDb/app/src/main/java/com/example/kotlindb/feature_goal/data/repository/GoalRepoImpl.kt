@@ -1,7 +1,7 @@
 package com.example.mobileapplicationproject.feature_goal.data.repository
 
-import com.example.mobileapplicationproject.feature_goal.data.db.GoalDao
-import com.example.mobileapplicationproject.feature_goal.data.model.GoalEntity
+import com.example.kotlindb.feature_goal.data.db.GoalDao
+import com.example.kotlindb.feature_goal.data.model.GoalEntity
 import kotlinx.coroutines.flow.Flow
 
 class GoalRepoImpl(
@@ -11,7 +11,7 @@ class GoalRepoImpl(
         return dao.getAllGoals()
     }
 
-    override suspend fun getGoalByTitle(title: String): Flow<GoalEntity> {
+    override suspend fun getGoalByTitle(title: String): GoalEntity? {
         return dao.getGoalByTitle(title)
     }
 
@@ -21,9 +21,5 @@ class GoalRepoImpl(
 
     override suspend fun deleteGoal(goal: GoalEntity) {
         dao.deleteGoal(goal)
-    }
-
-    override suspend fun updateGoal(goal: GoalEntity) {
-        dao.insertGoal(goal)
     }
 }

@@ -19,7 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.mobileapplicationproject.feature_goal.data.model.GoalEntity
+import com.example.kotlindb.feature_goal.data.model.GoalEntity
 import com.example.mobileapplicationproject.feature_goal.ui_layer.goals.GoalViewModel
 
 @Composable
@@ -143,3 +143,21 @@ fun GoalUpdateScreen(
         }
     }
 }
+
+//@Preview
+//@Composable
+//fun GoalUpdateScreenPreview() {
+//    // Provide sample data for the parameters used in Preview
+//    GoalUpdateScreen(
+//        viewModel = GoalViewModel(), // Provide an instance of your ViewModel
+//        goal = GoalEntity(
+//            id = 1,
+//            title = "Sample Goal",
+//            description = "Sample Description",
+//            deadline = "01/01/2023",
+//            isPrivate = false,
+//            miniGoals = listOf("Mini Goal 1", "Mini Goal 2")
+//        ),
+//        onUpdate = {}
+//    )
+//}

@@ -1,5 +1,7 @@
 package com.example.mobileapplicationproject.feature_goal.ui_layer.goal_ui
 
+
+
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -22,7 +24,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
@@ -30,10 +31,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.example.mobileapplicationproject.feature_goal.data.model.GoalEntity
+import com.example.kotlindb.feature_goal.data.model.GoalEntity
 import com.example.mobileapplicationproject.feature_goal.ui_layer.goals.GoalViewModel
 import com.example.mobileapplicationproject.feature_goal.ui_layer.goals.GoalsEvent
-import kotlinx.coroutines.launch
+
 
 @Composable
 fun GoalDisplayItem(
@@ -123,15 +124,11 @@ fun GoalDisplayList(
     }
 
     if (showDeleteDialog) {
-        val coroutineScope = rememberCoroutineScope()
-
         DeleteConfirmationDialog(
             onConfirmDelete = {
                 // Handle goal deletion here (e.g., delete it in the ViewModel)
                 deletingGoal?.let { nonNullGoal ->
-                    coroutineScope.launch {
-                        viewModel.onEvent(GoalsEvent.DeleteGoal(nonNullGoal))
-                    }
+                    viewModel.onEvent(GoalsEvent.DeleteGoal(nonNullGoal))
                 }
                 // Close the confirmation dialog
                 showDeleteDialog = false

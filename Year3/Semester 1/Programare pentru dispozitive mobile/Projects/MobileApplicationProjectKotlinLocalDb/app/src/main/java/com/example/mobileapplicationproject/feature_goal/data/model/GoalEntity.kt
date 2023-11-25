@@ -1,7 +1,11 @@
 package com.example.mobileapplicationproject.feature_goal.data.model
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import androidx.room.TypeConverter
+import com.google.firebase.crashlytics.buildtools.reloc.com.google.common.reflect.TypeToken
+import com.google.gson.Gson
 
 @Entity(tableName = "goals") // Define the table name if you want to customize it
 data class GoalEntity(
@@ -11,5 +15,20 @@ data class GoalEntity(
     val description: String,
     val deadline: String,
     val isPrivate: Boolean,
+    @ColumnInfo(name = "miniGoals")
     val miniGoals: List<String>
 )
+
+class Converters {
+    @TypeConverter
+    fun fromString(value: String?): List<String>? {
+        val listType = object : TypeToken<List<String>>() {}.type
+        return Gson().fromJson(value, listType)
+    }
+
+    @TypeConverter
+    fun toString(value: List<String>?): String {
+        return Gson().toJson(value)
+    }
+}
+class InvalidGoalException(message: String): Exception (message)

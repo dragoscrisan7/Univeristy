@@ -1,11 +1,11 @@
-package com.example.mobileapplicationproject.feature_goal.data.db
+package com.example.kotlindb.feature_goal.data.db
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.mobileapplicationproject.feature_goal.data.model.GoalEntity
+import com.example.kotlindb.feature_goal.data.model.GoalEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -14,7 +14,7 @@ interface GoalDao {
     fun getAllGoals(): Flow<List<GoalEntity>>
 
     @Query("SELECT * FROM goals WHERE title=:title")
-    fun getGoalByTitle(title: String): Flow<GoalEntity>
+    suspend fun getGoalByTitle(title: String): GoalEntity?
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertGoal(goal: GoalEntity)
