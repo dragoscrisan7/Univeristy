@@ -31,9 +31,11 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import com.example.mobileapplicationproject.feature_goal.data.model.GoalEntity
+import com.example.mobileapplicationproject.feature_goal.data.util.Encoder
 import com.example.mobileapplicationproject.feature_goal.ui_layer.goals.GoalViewModel
 import com.example.mobileapplicationproject.feature_goal.ui_layer.goals.GoalsEvent
 import kotlinx.coroutines.launch
+import java.net.URLEncoder
 
 @Composable
 fun GoalDisplayItem(
@@ -98,8 +100,9 @@ fun GoalDisplayList(
                 GoalDisplayItem(
                     goal = goal,
                     onEditClick = {
+                        val encodedGoal: String = URLEncoder.encode(Encoder.encodeGoal(goal), "UTF-8")
                         // Handle item click: Navigate to goal details
-                        navController.navigate("updateGoal/${goal.title}")
+                        navController.navigate("updateGoal/$encodedGoal")
                     },
                     onDeleteClick = {
                         deletingGoal = goal

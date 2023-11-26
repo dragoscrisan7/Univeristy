@@ -7,5 +7,6 @@ import com.example.mobileapplicationproject.feature_goal.data.util.OrderType
 data class GoalsState(
     val goals: List<GoalEntity> = emptyList(),
     val goalOrder: GoalOrder = GoalOrder.Title(OrderType.Descending),
-    val isOrderSectionVisible: Boolean = false
+    val isOrderSectionVisible: Boolean = false,
+    val goal: GoalEntity? = null
 )

@@ -8,7 +8,7 @@ sealed class GoalsEvent{
     data class DeleteGoal(val goal: GoalEntity): GoalsEvent()
     data class AddGoal(val goal: GoalEntity) : GoalsEvent()
     data class UpdateGoal(val goal: GoalEntity) : GoalsEvent()
-    data class GetGoal(val goalTitle: String, val onResult: (GoalEntity?) -> Unit) : GoalsEvent()
+    data class GetGoal(val goalTitle: String) : GoalsEvent()
     object RestoreGoal: GoalsEvent()
     object ToggleOrderSection: GoalsEvent()
 }

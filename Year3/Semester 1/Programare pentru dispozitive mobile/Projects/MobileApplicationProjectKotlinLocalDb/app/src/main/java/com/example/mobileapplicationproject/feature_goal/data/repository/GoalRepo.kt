@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.Flow
 interface GoalRepo {
     fun getAllGoals(): Flow<List<GoalEntity>>
 
-    suspend fun getGoalByTitle(title: String): Flow<GoalEntity>
+    suspend fun getGoalByTitle(title: String): GoalEntity?
 
     suspend fun insertGoal(goal: GoalEntity)
 

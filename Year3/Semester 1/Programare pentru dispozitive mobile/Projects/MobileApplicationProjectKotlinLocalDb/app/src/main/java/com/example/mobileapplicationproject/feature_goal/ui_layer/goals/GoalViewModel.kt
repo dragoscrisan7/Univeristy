@@ -10,7 +10,6 @@ import com.example.mobileapplicationproject.feature_goal.data.util.GoalOrder
 import com.example.mobileapplicationproject.feature_goal.data.util.OrderType
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
@@ -27,6 +26,8 @@ class GoalViewModel @Inject constructor(
     private var recentlyDeletedGoal: GoalEntity? = null
 
     private var getGoalsJob: Job? = null
+
+    private var currentGoalId: Int? = null
 
     init {
         getGoals(GoalOrder.Title(OrderType.Descending))
@@ -68,17 +69,16 @@ class GoalViewModel @Inject constructor(
                 }
             }
             is GoalsEvent.GetGoal -> {
+                val goal = goalUseCases.getGoal(event.goalTitle)
                 viewModelScope.launch {
-                    goalUseCases.getGoal(event.goalTitle).collect { goal ->
-                        event.onResult(goal)
+                    goal?.let {
+                        _state.value = state.value.copy(
+                            goal = goal
+                        )
                     }
                 }
             }
         }
-    }
-
-    private suspend fun getGoalByTitle(goalTitle: String): Flow<GoalEntity> {
-        return goalUseCases.getGoal(goalTitle)
     }
 
     private fun getGoals(goalOrder: GoalOrder){

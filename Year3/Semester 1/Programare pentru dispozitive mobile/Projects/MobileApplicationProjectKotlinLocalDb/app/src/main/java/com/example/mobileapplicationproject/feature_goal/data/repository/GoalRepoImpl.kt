@@ -11,7 +11,7 @@ class GoalRepoImpl(
         return dao.getAllGoals()
     }
 
-    override suspend fun getGoalByTitle(title: String): Flow<GoalEntity> {
+    override suspend fun getGoalByTitle(title: String): GoalEntity? {
         return dao.getGoalByTitle(title)
     }
 
