@@ -35,7 +35,6 @@ class GoalViewModel @Inject constructor(
 
         when(event){
             is GoalsEvent.Order -> {
-                syncWithRemote()
                 if(state.value.goalOrder::class == event.goalOrder::class &&
                     state.value.goalOrder.orderType == event.goalOrder.orderType) {
                     return
@@ -44,6 +43,7 @@ class GoalViewModel @Inject constructor(
             }
             is GoalsEvent.DeleteGoal -> {
                 viewModelScope.launch {
+                    syncWithRemote()
                     goalUseCases.deleteGoal(event.goal)
 //                    recentlyDeletedGoal=event.goal
                     syncWithRemote()
@@ -104,6 +104,7 @@ class GoalViewModel @Inject constructor(
                     goals = goals,
                     goalOrder = goalOrder
                 )
+                syncWithRemote()
             }
             .launchIn(viewModelScope)
     }

@@ -15,7 +15,6 @@ import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
-import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
@@ -25,7 +24,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -90,46 +88,42 @@ fun GoalDisplayList(
     ) {
         Spacer(modifier = Modifier.height(30.dp))
 
-        if (state.isLoading) {
-            CircularProgressIndicator(modifier = Modifier.align(Alignment.CenterHorizontally))
-        } else {
-            LazyColumn {
-                item {
-                    Text(
-                        text = "List of Goals",
-                        modifier = Modifier.padding(16.dp),
-                        fontSize = 30.sp
-                    )
-                }
-                items(state.goals) { goal ->
-                    GoalDisplayItem(
-                        goal = goal,
-                        onEditClick = {
-                            val encodedGoal: String =
-                                URLEncoder.encode(Encoder.encodeGoal(goal), "UTF-8")
-                            // Handle item click: Navigate to goal details
-                            navController.navigate("updateGoal/$encodedGoal")
-                        },
-                        onDeleteClick = {
-                            deletingGoal = goal
-                            showDeleteDialog = true
-                        }
-                    )
-                }
-
-                item {
-                    Button(
-                        onClick = {
-                            // Navigate to the "Add Goal" screen
-                            navController.navigate("addGoal")
-                        },
-                        modifier = Modifier.padding(16.dp)
-                    ) {
-                        Text("Add")
+        LazyColumn {
+            item {
+                Text(
+                    text = "List of Goals",
+                    modifier = Modifier.padding(16.dp),
+                    fontSize = 30.sp
+                )
+            }
+            items(state.goals) { goal ->
+                GoalDisplayItem(
+                    goal = goal,
+                    onEditClick = {
+                        val encodedGoal: String = URLEncoder.encode(Encoder.encodeGoal(goal), "UTF-8")
+                        // Handle item click: Navigate to goal details
+                        navController.navigate("updateGoal/$encodedGoal")
+                    },
+                    onDeleteClick = {
+                        deletingGoal = goal
+                        showDeleteDialog = true
                     }
+                )
+            }
+
+            item {
+                Button(
+                    onClick = {
+                        // Navigate to the "Add Goal" screen
+                        navController.navigate("addGoal")
+                    },
+                    modifier = Modifier.padding(16.dp)
+                ) {
+                    Text("Add")
                 }
             }
         }
+
     }
 
     if (showDeleteDialog) {
