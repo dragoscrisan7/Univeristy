@@ -11,7 +11,7 @@ import com.example.mobileapplicationproject.feature_goal.data.use_cases.DeleteGo
 import com.example.mobileapplicationproject.feature_goal.data.use_cases.GetGoal
 import com.example.mobileapplicationproject.feature_goal.data.use_cases.GetGoals
 import com.example.mobileapplicationproject.feature_goal.data.use_cases.GoalUseCases
-import com.example.mobileapplicationproject.feature_goal.data.use_cases.SyncWithRemote
+import com.example.mobileapplicationproject.feature_goal.data.use_cases.UpdateGoal
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -35,8 +35,12 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideGoalRepository(db: GoalDatabase, goalService: GoalService): GoalRepo {
-        return GoalRepoImpl(db.goalDao, goalService)
+    fun provideGoalRepository(
+        db: GoalDatabase,
+        goalService: GoalService,
+        @ApplicationContext context: Context
+    ): GoalRepo {
+        return GoalRepoImpl(db.goalDao, goalService, context)
     }
 
     @Provides
@@ -47,8 +51,7 @@ object AppModule {
             deleteGoal = DeleteGoal(repository),
             addGoal = AddGoal(repository),
             getGoal = GetGoal(repository),
-            updateGoal = AddGoal(repository),
-            syncWithRemote = SyncWithRemote(repository)
+            updateGoal = UpdateGoal(repository)
         )
     }
 }

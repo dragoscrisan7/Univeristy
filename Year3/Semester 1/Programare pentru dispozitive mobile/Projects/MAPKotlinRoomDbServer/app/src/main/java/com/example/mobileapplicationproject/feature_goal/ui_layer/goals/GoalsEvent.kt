@@ -10,5 +10,4 @@ sealed class GoalsEvent{
     data class UpdateGoal(val goal: GoalEntity) : GoalsEvent()
     data class GetGoal(val goalTitle: String) : GoalsEvent()
     object ToggleOrderSection: GoalsEvent()
-    object Sync : GoalsEvent()
 }

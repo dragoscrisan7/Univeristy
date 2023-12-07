@@ -6,6 +6,7 @@ import androidx.room.TypeConverters
 import com.example.mobileapplicationproject.feature_goal.data.model.Converters
 import com.example.mobileapplicationproject.feature_goal.data.model.GoalEntity
 
+
 @Database(
     entities = [GoalEntity::class],
     version = 1,

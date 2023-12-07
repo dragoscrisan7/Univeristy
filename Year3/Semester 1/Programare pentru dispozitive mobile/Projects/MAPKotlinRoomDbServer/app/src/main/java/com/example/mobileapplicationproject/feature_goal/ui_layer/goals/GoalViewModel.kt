@@ -43,10 +43,8 @@ class GoalViewModel @Inject constructor(
             }
             is GoalsEvent.DeleteGoal -> {
                 viewModelScope.launch {
-                    syncWithRemote()
                     goalUseCases.deleteGoal(event.goal)
 //                    recentlyDeletedGoal=event.goal
-                    syncWithRemote()
                 }
             }
 //            is GoalsEvent.RestoreGoal -> {
@@ -63,13 +61,11 @@ class GoalViewModel @Inject constructor(
             is GoalsEvent.AddGoal -> {
                 viewModelScope.launch {
                     goalUseCases.addGoal(event.goal)
-                    syncWithRemote()
                 }
             }
             is GoalsEvent.UpdateGoal -> {
                 viewModelScope.launch {
                     goalUseCases.updateGoal(event.goal)
-                    syncWithRemote()
                 }
             }
             is GoalsEvent.GetGoal -> {
@@ -80,19 +76,9 @@ class GoalViewModel @Inject constructor(
                             goal = goal
                         )
                     }
-                    syncWithRemote()
                 }
             }
-            is GoalsEvent.Sync -> {
-                syncWithRemote()
-            }
 
-        }
-    }
-
-    private suspend fun syncWithRemote() {
-        viewModelScope.launch {
-            goalUseCases.syncWithRemote()
         }
     }
 
@@ -104,7 +90,6 @@ class GoalViewModel @Inject constructor(
                     goals = goals,
                     goalOrder = goalOrder
                 )
-                syncWithRemote()
             }
             .launchIn(viewModelScope)
     }

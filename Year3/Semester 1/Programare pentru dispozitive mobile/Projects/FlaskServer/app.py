@@ -1,85 +1,100 @@
 from flask import Flask, request, jsonify
-from flask_sqlalchemy import SQLAlchemy
-from flask_cors import CORS
-import logging
+import sqlite3
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///goals.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
-CORS(app)
-
-logging.basicConfig(level=logging.DEBUG)
-
-class Goal(db.Model):
-    __tablename__ = 'goals'
-    id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(50), unique=True, nullable=False)
-    description = db.Column(db.String(255))
-    deadline = db.Column(db.String(10))
-    is_private = db.Column(db.Boolean)
-    mini_goals = db.Column(db.String(255))
 
 
-@app.route('/goals', methods=['GET'])
+def db_connection():
+    conn = None
+    try:
+        conn = sqlite3.connect('goals.sqlite')
+    except sqlite3.error as e:
+        print(e)
+    return conn
+
+
+@app.route("/goals", methods=["GET"])
 def get_all_goals():
-    logging.info(f"Received GET request at /goals from {request.remote_addr}")
-    __tablename__ = 'goals'
-    goals = Goal.query.all()
-    goals_json = [{'title': goal.title, 'description': goal.description,
-                   'deadline': goal.deadline, 'is_private': goal.is_private,
-                   'mini_goals': goal.mini_goals} for goal in goals]
-    return jsonify(goals_json)
+    conn = db_connection()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * from goals")
+    goals = [
+        dict(id=row[0], title=row[1], description=row[2], deadline=row[3], is_private=row[4], mini_goals=row[5])
+        for row in cursor.fetchall()
+    ]
+    if goals is not None:
+        return jsonify(goals)
 
 
-@app.route('/goals/<title>', methods=['GET'])
-def get_goal_by_title(title):
-    __tablename__ = 'goals'
-    goal = Goal.query.filter_by(title=title).first()
-    if goal:
-        return jsonify({'title': goal.title, 'description': goal.description,
-                        'deadline': goal.deadline, 'is_private': goal.is_private,
-                        'mini_goals': goal.mini_goals})
-    return jsonify({'message': 'Goal not found'}), 404
-
-
-@app.route('/goals', methods=['POST'])
-def insert_goal():
-    __tablename__ = 'goals'
+@app.route('/add_goal/<int:id>', methods=['POST'])
+def add_goal(id):
+    conn = db_connection()
+    cursor = conn.cursor()
     data = request.get_json()
-    new_goal = Goal(**data)
-    db.session.add(new_goal)
-    db.session.commit()
-    return jsonify({'message': 'Goal inserted successfully'}), 201
+
+    title = data.get('title')
+    description = data.get('description')
+    deadline = data.get('deadline')
+    is_private = data.get('isPrivate')
+    mini_goals = data.get('miniGoals', [])
+    sql = """INSERT INTO goals(id, title, description, deadline, is_private, mini_goals) VALUES (?, ?, ?, ?, ?, ?)"""
+
+    cursor.execute(sql, (id, title, description, deadline, is_private, ','.join(mini_goals)))
+
+    conn.commit()
+
+    return jsonify({"message": f"Goal with the id: {cursor.lastrowid} created successfully"})
 
 
-@app.route('/goals/<id>', methods=['DELETE'])
-def delete_goal(id):
-    __tablename__ = 'goals'
-    goal = Goal.query.get_or_404(id)
-    if goal:
-        db.session.delete(goal)
-        db.session.commit()
-        return jsonify({'message': 'Goal deleted successfully'})
-    return jsonify({'message': 'Goal not found'}), 404
-
-
-@app.route('/goals/<id>', methods=['PUT'])
+@app.route('/update_goal/<int:id>', methods=['PUT'])
 def update_goal(id):
-    __tablename__ = 'goals'
-    goal = Goal.query.get_or_404(id)
-    if goal:
-        data = request.get_json()
-        goal.title = data.get('title', goal.title)
-        goal.description = data.get('description', goal.description)
-        goal.deadline = data.get('deadline', goal.deadline)
-        goal.is_private = data.get('is_private', goal.is_private)
-        goal.mini_goals = data.get('mini_goals', goal.mini_goals)
-        db.session.commit()
-        return jsonify({'message': 'Goal updated successfully'})
-    return jsonify({'message': 'Goal not found'}), 404
+    conn = db_connection()
+    cursor = conn.cursor()
+    data = request.get_json()
+
+    title = data.get('title')
+    description = data.get('description')
+    deadline = data.get('deadline')
+    is_private = data.get('isPrivate')
+    mini_goals = data.get('miniGoals', [])
+
+    sql = """UPDATE goals SET title=?, description=?, deadline=?, is_private=?, mini_goals=? WHERE id=?"""
+    cursor.execute(sql, (title, description, deadline, is_private, ','.join(mini_goals), id))
+
+    conn.commit()
+
+    return f"Goal with the id: {cursor.lastrowid} successfully updated"
+
+
+@app.route('/goals/<int:id>', methods=['DELETE', 'GET'])
+def put_delete_get_goal(id):
+    conn = db_connection()
+    cursor = conn.cursor()
+    if request.method == 'DELETE':
+        sql = """DELETE from goals WHERE id=?"""
+        cursor.execute(sql, (id,))
+
+        conn.commit()
+
+        return f"Goal with the id: {cursor.lastrowid} successfully deleted", 200
+    elif request.method == 'GET':
+        sql = """SELECT * from goals WHERE id=?"""
+        cursor.execute(sql, (id,))
+        goal = cursor.fetchone()
+
+        if goal is not None:
+            goal_dict = {
+                'id': goal[0],
+                'title': goal[1],
+                'description': goal[2],
+                'deadline': goal[3],
+                'is_private': goal[4],
+                'mini_goals': goal[5]
+            }
+            return jsonify(goal_dict)
+        else:
+            return jsonify({'error': 'Goal not found'}), 404
 
 
 if __name__ == '__main__':
-    db.create_all()
-    app.run(debug=True, host="0.0.0.0")
+    app.run(debug=True, host='0.0.0.0', port=5000)
