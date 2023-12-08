@@ -14,4 +14,5 @@ interface GoalRepo {
 
     suspend fun updateGoal(goal: GoalEntity)
 
+    suspend fun processOfflineCommands()
 }

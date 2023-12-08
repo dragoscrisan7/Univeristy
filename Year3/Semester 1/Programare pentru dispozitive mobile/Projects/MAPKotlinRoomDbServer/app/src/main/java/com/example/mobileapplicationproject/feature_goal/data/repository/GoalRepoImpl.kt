@@ -5,7 +5,9 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
 import com.example.mobileapplicationproject.feature_goal.data.db.GoalDao
+import com.example.mobileapplicationproject.feature_goal.data.db.OfflineCommandsDao
 import com.example.mobileapplicationproject.feature_goal.data.model.GoalEntity
+import com.example.mobileapplicationproject.feature_goal.data.model.OfflineCommand
 import com.example.mobileapplicationproject.feature_goal.data.service.GoalService
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
@@ -14,6 +16,7 @@ import javax.inject.Inject
 class GoalRepoImpl @Inject constructor(
     private val dao: GoalDao,
     private val goalService: GoalService,
+    private val oCdao: OfflineCommandsDao,
     @ApplicationContext private val context: Context
 ) : GoalRepo {
     override fun getAllGoals(): Flow<List<GoalEntity>> {
@@ -30,6 +33,11 @@ class GoalRepoImpl @Inject constructor(
         if(goal2 != null && isNetworkAvailable()) {
             goalService.insertGoal(goal2.id, goal)
         }
+        else if(goal2 != null){
+            // Save the offline insert command
+            val offlineCommand = OfflineCommand(type = OfflineCommand.CommandType.INSERT, goal = goal, goalId = goal2.id)
+            oCdao.insertCommand(offlineCommand)
+        }
     }
 
     override suspend fun deleteGoal(goal: GoalEntity) {
@@ -37,12 +45,22 @@ class GoalRepoImpl @Inject constructor(
         if(isNetworkAvailable()) {
             goalService.deleteGoal(goal.id)
         }
+        else {
+            // Store the delete command locally when offline
+            val offlineCommand = OfflineCommand(type = OfflineCommand.CommandType.DELETE, goal = goal)
+            oCdao.insertCommand(offlineCommand)
+        }
     }
 
     override suspend fun updateGoal(goal: GoalEntity) {
         dao.insertGoal(goal)
         if(isNetworkAvailable()) {
             goalService.updateGoal(goal.id, goal)
+        }
+        else {
+            // Store the update command locally when offline
+            val offlineCommand = OfflineCommand(type = OfflineCommand.CommandType.UPDATE, goal = goal, goalId = goal.id)
+            oCdao.insertCommand(offlineCommand)
         }
     }
 
@@ -63,4 +81,31 @@ class GoalRepoImpl @Inject constructor(
             return activeNetworkInfo != null && activeNetworkInfo.isConnected
         }
     }
+
+    override suspend fun processOfflineCommands() {
+        // Fetch all offline commands from the database
+        val offlineCommands = oCdao.getAllCommands()
+
+        // Execute each command based on its type
+        for (command in offlineCommands) {
+            when (command.type) {
+                OfflineCommand.CommandType.INSERT -> {
+                    // Execute insert operation on the server
+                    goalService.insertGoal(command.goalId ?: 0, command.goal!!)
+                }
+                OfflineCommand.CommandType.DELETE -> {
+                    // Execute delete operation on the server
+                    goalService.deleteGoal(command.goal!!.id)
+                }
+                OfflineCommand.CommandType.UPDATE -> {
+                    // Execute update operation on the server
+                    goalService.updateGoal(command.goalId ?: 0, command.goal!!)
+                }
+            }
+        }
+
+        // Clear the processed commands from the database
+        oCdao.clearCommands()
+    }
+
 }

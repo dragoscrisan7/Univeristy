@@ -5,5 +5,6 @@ data class GoalUseCases(
     val deleteGoal: DeleteGoal,
     val addGoal: AddGoal,
     val getGoal: GetGoal,
-    val updateGoal: UpdateGoal
+    val updateGoal: UpdateGoal,
+    val networkReconnected: NetworkReconnected
 )

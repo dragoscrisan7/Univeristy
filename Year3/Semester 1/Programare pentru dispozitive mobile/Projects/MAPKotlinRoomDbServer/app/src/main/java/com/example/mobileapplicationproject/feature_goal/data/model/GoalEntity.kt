@@ -33,5 +33,15 @@ class Converters {
     fun toString(value: List<String>?): String {
         return Gson().toJson(value)
     }
+
+    @TypeConverter
+    fun fromGoalEntity(goalEntity: GoalEntity?): String? {
+        return Gson().toJson(goalEntity)
+    }
+
+    @TypeConverter
+    fun toGoalEntity(json: String?): GoalEntity? {
+        return Gson().fromJson(json, GoalEntity::class.java)
+    }
 }
 class InvalidGoalException(message: String): Exception (message)
