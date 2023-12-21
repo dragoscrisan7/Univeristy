@@ -1,0 +1,15 @@
+!DOCTYPE html>
+<html>
+
+<style>
+
+#grad {
+  background-image: conic-gradient(red, yellow, green);
+}
+
+</style>
+
+<body>
+
+</body>
+</html>

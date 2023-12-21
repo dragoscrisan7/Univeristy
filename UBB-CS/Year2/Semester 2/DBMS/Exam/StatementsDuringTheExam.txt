@@ -1,0 +1,281 @@
+USE SemesterProject;
+
+CREATE TABLE SemesterProject (
+    ID INT PRIMARY KEY,
+    sp_name VARCHAR(50)
+);
+
+CREATE TABLE ProjectTeam (
+    ID INT PRIMARY KEY,
+    pt_name VARCHAR(50),
+    number INT,
+    SPID INT FOREIGN KEY REFERENCES SemesterProject(ID)
+);
+
+CREATE TABLE StudentMembers (
+    ID INT PRIMARY KEY,
+    s_name VARCHAR(50),
+    s_role VARCHAR(50),
+    PTID INT FOREIGN KEY REFERENCES ProjectTeam(ID)
+);
+
+CREATE TABLE Task (
+    ID INT PRIMARY KEY,
+    t_description VARCHAR(50),
+    SMID INT FOREIGN KEY REFERENCES StudentMembers(ID)
+);
+
+CREATE TABLE SoftwareTool (
+    ID INT PRIMARY KEY,
+    st_name VARCHAR(50),
+    st_description VARCHAR(50)
+);
+
+CREATE TABLE Licence (
+    PTID INT,
+    STID INT,
+    availability_in_days INT,
+    FOREIGN KEY (PTID) REFERENCES ProjectTeam(ID),
+    FOREIGN KEY (STID) REFERENCES SoftwareTool(ID)
+);
+
+-- Inserting records in the StudentMembers table
+INSERT INTO StudentMembers (ID, s_name, s_role, PTID)
+VALUES (1, 'Alice', 'Developer', 1),
+       (2, 'Bob', 'Tester', 1),
+       (3, 'Charlie', 'Designer', 2),
+       (4, 'Diana', 'Analyst', 2);
+
+-- Inserting records in the Task table
+INSERT INTO Task (ID, t_description, SMID)
+VALUES (1, 'Design', 1),
+       (2, 'Coding', 1),
+       (3, 'Testing', 2),
+       (4, 'Documentation', 3),
+       (5, 'Review', 3),
+       (6, 'Deployment', 4);
+
+
+
+i did this code to handle the database:
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Configuration;
+
+namespace Exam
+{
+    public partial class Form1 : Form
+    {
+        SqlConnection conn;
+        SqlDataAdapter daClass;
+        SqlDataAdapter daSubClass;
+        DataSet dset;
+        BindingSource bsClass;
+        BindingSource bsSubClass;
+
+        SqlCommandBuilder cmdBuilder;
+
+        string queryClass;
+        string querySubClass;
+        public Form1()
+        {
+            InitializeComponent();
+            FillData();
+        }
+        string getConnectionString()
+        {
+            return "Server=DESKTOP-810AP8O\\LABONE;Database=SemesterProject;Integrated Security=true";
+        }
+        void FillData()
+        {
+            conn = new SqlConnection(getConnectionString());
+            try
+            {
+                queryClass = "Select * from StudentMembers";
+                querySubClass = "Select * from Task";
+
+                daClass = new SqlDataAdapter(queryClass, conn);
+                daSubClass = new SqlDataAdapter(querySubClass, conn);
+                dset = new DataSet();
+                daClass.Fill(dset, "StudentMembers");
+                daSubClass.Fill(dset, "Task");
+
+                cmdBuilder = new SqlCommandBuilder(daSubClass);
+
+                dset.Relations.Add("ClassSubclass",
+                    dset.Tables["StudentMembers"].Columns["ID"],
+                    dset.Tables["Task"].Columns["SMID"]);
+
+                bsClass = new BindingSource();
+                bsClass.DataSource = dset.Tables["StudentMembers"];
+                bsSubClass = new BindingSource(bsClass, "ClassSubclass");
+
+                this.dataGridView1.DataSource = bsClass;
+                this.dataGridView2.DataSource = bsSubClass;
+
+                cmdBuilder.GetUpdateCommand();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            daSubClass.Update(dset, "Task");
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+    }
+}
+
+Create a scenario in the sql based on this database that reproduces the update conflict concurency issue on 
+this database. Explain why the update conflict occurs, and describe a solution to prevent this concurency issue.
+These are examples of different scenarios for different isolation levels:
+use VaccinesSM
+
+/*Dirty reads*/
+Insert into Producers (Name, Popularity, YearsSinceFounding) 
+Values('producator', 1, 1)
+
+Begin Transaction
+Update Producers Set Name='nume_nou'
+Where Producers.Name='producator'
+Waitfor delay '00:00:10'
+Rollback Transaction
+
+Set transaction isolation level read uncommitted
+Begin tran
+Select * from Producers
+Waitfor delay '00:00:15'
+Select * from Producers
+Commit tran
+--change uncommitted to comitted
+/*-----------------------------------------------------------------------------------*/
+Insert into Producers (Name, Popularity, YearsSinceFounding)Values('P',7,7)
+Begin tran
+Waitfor Delay '00:00:05'
+Update Producers Set Popularity=10 Where Name='P'
+Commit tran
+--change from committed to repeatable read
+/*-----------------------------------------------------------------------------------*/
+Delete Producers where Name='P'
+Begin tran
+Waitfor delay '00:00:04'
+Insert into Producers (Name, Popularity, YearsSinceFounding) Values('P',7,7)
+Commit tran
+--change from repeated read to serializable
+/*-----------------------------------------------------------------------------------*/
+Select * 
+from Vaccine_Info
+Select *
+from Producers
+-------
+SET IDENTITY_INSERT Vaccine_Info ON
+Insert into Vaccine_Info(Name, AdministrationsNecesary, Vaccine_Type_ID, YearsSinceRelease)
+Values ('pipi', null, 3, 4)
+
+Begin tran
+Update Vaccine_Info set Name='nu_pipi1' where ID=9
+Waitfor delay '00:00:05'
+Update Producers set Name='deadlock1' where ID=9
+Commit tran
+
+--we add Set DEADLOCK_PRIORITY HIGH before tran
+
+--Set DEADLOCK_PRIORITY HIGH
+Begin tran
+Update Producers set Name='deadlock2' where ID=9
+Waitfor delay '00:00:05'
+Update Vaccine_Info set Name='nu_pipi2' where ID=9
+Commit tran
+/*---------------------------------------------------------------------------------------*/
+Alter database VaccinesSM set allow_snapshot_isolation on
+Use VaccinesSM
+go
+Waitfor delay '00:00:10'
+Begin tran
+Update Producers set Name='snapshot' where ID=6
+Waitfor delay '00:00:10'
+Commit tran
+------
+Use VaccinesSM
+go
+Set transaction isolation level snapshot
+Begin tran 
+Select * from Producers where ID=6
+Waitfor delay '00:00:10'
+Select * from Producers where ID=3
+Update Producers set Name='after_snpsht' where ID=6
+Commit tran
+Alter database VaccinesSM set allow_snapshot_isolation off
+
+do a similar scenario for the task i first described. keep in mind that these examples are on a different database, please 
+do this scenario on the database with Student Members and tasks that we talked about in the previous messages
+
+
+
+
+
+
+Project is a table in a SQL Server Database with schema Project[ProjectID, name]. With the primary key Project ID
+ProjectID is the search key of a clustered index on table Project. The table doesnt have any other indexes.
+Consider the interleaved execution below. there are no other concurrent transactions. The value of Name for the
+project with ProjectID 7 is Smart Agriculture when T1 begins execution.
+
+T1:                                     T2:
+Begin Tran       
+Select Name
+From Project
+Where ProjectID = 7
+					Begin Tran
+					Update Project
+					Set Name = 'Green Campus'
+					Where ProjectID = 7
+
+					Commit Tran
+Select Name
+From Project
+Where ProjectID = 7
+
+Update Project
+Set Name = 'Dissaster Management'
+Where ProjectID = 7
+
+Commit Tran
+
+Task: T1 and T2 both run under read committed, the second statement in T1 will display?
+
+Task(on the same execution): T1 runs under a SNAPSHOT and T2 duns under Read Committed.
+After the commit Tran statement in T1, The Name value for the projet with ProjectID 7 is?
+
+Task(on the same execution):
+T1 runs under Read Committed and T2 runs under Repeatable Read. Then choose which statement is true(there can be multiple):
+a. T1 acquires a shared lock for its second select statement
+b. T1ndoesnt acquire a shared lock for its second select statement
+c. T1 needs an exclusive lock for its update statement
+d. T1 doesn't need an exclusive lock for its update statement
+e. None of the above answers are correct

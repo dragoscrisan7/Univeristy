@@ -1,0 +1,98 @@
+1.
+"""
+COD
+   a: DINAIA~
+   b: DINAIA~
+ONWARD
+   SCAN(a)~
+   SCAN(b)~
+   CHOOSE(a > b) <{
+      CASE TRUE: WRITE(a)~
+      CASE FALSE: WRITE(b)~
+   }>
+AT_EASE.
+"""
+
+2.
+"""
+COD
+   n: ALBA_NEAGRA~
+   i: ALBA_NEAGRA~
+   is_prime: ALBA_NEAGRA~
+   found_prime: ALBA_NEAGRA~
+   temp: ALBA_NEAGRA~
+ONWARD
+   SCAN(n)~
+   found_prime -> FALSE~
+   i -> n - 1~
+
+   WHILE (i > 1) PERFORM <{
+      is_prime -> TRUE~
+      temp -> 2~
+      WHILE (temp * temp <= i) PERFORM <{
+         CHOOSE (i % temp = 0) <{
+            CASE TRUE: is_prime -> FALSE~
+         }>
+         temp -> temp + 1~
+      }>
+
+      CHOOSE is_prime <{
+         CASE TRUE: found_prime -> TRUE~
+      }>
+
+      CHOOSE found_prime <{
+         CASE TRUE: WRITE(i)~
+      }>
+      i -> i - 1~
+   }>
+AT_EASE."""
+
+3.
+"""
+COD
+   a: ALBA_NEAGRA;
+   b: ALBA_NEAGRA;
+   temp: ALBA_NEAGRA;
+ONWARD
+   SCAN(a);
+   SCAN(b);
+
+   WHILE (b <> 0) PERFORM <{
+      temp := b;
+      b := a % b;
+      a := temp;
+   }>
+
+   WRITE(a);
+AT_EASE."""
+
+1. error
+"""
+COD
+   a# DINAIA~
+   b: DINAIA~
+ONWARD
+   SCAN(a)~
+   SCAN(b)?
+   CHOOSE(a > b) <{
+      CASE TRUE: WRITE(a)~
+      CASE FALSE: WRITE(b)~
+   }>
+AT_EASE.
+AT_EASE."""
+
+
+
+
+
+COD
+   $56tuti DINAIA~
+   $frutti DINAIA~
+ONWARD
+   SCAN(0tuti)~
+   frutti->56
+   CHOOSE(0tuti > frutti) <{
+      CASE TRUE: WRITE(0tutti)~
+      CASE FALSE: WRITE(frutti)~
+   }>
+AT_EASE.

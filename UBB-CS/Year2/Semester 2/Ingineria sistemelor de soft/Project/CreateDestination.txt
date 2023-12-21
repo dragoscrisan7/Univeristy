@@ -1,0 +1,37 @@
+title Create Destination Sequence Diagram
+
+User->View: openApplication()
+activate View
+
+
+User->View: Input geolocation
+User->View: Input title
+User->View: Input imagePath
+User->View: Input description
+User->View: Input Stay_date
+User->View: Submit()
+View->Controller: handelDestinationAdd()
+activate Controller
+
+Controller->Service: addDestination(destinationData)
+activate Service
+
+Service->Repository: addDestination(destinationData)
+activate Repository
+
+Repository->Domain: add(destinationData)
+activate Domain
+
+Domain-->Repository: createdDestination
+deactivate Domain
+
+Repository-->Service: createdDestination
+deactivate Repository
+
+Service-->Controller: createdDestination
+deactivate Service
+
+Controller-->View: createdDestination
+deactivate Controller
+
+deactivate View

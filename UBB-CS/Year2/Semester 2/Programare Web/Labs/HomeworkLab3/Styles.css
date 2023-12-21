@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.layout {
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template-columns: 170px 1fr 1fr 1fr 150px;
+    grid-template-rows: 55px 5px 50px repeat(4, 1fr);
+}
+
+.header {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    flex-basis: 350px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo {
+    width: 80px;
+}
+.search {
+    width: 30px;
+}
+
+.page {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 8;
+    background-color: #7CD373;
+    overflow: hidden;
+}
+
+.news {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imeij {
+    border-radius: 20px;
+    width: 100%;
+    padding: 15px;
+}
+.description {
+    align-self: flex-start;
+    padding: 15px;
+}
+.text1 {
+    color: #F31919;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 15px;
+}
+.text2 {
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.text3 {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.other-news {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.other-news-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+}
+.headline {
+    font-size: 30px;
+    color: #194EF3;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+}
+.widget {
+    padding: 10px;
+    display: flex;
+    font-size: 18px;
+    margin-bottom: 15px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    border-bottom: solid 1px rgba(0,0,0,0.5);
+}
+
+.image {
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+.text4 {
+    padding-right: 10px;
+    font-size: 14px;
+    width: 70%;
+    text-align: justify;
+}

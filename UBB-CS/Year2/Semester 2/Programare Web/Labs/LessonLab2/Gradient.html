@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green, red);
+  transition: width 3s;
+  transition-delay: 1s;
+}
+
+#grad2 {
+  height: 200px;
+  width: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, green, red);
+}
+
+div#grad1:hover{
+width: 300px;
+}
+
+
+
+div#grad2:hover{
+transform: rotate(20deg);
+}
+
+</style>
+</head>
+<body>
+
+<h1>Conic Gradient - Three Colors</h1>
+
+<div id="grad1"></div>
+
+<div id="grad2"></div>
+
+</body>
+</html>

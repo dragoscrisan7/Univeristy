@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Double-click word highlight</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		.highlight {
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet leo eu ante malesuada hendrerit ac vitae diam. Sed vitae metus vel mauris semper faucibus. Sed ullamcorper augue eu eros eleifend suscipit. Phasellus et enim eu nulla pretium aliquam. Praesent nec lobortis nisl. Etiam dictum erat in vestibulum pulvinar. Nulla facilisi.</p>
+
+	<p>Suspendisse potenti. Nulla dignissim tristique quam, eget dignissim odio lacinia a. In interdum nisl ut blandit feugiat. Ut auctor neque ut purus bibendum, sit amet eleifend leo dapibus. Aenean eu nulla ut lacus eleifend mollis. Morbi quis mauris in dolor sollicitudin venenatis vel ut sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer id libero euismod, bibendum elit eu, convallis lectus. Donec vel velit purus. Praesent in magna sit amet orci malesuada bibendum. Sed sed sodales nisi, vitae lacinia odio. Donec sed turpis non ante pellentesque euismod et vitae lectus. Morbi molestie suscipit ipsum, sit amet eleifend quam gravida vel.</p>
+
+	<p>Curabitur sit amet justo vel arcu posuere molestie eu at est. Sed eu risus diam. Phasellus faucibus vestibulum velit id aliquet. Nunc congue elit eget elit vestibulum, eu gravida nisl dictum. Nunc malesuada aliquam enim quis hendrerit. Aliquam sed tristique lorem. Nam semper sollicitudin mi. Vivamus eget libero sed lorem tincidunt suscipit vel sed metus. In ornare ac massa non posuere. Sed vitae lacus ac nisi rhoncus ullamcorper nec vel nisl. Curabitur aliquam, quam sit amet dignissim elementum, risus lorem vehicula massa, a lobortis purus odio in lectus. Nunc vestibulum mauris id libero accumsan elementum.</p>
+    <script>
+		$(document).ready(function() {
+			$(document).on('dblclick', function(e) {
+				var selection = window.getSelection().toString().trim();
+				if (selection !== '') {
+					var regex = new RegExp("\\b" + selection + "\\b", "g");
+					$('body *:not(script)').each(function() {
+						var text = $(this).contents().filter(function() {
+							return this.nodeType === Node.TEXT_NODE && this.nodeValue.trim() !== '';
+						}).get();
+						$(text).replaceWith(function() {
+							return this.nodeValue.replace(regex, '<span class="highlight">' + selection + '</span>');
+						});
+					});
+				}
+			});
+		});
+        $(document).getElementByClass(p)
+	</script>
+</body>
+</html>

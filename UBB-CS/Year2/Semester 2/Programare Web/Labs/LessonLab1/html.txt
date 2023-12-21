@@ -1,0 +1,90 @@
+<html>
+<body>
+
+<style>
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+</style>
+
+
+
+
+<header>
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p>This is a paragraph
+<hr>
+</header>
+
+<p>This is<br>a paragraph<br>with line breaks.</p>
+
+<h3 style="background-color:DodgerBlue;">Hello World</h3>
+
+<pre>
+	This is mine
+	Only mine
+	I dont share
+</pre>
+
+<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+<hr>
+
+<!-- Write your comments here -->
+<img src="opera.jpg" alt="Picture" width="200" height="200">
+<hr>
+
+<ol>
+  <li>Web Development</li>
+  <li>MPP</li>
+  <li>AI</li>
+</ol>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+</style>
+
+<table style="color:Tomato;width:30%;">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico&#36;</td>
+  </tr>
+</table>
+
+<p>info</p>
+
+<video width="320" height="240" controls>
+	<source src ="Nice.MP4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<hr>
+
+<form>
+  <label for="fname">Nume:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">Mi-a placut video amuzant</label><br>
+</form>
+
+
+
+
+</body>
+</html>

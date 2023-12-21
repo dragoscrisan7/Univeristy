@@ -1,0 +1,24 @@
+program ::= "COD" decllist "~" cmpdstmt "."
+decllist ::= declaration | declaration "~" decllist
+declaration ::= IDENTIFIER "$" type
+type1 ::= "ALBA_NEAGRA" | "VORBE" | "DINAIA" | "DITOATE"
+arraydecl ::= "MORE" "[" nr "]" "OF" type1
+type  ::= type1|arraydecl
+cmpdstmt ::= "ONWARD" stmtlist "AT_EASE"
+stmtlist ::= stmt | stmt "~" stmtlist
+stmt ::= simplstmt | structstmt
+simplstmt ::= assignstmt | iostmt
+assignstmt ::= IDENTIFIER "->" expression
+expression ::= expression "+" term | term
+term ::= term "*" factor | factor
+factor ::= "(" expression ")" | IDENTIFIER
+iostmt ::= "SCAN" | "WRITE" "(" IDENTIFIER ")"
+structstmt ::= cmpdstmt | ifstmt | whilestmt | choosestmt
+ifstmt ::= "WHEN" condition "THEN" "<{" stmt "}>" ["OTHERWISE" "<{ stmt "}>"]
+whilestmt ::= "WHILE" condition "PERFORM" "<{" stmt "}>"
+choosestmt ::= "CHOOSE" "(" expression ")" "<{" caselist "}>"
+caselist ::= case caselist | defaultstmt
+case ::= "CASE" constant ":" stmtlist
+defaultstmt ::= "DEFAULT" ":" stmtlist
+condition ::= expression RELATION expression
+RELATION ::= "<" | "<=" | "=" | "<>" | ">=" | ">"

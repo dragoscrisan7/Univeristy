@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DjangoModelDependency</ID>
+  <OriginalElement>#mysite</OriginalElement>
+  <nodes>
+    <node x="55.25" y="106.0">polls.models.Group</node>
+    <node x="222.75" y="0.0">django.db.models.base.Model</node>
+    <node x="462.25" y="128.0">polls.models.Subject</node>
+    <node x="412.9130434782609" y="332.0">polls.models.Class</node>
+    <node x="239.25" y="106.0">polls.models.Teacher</node>
+    <node x="0.0" y="343.0">polls.models.Student</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="polls.models.Class" target="polls.models.Subject" relationship="ForeignKey">
+      <point x="-42.0" y="-93.0" />
+      <point x="454.9130434782609" y="311.0" />
+      <point x="362.94565217391306" y="311.0" />
+      <point x="362.94565217391306" y="291.0" />
+      <point x="548.25" y="291.0" />
+      <point x="0.0" y="60.0" />
+    </edge>
+    <edge source="polls.models.Group" target="django.db.models.base.Model" relationship="OneToOne">
+      <point x="0.0" y="-82.0" />
+      <point x="137.25" y="80.0" />
+      <point x="340.75" y="80.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="polls.models.Class" target="polls.models.Teacher" relationship="ForeignKey">
+      <point x="-42.0" y="-93.0" />
+      <point x="454.9130434782609" y="311.0" />
+      <point x="362.94565217391306" y="311.0" />
+      <point x="362.94565217391306" y="291.0" />
+      <point x="340.75" y="291.0" />
+      <point x="0.0" y="82.0" />
+    </edge>
+    <edge source="polls.models.Class" target="polls.models.Group" relationship="ForeignKey">
+      <point x="-42.0" y="-93.0" />
+      <point x="454.9130434782609" y="311.0" />
+      <point x="362.94565217391306" y="311.0" />
+      <point x="362.94565217391306" y="301.0" />
+      <point x="137.25" y="301.0" />
+      <point x="0.0" y="82.0" />
+    </edge>
+    <edge source="polls.models.Subject" target="django.db.models.base.Model" relationship="OneToOne">
+      <point x="0.0" y="-60.0" />
+      <point x="548.25" y="80.0" />
+      <point x="340.75" y="80.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="polls.models.Class" target="django.db.models.base.Model" relationship="OneToOne">
+      <point x="42.0" y="-93.0" />
+      <point x="538.9130434782609" y="311.0" />
+      <point x="644.75" y="311.0" />
+      <point x="644.75" y="80.0" />
+      <point x="340.75" y="80.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="polls.models.Teacher" target="django.db.models.base.Model" relationship="OneToOne">
+      <point x="0.0" y="-82.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="polls.models.Student" target="django.db.models.base.Model" relationship="OneToOne">
+      <point x="-45.5" y="-82.0" />
+      <point x="44.75" y="80.0" />
+      <point x="340.75" y="80.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="polls.models.Student" target="polls.models.Group" relationship="ForeignKey">
+      <point x="45.5" y="-82.0" />
+      <point x="0.0" y="82.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="322.5" y="259.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+</Diagram>
+

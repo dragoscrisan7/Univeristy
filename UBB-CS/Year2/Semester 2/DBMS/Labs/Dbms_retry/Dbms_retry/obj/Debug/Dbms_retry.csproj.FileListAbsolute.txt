@@ -1,0 +1,11 @@
+C:\Users\Dragos\source\repos\Dbms_retry\Dbms_retry\bin\Debug\Dbms_retry.exe.config
+C:\Users\Dragos\source\repos\Dbms_retry\Dbms_retry\bin\Debug\Dbms_retry.exe
+C:\Users\Dragos\source\repos\Dbms_retry\Dbms_retry\bin\Debug\Dbms_retry.pdb
+C:\Users\Dragos\source\repos\Dbms_retry\Dbms_retry\obj\Debug\Dbms_retry.csproj.AssemblyReference.cache
+C:\Users\Dragos\source\repos\Dbms_retry\Dbms_retry\obj\Debug\Dbms_retry.csproj.SuggestedBindingRedirects.cache
+C:\Users\Dragos\source\repos\Dbms_retry\Dbms_retry\obj\Debug\Dbms_retry.Form1.resources
+C:\Users\Dragos\source\repos\Dbms_retry\Dbms_retry\obj\Debug\Dbms_retry.Properties.Resources.resources
+C:\Users\Dragos\source\repos\Dbms_retry\Dbms_retry\obj\Debug\Dbms_retry.csproj.GenerateResource.cache
+C:\Users\Dragos\source\repos\Dbms_retry\Dbms_retry\obj\Debug\Dbms_retry.csproj.CoreCompileInputs.cache
+C:\Users\Dragos\source\repos\Dbms_retry\Dbms_retry\obj\Debug\Dbms_retry.exe
+C:\Users\Dragos\source\repos\Dbms_retry\Dbms_retry\obj\Debug\Dbms_retry.pdb

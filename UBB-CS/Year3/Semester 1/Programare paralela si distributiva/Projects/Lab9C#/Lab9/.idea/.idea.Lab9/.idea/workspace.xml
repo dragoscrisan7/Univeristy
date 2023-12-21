@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d1a4f46-ba86-4add-aa00-388d2c9fa352" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/my_dir/haha1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client_1/cmake-build-debug/my_dir/haha1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/.idea/CyptoLab3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/.idea/CyptoLab3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/.cmake/api/v1/reply/cache-v2-1a9ae91fff65143b23fc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-26010bc4b7f397e9fc8e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-3d2639b16bfd3fd58774.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/.cmake/api/v1/reply/index-2023-11-02T14-19-08-0209.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/.cmake/api/v1/reply/target-CyptoLab3-Debug-b1e101bcc482cad39389.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-fba4f8ac22970f066d86.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/3.21.1/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/3.21.1/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/3.21.1/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/3.21.1/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/CyptoLab3.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/CyptoLab3.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CyptoLab3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/CyptoLab3.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cryptografie cu cheie publica/Projects/CryptographyLab3/CyptoLab3/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/.idea/Lab2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/FA.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/GithubLink.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/LFTCLab2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/Scanner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/ScannerHomework.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/SymTable.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/Tests/FiniteAutomataTests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/Tests/ScannerTests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/Tests/SymTableTests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/Tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/Utils/CodeBeingRead" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/Utils/Codes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/Utils/FiniteAutomation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/Utils/HashTable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/Utils/Scanner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/Utils/SymbolTable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/Utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/output_fip.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Limbaje Formale si Tehnici de Compilare/Projects/Lab2-5/output_symbol_table.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/.idea/MyFtpServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/.idea/MyFtpServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/TcpConnection.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/TcpConnection.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/TcpConnection.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/TcpConnection.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/.cmake/api/v1/reply/cache-v2-1d3e9c5d97042377adb7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-1554cb2f79cfd0c93034.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-40e1be72be6d0463c7f7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/.cmake/api/v1/reply/index-2023-11-14T09-28-55-0617.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/.cmake/api/v1/reply/target-MyFtpServer-Debug-4bc308f14f9b5fee4ac7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-fba4f8ac22970f066d86.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/3.21.1/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/3.21.1/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/3.21.1/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/3.21.1/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/MyFtpServer.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/MyFtpServer.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/MyFtpServer.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/MyFtpServer.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/ftp_server.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/ftp_server.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/ftp_server.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/ftp_server.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/MyFtpServer/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.idea/ftp-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.vs/ftp-client/FileContentIndex/14986ec8-023c-4c49-878e-576bfe0ea8e6.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.vs/ftp-client/FileContentIndex/66c016e2-0422-402c-b8c4-60bc24709f28.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.vs/ftp-client/FileContentIndex/f7688fc9-be2c-4e2c-a160-23aeeec4e8e0.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.vs/ftp-client/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.vs/ftp-client/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.vs/ftp-client/v17/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.vs/ftp-client/v17/Browse.VC.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.vs/ftp-client/v17/ipch/AutoPCH/665a40d566c7f578/FTPCLIENT.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.vs/ftp-client/v17/ipch/AutoPCH/665a40d566c7f578/FTPCLIENT.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.vs/ftp-client/v17/ipch/AutoPCH/b592aba4d5e2c4f6/TCPCONNECTION.ipch" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/.vs/ftp-client/v17/ipch/AutoPCH/b592aba4d5e2c4f6/TCPCONNECTION.ipch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/ftp-client/FtpClient.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/ftp-client/FtpClient.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/ftp-client/FtpClient.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/ftp-client/FtpClient.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/ftp-client/TcpConnection.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/ftp-client/TcpConnection.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/ftp-client/TcpConnection.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/ftp-client/TcpConnection.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/ftp-client/ftp-client.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/ftp-client/ftp-client.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/ftp-client/ftp-client.vcxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/ftp-client/ftp-client.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Securitate Software/Projects/TeamProject/ftp-client/ftp-client/ftp-client.vcxproj.filters" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2ZaETLn2SY0qekH1ChJDm8xeI0e" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Dragos\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Dragos\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Dragos\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d1a4f46-ba86-4add-aa00-388d2c9fa352" name="Changes" comment="" />
+      <created>1702651799170</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702651799170</updated>
+      <workItem from="1702651802244" duration="1351000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

@@ -1,0 +1,15 @@
+# ninja log v5
+21	4341	7240781143118447	CMakeFiles/ftp_client.dir/ftp-client/TcpConnection.cpp.obj	d04fce18c43e521b
+6	4623	7241111771639518	CMakeFiles/ftp_client.dir/ftp-client/FtpClient.cpp.obj	e3b50ddd9239ee5d
+2286	2463	7241122878345279	ftp_client.exe	7754cad15f042418
+11	852	7242462650670331	build.ninja	5b231bdb59a4ff13
+25	5124	7242462894104916	CMakeFiles/ftp_client.dir/ftp-client/TcpConnection.cpp.obj	205d9d42517210a4
+16	5433	7242462897354885	CMakeFiles/ftp_client.dir/ftp-client/FtpClient.cpp.obj	752079dbc14608ff
+7	2798	7242464256775750	CMakeFiles/ftp_client.dir/ftp-client/main.cpp.obj	c239294621b0673f
+2799	3056	7242464259285772	ftp_client.exe	92d99a8e80f15c48
+7	2992	7242466284273335	CMakeFiles/ftp_client.dir/ftp-client/main.cpp.obj	c239294621b0673f
+2993	3184	7242466286143323	ftp_client.exe	92d99a8e80f15c48
+9	2726	7242467611696139	CMakeFiles/ftp_client.dir/ftp-client/main.cpp.obj	c239294621b0673f
+2727	2978	7242467614176110	ftp_client.exe	92d99a8e80f15c48
+6	2702	7242470233086056	CMakeFiles/ftp_client.dir/ftp-client/main.cpp.obj	c239294621b0673f
+2703	2886	7242470234884849	ftp_client.exe	92d99a8e80f15c48

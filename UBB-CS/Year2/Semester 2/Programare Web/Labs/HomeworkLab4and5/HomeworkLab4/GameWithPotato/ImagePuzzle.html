@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Puzzle Game</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            padding: 0;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 24px;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        table img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td id="cell1"></td>
+            <td id="cell2"></td>
+            <td id="cell3"></td>
+        </tr>
+        <tr>
+            <td id="cell4"></td>
+            <td id="cell5"></td>
+            <td id="cell6"></td>
+        </tr>
+        <tr>
+            <td id="cell7"></td>
+            <td id="cell8"></td>
+            <td id="cell9"></td>
+        </tr>
+    </table>
+    <button onclick="shuffle()">Shuffle</button>
+    <button onclick="checkSolution()">Check Solution</button>
+    <div id="message"></div>
+    <script>
+        const cells = [
+            document.getElementById('cell1'),
+            document.getElementById('cell2'),
+            document.getElementById('cell3'),
+            document.getElementById('cell4'),
+            document.getElementById('cell5'),
+            document.getElementById('cell6'),
+            document.getElementById('cell7'),
+            document.getElementById('cell8'),
+            document.getElementById('cell9')
+        ];
+        const images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg', 'image6.jpg', 'image7.jpg', 'image8.jpg', 'image9.jpg'];
+        let shuffledImages = shuffleArray(images.slice());
+        render();
+        function render() {
+            for (let i = 0; i < cells.length; i++) {
+                const img = document.createElement('img');
+                img.src = shuffledImages[i];
+                cells[i].innerHTML = '';
+                cells[i].appendChild(img);
+                cells[i].classList.remove('selected');
+                cells[i].onclick = () => {
+                selectCell(i);
+                };
+            }
+        }
+
+        let selectedCellIndex = null;
+
+        function selectCell(cellIndex) {
+        if (selectedCellIndex === null) {
+            // no cell is currently selected
+            selectedCellIndex = cellIndex;
+            cells[cellIndex].classList.add('selected');
+        } else if (selectedCellIndex === cellIndex) {
+            // clicked the same cell twice - deselect it
+            selectedCellIndex = null;
+            cells[cellIndex].classList.remove('selected');
+        } else if (isAdjacent(selectedCellIndex, cellIndex)) {
+            // clicked an adjacent cell while another cell is selected - swap them
+            [shuffledImages[selectedCellIndex], shuffledImages[cellIndex]] = [shuffledImages[cellIndex], shuffledImages[selectedCellIndex]];
+            selectedCellIndex = null;
+            render();
+        } else {
+            // clicked a non-adjacent cell while another cell is selected - deselect the first cell
+            cells[selectedCellIndex].classList.remove('selected');
+            selectedCellIndex = cellIndex;
+            cells[cellIndex].classList.add('selected');
+        }
+        }
+
+        function isAdjacent(cellIndex1, cellIndex2) {
+        const x1 = cellIndex1 % 3;
+        const y1 = Math.floor(cellIndex1 / 3);
+        const x2 = cellIndex2 % 3;
+        const y2 = Math.floor(cellIndex2 / 3);
+        return Math.abs(x1 - x2) + Math.abs(y1 - y2) === 1;
+        }
+
+        function swapCells(cellIndex) {
+            if (selectedCellIndex === null) {
+                selectedCellIndex = cellIndex;
+                cells[selectedCellIndex].classList.add('selected');
+            } else if (cellIndex === selectedCellIndex) {
+                cells[selectedCellIndex].classList.remove('selected');
+                selectedCellIndex = null;
+            } else if ((cellIndex === selectedCellIndex - 1 && selectedCellIndex % 3 !== 0) ||
+                        (cellIndex === selectedCellIndex + 1 && selectedCellIndex % 3 !== 2) ||
+                        cellIndex === selectedCellIndex - 3 ||
+                        cellIndex === selectedCellIndex + 3) {
+                [shuffledImages[cellIndex], shuffledImages[selectedCellIndex]] = [shuffledImages[selectedCellIndex], shuffledImages[cellIndex]];
+                cells[selectedCellIndex].classList.remove('selected');
+                selectedCellIndex = null;
+                render();
+            } else {
+                cells[selectedCellIndex].classList.remove('selected');
+                selectedCellIndex = cellIndex;
+                cells[selectedCellIndex].classList.add('selected');
+            }
+        }
+
+        function shuffle() {
+            shuffledImages = shuffleArray(images.slice());
+            emptyCellIndex = 8;
+            render();
+        }
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+            render();
+        }
+        function checkSolution() {
+            for (let i = 0; i < shuffledImages.length; i++) {
+                if (shuffledImages[i] !== images[i]) {
+                    return;
+                }
+                document.getElementById('message').innerHTML = 'Well done!';
+            }
+        }
+    </script>
+</body>
+</html>

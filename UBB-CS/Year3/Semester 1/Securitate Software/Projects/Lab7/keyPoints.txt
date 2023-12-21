@@ -1,0 +1,48 @@
+Key points from the slides
+Object Handle Manipulation
+    at creation/opening, the object is referred by its name
+    return an object handle
+    any subsequent operations are based on the object handle
+    Windows API functions are inconsistent
+       an error results in a NULL or an INVALID_HANDLE_VALUE (-1)
+       CreateFile() returns INVALID_HANDLE_VALUE when encounters errors
+       OpenProcess() returns NULL on errors
+
+CreateProcess() is the common method to start a new process
+   security issue: unquoted path containing spaces;leave the possibility for executing unintended programs
+       CreateProcess(NULL, "C:\\Program Files\\My Applications\\my app.exe", ...);
+ShellExecute() and ShellExecuteEx()
+    determine, based on file type, which application to launch
+    code audit: take care that these functions to not necessarily
+    (especially in case of no executable files) run the supplied file
+DLL Loading
+    DLL search order
+        application load directory
+        current directory
+        “system32” directory
+        “Windows” directory
+        directories in PATH
+    attack way: cause the run of an application in a directory where the attacker can write (DLL) files
+DLL redirection
+    introduced security issue: a redirection file causes loading of an alternate set of libraries, even when a qualified path is provided in LoadLibrary()
+    redirection is superseded by an application manifest
+    “HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\KnownDLLs”
+File Access
+    Canonicalization (Normalization): “c:\nonexistent\path\..\..\file.txt” → “c:\file.txt”
+File-like Objects
+    eg: pipes: “\\.\pipe\pipename”
+    attacking such objects requires control of the first segment of the pathname
+Device Files
+    types COM1-9 LPT1-9 CON CONIN$ CONOUT$ PRN AUX CLOCK$ NUL
+    pathnames are searched for such special names as filename and the rest of the pathname and extension are ignored
+        device file’s names could be prepended by any pathname
+        device file’s names could have any extension appended
+Soft link/ Hard Link / Jonction
+    attack accessing any file in “c:\windows\system32”
+        create a junction with the same name as the file being created,
+        e.g. “c:\temp\bob_dirname” → “c:\windows\system32”
+        specify a filename with enough trailing spaces to cut off the extension
+ADS
+    - file.txt:secret.stream
+    - if user can control the filename part of path, he could create files with any extension (=> file[.exe:stream].txt will create file.exe)
+    - some files contain ::$DATA stream (example IIS)

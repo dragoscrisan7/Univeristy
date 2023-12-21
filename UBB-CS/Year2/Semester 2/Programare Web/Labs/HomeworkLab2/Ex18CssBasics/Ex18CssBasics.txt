@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+.rainbow {
+	width: 100%;
+	height: 400px;
+	background-image: linear-gradient(to bottom right, 
+		red, orange, yellow, green, blue, indigo, violet);
+	transform: translate(50px,100px);
+}
+
+@media (min-width: 768px) {
+	.rainbow {
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+</style>
+
+
+<head>
+	<title>Rainbow</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="rainbow"></div>
+</body>
+</html>

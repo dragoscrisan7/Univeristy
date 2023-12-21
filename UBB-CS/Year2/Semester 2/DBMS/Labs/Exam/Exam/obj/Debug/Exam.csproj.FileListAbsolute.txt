@@ -1,0 +1,11 @@
+C:\Users\Dragos\source\repos\Exam\Exam\bin\Debug\Exam.exe.config
+C:\Users\Dragos\source\repos\Exam\Exam\bin\Debug\Exam.exe
+C:\Users\Dragos\source\repos\Exam\Exam\bin\Debug\Exam.pdb
+C:\Users\Dragos\source\repos\Exam\Exam\obj\Debug\Exam.csproj.AssemblyReference.cache
+C:\Users\Dragos\source\repos\Exam\Exam\obj\Debug\Exam.csproj.SuggestedBindingRedirects.cache
+C:\Users\Dragos\source\repos\Exam\Exam\obj\Debug\Exam.Form1.resources
+C:\Users\Dragos\source\repos\Exam\Exam\obj\Debug\Exam.Properties.Resources.resources
+C:\Users\Dragos\source\repos\Exam\Exam\obj\Debug\Exam.csproj.GenerateResource.cache
+C:\Users\Dragos\source\repos\Exam\Exam\obj\Debug\Exam.csproj.CoreCompileInputs.cache
+C:\Users\Dragos\source\repos\Exam\Exam\obj\Debug\Exam.exe
+C:\Users\Dragos\source\repos\Exam\Exam\obj\Debug\Exam.pdb

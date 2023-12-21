@@ -1,0 +1,169 @@
+use SemesterProject
+
+DROP TABLE Licence;
+DROP TABLE Task;
+DROP TABLE StudentMembers;
+DROP TABLE SoftwareTool;
+DROP TABLE ProjectTeam;
+DROP TABLE SemesterProject;
+
+
+Create Table SemesterProject(
+	ID int Identity Primary Key,
+	sp_name varchar(50)
+)
+
+Create Table ProjectTeam(
+	ID int Identity Primary Key,
+	pt_name varchar(50),
+	number int,
+	SPID int Foreign Key References SemesterProject(ID)
+)
+
+Create Table StudentMembers(
+	ID int Identity Primary Key,
+	s_name varchar(50),
+	s_role varchar(50),
+	PTID int Foreign Key References ProjectTeam(ID)
+)
+
+Create Table Task(
+	ID int Identity Primary Key,
+	t_description varchar(50),
+	SMID int Foreign Key References StudentMembers(ID)
+)
+
+Create Table SoftwareTool(
+	ID int Identity Primary Key,
+	st_name varchar(50),
+	st_description varchar(50),
+)
+
+CREATE TABLE Licence (
+    PTID INT,
+    STID INT,
+    availability_in_days INT,
+    FOREIGN KEY (PTID) REFERENCES ProjectTeam(ID),
+    FOREIGN KEY (STID) REFERENCES SoftwareTool(ID)
+)
+
+use SemesterProject
+
+SET IDENTITY_INSERT SemesterProject ON
+Insert into SemesterProject(ID,sp_name)
+Values (1,'name1'),
+(2,'name2')
+SET IDENTITY_INSERT SemesterProject OFF
+
+SET IDENTITY_INSERT ProjectTeam ON
+Insert into ProjectTeam(ID,pt_name,number,SPID)
+Values (1,'name1',10,1),
+(2,'name2',7,2)
+SET IDENTITY_INSERT ProjectTeam OFF
+
+SET IDENTITY_INSERT StudentMembers ON
+INSERT INTO StudentMembers (ID, s_name, s_role, PTID)
+VALUES (1, 'Ana', 'Developer', 1),
+(2, 'Bob', 'Tester', 1),
+(3, 'Charlie', 'Designer', 2),
+(4, 'Diana', 'Leader', 2)
+SET IDENTITY_INSERT StudentMembers OFF
+
+SET IDENTITY_INSERT Task ON
+INSERT INTO Task (ID, t_description, SMID)
+VALUES (1, 'Task1', 1),
+       (2, 'Coding', 1),
+       (3, 'Testing', 2),
+       (4, 'Documentation', 3),
+       (5, 'Task2', 3),
+       (6, 'Task3', 4);
+SET IDENTITY_INSERT Task OFF
+
+
+These are the tables and the inserts of this database.
+Create a scenario in the sql based on this database that reproduces the update conflict concurency issue on 
+this database. Explain why the update conflict occurs, and describe a solution to prevent this concurency issue.
+These are examples of different scenarios for different isolation levels
+
+
+
+Answer:
+-- Set the isolation level to Serializable for both transactions
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+
+-- Begin Transaction T1
+BEGIN TRAN T1;
+UPDATE StudentMembers SET s_name = 'Updated1' WHERE ID = 1;
+
+-- Begin Transaction T2
+BEGIN TRAN T2;
+UPDATE StudentMembers SET s_name = 'Updated2' WHERE ID = 1;
+
+-- Commit Transaction T1
+COMMIT TRAN T1;
+
+-- Commit Transaction T2
+COMMIT TRAN T2;
+
+To create a scenario that reproduces the update conflict concurrency issue on the given database, 
+we can use the following example:
+
+Scenario:
+
+Begin Transaction T1.
+Begin Transaction T2.
+T1: Update the name of StudentMember with ID 1 to 'Updated1'.
+T2: Update the name of StudentMember with ID 1 to 'Updated2'.
+Commit Transaction T1.
+Commit Transaction T2.
+Explanation:
+The update conflict concurrency issue occurs because both transactions (T1 and T2) are attempting to 
+update the same record (StudentMember with ID 1) simultaneously. Since both transactions started 
+without knowing about each other's changes, they can lead to conflicts when trying to commit their updates.
+
+In this scenario, T1 and T2 are using the default Read Committed isolation level. In Read Committed, 
+each transaction reads the latest committed data and holds locks only for the duration of the operation. 
+When T2 tries to update the name of the StudentMember, it finds that the record has already been updated 
+by T1. This leads to a conflict between the changes made by T1 and T2.
+
+Solution to Prevent Concurrency Issue:
+One solution to prevent the update conflict concurrency issue is to use a higher isolation level, 
+such as Serializable. Serializable ensures that transactions are executed sequentially, preventing 
+conflicts and maintaining data consistency. By using Serializable isolation level, T2 would be blocked 
+until T1 completes its transaction, and then T2 would proceed with its update.
+
+To modify the scenario to prevent the update conflict concurrency issue:
+
+Set the isolation level of both T1 and T2 to Serializable.
+Follow the same steps as mentioned in the previous scenario.
+With Serializable isolation level, T2 would wait for T1 to complete its transaction before 
+proceeding with its update. This prevents the update conflict and ensures that the transactions are 
+executed sequentially.
+
+Note: It's important to consider the trade-offs of using higher isolation levels, as they may 
+impact concurrency and performance in a multi-user environment. Therefore, it's crucial to choose the 
+appropriate isolation level based on the specific requirements and characteristics of the system.
+
+
+
+I give you an example that ilustrates dirty reads on a different database:
+/*Dirty reads*/
+Insert into Producers (Name, Popularity, YearsSinceFounding) 
+Values('producator', 1, 1)
+
+Begin Transaction
+Update Producers Set Name='nume_nou'
+Where Producers.Name='producator'
+Waitfor delay '00:00:10'
+Rollback Transaction
+
+Set transaction isolation level read uncommitted
+Begin tran
+Select * from Producers
+Waitfor delay '00:00:15'
+Select * from Producers
+Commit tran
+
+can you modify the scenario you gave me to add delays and everything necesary so i can pute them
+in two different queries and run them one after another and see how it behaves?
+

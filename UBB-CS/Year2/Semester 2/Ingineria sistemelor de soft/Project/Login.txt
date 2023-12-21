@@ -1,0 +1,50 @@
+title Login Sequence Diagram
+
+User->View: openApplication()
+activate View
+
+User->View: Input Username
+User->View: Input Password
+View->Controller: handleUserLogin()
+activate Controller
+
+Controller->Service: containsUser()
+activate Service
+
+Service->Repository: containsUser()
+activate Repository
+
+Repository->Domain: contains() (Check if user exists)
+activate Domain
+
+Domain-->Repository: userExists
+deactivate Domain
+
+Repository-->Service: userExists
+deactivate Repository
+
+Service-->Controller: userExists
+deactivate Service
+
+Controller->Service: getUser()
+activate Service
+
+Service->Repository: getUser()
+activate Repository
+
+Repository->Domain: get() (Get user data)
+activate Domain
+
+Domain-->Repository: userData
+deactivate Domain
+
+Repository-->Service: userData
+deactivate Repository
+
+Service-->Controller: authenticationResult
+deactivate Service
+
+Controller-->View: authenticationResult()
+deactivate Controller
+
+deactivate View

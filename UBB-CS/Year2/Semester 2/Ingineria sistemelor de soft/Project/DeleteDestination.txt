@@ -1,0 +1,85 @@
+title Delete Destination Sequence Diagram
+
+User->View: openApplication()
+activate View
+
+View->Controller: selectDestination(destinationID)
+activate Controller
+
+Controller->Service: getDestination(destinationID)
+activate Service
+
+Service->Repository: getDestination(destinationID)
+activate Repository
+
+Repository->Domain: get(destinationID)
+activate Domain
+
+Domain-->Repository: destinationData
+deactivate Domain
+
+Repository-->Service: destinationData
+deactivate Repository
+
+Service-->Controller: destinationData
+deactivate Service
+
+Controller->View: showDestination(destinationData)
+deactivate Controller
+
+View->Controller: handleAddPendingApproval()
+activate Controller
+
+Controller->Service: addPendingApproval(destinationData)
+activate Service
+
+Service->Repository: addPendingApproval(destinationData)
+activate Repository
+
+Repository->Domain: addPendingApproval(destinationData)
+activate Domain
+
+Admin->View-Admin: openApplication
+activate View-Admin
+View-Admin->Controller-Admin: handleAcceptPendingApproval()
+activate Controller-Admin
+Controller-Admin->Service-Admin: acceptPendingApproval()
+activate Service-Admin
+Service-Admin->Repository-Admin: acceptPendingApproval()
+activate Repository-Admin
+Repository-Admin->Domain-Admin: acceptPendingApproval()
+activate Domain-Admin
+
+Domain-Admin-->Repository-Admin: approvalResult
+deactivate Domain-Admin
+
+Repository-Admin-->Service-Admin: approvalResult
+deactivate Repository-Admin
+
+Service-Admin-->Controller-Admin: approvalResult
+deactivate Service-Admin
+
+Controller-Admin-->View-Admin: approvalResult
+deactivate Controller-Admin
+View-Admin-->View:approvalResult 
+deactivate View-Admin
+
+View->Controller: handleDestinationRemove(destinationData)
+
+Controller->Service: removeDestinatio(destinationData)
+
+Service->Repository: removeDestinatio(destinationData)
+
+Repository->Domain: remove(destinationData)
+
+Domain-->Repository: deletionMessage
+deactivate Domain
+
+Repository-->Service: deletionMessage
+deactivate Repository
+
+Service-->Controller: deletionMessage
+deactivate Service
+
+Controller->View: deletionMessage
+deactivate Controller

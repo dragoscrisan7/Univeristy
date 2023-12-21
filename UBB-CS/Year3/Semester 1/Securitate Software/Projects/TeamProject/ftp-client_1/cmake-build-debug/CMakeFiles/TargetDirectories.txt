@@ -1,0 +1,3 @@
+C:/Users/Dragos/Facultate_no-Onedrive/FtpServer/ftp-client_1/cmake-build-debug/CMakeFiles/ftp_client.dir
+C:/Users/Dragos/Facultate_no-Onedrive/FtpServer/ftp-client_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dragos/Facultate_no-Onedrive/FtpServer/ftp-client_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

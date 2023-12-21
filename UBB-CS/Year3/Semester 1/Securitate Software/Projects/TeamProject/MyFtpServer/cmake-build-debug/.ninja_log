@@ -1,0 +1,9 @@
+# ninja log v5
+12	7500	7241122617543386	CMakeFiles/MyFtpServer.dir/main.cpp.obj	79ec0c9ebf1fcb81
+9152	9456	7241122637033388	MyFtpServer.exe	7b5c27e6cc6686e9
+22	9151	7241122634043730	CMakeFiles/MyFtpServer.dir/TcpConnection.cpp.obj	ae027314fbc62454
+31	7352	7241122616063380	CMakeFiles/MyFtpServer.dir/ftp_server.cpp.obj	1f96fda6e1259cd0
+9	8681	7242461815198012	CMakeFiles/MyFtpServer.dir/ftp_server.cpp.obj	f1440778fcc3a3fd
+65	8783	7242461816468012	CMakeFiles/MyFtpServer.dir/main.cpp.obj	80301b2b294d804b
+72	11273	7242461841617972	CMakeFiles/MyFtpServer.dir/TcpConnection.cpp.obj	fae49158be9a01be
+11274	11673	7242461845598397	MyFtpServer.exe	7b5c27e6cc6686e9

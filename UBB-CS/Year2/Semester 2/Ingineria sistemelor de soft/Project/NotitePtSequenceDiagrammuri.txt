@@ -1,0 +1,3 @@
+de urmarit functiile care se apeleaza prin controller si repository
+de mutat adminul la request pe aceeasi coloana cu userul si intrerupt procesul userului pana termina
+adminul procesul lui
