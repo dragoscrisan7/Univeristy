@@ -1,0 +1,15 @@
+# ninja log v5
+19	5040	7263739804177288	CMakeFiles/ServerHomework.dir/Utils/Parser.cpp.obj	392bfb4fe3e3d14a
+8249	11427	7263739868190739	CMakeFiles/ServerHomework.dir/Utils/Callback.cpp.obj	52f2490f3f71d4b3
+10	8249	7263739836227311	CMakeFiles/ServerHomework.dir/main.cpp.obj	50d9be83823d785
+28	4646	7263739800327309	CMakeFiles/ServerHomework.dir/SocketHandler/SocketHandler.cpp.obj	5e91003f7486a86f
+11428	12221	7263739876050754	ServerHomework.exe	77264e11619f76f6
+4649	9693	7263739850817287	CMakeFiles/ServerHomework.dir/Utils/TaskSolution.cpp.obj	316b49ef8f6a4165
+5040	10009	7263739853997257	CMakeFiles/ServerHomework.dir/Utils/AsyncAwaitSolution.cpp.obj	736f6db0ffeb09b6
+9	5162	7263745630083812	CMakeFiles/ServerHomework.dir/Utils/Parser.cpp.obj	60807818b5c28572
+30	5304	7263745631857906	CMakeFiles/ServerHomework.dir/Utils/Callback.cpp.obj	64f53a08e89e5d75
+17	8668	7263745665567889	CMakeFiles/ServerHomework.dir/main.cpp.obj	f8e28342751697b8
+5304	9621	7263745675217874	CMakeFiles/ServerHomework.dir/SocketHandler/SocketHandler.cpp.obj	88f08ae216b214fc
+5164	9999	7263745679007849	CMakeFiles/ServerHomework.dir/Utils/AsyncAwaitSolution.cpp.obj	f5070a66a05ef8e9
+8668	11742	7263745696442434	CMakeFiles/ServerHomework.dir/Utils/TaskSolution.cpp.obj	75d9888fdbf37c70
+11743	12528	7263745704222438	ServerHomework.exe	77264e11619f76f6

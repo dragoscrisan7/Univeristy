@@ -1,0 +1,13 @@
+# ninja log v5
+11	1964	7263698722529310	CMakeFiles/Lab7_9New.dir/main.cpp.obj	7087a6d6d89dc9ea
+2359	2526	7263699493568156	Lab7_9New.exe	7bb94ec42e1a2be8
+6	2358	7263699491928172	CMakeFiles/Lab7_9New.dir/SocketHandler/SocketHandler.cpp.obj	b8761ce9dcd03328
+5	4448	7263699908547880	CMakeFiles/Lab7_9New.dir/SocketHandler/SocketHandler.cpp.obj	b8761ce9dcd03328
+4449	4662	7263699910617877	Lab7_9New.exe	7bb94ec42e1a2be8
+5	978	7263700572778177	CMakeFiles/Lab7_9New.dir/main.cpp.obj	7087a6d6d89dc9ea
+979	1160	7263700574518187	Lab7_9New.exe	7bb94ec42e1a2be8
+9	3907	7263701049535111	CMakeFiles/Lab7_9New.dir/SocketHandler/SocketHandler.cpp.obj	b8761ce9dcd03328
+3909	4065	7263701051075120	Lab7_9New.exe	7bb94ec42e1a2be8
+11	2571	7263702789031819	CMakeFiles/Lab7_9New.dir/main.cpp.obj	7087a6d6d89dc9ea
+22	5297	7263702816310174	CMakeFiles/Lab7_9New.dir/SocketHandler/SocketHandler.cpp.obj	b8761ce9dcd03328
+5298	5526	7263702818520146	Lab7_9New.exe	7bb94ec42e1a2be8

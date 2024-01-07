@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Lab13",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Lab13::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Lab13-Debug-9acccfeaa5bbf86a3d99.json",
+					"name" : "Lab13",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug",
+		"source" : "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

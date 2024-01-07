@@ -1,0 +1,1945 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/3.27.0/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/g++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/3.27.0/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iqdwxc"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iqdwxc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iqdwxc'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_f73c0
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_f73c0.dir/'
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f73c0.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\Dragos\\AppData\\Local\\Temp\\ccXPXyJh.s
+        GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring nonexistent directory "/win/include"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+         /mingw/include
+        End of search list.
+        Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_f73c0.dir/'
+         as -v -o CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj C:\\Users\\Dragos\\AppData\\Local\\Temp\\ccXPXyJh.s
+        GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;/mingw/lib/../lib/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../;/mingw/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.'
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe  -v CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj -o cmTC_f73c0.exe -Wl,--out-implib,libcmTC_f73c0.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe
+        COLLECT_LTO_WRAPPER=C:/Program\\ Files/JetBrains/CLion\\ 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COMPILER_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;/mingw/lib/../lib/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../;/mingw/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f73c0.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f73c0.'
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_f73c0.exe C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -L/mingw/lib/../lib -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -L/mingw/lib CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_f73c0.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f73c0.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f73c0.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+          add: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+          add: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+          add: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+          add: [/mingw/include]
+        end of search list found
+        collapse include dir [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/include]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/x86_64-w64-mingw32/include]
+        collapse include dir [/mingw/include] ==> [/MinGW/include]
+        implicit include dirs: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/include;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/x86_64-w64-mingw32/include;/MinGW/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-iqdwxc']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_f73c0]
+        ignore line: [[1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_f73c0.dir/']
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1.exe -quiet -v -iprefix C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_f73c0.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\Dragos\\AppData\\Local\\Temp\\ccXPXyJh.s]
+        ignore line: [GNU C17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/win/include"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [ /mingw/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 2aa4fcf5c9208168c5e2d38a58fc2a97]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_f73c0.dir/']
+        ignore line: [ as -v -o CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj C:\\Users\\Dragos\\AppData\\Local\\Temp\\ccXPXyJh.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [/mingw/lib/../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [/mingw/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.']
+        ignore line: [[2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe  -v CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj -o cmTC_f73c0.exe -Wl --out-implib libcmTC_f73c0.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Program\\ Files/JetBrains/CLion\\ 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [/mingw/lib/../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [/mingw/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f73c0.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f73c0.']
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_f73c0.exe C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -L/mingw/lib/../lib -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -L/mingw/lib CMakeFiles/cmTC_f73c0.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_f73c0.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f73c0.exe' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_f73c0.']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sp3nrd"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sp3nrd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sp3nrd'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_75c7f
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_75c7f.dir/'
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_75c7f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\Dragos\\AppData\\Local\\Temp\\cc2LGfI7.s
+        GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)
+        	compiled by GNU C version 13.1.0, GMP version 6.2.1, MPFR version 4.2.0-p4, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"
+        ignoring nonexistent directory "/win/include"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../include"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"
+        ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include
+         /mingw/include
+        End of search list.
+        Compiler executable checksum: e75de627edc3c57e31324b930b15b056
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_75c7f.dir/'
+         as -v -o CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\Dragos\\AppData\\Local\\Temp\\cc2LGfI7.s
+        GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40
+        COMPILER_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;/mingw/lib/../lib/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../;/mingw/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE  -v CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_75c7f.exe -Wl,--out-implib,libcmTC_75c7f.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        Using built-in specs.
+        COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE
+        COLLECT_LTO_WRAPPER=C:/Program\\ Files/JetBrains/CLion\\ 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe
+        Target: x86_64-w64-mingw32
+        Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.1.0 (GCC) 
+        COMPILER_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/
+        LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/;/mingw/lib/../lib/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../;/mingw/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75c7f.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_75c7f.'
+         C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_75c7f.exe C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -L/mingw/lib/../lib -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -L/mingw/lib CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_75c7f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75c7f.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_75c7f.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+          add: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+          add: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+          add: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+          add: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+          add: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+          add: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+          add: [/mingw/include]
+        end of search list found
+        collapse include dir [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++] ==> [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32] ==> [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward] ==> [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include] ==> [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include] ==> [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/include]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed] ==> [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        collapse include dir [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include] ==> [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/x86_64-w64-mingw32/include]
+        collapse include dir [/mingw/include] ==> [/MinGW/include]
+        implicit include dirs: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/include;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed;C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/x86_64-w64-mingw32/include;/MinGW/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sp3nrd']
+        ignore line: []
+        ignore line: [Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_75c7f]
+        ignore line: [[1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_75c7f.dir/']
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -quiet -v -iprefix C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_REENTRANT C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_75c7f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=nocona -version -fdiagnostics-color=always -o C:\\Users\\Dragos\\AppData\\Local\\Temp\\cc2LGfI7.s]
+        ignore line: [GNU C++17 (GCC) version 13.1.0 (x86_64-w64-mingw32)]
+        ignore line: [	compiled by GNU C version 13.1.0  GMP version 6.2.1  MPFR version 4.2.0-p4  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/win/include"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../include"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"]
+        ignore line: [ignoring duplicate directory "C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed]
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include]
+        ignore line: [ /mingw/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: e75de627edc3c57e31324b930b15b056]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_75c7f.dir/']
+        ignore line: [ as -v -o CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj C:\\Users\\Dragos\\AppData\\Local\\Temp\\cc2LGfI7.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-w64-mingw32) using BFD version (GNU Binutils) 2.40]
+        ignore line: [COMPILER_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [/mingw/lib/../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [/mingw/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE  -v CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_75c7f.exe -Wl --out-implib libcmTC_75c7f.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE]
+        ignore line: [COLLECT_LTO_WRAPPER=C:/Program\\ Files/JetBrains/CLion\\ 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/lto-wrapper.exe]
+        ignore line: [Target: x86_64-w64-mingw32]
+        ignore line: [Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.1.0 (GCC) ]
+        ignore line: [COMPILER_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/]
+        ignore line: [/mingw/lib/../lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/]
+        ignore line: [C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../]
+        ignore line: [/mingw/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75c7f.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_75c7f.']
+        ignore line: [ C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/collect2.exe -m i386pep -Bdynamic -o cmTC_75c7f.exe C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtbegin.o -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0 -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib -L/mingw/lib/../lib -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib -LC:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../.. -L/mingw/lib CMakeFiles/cmTC_75c7f.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_75c7f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/lib/../lib/default-manifest.o C:/Program Files/JetBrains/CLion 2023.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/crtend.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_75c7f.exe' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-dumpdir' 'cmTC_75c7f.']
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-johdkm"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-johdkm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-johdkm'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_19615
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_19615.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-johdkm/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_19615.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_19615.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-johdkm/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-johdkm/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kehbs9"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kehbs9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kehbs9'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_6724f
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_6724f.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kehbs9/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_6724f.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_6724f.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kehbs9/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-kehbs9/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wusm5t"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wusm5t"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wusm5t'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_996ea
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_996ea.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wusm5t/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_996ea.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_996ea.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wusm5t/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wusm5t/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l9h74w"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l9h74w"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l9h74w'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_b624c
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_b624c.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l9h74w/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_b624c.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_b624c.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l9h74w/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-l9h74w/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jat2q7"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jat2q7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jat2q7'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_4bc5c
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_4bc5c.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jat2q7/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_4bc5c.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_4bc5c.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jat2q7/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-jat2q7/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6kgnfu"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6kgnfu"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6kgnfu'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_48d41
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_48d41.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6kgnfu/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_48d41.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_48d41.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6kgnfu/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6kgnfu/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8j2otc"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8j2otc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8j2otc'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_5de36
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_5de36.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8j2otc/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_5de36.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_5de36.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8j2otc/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-8j2otc/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z6k8by"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z6k8by"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z6k8by'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_5cc66
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_5cc66.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z6k8by/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_5cc66.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_5cc66.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z6k8by/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z6k8by/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ix4ybc"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ix4ybc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ix4ybc'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_2fb57
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_2fb57.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ix4ybc/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_2fb57.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_2fb57.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ix4ybc/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ix4ybc/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z5949e"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z5949e"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z5949e'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_1eeb3
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_1eeb3.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z5949e/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_1eeb3.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_1eeb3.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z5949e/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z5949e/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:10 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y1ossi"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y1ossi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y1ossi'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_25cfe
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_25cfe.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y1ossi/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_25cfe.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_25cfe.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y1ossi/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-y1ossi/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:10 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xvxuhe"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xvxuhe"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xvxuhe'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_7ca32
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_7ca32.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xvxuhe/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_7ca32.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_7ca32.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xvxuhe/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xvxuhe/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o73gzj"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o73gzj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o73gzj'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_e7116
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_e7116.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o73gzj/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_e7116.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_e7116.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o73gzj/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-o73gzj/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1nzoq8"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1nzoq8"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1nzoq8'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_26d5f
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_26d5f.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1nzoq8/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_26d5f.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_26d5f.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1nzoq8/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1nzoq8/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b3qsqj"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b3qsqj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b3qsqj'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_4054b
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_4054b.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b3qsqj/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_4054b.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_4054b.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b3qsqj/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-b3qsqj/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1tbg6f"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1tbg6f"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1tbg6f'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_09070
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_09070.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1tbg6f/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_09070.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_09070.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1tbg6f/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1tbg6f/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w07sem"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w07sem"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w07sem'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~2.3/bin/ninja/win/x64/ninja.exe -v cmTC_7278f
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles/cmTC_7278f.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w07sem/test_mpi.c"
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_7278f.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles/cmTC_7278f.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w07sem/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-w07sem/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3p8yh4"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3p8yh4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3p8yh4'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~2.3/bin/ninja/win/x64/ninja.exe -v cmTC_e1ec3
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE    -o CMakeFiles/cmTC_e1ec3.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3p8yh4/test_mpi.cpp"
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_e1ec3.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE    -o CMakeFiles/cmTC_e1ec3.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3p8yh4/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3p8yh4/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6j956o"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6j956o"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6j956o'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_24e97
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_24e97.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6j956o/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_24e97.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_24e97.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6j956o/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-6j956o/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yhzlbr"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yhzlbr"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yhzlbr'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_04e43
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_04e43.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yhzlbr/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_04e43.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_04e43.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yhzlbr/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-yhzlbr/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1kk1qa"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1kk1qa"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1kk1qa'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_d7ed2
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_d7ed2.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1kk1qa/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_d7ed2.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_d7ed2.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1kk1qa/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-1kk1qa/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pt9x71"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pt9x71"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pt9x71'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_f1658
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_f1658.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pt9x71/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_f1658.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_f1658.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pt9x71/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-pt9x71/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:10 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-q50jp5"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-q50jp5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-q50jp5'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_7a68a
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_7a68a.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-q50jp5/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_7a68a.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_7a68a.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-q50jp5/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-q50jp5/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:10 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bfybyg"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bfybyg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bfybyg'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_522a1
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_522a1.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bfybyg/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_522a1.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_522a1.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bfybyg/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-bfybyg/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mdr3ck"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mdr3ck"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mdr3ck'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_030b2
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_030b2.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mdr3ck/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_030b2.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_030b2.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mdr3ck/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mdr3ck/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-07jb96"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-07jb96"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-07jb96'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_35524
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_35524.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-07jb96/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_35524.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_35524.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-07jb96/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-07jb96/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-neksmf"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-neksmf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-neksmf'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_f10e4
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_f10e4.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-neksmf/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_f10e4.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_f10e4.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-neksmf/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-neksmf/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qpsugf"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qpsugf"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qpsugf'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_5ecdb
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_5ecdb.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qpsugf/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_5ecdb.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_5ecdb.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qpsugf/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qpsugf/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mhvq96"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mhvq96"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mhvq96'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~2.3/bin/ninja/win/x64/ninja.exe -v cmTC_1c6e9
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles/cmTC_1c6e9.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mhvq96/test_mpi.c"
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_1c6e9.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles/cmTC_1c6e9.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mhvq96/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-mhvq96/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4yogy5"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4yogy5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4yogy5'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~2.3/bin/ninja/win/x64/ninja.exe -v cmTC_ada1b
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE    -o CMakeFiles/cmTC_ada1b.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4yogy5/test_mpi.cpp"
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_ada1b.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE    -o CMakeFiles/cmTC_ada1b.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4yogy5/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-4yogy5/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dkc80v"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dkc80v"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dkc80v'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_f6c3d
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_f6c3d.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dkc80v/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_f6c3d.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_f6c3d.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dkc80v/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-dkc80v/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cobc5p"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cobc5p"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cobc5p'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_091ae
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_091ae.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cobc5p/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_091ae.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_091ae.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cobc5p/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-cobc5p/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-a4erqi"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-a4erqi"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-a4erqi'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_cfff4
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_cfff4.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-a4erqi/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_cfff4.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_cfff4.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-a4erqi/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-a4erqi/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ma2sua"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ma2sua"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ma2sua'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_e712c
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_e712c.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ma2sua/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_e712c.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_e712c.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ma2sua/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-ma2sua/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wrebc7"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wrebc7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wrebc7'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~2.3/bin/ninja/win/x64/ninja.exe -v cmTC_f4948
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles/cmTC_f4948.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wrebc7/test_mpi.c"
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_f4948.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe    -o CMakeFiles/cmTC_f4948.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wrebc7/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wrebc7/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2epyd"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2epyd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2epyd'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~2.3/bin/ninja/win/x64/ninja.exe -v cmTC_8956f
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE    -o CMakeFiles/cmTC_8956f.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2epyd/test_mpi.cpp"
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_8956f.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE    -o CMakeFiles/cmTC_8956f.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2epyd/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-e2epyd/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qufu7m"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qufu7m"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qufu7m'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_4452a
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_4452a.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qufu7m/test_mpi.c"
+        FAILED: CMakeFiles/cmTC_4452a.dir/test_mpi.c.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_4452a.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qufu7m/test_mpi.c"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-qufu7m/test_mpi.c:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xhq35n"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xhq35n"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xhq35n'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_6a329
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_6a329.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xhq35n/test_mpi.cpp"
+        FAILED: CMakeFiles/cmTC_6a329.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   -fdiagnostics-color=always -o CMakeFiles/cmTC_6a329.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xhq35n/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xhq35n/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5y3u5m"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5y3u5m"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5y3u5m'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~2.3/bin/ninja/win/x64/ninja.exe -v cmTC_7ec65
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe  -isystem "C:/Program Files (x86)/Microsoft SDKs/MPI/Include"  -o CMakeFiles/cmTC_7ec65.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5y3u5m/test_mpi.c"
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_7ec65.dir/test_mpi.c.obj -o cmTC_7ec65.exe -Wl,--out-implib,libcmTC_7ec65.dll.a -Wl,--major-image-version,0,--minor-image-version,0  "C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xif3h1"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xif3h1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xif3h1'
+        
+        Run Build Command(s): C:/PROGRA~1/JETBRA~1/CLION2~2.3/bin/ninja/win/x64/ninja.exe -v cmTC_bd7eb
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE    -o CMakeFiles/cmTC_bd7eb.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xif3h1/test_mpi.cpp"
+        \x1b[31mFAILED: \x1b[0mCMakeFiles/cmTC_bd7eb.dir/test_mpi.cpp.obj 
+        C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE    -o CMakeFiles/cmTC_bd7eb.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xif3h1/test_mpi.cpp"
+        C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xif3h1/test_mpi.cpp:1:10: fatal error: mpi.h: No such file or directory
+            1 | #include <mpi.h>
+              |          ^~~~~~~
+        compilation terminated.
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z8ytw7"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z8ytw7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z8ytw7'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_2851b
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe  -isystem "C:/Program Files (x86)/Microsoft SDKs/MPI/Include" -fdiagnostics-color=always -o CMakeFiles/cmTC_2851b.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-z8ytw7/test_mpi.c"
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_2851b.dir/test_mpi.c.obj -o cmTC_2851b.exe -Wl,--out-implib,libcmTC_2851b.dll.a -Wl,--major-image-version,0,--minor-image-version,0  "C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hmni68"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hmni68"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hmni68'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_4e76c
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE  -isystem "C:/Program Files (x86)/Microsoft SDKs/MPI/Include" -fdiagnostics-color=always -o CMakeFiles/cmTC_4e76c.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hmni68/test_mpi.cpp"
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   CMakeFiles/cmTC_4e76c.dir/test_mpi.cpp.obj -o cmTC_4e76c.exe -Wl,--out-implib,libcmTC_4e76c.dll.a -Wl,--major-image-version,0,--minor-image-version,0  "C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:6 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zrzuix"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zrzuix"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zrzuix'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_c9a22
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE  -isystem "C:/Program Files (x86)/Microsoft SDKs/MPI/Include" -fdiagnostics-color=always -o CMakeFiles/cmTC_c9a22.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-zrzuix/test_mpi.cpp"
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   CMakeFiles/cmTC_c9a22.dir/test_mpi.cpp.obj -o cmTC_c9a22.exe -Wl,--out-implib,libcmTC_c9a22.dll.a -Wl,--major-image-version,0,--minor-image-version,0  "C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7avee9"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7avee9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7avee9'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_75c64
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe  -isystem "C:/Program Files (x86)/Microsoft SDKs/MPI/Include" -fdiagnostics-color=always -o CMakeFiles/cmTC_75c64.dir/test_mpi.c.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7avee9/test_mpi.c"
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\gcc.exe   CMakeFiles/cmTC_75c64.dir/test_mpi.c.obj -o cmTC_75c64.exe -Wl,--out-implib,libcmTC_75c64.dll.a -Wl,--major-image-version,0,--minor-image-version,0  "C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n488qu"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n488qu"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n488qu'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_25e15
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE  -isystem "C:/Program Files (x86)/Microsoft SDKs/MPI/Include" -fdiagnostics-color=always -o CMakeFiles/cmTC_25e15.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-n488qu/test_mpi.cpp"
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   CMakeFiles/cmTC_25e15.dir/test_mpi.cpp.obj -o cmTC_25e15.exe -Wl,--out-implib,libcmTC_25e15.dll.a -Wl,--major-image-version,0,--minor-image-version,0  "C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3/bin/cmake/win/x64/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:7 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-up6sat"
+      binary: "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-up6sat"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-up6sat'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3/bin/ninja/win/x64/ninja.exe" -v cmTC_0401e
+        [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE  -isystem "C:/Program Files (x86)/Microsoft SDKs/MPI/Include" -fdiagnostics-color=always -o CMakeFiles/cmTC_0401e.dir/test_mpi.cpp.obj -c "C:/Users/Dragos/Facultate_no-Onedrive/UniveristyGithub/UBB-CS/Year3/Semester 1/Programare paralela si distributiva/Projects/Lab13/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-up6sat/test_mpi.cpp"
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~2.3\\bin\\mingw\\bin\\G__~1.EXE   CMakeFiles/cmTC_0401e.dir/test_mpi.cpp.obj -o cmTC_0401e.exe -Wl,--out-implib,libcmTC_0401e.dll.a -Wl,--major-image-version,0,--minor-image-version,0  "C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib"  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...
