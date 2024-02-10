@@ -1,0 +1,25 @@
+﻿Algorithm Descendent Recursive
+INPUT: G, w =a1a2...an
+OUTPUT: string of productions and message
+config= (q,1, &amp;,S);
+while (s!=f) and (s!=e) do
+if s = q
+then if (i=n+1) and IsEmpty(ẞ)
+then Success(config)
+else
+if Head(ẞ) = A
+then Expand(config) else
+if Head(ẞ) = ai;
+then Advance(config)
+else MomentaryInsuccess(config)
+else
+if s = b
+then
+if Head(a) = a
+then Back(config)
+else AnotherTry(config)
+endWhile
+if se then message &quot;Error&quot;
+else message &quot;Sequence accepted&quot;;
+BuildStringOfProd(a)
+//initial configuration (s,i,a,ẞ)
