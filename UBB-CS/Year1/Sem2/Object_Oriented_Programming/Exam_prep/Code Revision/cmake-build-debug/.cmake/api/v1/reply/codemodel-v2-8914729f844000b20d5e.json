@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Code_Revision",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Code_Revision::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code_Revision-Debug-586b090eb9b4f02c11f2.json",
+					"name" : "Code_Revision",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code_Revision_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code_Revision_autogen-Debug-71fde38045e40ea13429.json",
+					"name" : "Code_Revision_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Code_Revision_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Code_Revision_autogen_timestamp_deps-Debug-927690b967e127d7eefb.json",
+					"name" : "Code_Revision_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Dragos/CLionProjects/Code Revision/cmake-build-debug",
+		"source" : "C:/Users/Dragos/CLionProjects/Code Revision"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,56 @@
+#include <fstream>
+
+void QuestionRepo::read_from_file() {
+    std::ifstream f(file_name);
+    while(!f.eof()){
+        Question q;
+        f>> q;
+        this->arr.push_back(q);
+    }
+    f.close();
+
+}
+
+void QuestionRepo::save_to_file() {
+    std::ofstream f(file_name);
+    f.clear();
+    for(const auto& q:arr){
+        f<<q<<"\n";
+    }
+    f.close();
+}
+
+
+
+void ProgrammerWindow::handleListSelectionChanged() {
+    auto row = sourceFilesList->currentRow();
+    auto sortedSourceFiles = codeRepository.getSortedSourceFiles();
+
+//    if (row < 0 or row >= sortedSourceFiles.size()) {
+    if (not codeRepository.isIndexValid(row)) {
+        reviseButton->setDisabled(true);
+        return;
+    }
+
+    auto sourceFile = sortedSourceFiles[row];
+    auto shouldEnableReviseButton = sourceFile.isNotRevised() and programmer.getName() != sourceFile.getCreator();
+
+    reviseButton->setEnabled(shouldEnableReviseButton);
+}
+
+
+void ProgrammerWindow::handleListSelectionChanged() {
+    auto row = sourceFilesList->currentRow();
+    auto sortedSourceFiles = codeRepository.getSortedSourceFiles();
+
+//    if (row < 0 or row >= sortedSourceFiles.size()) {
+    if (not codeRepository.isIndexValid(row)) {
+        reviseButton->setDisabled(true);
+        return;
+    }
+
+    auto sourceFile = sortedSourceFiles[row];
+    auto shouldEnableReviseButton = sourceFile.isNotRevised() and programmer.getName() != sourceFile.getCreator();
+
+    reviseButton->setEnabled(shouldEnableReviseButton);
+}

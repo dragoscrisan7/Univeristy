@@ -1,0 +1,62 @@
+Graph algorithms - A* algorithm
+Problem
+Given a graph with non-negative costs, two vertices s and t, and, for each vertex x, an estimation h(x) of the distance from x to t find a minimum cost walk from s to t.
+
+Idea
+The goal of the A* algorithm is to avoid computing paths that start from s but go in a direction opposite to t. For instance, if we want to go from Cluj to Paris, we won't try a route through Moscow.
+
+To be able to exclude such unpromising routes, we need, in addition to the graph itself, an estimation of the distance from each vertex to the target vertex. This estimation is part of the input data.
+
+Of course, not any estimation function will work. There are two conditions on the estimation function:
+
+(strong condition): for all edges (x,y), we have c(x,y) ≥ h(x) - h(y) (in other words, the estimation does not decrease, along an edge, faster than the cost of that edge); in addition, h(t)=0;
+(weak condition): for all vertices x, we have h(x) ≤ d(x,t) (in other words, the estimation is always an underestimation).
+If the graph represents places in space (cities, intersections, etc), then the estimation function could be the euclidian distance.
+
+Essentially, the A* algorithm is identical with Dijkstra's algorithm, with one difference: the priority of a vertex x in the priority queue is not dist[x] but rather dist[x]+h(x).
+
+The algorithm
+Input:
+    G : directed graph with costs
+    s, t : two vertices
+    h : X -> R the estimation of the distance to t
+Output:
+    dist : a map that associates, to each accessible vertex, the cost of the minimum
+            cost walk from s to it
+    prev : a map that maps each accessible vertex to its predecessor on a path from s to it
+Algorithm:
+    PriorityQueue q
+    Dictionary prev
+    Dictionary dist
+    q.enqueue(s, h(s))
+    dist[s] = 0
+    found = false
+    while not q.isEmpty() and not found do
+        x = q.dequeue()
+        for y in Nout(x) do
+            if y not in dist.keys() or dist[x] + cost(x,y) < dist[y] then
+                dist[y] = dist[x] + cost(x, y)
+                q.enqueue(y, dist[y]+h(y))
+                prev[y] = x
+            end if
+        end for
+        if x == t then
+            found = true
+        endif
+    end while
+Proof of correctness
+We claim that:
+
+If the estimation satisfies the strong condition, then, each time a vertex x is dequeued, dist[x] is the cost of the minimum cost walk from s to x. It immediately follows that, at the end, when t is dequeued, we have the minimum cost walk from s to t.
+If the estimation only satisfies the weak condition, we still get the minimum cost walk from s to t, but some vertices may be dequeued and enqueued several times.
+Strong condition estimate
+One way of proving the correctness is as follows. We set a new cost function on the edges, defined as
+c'(x,y) = c(x,y) - h(x) + h(y)
+A walk from s to t with the new cost function will have a cost
+c'(s=x0,x1,...,xk=t) = c'(x0,x1) + c'(x1,x2) + ... + c'(xk-1,xk) =
+= c(x0,x1) - h(x0) + h(x1) + c(x1,x2) - h(x1) + h(x2) + ... + c(xk-1,xk) - h(xk-1) + h(xk) =
+= c(x0,x1,...,xk) - h(s) + h(t)
+
+Consequently, for all the walks from s to t, the difference between the cost c and c' is the same, so, the minimum cost walk is the same for both costs.
+
+Finally, notice that the A* algorithm is, essentially, the Dijkstra algorithm for the cost c', and that c' is non-negative.

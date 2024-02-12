@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "pregatire_test_qt_1",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "pregatire_test_qt_1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pregatire_test_qt_1-Debug-f4da7a3b2065b4c4d39e.json",
+					"name" : "pregatire_test_qt_1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pregatire_test_qt_1_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pregatire_test_qt_1_autogen-Debug-7237799d62ca227fdde6.json",
+					"name" : "pregatire_test_qt_1_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pregatire_test_qt_1_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pregatire_test_qt_1_autogen_timestamp_deps-Debug-eebd7b12db89dd6abbae.json",
+					"name" : "pregatire_test_qt_1_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/pregatire_test_qt_1/cmake-build-debug",
+		"source" : "C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/pregatire_test_qt_1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

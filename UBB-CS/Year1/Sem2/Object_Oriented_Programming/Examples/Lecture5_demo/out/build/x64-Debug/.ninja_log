@@ -1,0 +1,9 @@
+# ninja log v5
+37	1839	6719597455356171	CMakeFiles/Lecture5_demo.dir/MultipleInheritance/main.cpp.obj	3844c59c5548b893
+30	2880	6719597465876499	CMakeFiles/Lecture5_demo.dir/Lecture5_demo/Penguin.cpp.obj	154c6d96af1f7d46
+10	2902	6719597465916475	CMakeFiles/Lecture5_demo.dir/Lecture5_demo/Dog.cpp.obj	d7473afd1aa374dd
+2	3034	6719597467286868	CMakeFiles/Lecture5_demo.dir/Lecture5_demo/Animal.cpp.obj	4faceed37c54d04c
+16	4354	6719597480693756	CMakeFiles/Lecture5_demo.dir/Lecture5_demo/main.cpp.obj	66ade6305201dab2
+4355	5576	6719597492583797	Lecture5_demo.exe	df5e3355bf312073
+1	2790	6719598310202837	CMakeFiles/Lecture5_demo.dir/Lecture5_demo/main.cpp.obj	66ade6305201dab2
+2794	3308	6719598314554046	Lecture5_demo.exe	df5e3355bf312073

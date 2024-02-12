@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gui</class>
+ <widget class="QWidget" name="gui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>476</width>
+    <height>422</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>gui</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Ideas:</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableView" name="tableView"/>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="actEdit"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Act</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="descriptionEdit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Description</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="developButton">
+     <property name="text">
+      <string>Develop</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="savePlotButton">
+     <property name="text">
+      <string>Save Plot</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="acceptIdeaButton">
+     <property name="text">
+      <string>Accept idea</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="addIdeaButton">
+     <property name="text">
+      <string>Add idea</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

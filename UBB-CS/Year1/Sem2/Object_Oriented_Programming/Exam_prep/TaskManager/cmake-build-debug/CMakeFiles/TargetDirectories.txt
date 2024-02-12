@@ -1,0 +1,5 @@
+C:/Users/Dragos/CLionProjects/TaskManager/cmake-build-debug/CMakeFiles/TaskManager.dir
+C:/Users/Dragos/CLionProjects/TaskManager/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dragos/CLionProjects/TaskManager/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Dragos/CLionProjects/TaskManager/cmake-build-debug/CMakeFiles/TaskManager_autogen_timestamp_deps.dir
+C:/Users/Dragos/CLionProjects/TaskManager/cmake-build-debug/CMakeFiles/TaskManager_autogen.dir

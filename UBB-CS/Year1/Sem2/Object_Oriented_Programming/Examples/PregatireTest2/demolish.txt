@@ -1,0 +1,2 @@
+House: address: address 2 construction year: 1987 isn't historical.
+Block of apartments: address: address 4 construction year:1978 total apartments: 30 occupied apartments: 1

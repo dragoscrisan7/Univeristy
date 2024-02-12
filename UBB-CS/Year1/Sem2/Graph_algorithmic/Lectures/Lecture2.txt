@@ -1,0 +1,171 @@
+Graph algorithms - Graph representation
+Internal representation
+Choosing a representation for the data is a matter of trade-offs.
+
+To choose a good representation for the data, we always need to know:
+
+What does the data look like — how big is the data and how large is each part relative to the others;
+What operations do we need to perform — how often is each operation performed.
+With respect to the graph size, we have dense graphs, where m = Θ(n2), sparse graphs, where m = O(n), and some intermediate graphs.
+
+In dense graphs, the degrees of most vertices are of the order of Θ(n). In sparse graphs, the degrees of most vertices are small (O(1)), but we can sometimes have a few vertices of very high degree.
+
+For instance, the graph corresponding to a road network is a sparse graph. If we represent intersections by vertices, each vertex (intersection) usually has 3 or 4 neighbours (out of the hundreds of millions intersections in the world).
+
+Typically, we have the following operations to be performed:
+
+Given vertices x and y, test if (x,y) is an edge;
+Given a vertex x, parse the set Nout(x) of outbound neighbours of x;
+Given a vertex x, parse the set Nin(x) of inbound neighbours of x;
+Parse the set of vertices of the graph.
+Adjacency matrix
+We have a n×n matrix with 0-1 or true-false values, defined as: ax,y=1 if there is an edge from x to y, and 0 otherwise.
+
+.
+Memory: Θ(n2)
+
+Test edge: O(1)
+
+Parse neighbours: Θ(n)
+
+Summary: Adjacency matrix is good for dense graphs, but bad for sparse graphs. Imagine a graph with 108 vertices and 4×108
+
+edges, but which occupies 1016 bits (or around 1000TB).
+List of edges
+It involves keeping a collection containing the edges (as pairs of vertices). It is compact for sparse graphs, but all operations need to parse the full collection.
+
+Memory: Θ(m)
+
+Test edge: O(m)
+
+Parse neighbours: O(m)
+
+List of neighbours
+For each vertex, we keep a collection of its neighbours (inbound or outbound or both).
+
+The collection of neighbors may be a vector, a linked list, or a set. The set allows to quickly test if (x,y) is an edge if x has a lot of outbound neighbors; the vector is more compact and works reasonably if the above test is not very often performed or if the number of outbound neighbours is small.
+
+To get from the vertex to the set of neighbours, we can use a vector where the vertex is the index, or a map (dictionary) where the vertex is the key.
+
+The vector is more compact and faster, but requires the vertices to be consecutive integers (which, in turn, means that removing a vertex requires the re-numbering of all the vertices following it).
+
+Memory: Θ(n+m)
+
+Test edge: O(deg(x))
+
+Parse neighbours: Θ(deg(x))
+
+External interface
+it is useful to separate implementation from the algorithms
+for particular problems, it is possible to have an implementation that is far from the above implementations
+Read-only operations
+
+parse the outbound neighbours of a given vertex
+parse the inbound neighbours of a given vertex
+test if (x, y) is an edge
+parse all the vertices
+Operations concerning edge costs
+
+get the cost of the edge (x, y) (assuming it is an edge)
+parse the outbound/inbound edges of a given vertex, returning the cost of the edge along with the neighbour vertex
+Type for vertex
+Must provide test for equality
+For efficiency, it should provide either a hash function or a comparator function
+It should be a template argument of the interface (for static typed languages)
+Example, Python:
+
+class Vertex:
+	def __eq__(self, other):
+		if not isinstance(other, self.__class__):
+			return False
+		...
+	def __ne__(self, other):
+		return not self.__eq__(other)
+	def __hash__(self):
+		...
+Example, Java:
+
+class Vertex:
+	boolean equals(Object other) {
+		if (! other instanceof Vertex) return false;
+		Vertex otherVertex = (Vertex)other;
+		...
+	}
+	int hashCode() {
+		...
+	}
+}
+Example, C++
+
+class Vertex:
+	bool operator==(Vertex const& other) {
+		...
+	}
+	bool operator<(Vertex const& other) {
+		...
+	}
+}
+Return type for parse operations
+collection, by value
+Simple to describe; needs to perform a copy; interface may be sensitive to the type of collection
+collection, by reference
+Simple to describe; the graph may be inadvertently be changed if the outside code changes the result; what to do if the internal representation is different?; interface may be sensitive to the type of collection
+iterable
+No copy is needed; very flexible; a bit harder to implement
+Example, Python:
+
+class Graph:
+	# Return by reference; beware of possible change by user
+	def parseNout(self, x):
+		return self.__out[x]
+
+	# return a copy
+	def parseNout(self, x):
+		l = []
+		for y in self.__out[x]:
+			l.append(y)
+		return l
+
+	# return a copy
+	def parseNout(self, x):
+		return [y for y in self.__out[x]]
+
+	# return an iterable
+	def parseNout(self, x):
+		for y in self.__out[x]:
+			yield y
+
+for y in g.parseNout(x):
+	...
+# Beware:
+s = g.parseNout(x)
+s.append(...)
+
+Example, Java:
+
+class Graph:
+	// return by reference
+	public Iterable parseNout(Vertex x) {
+		return _out.get(x);
+	}
+	// return a copy
+	public Iterable<Vertex> parseNout(Vertex x) {
+		return new ArrayList<Vertex>(_out.get(x));
+	}
+	// return a read-only wrapper over the direct reference
+	public Iterable parseNout(Vertex x) {
+		return Collections.unmodifyableList(_out.get(x));
+	}
+	private Map > _out;
+}
+Example, C++
+
+class Graph:
+	// Standard C++ collection
+	class iterator {...}
+	iterator parseNout_begin(x){..}
+	iterator parseNout_end(x){..}
+	
+	// ad-hoc - return by value
+	list parseNout(Vertex x)
+}

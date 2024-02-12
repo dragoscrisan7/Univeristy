@@ -1,0 +1,23 @@
+# ninja log v5
+400	1790	6783046776788063	CMakeFiles/Code_Revision.dir/Source_File.cpp.obj	319b1365f91a61e7
+29	509	6783080237955578	Code_Revision_autogen/timestamp	9b5dcb495aaae5f2
+541	5915	6783080292035553	CMakeFiles/Code_Revision.dir/gui.cpp.obj	e23d66409fcdce12
+1212	3454	6783044970257022	CMakeFiles/Code_Revision.dir/SRepo.cpp.obj	2ba47d666f6c5617
+29	509	6783080237955578	Code_Revision_autogen/mocs_compilation.cpp	9b5dcb495aaae5f2
+380	1232	6782957964687385	CMakeFiles/Code_Revision.dir/Programmer.cpp.obj	4a23965923d610e1
+29	509	6783080237955578	C:/Users/Dragos/CLionProjects/Code Revision/cmake-build-debug/Code_Revision_autogen/timestamp	9b5dcb495aaae5f2
+29	509	6783080237955578	C:/Users/Dragos/CLionProjects/Code Revision/cmake-build-debug/Code_Revision_autogen/mocs_compilation.cpp	9b5dcb495aaae5f2
+1233	3816	6782970724316262	CMakeFiles/Code_Revision.dir/PRepo.cpp.obj	ca2354fe24b4c9ef
+534	2371	6783080256475601	CMakeFiles/Code_Revision.dir/Service.cpp.obj	ccc34d154676ccbe
+5915	6888	6783080297465520	Code_Revision.exe	5779ae9cb178e503
+1208	5346	6783072603497947	CMakeFiles/Code_Revision.dir/Code_Revision_autogen/mocs_compilation.cpp.obj	5c7bab9e6d863d82
+1202	5727	6783072607401874	CMakeFiles/Code_Revision.dir/main.cpp.obj	b0ec7844a0350668
+2124	7517	6783014853212657	CMakeFiles/Code_Revision.dir/Observer.cpp.obj	f20901caebb80c81
+18	1919	6783082227100711	Code_Revision_autogen/timestamp	9b5dcb495aaae5f2
+18	1919	6783082227100711	Code_Revision_autogen/mocs_compilation.cpp	9b5dcb495aaae5f2
+18	1919	6783082227100711	C:/Users/Dragos/CLionProjects/Code Revision/cmake-build-debug/Code_Revision_autogen/timestamp	9b5dcb495aaae5f2
+18	1919	6783082227100711	C:/Users/Dragos/CLionProjects/Code Revision/cmake-build-debug/Code_Revision_autogen/mocs_compilation.cpp	9b5dcb495aaae5f2
+1924	5655	6783082267611164	CMakeFiles/Code_Revision.dir/Code_Revision_autogen/mocs_compilation.cpp.obj	5c7bab9e6d863d82
+1933	6009	6783082271175818	CMakeFiles/Code_Revision.dir/statistics.cpp.obj	3b67d703c97ab68
+1928	6909	6783082280177632	CMakeFiles/Code_Revision.dir/gui.cpp.obj	e23d66409fcdce12
+6910	7634	6783082284541598	Code_Revision.exe	b2dd5630b32967ad

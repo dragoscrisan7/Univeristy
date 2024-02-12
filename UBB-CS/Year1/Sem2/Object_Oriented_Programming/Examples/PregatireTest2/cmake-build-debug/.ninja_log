@@ -1,0 +1,8 @@
+# ninja log v5
+11	207	6731908332649734	CMakeFiles/PregatireTest2.dir/Block.cpp.obj	d05a48809e3327bd
+35	540	6731962155852043	CMakeFiles/PregatireTest2.dir/House.cpp.obj	60943dc1037a3720
+26	1577	6731910409995420	CMakeFiles/PregatireTest2.dir/Building.cpp.obj	f805bc27548e9d5b
+581	782	6731979798826097	PregatireTest2.exe	367709a3b71d78ee
+6	493	6731979796013149	CMakeFiles/PregatireTest2.dir/main.cpp.obj	c1de98bf2c91f873
+21	580	6731979796850899	CMakeFiles/PregatireTest2.dir/Service.cpp.obj	4f699d440fda9764
+14	573	6731979796810908	CMakeFiles/PregatireTest2.dir/UserInterface.cpp.obj	5baef4a061b65b39

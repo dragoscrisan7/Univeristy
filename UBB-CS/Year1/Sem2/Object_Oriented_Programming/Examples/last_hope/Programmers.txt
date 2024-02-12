@@ -1,0 +1,3 @@
+gicu,2,4
+nunu,1,5
+bartos,0,3

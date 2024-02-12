@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "last_hope",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "last_hope::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-last_hope-Debug-e319b64c0c138272b12c.json",
+					"name" : "last_hope",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "last_hope_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-last_hope_autogen-Debug-37e63ecc9f1acbbb16fd.json",
+					"name" : "last_hope_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "last_hope_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-last_hope_autogen_timestamp_deps-Debug-8b83ed7ef5bdbb681edb.json",
+					"name" : "last_hope_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/last_hope/cmake-build-debug",
+		"source" : "C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/last_hope"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

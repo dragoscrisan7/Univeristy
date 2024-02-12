@@ -1,0 +1,26 @@
+# ninja log v5
+101	4000	6709315337853219	CMakeFiles/TaskManager.dir/main.cpp.obj	44dc06d75a0f6e49
+121	3985	6709315337714433	CMakeFiles/TaskManager.dir/Services.cpp.obj	50b07b0d4036bdf3
+244	3723	6709315334250780	CMakeFiles/TaskManager.dir/Task.cpp.obj	eb5e7cff7a40278a
+173	3907	6709315336698834	CMakeFiles/TaskManager.dir/Ui.cpp.obj	f3e1f35cf0d0f450
+11	3980	6709315337386832	CMakeFiles/TaskManager.dir/Repository.cpp.obj	32b98878f0d9ee5c
+4001	4386	6709315341768915	TaskManager.exe	7e09da59efed4d14
+33	1398	6709321477434009	CMakeFiles/TaskManager.dir/Ui.cpp.obj	f3e1f35cf0d0f450
+9	1414	6709321477305687	CMakeFiles/TaskManager.dir/main.cpp.obj	44dc06d75a0f6e49
+20	1505	6709321478626597	CMakeFiles/TaskManager.dir/Services.cpp.obj	50b07b0d4036bdf3
+27	1520	6709321478972939	CMakeFiles/TaskManager.dir/Test.cpp.obj	a04e03c740272b29
+1522	2257	6709321485041364	TaskManager.exe	fb8bda3f6bfbd323
+13	1012	6709322238169116	CMakeFiles/TaskManager.dir/Test.cpp.obj	a04e03c740272b29
+1014	1385	6709322241270028	TaskManager.exe	fb8bda3f6bfbd323
+7	1151	6709322344399770	CMakeFiles/TaskManager.dir/Test.cpp.obj	a04e03c740272b29
+1152	1518	6709322348497452	TaskManager.exe	fb8bda3f6bfbd323
+9	1289	6709322619002536	CMakeFiles/TaskManager.dir/Test.cpp.obj	a04e03c740272b29
+1291	1778	6709322623266819	TaskManager.exe	fb8bda3f6bfbd323
+13	805	6709322999021845	CMakeFiles/TaskManager.dir/Test.cpp.obj	a04e03c740272b29
+807	1058	6709323001426625	TaskManager.exe	fb8bda3f6bfbd323
+6	1106	6709323113219735	CMakeFiles/TaskManager.dir/Test.cpp.obj	a04e03c740272b29
+1108	1430	6709323116396849	TaskManager.exe	fb8bda3f6bfbd323
+10	984	6709323190774027	CMakeFiles/TaskManager.dir/Test.cpp.obj	a04e03c740272b29
+986	1260	6709323193293900	TaskManager.exe	fb8bda3f6bfbd323
+7	927	6709323661381451	CMakeFiles/TaskManager.dir/Test.cpp.obj	a04e03c740272b29
+929	1194	6709323663953048	TaskManager.exe	fb8bda3f6bfbd323

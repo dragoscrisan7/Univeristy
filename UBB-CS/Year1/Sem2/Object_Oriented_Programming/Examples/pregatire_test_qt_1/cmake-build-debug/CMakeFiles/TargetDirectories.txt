@@ -1,0 +1,5 @@
+C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/pregatire_test_qt_1/cmake-build-debug/CMakeFiles/pregatire_test_qt_1.dir
+C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/pregatire_test_qt_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/pregatire_test_qt_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/pregatire_test_qt_1/cmake-build-debug/CMakeFiles/pregatire_test_qt_1_autogen_timestamp_deps.dir
+C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/pregatire_test_qt_1/cmake-build-debug/CMakeFiles/pregatire_test_qt_1_autogen.dir

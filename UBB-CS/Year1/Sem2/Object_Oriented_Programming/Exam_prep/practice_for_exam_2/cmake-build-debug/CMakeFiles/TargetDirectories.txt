@@ -1,0 +1,5 @@
+C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Exam_prep/practice_for_exam_2/cmake-build-debug/CMakeFiles/practice_for_exam_2.dir
+C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Exam_prep/practice_for_exam_2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Exam_prep/practice_for_exam_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Exam_prep/practice_for_exam_2/cmake-build-debug/CMakeFiles/practice_for_exam_2_autogen_timestamp_deps.dir
+C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Exam_prep/practice_for_exam_2/cmake-build-debug/CMakeFiles/practice_for_exam_2_autogen.dir

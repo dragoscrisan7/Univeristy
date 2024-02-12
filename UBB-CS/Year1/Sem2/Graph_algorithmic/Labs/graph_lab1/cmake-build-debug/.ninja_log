@@ -1,0 +1,5 @@
+# ninja log v5
+1	2449	6731921783336412	CMakeFiles/graph_lab1.dir/main.cpp.obj	325d5c4a007acd8e
+31	4446	6731921803448760	CMakeFiles/graph_lab1.dir/Test.cpp.obj	192912bb49e12bcf
+79	5151	6731921810516040	CMakeFiles/graph_lab1.dir/Graph.cpp.obj	87699055599a64d2
+5151	6154	6731921820658949	graph_lab1.exe	303ec706b3e272a8

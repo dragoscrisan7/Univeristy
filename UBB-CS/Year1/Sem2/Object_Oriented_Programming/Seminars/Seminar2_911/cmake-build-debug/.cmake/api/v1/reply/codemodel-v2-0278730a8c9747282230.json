@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Seminar2_911",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Seminar2_911::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Seminar2_911-Debug-208fc404e8649047c2b3.json",
+					"name" : "Seminar2_911",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/Seminar2_911/cmake-build-debug",
+		"source" : "C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/Seminar2_911"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

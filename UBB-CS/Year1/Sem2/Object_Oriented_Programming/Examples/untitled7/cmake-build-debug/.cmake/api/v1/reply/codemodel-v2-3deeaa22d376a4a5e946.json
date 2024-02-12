@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "untitled7",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "untitled7::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-untitled7-Debug-ad8b3ff8a56fd198976e.json",
+					"name" : "untitled7",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "untitled7_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-untitled7_autogen-Debug-e715fbbdf1a995eef094.json",
+					"name" : "untitled7_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "untitled7_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-untitled7_autogen_timestamp_deps-Debug-6dafc1ecf61e8a406979.json",
+					"name" : "untitled7_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled7/cmake-build-debug",
+		"source" : "C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled7"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

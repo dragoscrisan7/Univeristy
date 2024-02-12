@@ -1,0 +1,27 @@
+# ninja log v5
+16	654	6749963777990066	pregatire_test_qt_1_autogen/timestamp	be83bd7d62ffc2b9
+1870	6410	6749954888956367	CMakeFiles/pregatire_test_qt_1.dir/pregatire_test_qt_1_autogen/mocs_compilation.cpp.obj	db8736b48b31c865
+16	654	6749963777990066	pregatire_test_qt_1_autogen/mocs_compilation.cpp	be83bd7d62ffc2b9
+1885	3874	6749954863486337	CMakeFiles/pregatire_test_qt_1.dir/Task.cpp.obj	bb20861010c9bc05
+676	4245	6749963813920328	CMakeFiles/pregatire_test_qt_1.dir/user_interface.cpp.obj	c7c2c19ec67cc592
+1899	6605	6749954890856329	CMakeFiles/pregatire_test_qt_1.dir/main.cpp.obj	ab3dbfe6a134c969
+5	1242	6750517136853715	build.ninja	d2d32bd862b818
+1009	3450	6749957009775011	CMakeFiles/pregatire_test_qt_1.dir/service.cpp.obj	85e1437c90b2754a
+4245	5141	6749963817830329	pregatire_test_qt_1.exe	bd36295ae3816e17
+9	1762	6750824807021540	pregatire_test_qt_1_autogen/timestamp	fb1a24a34e197493
+9	1762	6750824807021540	pregatire_test_qt_1_autogen/mocs_compilation.cpp	fb1a24a34e197493
+9	1762	6750824807021540	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/pregatire_test_qt_1/cmake-build-debug/pregatire_test_qt_1_autogen/timestamp	fb1a24a34e197493
+9	1762	6750824807021540	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/pregatire_test_qt_1/cmake-build-debug/pregatire_test_qt_1_autogen/mocs_compilation.cpp	fb1a24a34e197493
+1777	3741	6750824828691690	CMakeFiles/pregatire_test_qt_1.dir/Task.cpp.obj	253cb68731f1695f
+1771	3785	6750824829401529	CMakeFiles/pregatire_test_qt_1.dir/service.cpp.obj	84a4fd92150d5534
+1763	6041	6750824851891547	CMakeFiles/pregatire_test_qt_1.dir/pregatire_test_qt_1_autogen/mocs_compilation.cpp.obj	c17f41cdd543a1a6
+1767	6333	6750824855351534	CMakeFiles/pregatire_test_qt_1.dir/main.cpp.obj	44f23bf839bd25c7
+1784	7305	6750824865071527	CMakeFiles/pregatire_test_qt_1.dir/user_interface.cpp.obj	fdfcdc6c79d397b2
+7305	8159	6750824869861514	pregatire_test_qt_1.exe	f2995ffce2857661
+10	414	6750840021822971	pregatire_test_qt_1_autogen/timestamp	fb1a24a34e197493
+10	414	6750840021822971	pregatire_test_qt_1_autogen/mocs_compilation.cpp	fb1a24a34e197493
+10	414	6750840021822971	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/pregatire_test_qt_1/cmake-build-debug/pregatire_test_qt_1_autogen/timestamp	fb1a24a34e197493
+10	414	6750840021822971	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/pregatire_test_qt_1/cmake-build-debug/pregatire_test_qt_1_autogen/mocs_compilation.cpp	fb1a24a34e197493
+433	1722	6750840034762990	CMakeFiles/pregatire_test_qt_1.dir/service.cpp.obj	84a4fd92150d5534
+437	5351	6750840071172981	CMakeFiles/pregatire_test_qt_1.dir/user_interface.cpp.obj	fdfcdc6c79d397b2
+5352	6205	6750840075862994	pregatire_test_qt_1.exe	f2995ffce2857661

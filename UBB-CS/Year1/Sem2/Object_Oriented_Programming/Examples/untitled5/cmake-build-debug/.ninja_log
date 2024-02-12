@@ -1,0 +1,19 @@
+# ninja log v5
+6524	12435	6765857899638350	CMakeFiles/untitled5.dir/Question.cpp.obj	e939033893445dce
+68	1824	6765869278693877	untitled5_autogen/timestamp	5e95001adf67c16d
+68	1824	6765869278693877	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled5/cmake-build-debug/untitled5_autogen/mocs_compilation.cpp	5e95001adf67c16d
+68	1824	6765869278693877	untitled5_autogen/mocs_compilation.cpp	5e95001adf67c16d
+68	1824	6765869278693877	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled5/cmake-build-debug/untitled5_autogen/timestamp	5e95001adf67c16d
+4254	8790	6765866027379946	CMakeFiles/untitled5.dir/untitled5_autogen/mocs_compilation.cpp.obj	40870f7289af978d
+1851	7000	6765869330893873	CMakeFiles/untitled5.dir/presenter.cpp.obj	e07c3e4f2a896bc2
+6531	13117	6765857907398338	CMakeFiles/untitled5.dir/Service.cpp.obj	b60a8c21b56eef3b
+6508	18109	6765857958418381	CMakeFiles/untitled5.dir/main.cpp.obj	f606b9f9311d1dbb
+2335	5264	6765842196113847	CMakeFiles/untitled5.dir/Observer.cpp.obj	a7dd04e8a9f12fbf
+3325	8193	6765855394569675	CMakeFiles/untitled5.dir/PRepository.cpp.obj	3900f55ef95b56e6
+3315	8199	6765855396249680	CMakeFiles/untitled5.dir/Participant.cpp.obj	8e74a418b6b4d306
+6519	12924	6765857904568353	CMakeFiles/untitled5.dir/Repository.cpp.obj	42827ebac3bcd638
+41	983	6765870283886803	untitled5_autogen/timestamp	5e95001adf67c16d
+41	983	6765870283886803	untitled5_autogen/mocs_compilation.cpp	5e95001adf67c16d
+41	983	6765870283886803	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled5/cmake-build-debug/untitled5_autogen/timestamp	5e95001adf67c16d
+41	983	6765870283886803	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled5/cmake-build-debug/untitled5_autogen/mocs_compilation.cpp	5e95001adf67c16d
+1014	7186	6765870345946799	CMakeFiles/untitled5.dir/presenter.cpp.obj	e07c3e4f2a896bc2

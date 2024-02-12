@@ -1,0 +1,22 @@
+Graph algorithms - parsing accessible vertices
+Algorithms for visiting all vertices accessible from a given start vertex.
+
+Sample partial implementation: parse.py
+
+Issues:
+
+Analyse examples with cycles and with inaccessible vertices;
+Why is each accessible vertex visited (no accessible vertex omited)?
+Construct and print the tree with each vertex has, as parent, the vertex from which it was visited (the root is the starting vertex)
+Use the tree to reconstruct the path
+Use the same algorithm implementation with the Wolf, Goat and Cabbage problem graph plugged in to solve that problem.
+Note: for printing the tree, you can use the following format:
+
+parent
+    child-1
+        grandchild-1-1
+        grandchild-1-2
+    child-2
+    child-3
+        grandchild-3-1
+        grandchild-3-2

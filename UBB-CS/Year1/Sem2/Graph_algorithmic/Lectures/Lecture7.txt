@@ -1,0 +1,55 @@
+Graph algorithms - Minimum cost walk between all pairs of vertices
+Find minimum cost walk between all pairs of vertices. Negative cost edges are ok; negative cost cycles are not.
+
+Matrix multiplication
+Define wk,x,y = the cost of minimum cost walk of length at most k from x to y, or ∞ if no such walk exists.
+
+We have a recurrence relation. The base case is:
+
+w1,x,x=0;
+w1,x,y=cost(x,y), if (x,y) is an edge of the graph;
+w1,x,y=∞, if x≠y and (x,y) is not an edge of the graph;
+The actual recurrence is:
+
+wk+l,x,y=min(wk,x,z+wl,z,y).
+The idea is to compute wk,x,y for a value of k based upon the already computed values for k/2. We need to get to a k greater than n.
+
+The number of operations for computing all wk,x,y for a given k is O(n3). Doing this up to a k greater than n will take O(n3 log n).
+
+To retrieve the path, we can define a second array, fk,x,y = the next vertex after x on the walk of cost wk,x,y. When the minimum in the recurrence is reached for some intermediate vertex z, we set f2k,x,y = fk,x,z.
+
+Floyd-Warshall algorithm
+It is also based on dynamic programming. We need to have a numbering of all vertices of the graph, X={z0,z1,...,zn-1}.
+
+Then, we define wk,x,y = the cost of minimum cost walk from x to y, using, as intermediate vertices, only those in the set {z0,z1,...,zk-1}.
+
+The recursion starts like for the matrix multiplication algorithm. Then, we have:
+
+wk+1,x,y=min(wk,x,y, wk,x,zk+wk,zk,y).
+Finally, wn,x,y is allowed to use all vertices in the graph.
+
+The algorithm is thus (assuming vertices are the numbers from 0 to n-1):
+
+for i=0 to n-1 do
+    for j=0 to n-1 do
+        if i==j then
+            w[i,j] = 0
+        else if (i,j) is edge in G then
+            w[i,j] = cost(i,j)
+            f[i,j] = j
+        else
+            w[i,j] = infinity
+        endif
+    endfor
+endfor
+for k=0 to n-1 do
+    for i=0 to n-1 do
+        for j=0 to n-1 do
+            if w[i,j] > w[i,k]+w[k,j] then
+                w[i,j] = w[i,k]+w[k,j]
+                f[i,j] = f[i,k]
+            endif
+        endfor
+    endfor
+endfor
+The algorithm complexity is O(n3).

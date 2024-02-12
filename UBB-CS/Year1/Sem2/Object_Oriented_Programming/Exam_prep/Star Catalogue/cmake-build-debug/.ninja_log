@@ -1,0 +1,92 @@
+# ninja log v5
+43	2158	6787484141130492	Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+43	2158	6787484141130492	Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+43	2158	6787484141130492	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+3158	7417	6787476579582334	CMakeFiles/Star_Catalogue.dir/Astronomers.cpp.obj	38745cb8ffe82a91
+43	2158	6787484141130492	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+3153	7629	6787476581562331	CMakeFiles/Star_Catalogue.dir/ARepo.cpp.obj	575d0f6840136028
+3165	7495	6787476580412332	CMakeFiles/Star_Catalogue.dir/Stars.cpp.obj	68f0a42b35569396
+3169	7596	6787476581342363	CMakeFiles/Star_Catalogue.dir/SRepo.cpp.obj	ce4b14811c616737
+7496	12611	6787476626902312	CMakeFiles/Star_Catalogue.dir/Service.cpp.obj	7a825c1309a09b35
+2159	8724	6787484209911778	CMakeFiles/Star_Catalogue.dir/main.cpp.obj	f714b83a5b9cf2a8
+2164	8170	6787484204401769	CMakeFiles/Star_Catalogue.dir/Star_Catalogue_autogen/mocs_compilation.cpp.obj	18d045b8d4546ba5
+2169	9818	6787484220937933	CMakeFiles/Star_Catalogue.dir/gui.cpp.obj	5777ea42ea88d534
+7596	20634	6787476712502359	CMakeFiles/Star_Catalogue.dir/QTableView.cpp.obj	68234adcc19aaf2f
+9819	12012	6787484230537939	Star_Catalogue.exe	f584ba942d79e968
+28	2349	6787510179104033	Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+28	2349	6787510179104033	Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+28	2349	6787510179104033	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+28	2349	6787510179104033	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+2378	6125	6787510222034050	CMakeFiles/Star_Catalogue.dir/Service.cpp.obj	7a825c1309a09b35
+2366	6160	6787510222654023	CMakeFiles/Star_Catalogue.dir/SRepo.cpp.obj	ce4b14811c616737
+2362	6275	6787510223724072	CMakeFiles/Star_Catalogue.dir/ARepo.cpp.obj	575d0f6840136028
+6160	7974	6787510241194071	CMakeFiles/Star_Catalogue.dir/Observer.cpp.obj	4c7d3d940ca16c63
+2356	12875	6787510290294079	CMakeFiles/Star_Catalogue.dir/Star_Catalogue_autogen/mocs_compilation.cpp.obj	18d045b8d4546ba5
+2372	13994	6787510301341910	CMakeFiles/Star_Catalogue.dir/MyTable.cpp.obj	eac1935864fda30f
+2350	14205	6787510302701919	CMakeFiles/Star_Catalogue.dir/main.cpp.obj	f714b83a5b9cf2a8
+27	2332	6787513470529903	Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+27	2332	6787513470529903	Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+27	2332	6787513470529903	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+27	2332	6787513470529903	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+2379	5200	6787513501739949	CMakeFiles/Star_Catalogue.dir/Service.cpp.obj	7a825c1309a09b35
+2342	11803	6787513567939917	CMakeFiles/Star_Catalogue.dir/Star_Catalogue_autogen/mocs_compilation.cpp.obj	18d045b8d4546ba5
+2353	11964	6787513570159888	CMakeFiles/Star_Catalogue.dir/MyTable.cpp.obj	eac1935864fda30f
+2333	12000	6787513570589897	CMakeFiles/Star_Catalogue.dir/main.cpp.obj	f714b83a5b9cf2a8
+2347	12867	6787513579269881	CMakeFiles/Star_Catalogue.dir/gui.cpp.obj	5777ea42ea88d534
+12868	14371	6787513585519865	Star_Catalogue.exe	8581ffbb895c8fae
+29	657	6787514750323695	Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+29	657	6787514750323695	Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+29	657	6787514750323695	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+29	657	6787514750323695	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+682	9766	6787514841073771	CMakeFiles/Star_Catalogue.dir/gui.cpp.obj	5777ea42ea88d534
+9767	13000	6787514860493693	Star_Catalogue.exe	8581ffbb895c8fae
+19	2052	6787516750507983	Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+19	2052	6787516750507983	Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+19	2052	6787516750507983	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+19	2052	6787516750507983	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+2067	4592	6787516779678038	CMakeFiles/Star_Catalogue.dir/ARepo.cpp.obj	575d0f6840136028
+2061	8951	6787516824007992	CMakeFiles/Star_Catalogue.dir/Star_Catalogue_autogen/mocs_compilation.cpp.obj	18d045b8d4546ba5
+2053	9298	6787516827618021	CMakeFiles/Star_Catalogue.dir/main.cpp.obj	f714b83a5b9cf2a8
+2072	10085	6787516835547958	CMakeFiles/Star_Catalogue.dir/gui.cpp.obj	5777ea42ea88d534
+10085	11078	6787516841607975	Star_Catalogue.exe	8581ffbb895c8fae
+26	7034	6787519981586498	Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+26	7034	6787519981586498	Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+26	7034	6787519981586498	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+26	7034	6787519981586498	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+7050	13887	6787520057656477	CMakeFiles/Star_Catalogue.dir/Service.cpp.obj	7a825c1309a09b35
+7035	21905	6787520141506467	CMakeFiles/Star_Catalogue.dir/Star_Catalogue_autogen/mocs_compilation.cpp.obj	18d045b8d4546ba5
+7060	22095	6787520143251688	CMakeFiles/Star_Catalogue.dir/MyTable.cpp.obj	eac1935864fda30f
+7043	22312	6787520145611721	CMakeFiles/Star_Catalogue.dir/main.cpp.obj	f714b83a5b9cf2a8
+7055	23507	6787520157421715	CMakeFiles/Star_Catalogue.dir/gui.cpp.obj	5777ea42ea88d534
+23508	24995	6787520168381702	Star_Catalogue.exe	8581ffbb895c8fae
+31	538	6787520631550311	Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+31	538	6787520631550311	Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+31	538	6787520631550311	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+31	538	6787520631550311	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+564	5173	6787520677889870	CMakeFiles/Star_Catalogue.dir/gui.cpp.obj	5777ea42ea88d534
+5174	6222	6787520683779907	Star_Catalogue.exe	8581ffbb895c8fae
+23	558	6787522604610860	Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+23	558	6787522604610860	Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+23	558	6787522604610860	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+23	558	6787522604610860	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+582	2001	6787522618880922	CMakeFiles/Star_Catalogue.dir/SRepo.cpp.obj	ce4b14811c616737
+586	5391	6787522652930884	CMakeFiles/Star_Catalogue.dir/gui.cpp.obj	5777ea42ea88d534
+5391	6838	6787522660720888	Star_Catalogue.exe	8581ffbb895c8fae
+52	2720	6787524716974836	Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+52	2720	6787524716974836	Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+52	2720	6787524716974836	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+52	2720	6787524716974836	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+2749	5351	6787524743167904	CMakeFiles/Star_Catalogue.dir/SRepo.cpp.obj	ce4b14811c616737
+2756	10343	6787524793348900	CMakeFiles/Star_Catalogue.dir/gui.cpp.obj	5777ea42ea88d534
+10344	11385	6787524798968904	Star_Catalogue.exe	8581ffbb895c8fae
+27	2476	6787532270349451	Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+27	2476	6787532270349451	Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+27	2476	6787532270349451	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/timestamp	aba97301f8db54c6
+27	2476	6787532270349451	C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/Star_Catalogue_autogen/mocs_compilation.cpp	aba97301f8db54c6
+2489	8391	6787532331102787	CMakeFiles/Star_Catalogue.dir/Service.cpp.obj	7a825c1309a09b35
+2498	9445	6787532343543332	CMakeFiles/Star_Catalogue.dir/SRepo.cpp.obj	ce4b14811c616737
+2483	14380	6787532393639232	CMakeFiles/Star_Catalogue.dir/Star_Catalogue_autogen/mocs_compilation.cpp.obj	18d045b8d4546ba5
+2477	14468	6787532394509232	CMakeFiles/Star_Catalogue.dir/main.cpp.obj	f714b83a5b9cf2a8
+2503	14577	6787532395819232	CMakeFiles/Star_Catalogue.dir/MyTable.cpp.obj	eac1935864fda30f
+2508	15648	6787532406569193	CMakeFiles/Star_Catalogue.dir/gui.cpp.obj	5777ea42ea88d534
+15648	16694	6787532413029211	Star_Catalogue.exe	8581ffbb895c8fae

@@ -1,0 +1,147 @@
+Graph algorithms - NP-hard problems
+Minimum cost walk or path with negative cost cycles
+Minimum cost walk problem
+Looking for the minimum cost walk between two given vertices, assuming that at least one walk exists:
+
+if the graph contains only positive cost cycles (or no cycles at all)
+the minimum cost walk between two vertices exists and is a path
+if the graph contains only positive and zero cost cycles
+the minimum cost walk between two vertices exists; additionally, there is always a path with the same cost
+there is at least one negative cost cycle
+the minimum cost walk between two vertices may not exist, because the set of costs of the walks may be unbounded towards -∞
+Minimum cost path problem - dynamic programming approach
+The concatenation of two paths is not necessary a path - the two paths that get concatenated may have some vertices in common.
+
+To use the dynamic programming approach, one needs to parametrize the table with the set of used vertices, in addition to the last vertex:
+
+w[k,x,S] = the cost of the minimum cost path from the starting vertex s to vertex x, of length k, and using only the vertices in the set S.
+
+w[k,x,S] = miny ∈ Nin(x)∩S(w[k-1,y,S\{x}])
+
+The problem is that the number of w values to compute grows exponentially fast with the size of the graph.
+P, NP, and NP-complete problems
+Crash course on Turing machine
+What is the turing machine
+A Turing machine has:
+
+a finite state machine - at each moment, the machine is in one state out of the finite set of states;
+a infinite tape with infinitely many cells, each cell containing, at each moment, one symbol out of a finite alphabet (set of possible symbols).
+a read-write head, positioned at each moment on one of the cells on the tape.
+At each step, depending on the current state and on the symbol in front of the read-write head, the machine will:
+
+go to some state;
+write some symbol to the tape (where the head is located);
+move the head one position to the left, one position to the right, or keep it in place.
+Start ing the Turing machine
+At the beginning
+
+the Turing machine is in one distinguished state - the initial state
+the input data is encoded on the tape
+all the tape except for a finite part is filled with a distinguished symbol of the alphabet - the blank symbol
+Stopping the Turing machine
+There is one or more final states for the Turing machine. The machine stops when it gets into either of the final states
+
+The stopping state can be used for the output of the execution - for example, there can be two final states: a yes state and a no state.
+
+Also, the content of the tape at the end may be interpreted as the output of the execution.
+
+Complexity classes
+P class of problems
+The execution time is the number of steps until reaching the final state.
+
+The execution time is compared to the size of the input data, that is, the number of symbols used for encoding the input data on the tape.
+
+Problems are classified according to the complexity of the best algorithm for solving them (the best Turing machine that solves them).
+
+The class P consists in all problems for which there is a Turing machine and a polynomial such that the machine solves the problem and the number of steps is bounded by the polynomial applied to the size of the input data.
+
+Non-deterministic Turing machine
+For a non-deterministic Turing machine, there are several possible next actions (next state, symbol written on the tape, and the movement of the head) for a single current state (state of the machine, plus the symbol on the tape).
+
+Thus, there are multiple executions possible. (The number of executions grows exponentially fast with the number of steps.)
+
+For yes/no problems, the link between the executions and the answer is the following:
+
+the machine has 2 final states: ok and fail;
+if at least one execution finished in ok, the answer to the problem is considered yes;
+if all executions finish in fail, the answer to the problem is considered no.
+The class NP contains all yes/no problems for which there is a non-deterministic Turing machine that solves the problem in polynomial time.
+
+Obviously, P ⊆ NP.
+
+Note that yes and no are not symmetrical to each other. The class Co-NP contains the problems whose inverse (that is, interchanging yes with no) are in NP.
+
+NP problems
+Generally, a NP problem is a problem for which a yes answer means there is a "solution" that is a vector of polynomial size (polynomial in the size of the input) and whose correctness can also be checked in polynomial time.
+
+Examples:
+
+given a graph and two vertices, is there a path from the first to the second?
+given a graph, is there a cycle in it?
+given a graph, is there a Hamiltonian cycle in it?
+given a graph with costs, two vertices, and an integer k, is there a path of cost at most k between the vertices?
+given a graph with costs, and an integer k, is there a Hamiltonian cycle of cost at most k?
+Polynomial reducibility
+Problem A reduces to problem B if there is a way of solving A as follows:
+
+the input for A is transformed, through a polynomial-time algorithm, into a valid input for B;
+a solution for B is applied;
+the output from B is transformed, through a polynomial-time algorithm, into an output for A;
+the result from the above sequence is the correct answer of the original problem A.
+If A reduces to B it means that A is not (much) more complex than B. In particular, if A reduces to B and B is polynomial (belongs to P), then A is polynomial, tool.
+
+This also means that, if A reduces to B and A is known to be hard, then B is hard, too. If B is not polynomial and A reduces to B, then A is not polynomial, either.
+
+Note: DO NOT apply the above in reverse. If A reduces to B and B is known to be hard, this does not say anything about A. It only says that there is an expensive way to solve A (by reducing it to the hard problem B); but nothing prevents the existence of a better solution for A.
+
+NP hard and NP complete problems
+An NP-hard problem is a problem such that all NP problems reduce to it.
+
+An NP-complete problem is a problem that is both NP and NP-hard.
+
+The first problem to be proven NP-complete is the boolean satisfiability (SAT) problem (Cook-Levin theorem, 1971): given a boolean expression in normal conjunctive form, is there an assignment for the variables such that the expression has the value true?
+
+E = (x1,1 ∨ x1,2 ∨...∨x1,k1) ∧ (x2,1 ∨ x2,2 ∨...∨x2,k2) ∧... ∧ (xn,1 ∨ xn,2 ∨...∨xn,kn),
+
+where each variable is either one of the input variables or its negate.
+
+It is not known whether P = NP or not. This is a million-dollar open problem!
+
+Known NP-complete problems
+3SAT
+3SAT is a special case of SAT where the disjunctions are limited to 3 terms.
+
+SAT is reducible to 3SAT by replacing each longer disjunction
+x1 ∨ x2 ∨...∨xk
+by a conjunction of size 3 disjunctions containing newly introduced variables:
+(x1 ∨ x2 ∨ y1) ∧ (⅂y1 ∨ x3 ∨ y2) ∧ (⅂y2 ∨ x4 ∨ y3) ∧...∧ (⅂yk-3 ∨ xk-1 ∨ xk)
+Hamiltonean cycle and friends
+The existence of a Hamiltonean cycle is proven to be NT-complete
+
+Note: this is both in a directed graph and in an undirected graph. There is an interesting way of reducing the directed Hamiltonean cycle problem to the undirected Hamiltonean cycle problem. TBA
+
+Traveling Salesman Problem (TSP) can be phrased as a yes/no problem by putting an upper limit on the cost: given a (directed) graph with costs, and an integer k, is there a Hamiltonean cycle of cost at most equal to k?
+
+The Hamiltonean cycle problem reduces to TSP, even to TSP in a complete graph. Simply put a cost of 1 on edges that exist in the original graph and 2 on those that do not exist in the original graph, and find a solution of cost n to TSP.
+
+Now we can show that the minimum cost path problem, in the general case where negative cost cycles may exist, is NP-hard. Indeed, the Hamiltonean path problem can easily reduce to it.
+
+Note: for TSP on an undirected graph satisfying the triangle inequality, there is an approximate solution no worse than twice the optimal cost. Build a Minimum Spanning Tree and parse it in pre-order for the solution.
+
+Clique, independent set, vertex cover
+A clique in an undirected graph is a subset of vertices of a graph such that the induced subgraph is complete (for every pair of vertices in the clique, there is an edge between them).
+
+The k-clique problem is: given a graph and an integer k, is there a clique of size k.
+
+An independent set in an undirected graph is a subset of vertices of a graph such,for every pair of vertices in the set, there is an no edge between them.
+
+Edge cover: given an undirected graph, find a (minimum) set of vertices such that every edge has at least one endpoint in the set.
+
+There is a simple reducibility relation between these 3 problems!
+
+Other problems
+A vertex cover in an undirected graph is a subset A of vertices such that any vertex of the graph is either a member of A or a direct neighbor of a vertex in A.
+
+k-coloring: given an undirected graph and an integer k, assign to each vertex a number in {1,2,...,k} (a "color") such that any two adjacent vertices have distinct numbers associated to them (distinct colors).
+
+3-way matching: given 3 sets X, Y and Z, disjoint and all having the same number of elements, and a set T ⊆ X ⨯ Y ⨯ Z of triplets, find a subset U ⊆ T such that each element of X, Y, and Z appears in exactly one triple in U.

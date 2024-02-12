@@ -1,0 +1,3 @@
+C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/Lecture6_demo/Lecture6_demo/cmake-build-debug/CMakeFiles/Lecture6_demo.dir
+C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/Lecture6_demo/Lecture6_demo/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/Lecture6_demo/Lecture6_demo/cmake-build-debug/CMakeFiles/rebuild_cache.dir

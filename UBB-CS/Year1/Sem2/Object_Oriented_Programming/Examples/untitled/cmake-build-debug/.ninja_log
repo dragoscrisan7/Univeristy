@@ -1,0 +1,17 @@
+# ninja log v5
+27	2369	6750236506071202	untitled_autogen/timestamp	b42537073e880054
+461	1015	6750202610335957	CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.obj	8f31709bd74f4bb5
+348	3803	6750211000437607	CMakeFiles/untitled.dir/Repository.cpp.obj	ff0ee6ebb9a27c8c
+353	5906	6750211021734945	CMakeFiles/untitled.dir/Service.cpp.obj	355e78179327f20e
+27	2369	6750236506071202	untitled_autogen/mocs_compilation.cpp	b42537073e880054
+27	2369	6750236506071202	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled/cmake-build-debug/untitled_autogen/timestamp	b42537073e880054
+27	2369	6750236506071202	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled/cmake-build-debug/untitled_autogen/mocs_compilation.cpp	b42537073e880054
+329	6039	6750211023715511	CMakeFiles/untitled.dir/Dog.cpp.obj	170f33e000f4761b
+2379	11440	6750236597280937	CMakeFiles/untitled.dir/main.cpp.obj	93c7be178fc9f47d
+342	6055	6750211023975517	CMakeFiles/untitled.dir/Ui.cpp.obj	190c48b5fd0c26ba
+3804	8005	6750211043581396	CMakeFiles/untitled.dir/UserRepository.cpp.obj	ff091da237a6edfd
+287	6588	6750214456104363	CMakeFiles/untitled.dir/CSVfile.cpp.obj	3e1a396a71c424a7
+736	4683	6750217958315836	CMakeFiles/untitled.dir/HTMLfile.cpp.obj	7685f3dd173404b1
+683	7646	6750219880741064	CMakeFiles/untitled.dir/UserService.cpp.obj	7ad32833bf2cc57c
+297	6930	6750214460228433	CMakeFiles/untitled.dir/Validators.cpp.obj	bcc61bde2e3b0f9
+11448	12318	6750236601910946	untitled.exe	6db779bd88b70ac0

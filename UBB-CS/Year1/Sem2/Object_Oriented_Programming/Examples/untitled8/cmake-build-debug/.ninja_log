@@ -1,0 +1,27 @@
+# ninja log v5
+13	6238	6765926934009958	untitled8_autogen/timestamp	223b5ff44424c58
+13	6238	6765926934009958	untitled8_autogen/mocs_compilation.cpp	223b5ff44424c58
+13	6238	6765926934009958	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled8/cmake-build-debug/untitled8_autogen/timestamp	223b5ff44424c58
+13	6238	6765926934009958	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled8/cmake-build-debug/untitled8_autogen/mocs_compilation.cpp	223b5ff44424c58
+6238	11433	6765926990545207	CMakeFiles/untitled8.dir/untitled8_autogen/mocs_compilation.cpp.obj	6285d6c528f18ac2
+2506	6808	6765925379291816	CMakeFiles/untitled8.dir/Participant.cpp.obj	a200203ffdd05164
+2489	6915	6765925380461847	CMakeFiles/untitled8.dir/Question.cpp.obj	932ebfa2c10ff2a4
+2501	7039	6765925381361752	CMakeFiles/untitled8.dir/PRepository.cpp.obj	76953a5ff5d5158b
+2484	7088	6765925382361771	CMakeFiles/untitled8.dir/Repository.cpp.obj	e91dd01eaa8467aa
+3356	7856	6765925390261759	CMakeFiles/untitled8.dir/Service.cpp.obj	1da7010235f6a969
+6811	8256	6765925394021811	CMakeFiles/untitled8.dir/Observer.cpp.obj	2e40d514d0b19ea2
+2494	10246	6765925414391755	CMakeFiles/untitled8.dir/main.cpp.obj	12b4340461b71678
+6244	11894	6765926995005184	CMakeFiles/untitled8.dir/presenter.cpp.obj	1931b1ea7f184ce2
+40	3052	6765928097969744	untitled8_autogen/timestamp	223b5ff44424c58
+40	3052	6765928097969744	untitled8_autogen/mocs_compilation.cpp	223b5ff44424c58
+40	3052	6765928097969744	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled8/cmake-build-debug/untitled8_autogen/timestamp	223b5ff44424c58
+40	3052	6765928097969744	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled8/cmake-build-debug/untitled8_autogen/mocs_compilation.cpp	223b5ff44424c58
+3053	8582	6765928157329746	CMakeFiles/untitled8.dir/untitled8_autogen/mocs_compilation.cpp.obj	6285d6c528f18ac2
+3063	9116	6765928162839730	CMakeFiles/untitled8.dir/presenter.cpp.obj	1931b1ea7f184ce2
+9116	10260	6765928169249738	untitled8.exe	659c5782efa4427e
+26	871	6765958302313348	untitled8_autogen/timestamp	223b5ff44424c58
+26	871	6765958302313348	untitled8_autogen/mocs_compilation.cpp	223b5ff44424c58
+26	871	6765958302313348	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled8/cmake-build-debug/untitled8_autogen/timestamp	223b5ff44424c58
+26	871	6765958302313348	C:/Users/Dragos/OneDrive/Facultate/Year1Sem2/Object_Oriented_Programming/Examples/untitled8/cmake-build-debug/untitled8_autogen/mocs_compilation.cpp	223b5ff44424c58
+893	5667	6765958350353329	CMakeFiles/untitled8.dir/presenter.cpp.obj	1931b1ea7f184ce2
+5670	6653	6765958355323333	untitled8.exe	659c5782efa4427e

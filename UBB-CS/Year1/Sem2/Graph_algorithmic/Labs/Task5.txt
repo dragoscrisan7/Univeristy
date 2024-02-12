@@ -1,0 +1,26 @@
+Graph algorithms - practical work no. 5
+Due: week 13-14.
+
+Write a program that solves the assigned problem from those below. An exact, exponential time, algorithm is expected unless noted otherwise. Use the abstract data type created for lab. 1; modify it if necessary.
+
+Assigned problems
+
+1. Given an undirected graph, find a clique of maximum size.
+
+2. Given an undirected graph, find a vertex cover of minimum size.
+
+3. Given an undirected graph, find a vertex coloring with minimum number of colors.
+
+4. Given an undirected graph, find a Hamiltonian cycle (if it exists).
+
+5. Given a digraph with costs and two vertices, find a minimum cost path between them (negative cost cycles may exist in the graph).
+
+6. Given a digraph with costs, find a minimum cost Hamiltonian cycle (i.e., solve the TSP)
+
+7. Given an undirected graph, find a vertex cover covering of edges by vertices with no more than twice the optimal number of vertices in O(n+m) time.
+
+8. Given an undirected graph with costs satisfying the triangle inequality, find a Hamiltonian cycle of no more than twice the minimum cost in O(m+n log n).
+
+9. Given an undirected graph with costs, find a Hamiltonian cycle of low cost (approximate TSP) by using the heuristic of sorting the edges in increasing order of their costs and, for each edge, choose it if and only if it does not close a cycle of length lower than n.
+
+10. Given an undirected graph with costs, find a Hamiltonian cycle of low cost (approximate TSP) by using the heuristic of taking, from the current vertex, the edge of minimum cost that do not close a cycle of length lower than n.

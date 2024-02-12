@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>user_interface</class>
+ <widget class="QWidget" name="user_interface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>352</width>
+    <height>294</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>user_interface</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QListWidget" name="list_tasks"/>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="msgBox"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Input prioirty:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="input"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button">
+       <property name="text">
+        <string>Show tasks</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

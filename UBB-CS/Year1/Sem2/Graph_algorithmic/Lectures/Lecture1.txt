@@ -1,0 +1,23 @@
+Graph algorithms - glossary
+accessible
+A vertex y is accessible from x if there exists at least one walk starting at x and ending at y. As walks of length 0 are valid, this means that each vertex is accessible from itself
+adjacency
+vertex y is adjecent to vertex x if there is an edge from x to y
+closed walk
+a walk that starts and ends in the same vertex.
+connected component
+a subset of the set of vertices, so that each vertex in the subset is accessible from each vertex of the subset, and which is maximal (there is no proper superset with the same property). The connected component term is used only for undirected graphs; for a directed graph, the same concept is called strongly connected component.
+cost of a walk
+the sum of the costs of the edges that form that walk. Note that a zero length walk has a cost of zero.
+cycle
+a closed walk of length at least 1, with no other repeating vertices except for the fact that the first is the same as the last, and with no repeating edges. In an undirected graph, this means that a cycle has the length at least 3.
+incidency
+vertex x is incident to edge e if x is an endpoint of e
+length of a walk
+the number of edges along the walk, or, equivalently, the number of vertices minus one.
+path
+A walk with no repeating vertices
+strongly connected component
+see connected component
+walk
+A sequence of 1 or more vertices, (x0, x1,...,xk) such that each vertex has an edge to the next one. The length of the walk is the number of edges along it, or, equivalently, the number of vertices minus one. Repeating vertices or edges are allowed. A walk of length 0 is allowed; it has a single vertex (so the starting vertex is the same as the destination vertex) and zero edges.

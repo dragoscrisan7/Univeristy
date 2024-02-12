@@ -1,0 +1,5 @@
+C:/Users/Dragos/CLionProjects/Quiz/cmake-build-debug/CMakeFiles/Quiz.dir
+C:/Users/Dragos/CLionProjects/Quiz/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dragos/CLionProjects/Quiz/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Dragos/CLionProjects/Quiz/cmake-build-debug/CMakeFiles/Quiz_autogen_timestamp_deps.dir
+C:/Users/Dragos/CLionProjects/Quiz/cmake-build-debug/CMakeFiles/Quiz_autogen.dir

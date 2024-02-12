@@ -1,0 +1,63 @@
+Graph algorithms - graph traversal
+Problem
+Given a starting vertex s, find all vertices that are accessible from it;
+Additionally, find a path, or a minimum length path, from the starting vertex to a given destination vertex;
+Breadth-first traversal algorithm
+The algorith below visits all the vertices that are accessible from the start vertex. They are visited in the order of increasing distances from the starting vertex. A previous vector or map is computed, allowing us to compute the minimum length path from the starting vertex to any choosen accessible vertex.
+Input:
+    G : graph
+    s : a vertex
+Output:
+    accessible : the set of vertices that are accessible from s
+    prev : a map that maps each accessible vertex to its predecessor on a path from s to it
+Algorithm:
+    Queue q
+    Dictionary prev
+    Dictionary dist
+    Set visited
+    q.enqueue(s)
+    visited.add(s)
+    dist[s] = 0
+    while not q.isEmpty() do
+        x = q.dequeue()
+        for y in Nout(x) do
+            if y not in visited then
+                q.enqueue(y)
+                visited.add(y)
+                dist[y] = dist[x] + 1
+                prev[y] = x
+            end if
+        end for
+    end while
+    accessible = visited
+Accessibility - proof of correctness
+The proof comes in 3 parts:
+All returned vertices are accessible,
+The algorithm finishes,
+All accessible vertices are returned.
+1. When a vertex is put into the queue, it is also put into the visited set, and no vertex is ever removed from the visited set, so any vertex in the queue is also in the visited set.
+
+Next, we claim that, at each iteration, all vertices in the visited set are accessible from the start. At the beginning, this is true, because only the starting vertex is in the visited set. Next, a vertex is put in the visited set only if it is the outbound neighbour of a vertex in the queue; that vertex is therefore in the visited set and so it is accessible from start, so the added vertex is also accessible from start.
+
+2. A vertex added to the queue only if not already in the visited set; it is also added in the visited set and never removed. So, any vertex gets at most once in the queue. So, the algorithm finishes in at most n iterations of the main loop. At each iteration, the inner loop executes outdeg(x) times, which sums up, on all iterations, to the total number of edges. So, the algorithm runs in O(n+m).
+
+3. Suppose, by contradiction, that there is a vertex y accessible from s (start), but which is not in the visited set at the end. Since y is accessible from s, there is a path (s=x0,x1,...,xk=y) from s to y. On that path, there must be a first vertex that is not visited, so, there is an i such that xi is visited and xi+1 is not visited.
+
+This means that there was a moment when xi was visited and added to the queue, and, at a later time, there was an iteration when xi was processed. At that moment, xi+1 was discovered as an unvisited neighbour of xi and added to the visited set, which contradicts the hypothesis.
+
+3'. (alternative) We claim that, at each iteration, for any vertex x accessible from start, either x is in the visited set, or there is a walk going from start to x that has a vertex in the queue and that vertex is followed only by vertices not in the visited set.
+
+The above condition is true in the beginning. When going from one iteration to the next, there are two changes: the top vertex is extracted from the queue, and its neighbours are inserted into the queue and into the visited set.
+
+If (s=x0,...,xj,xj+1,...,xk=t) is a path from the starting vertex, xj is the top of the queue and xj+1,...,xk are not visited, then xj+1 is added to the queue and is followed only by non-visited vertices.
+
+If, though, a vertex xl, with l>j, is added to the visited set, it is also added to the queue and is followed only by non-visited vertices.
+
+Minimum length path - proof of correctness
+Note that dist contains the length of the path that would be retrieved from the prev map.
+
+First, we remark that vertices are processed in groups with increasing values of dist. That is, first we process the start vertex that has a dist of 0, and the algorithm puts vertices with a dist of 1 in the queue. Then they are processed and the vertices put in the queue will have a dist of 2, then the vertices with dist=2 are processed and vertices with dist=3 are put into the queue, and so on
+
+Next, we prove that if dist[x]=k, then there exists a walk of length k from start to x. This can be proven by indunction on the iterations. Initially, we have a zero length walk from start to itself. Next, when we set dist for a vertex, it is set based on a previous vertex, as dist[y]=dist[x]+1. By induction hypothesis, there is a walk of length dist[x] from start to x and, by adding the edge (x,y) to it, we get a walk of length dist[x]+1 from start to y.
+
+Finally, we will prove that dist[x] is indeed the length of the minimum length walk from start to x. Suppose (s=x0, x1,...,xk) is a minimum length walk from s to some vertex xk. We claim that dist[xi]=i, for all vertices in the walk. Let i be the first vertex for which the claim is false. It means that, when xi-1 was processed, xi was already processed (otherwise it would have got assigned a dist of i). But this means that it got an even smaller value (dist[xi]<i), which means that there is a strictly better walk to xi, which contradicts our assumption.
