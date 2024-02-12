@@ -1,0 +1,123 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit, fopen, fclose, fscanf, fprintf, printf          ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  import fclose msvcrt.dll
+    11                                  import fopen msvcrt.dll
+    12                                  import fscanf msvcrt.dll
+    13                                  import fprintf msvcrt.dll
+    14                                  import printf msvcrt.dll
+    15                                  ; our data is declared here (the variables needed by our program)
+    16                                  segment data use32 class=data
+    17                                      ; ...
+    18 00000000 6669736965722E7478-         filename db "fisier.txt", 0
+    18 00000009 7400               
+    19 0000000B 7200                        accesmode db "r", 0
+    20 0000000D 00000000                    filedescripter dd 0
+    21 00000011 <res 00000190>              numere resd 100
+    22 000001A1 257800                      format db "%x", 0
+    23 000001A4 00                          lungime db 0
+    24 000001A5 25782000                    formatprint db "%x ", 0
+    25                                  
+    26                                  ; our code starts here
+    27                                  ;A string of doublewords is given. Order in decreasing order the string of the 
+    28                                  ;low words (least significant) from these doublewords. The high words (most significant) remain unchanged.
+    29                                  segment code use32 class=code
+    30                                      start:
+    31                                          ; ...
+    32                                          ;fopen(filename, "r")
+    33 00000000 68[0B000000]                    push dword accesmode
+    34 00000005 68[00000000]                    push dword filename
+    35 0000000A FF15[00000000]                  call [fopen]
+    36 00000010 83C408                          add esp, 4*2
+    37                                          
+    38 00000013 A3[0D000000]                    mov dword [filedescripter], eax
+    39 00000018 83F800                          cmp eax, 0
+    40 0000001B 0F8484000000                    je end_program
+    41                                          
+    42 00000021 BF[11000000]                    mov edi, dword numere
+    43 00000026 BB00000000                      mov ebx, 0
+    44                                          while_citit:
+    45 0000002B 53                              push ebx
+    46 0000002C 57                              push edi
+    47                                          ;fscanf(filedescripter, format, variabila) 
+    48 0000002D 57                                  push dword edi
+    49 0000002E 68[A1010000]                        push dword format
+    50 00000033 FF35[0D000000]                      push dword [filedescripter]
+    51 00000039 FF15[00000000]                      call [fscanf]
+    52 0000003F 83C40C                              add esp, 4*3
+    53 00000042 5F                                  pop edi
+    54 00000043 5B                                  pop ebx
+    55                                              
+    56 00000044 83F8FF                              cmp eax, -1
+    57 00000047 7408                                je end_while
+    58                                              
+    59 00000049 83C704                              add edi, 4
+    60 0000004C 83C304                              add ebx, 4
+    61                                              
+    62 0000004F EBDA                                jmp while_citit
+    63                                          end_while:
+    64 00000051 891D[A4010000]                  mov [lungime], ebx
+    65                                          ;fclose(filedescripter)
+    66 00000057 FF35[0D000000]                  push dword [filedescripter]
+    67 0000005D FF15[00000000]                  call [fclose]
+    68 00000063 83C404                          add esp, 4
+    69                                          
+    70 00000066 BE00000000                      mov esi, 0
+    71 0000006B BF[11000000]                    mov edi, dword numere
+    72                                          while_sortare:
+    73 00000070 3935[A4010000]                      cmp [lungime], esi
+    74 00000076 742D                                je end_sortare
+    75                                          
+    76 00000078 8B0437                              mov eax, [edi+esi]
+    77 0000007B 56                                  push esi
+    78 0000007C 83C604                              add esi, 4
+    79                                              while_parcurgere:
+    80 0000007F 3935[A4010000]                          cmp [lungime], esi
+    81 00000085 7415                                    je end_parcurgere
+    82                                                  
+    83 00000087 8B1C37                                  mov ebx, [edi+esi]
+    84 0000008A 39D8                                    cmp eax, ebx
+    85 0000008C 7C06                                    jl higher
+    86 0000008E 89C1                                        mov ecx, eax
+    87 00000090 89D8                                        mov eax, ebx
+    88 00000092 89CB                                        mov ebx, ecx   
+    89                                                  higher:
+    90 00000094 891C37                                  mov [edi+esi], ebx
+    91                                                  
+    92 00000097 83C604                                  add esi, 4
+    93 0000009A EBE3                                    jmp while_parcurgere
+    94                                                  end_parcurgere:
+    95 0000009C 5E                                  pop esi
+    96 0000009D 890437                              mov [edi+esi], eax
+    97                                             
+    98 000000A0 83C604                              add esi, 4
+    99 000000A3 EBCB                                jmp while_sortare
+   100                                              end_sortare:
+   101                                          end_program:
+   102                                          
+   103 000000A5 BE00000000                      mov esi, 0
+   104                                          while_afisare:
+   105 000000AA 3935[A4010000]                      cmp [lungime], esi
+   106 000000B0 7419                                je end_afisare
+   107                                          
+   108 000000B2 8B0437                              mov eax, [edi+esi]
+   109 000000B5 83C604                              add esi, 4
+   110 000000B8 56                                  push esi
+   111                                              ;printf(format, variabila)
+   112 000000B9 50                                  push dword eax
+   113 000000BA 68[A5010000]                        push dword formatprint
+   114 000000BF FF15[00000000]                      call [printf]
+   115 000000C5 83C408                              add esp, 4*2
+   116                                              
+   117 000000C8 5E                                  pop esi
+   118 000000C9 EBDF                                jmp while_afisare
+   119                                          end_afisare:
+   120                                          ; exit(0)
+   121 000000CB 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   122 000000CD FF15[00000000]                  call    [exit]       ; call exit to terminate the program

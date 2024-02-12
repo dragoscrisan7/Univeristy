@@ -1,0 +1,4 @@
+3;Which is the biggest mountain?;Everest;Moldoveanu;Bobu;Everest;medium
+5;Guess the difficulty of this question?;easy;medium;hard;medium;medium
+0;Which numero largo;1;3;4;4;easy
+4;What is the bit stocking order method in calculus system arhitecture?;little endian;reverse little endian;in the order they were typed;little endian;hard

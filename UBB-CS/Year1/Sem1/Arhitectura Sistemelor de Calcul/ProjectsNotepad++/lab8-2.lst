@@ -1,0 +1,111 @@
+     1                                  bits 32 ; assembling for the 32 bits architecture
+     2                                  
+     3                                  ; declare the EntryPoint (a label defining the very first instruction of the program)
+     4                                  global start        
+     5                                  
+     6                                  ; declare external functions needed by our program
+     7                                  extern exit , printf, scanf, fopen, fclose, fprintf, fread              ; tell nasm that exit exists even if we won't be defining it
+     8                                  import exit msvcrt.dll    ; exit is a function that ends the calling process. It is defined in msvcrt.dll
+     9                                                            ; msvcrt.dll contains exit, printf and all the other important C-runtime specific functions
+    10                                  import printf msvcrt.dll
+    11                                  import scanf msvcrt.dll
+    12                                  
+    13                                  import fopen msvcrt.dll
+    14                                  import fclose msvcrt.dll
+    15                                  import fprintf msvcrt.dll
+    16                                  import fread msvcrt.dll
+    17                                  ; our data is declared here (the variables needed by our program)
+    18                                  segment data use32 class=data
+    19                                      ; ...
+    20 00000000 7700                        formatfo db "w", 0
+    21 00000002 4C654669736965722E-         file_name db "LeFisier.txt", 0
+    21 0000000B 74787400           
+    22 0000000F FFFFFFFF                    file_descriptor dd -1
+    23 00000013 00<rept>                    cuvant times 20 db 0
+    24 00000027 257300                      formatcuv db "%s", 0
+    25 0000002A 257500                      formatw db "%u", 0
+    26 0000002D 6D6573616A00                msg db "mesaj", 0
+    27 00000033 2000                        ent db " ", 0
+    28                                  
+    29                                  ;A file name (defined in data segment) is given. Create a file with the given name, then read words from the keyboard until character '$' is read from the keyboard. 
+    30                                  ;Write only the words that contain at least one digit to file.
+    31                                  ; our code starts here
+    32                                  segment code use32 class=code
+    33                                      start:   
+    34                                          ;fopen("LeFisier.txt", "w")
+    35 00000000 68[00000000]                    push dword formatfo
+    36 00000005 68[02000000]                    push file_name
+    37 0000000A FF15[00000000]                  call [fopen]
+    38 00000010 83C408                          add esp, 4*2
+    39                                          
+    40 00000013 A3[0F000000]                    mov [file_descriptor], eax
+    41                                          
+    42 00000018 83F800                          cmp eax, 0
+    43 0000001B 0F8482000000                    je final
+    44                                          
+    45                                          repeta:
+    46                                          
+    47                                          ;scanf("%d", &n)
+    48 00000021 68[13000000]                    push dword cuvant
+    49 00000026 68[27000000]                    push dword formatcuv
+    50 0000002B FF15[00000000]                  call [scanf]
+    51 00000031 83C408                          add esp, 4*2
+    52                                          
+    53 00000034 8A0D[13000000]                  mov cl, byte [cuvant]
+    54 0000003A 80F924                          cmp cl, '$'
+    55 0000003D 7455                            je dupa
+    56                                          
+    57 0000003F BB00000000                      mov ebx, 0
+    58 00000044 B914000000                      mov ecx, 20
+    59                                          
+    60                                          parcuv:
+    61 00000049 8A83[13000000]                  mov al, byte [cuvant + ebx]
+    62 0000004F 43                              inc ebx
+    63                                          
+    64 00000050 3C00                            cmp al, 0
+    65 00000052 74CD                            je repeta
+    66                                          
+    67 00000054 3C30                            cmp al, '0'
+    68 00000056 7C38                            jl next_char
+    69                                          
+    70 00000058 3C39                            cmp al, '9'
+    71 0000005A 7F34                            jg next_char
+    72                                          
+    73                                          ; display the number of chars we've read and the text
+    74                                          ; printf(file_descriptor, format, eax)
+    75 0000005C 68[13000000]                    push dword cuvant
+    76 00000061 68[27000000]                    push dword formatcuv
+    77 00000066 FF35[0F000000]                  push dword [file_descriptor]
+    78 0000006C FF15[00000000]                  call [fprintf]
+    79 00000072 83C40C                          add esp, 4*3
+    80                                          
+    81 00000075 68[33000000]                    push dword ent 
+    82 0000007A 68[27000000]                    push dword formatcuv
+    83 0000007F FF35[0F000000]                  push dword [file_descriptor]
+    84 00000085 FF15[00000000]                  call [fprintf]
+    85 0000008B 83C40C                          add esp, 4*3
+    86                                          
+    87 0000008E EB91                            jmp repeta
+    88                                          
+    89                                          next_char:
+    90                                          
+    91                                          
+    92                                          
+    93 00000090 E2B7                            loop parcuv
+    94                                          
+    95 00000092 EB8D                            jmp repeta
+    96                                          dupa:
+    97                                          
+    98                                  
+    99                                          
+   100                                          ; call fclose() to close the file
+   101                                          ; fclose(file_descriptor)
+   102 00000094 FF35[0F000000]                  push dword [file_descriptor]
+   103 0000009A FF15[00000000]                  call [fclose]
+   104 000000A0 83C404                          add esp, 4
+   105                                          
+   106                                          
+   107                                          final:
+   108                                          
+   109 000000A3 6A00                            push    dword 0      ; push the parameter for exit onto the stack
+   110 000000A5 FF15[00000000]                  call    [exit]       ; call exit to terminate the program

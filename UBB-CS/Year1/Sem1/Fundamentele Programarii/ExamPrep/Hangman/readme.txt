@@ -1,0 +1,5 @@
+ana has apples
+patricia has pears
+cars are fast
+planes are quick
+the quick brown fox jumps over the lazy dog
