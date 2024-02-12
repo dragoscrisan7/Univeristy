@@ -1,0 +1,577 @@
+Id: 17
+Execution stack: 
+(v is int|(v=int(4)|(do {(print(v)|v=v - int(1))} while (v > int(0))|print(v))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+v is int
+(v=int(4)|(do {(print(v)|v=v - int(1))} while (v > int(0))|print(v)))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+v is int
+(v=int(4)|(do {(print(v)|v=v - int(1))} while (v > int(0))|print(v)))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+(v=int(4)|(do {(print(v)|v=v - int(1))} while (v > int(0))|print(v)))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+(v=int(4)|(do {(print(v)|v=v - int(1))} while (v > int(0))|print(v)))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+v=int(4)
+(do {(print(v)|v=v - int(1))} while (v > int(0))|print(v))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+v=int(4)
+(do {(print(v)|v=v - int(1))} while (v > int(0))|print(v))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+(do {(print(v)|v=v - int(1))} while (v > int(0))|print(v))
+Symbol table: 
+v -> int(4)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+(do {(print(v)|v=v - int(1))} while (v > int(0))|print(v))
+Symbol table: 
+v -> int(4)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+do {(print(v)|v=v - int(1))} while (v > int(0))
+print(v)
+Symbol table: 
+v -> int(4)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+do {(print(v)|v=v - int(1))} while (v > int(0))
+print(v)
+Symbol table: 
+v -> int(4)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+((print(v)|v=v - int(1))|while(v > int(0)){(print(v)|v=v - int(1))})
+print(v)
+Symbol table: 
+v -> int(4)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+((print(v)|v=v - int(1))|while(v > int(0)){(print(v)|v=v - int(1))})
+print(v)
+Symbol table: 
+v -> int(4)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+(print(v)|v=v - int(1))
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(4)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+(print(v)|v=v - int(1))
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(4)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+print(v)
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(4)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+print(v)
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(4)
+Output list: 
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(4)
+Output list: 
+int(4)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(4)
+Output list: 
+int(4)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(3)
+Output list: 
+int(4)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(3)
+Output list: 
+int(4)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+(print(v)|v=v - int(1))
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(3)
+Output list: 
+int(4)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+(print(v)|v=v - int(1))
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(3)
+Output list: 
+int(4)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+print(v)
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(3)
+Output list: 
+int(4)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+print(v)
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(3)
+Output list: 
+int(4)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(3)
+Output list: 
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(3)
+Output list: 
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(2)
+Output list: 
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(2)
+Output list: 
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+(print(v)|v=v - int(1))
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(2)
+Output list: 
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+(print(v)|v=v - int(1))
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(2)
+Output list: 
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+print(v)
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(2)
+Output list: 
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+print(v)
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(2)
+Output list: 
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(2)
+Output list: 
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(2)
+Output list: 
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(1)
+Output list: 
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(1)
+Output list: 
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+(print(v)|v=v - int(1))
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(1)
+Output list: 
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+(print(v)|v=v - int(1))
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(1)
+Output list: 
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+print(v)
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(1)
+Output list: 
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+print(v)
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(1)
+Output list: 
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(1)
+Output list: 
+int(4)
+int(3)
+int(2)
+int(1)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+v=v - int(1)
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(1)
+Output list: 
+int(4)
+int(3)
+int(2)
+int(1)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(0)
+Output list: 
+int(4)
+int(3)
+int(2)
+int(1)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+while(v > int(0)){(print(v)|v=v - int(1))}
+print(v)
+Symbol table: 
+v -> int(0)
+Output list: 
+int(4)
+int(3)
+int(2)
+int(1)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+print(v)
+Symbol table: 
+v -> int(0)
+Output list: 
+int(4)
+int(3)
+int(2)
+int(1)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+print(v)
+Symbol table: 
+v -> int(0)
+Output list: 
+int(4)
+int(3)
+int(2)
+int(1)
+File table:
+Heap memory:
+
+Id: 17
+Execution stack: 
+Symbol table: 
+v -> int(0)
+Output list: 
+int(4)
+int(3)
+int(2)
+int(1)
+int(0)
+File table:
+Heap memory:
+

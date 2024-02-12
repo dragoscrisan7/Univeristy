@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="474.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pain.prgExecuteController">
+   <children>
+      <Button fx:id="runOneStepButton" layoutX="473.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#runOneStep" text="Run one step" />
+      <TextField fx:id="numberOfPrgStates" layoutX="320.0" layoutY="2.0" />
+      <Text layoutX="205.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of prgStates" />
+      <TableView fx:id="heapTableView" layoutX="21.0" layoutY="22.0" prefHeight="200.0" prefWidth="204.0">
+        <columns>
+          <TableColumn fx:id="addressColumn" prefWidth="102.0" text="Address" />
+          <TableColumn fx:id="valueColumn" prefWidth="101.0" text="Value" />
+        </columns>
+      </TableView>
+      <Text layoutX="21.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Heap Table" />
+      <ListView fx:id="outputListView" layoutX="231.0" layoutY="51.0" prefHeight="200.0" prefWidth="157.0" />
+      <Text layoutX="231.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Out Table" />
+      <ListView fx:id="fileTableListView" layoutX="394.0" layoutY="51.0" prefHeight="200.0" prefWidth="157.0" />
+      <Text layoutX="394.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="File Table" />
+      <ListView fx:id="programStateIdentifiersListView" layoutX="231.0" layoutY="274.0" prefHeight="200.0" prefWidth="157.0" />
+      <Text layoutX="230.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="prgState ID" />
+      <TableView fx:id="symbolTableView" layoutX="21.0" layoutY="274.0" prefHeight="200.0" prefWidth="204.0">
+         <columns>
+            <TableColumn fx:id="variableNameColumn" prefWidth="102.0" text="Variable Name" />
+            <TableColumn fx:id="variableValueColumn" prefWidth="101.0" text="Value" />
+         </columns>
+      </TableView>
+      <ListView fx:id="executionStackListView" layoutX="559.0" layoutY="51.0" prefHeight="200.0" prefWidth="157.0" />
+      <Text layoutX="559.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exe Stack" />
+      <Text layoutX="20.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Symbol Table" />
+      <Text layoutX="395.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Latch Table" />
+      <TableView fx:id="latchTableView" layoutX="394.0" layoutY="274.0" prefHeight="200.0" prefWidth="204.0">
+         <columns>
+            <TableColumn fx:id="latchLocationColumn" prefWidth="102.0" text="Location" />
+            <TableColumn fx:id="latchValueColumn" prefWidth="101.0" text="Value" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

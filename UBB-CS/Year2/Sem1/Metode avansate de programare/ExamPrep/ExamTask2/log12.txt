@@ -1,0 +1,1069 @@
+Id: 9
+Execution stack: 
+(v is int|(v=int(20)|(wait(10)|print(v * int(10)))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+v is int
+(v=int(20)|(wait(10)|print(v * int(10))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+v is int
+(v=int(20)|(wait(10)|print(v * int(10))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(v=int(20)|(wait(10)|print(v * int(10))))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(v=int(20)|(wait(10)|print(v * int(10))))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+v=int(20)
+(wait(10)|print(v * int(10)))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+v=int(20)
+(wait(10)|print(v * int(10)))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(wait(10)|print(v * int(10)))
+Symbol table: 
+v -> int(20)
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(wait(10)|print(v * int(10)))
+Symbol table: 
+v -> int(20)
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(10)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(10)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(10))|wait(9))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(10))|wait(9))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(10))
+wait(9)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(10))
+wait(9)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(9)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(9)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(9))|wait(8))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(9))|wait(8))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(9))
+wait(8)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(9))
+wait(8)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(8)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(8)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(8))|wait(7))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(8))|wait(7))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(8))
+wait(7)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(8))
+wait(7)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(7)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(7)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(7))|wait(6))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(7))|wait(6))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(7))
+wait(6)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(7))
+wait(6)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(6)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(6)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(6))|wait(5))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(6))|wait(5))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(6))
+wait(5)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(6))
+wait(5)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(5)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(5)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(5))|wait(4))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(5))|wait(4))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(5))
+wait(4)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(5))
+wait(4)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(4)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(4)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(4))|wait(3))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(4))|wait(3))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(4))
+wait(3)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(4))
+wait(3)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(3)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(3)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(3))|wait(2))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(3))|wait(2))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(3))
+wait(2)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(3))
+wait(2)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(2)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(2)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(2))|wait(1))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(2))|wait(1))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(2))
+wait(1)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(2))
+wait(1)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(1)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(1)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(1))|wait(0))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+(print(int(1))|wait(0))
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(1))
+wait(0)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(int(1))
+wait(0)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+int(2)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(0)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+int(2)
+int(1)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+wait(0)
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+int(2)
+int(1)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+int(2)
+int(1)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+print(v * int(10))
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+int(2)
+int(1)
+File table:
+Heap memory:
+
+Id: 9
+Execution stack: 
+Symbol table: 
+v -> int(20)
+Output list: 
+int(10)
+int(9)
+int(8)
+int(7)
+int(6)
+int(5)
+int(4)
+int(3)
+int(2)
+int(1)
+int(200)
+File table:
+Heap memory:
+

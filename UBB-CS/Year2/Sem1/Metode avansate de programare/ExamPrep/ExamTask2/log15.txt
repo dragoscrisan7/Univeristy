@@ -1,0 +1,361 @@
+Id: 15
+Execution stack: 
+(b is boolean|(c is int|(b=bool(true)|(c=(b)? int(100): int(200)|(print(c)|(c=(bool(false))? int(100): int(200)|print(c)))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+b is boolean
+(c is int|(b=bool(true)|(c=(b)? int(100): int(200)|(print(c)|(c=(bool(false))? int(100): int(200)|print(c))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+b is boolean
+(c is int|(b=bool(true)|(c=(b)? int(100): int(200)|(print(c)|(c=(bool(false))? int(100): int(200)|print(c))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(c is int|(b=bool(true)|(c=(b)? int(100): int(200)|(print(c)|(c=(bool(false))? int(100): int(200)|print(c))))))
+Symbol table: 
+b -> bool(false)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(c is int|(b=bool(true)|(c=(b)? int(100): int(200)|(print(c)|(c=(bool(false))? int(100): int(200)|print(c))))))
+Symbol table: 
+b -> bool(false)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+c is int
+(b=bool(true)|(c=(b)? int(100): int(200)|(print(c)|(c=(bool(false))? int(100): int(200)|print(c)))))
+Symbol table: 
+b -> bool(false)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+c is int
+(b=bool(true)|(c=(b)? int(100): int(200)|(print(c)|(c=(bool(false))? int(100): int(200)|print(c)))))
+Symbol table: 
+b -> bool(false)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(b=bool(true)|(c=(b)? int(100): int(200)|(print(c)|(c=(bool(false))? int(100): int(200)|print(c)))))
+Symbol table: 
+b -> bool(false)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(b=bool(true)|(c=(b)? int(100): int(200)|(print(c)|(c=(bool(false))? int(100): int(200)|print(c)))))
+Symbol table: 
+b -> bool(false)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+b=bool(true)
+(c=(b)? int(100): int(200)|(print(c)|(c=(bool(false))? int(100): int(200)|print(c))))
+Symbol table: 
+b -> bool(false)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+b=bool(true)
+(c=(b)? int(100): int(200)|(print(c)|(c=(bool(false))? int(100): int(200)|print(c))))
+Symbol table: 
+b -> bool(false)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(c=(b)? int(100): int(200)|(print(c)|(c=(bool(false))? int(100): int(200)|print(c))))
+Symbol table: 
+b -> bool(true)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(c=(b)? int(100): int(200)|(print(c)|(c=(bool(false))? int(100): int(200)|print(c))))
+Symbol table: 
+b -> bool(true)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+c=(b)? int(100): int(200)
+(print(c)|(c=(bool(false))? int(100): int(200)|print(c)))
+Symbol table: 
+b -> bool(true)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+c=(b)? int(100): int(200)
+(print(c)|(c=(bool(false))? int(100): int(200)|print(c)))
+Symbol table: 
+b -> bool(true)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(IF(b) THEN(c=int(100))ELSE(c=int(200)))
+(print(c)|(c=(bool(false))? int(100): int(200)|print(c)))
+Symbol table: 
+b -> bool(true)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(IF(b) THEN(c=int(100))ELSE(c=int(200)))
+(print(c)|(c=(bool(false))? int(100): int(200)|print(c)))
+Symbol table: 
+b -> bool(true)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+c=int(100)
+(print(c)|(c=(bool(false))? int(100): int(200)|print(c)))
+Symbol table: 
+b -> bool(true)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+c=int(100)
+(print(c)|(c=(bool(false))? int(100): int(200)|print(c)))
+Symbol table: 
+b -> bool(true)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(print(c)|(c=(bool(false))? int(100): int(200)|print(c)))
+Symbol table: 
+b -> bool(true)
+c -> int(100)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(print(c)|(c=(bool(false))? int(100): int(200)|print(c)))
+Symbol table: 
+b -> bool(true)
+c -> int(100)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+print(c)
+(c=(bool(false))? int(100): int(200)|print(c))
+Symbol table: 
+b -> bool(true)
+c -> int(100)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+print(c)
+(c=(bool(false))? int(100): int(200)|print(c))
+Symbol table: 
+b -> bool(true)
+c -> int(100)
+Output list: 
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(c=(bool(false))? int(100): int(200)|print(c))
+Symbol table: 
+b -> bool(true)
+c -> int(100)
+Output list: 
+int(100)
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(c=(bool(false))? int(100): int(200)|print(c))
+Symbol table: 
+b -> bool(true)
+c -> int(100)
+Output list: 
+int(100)
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+c=(bool(false))? int(100): int(200)
+print(c)
+Symbol table: 
+b -> bool(true)
+c -> int(100)
+Output list: 
+int(100)
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+c=(bool(false))? int(100): int(200)
+print(c)
+Symbol table: 
+b -> bool(true)
+c -> int(100)
+Output list: 
+int(100)
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(IF(bool(false)) THEN(c=int(100))ELSE(c=int(200)))
+print(c)
+Symbol table: 
+b -> bool(true)
+c -> int(100)
+Output list: 
+int(100)
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+(IF(bool(false)) THEN(c=int(100))ELSE(c=int(200)))
+print(c)
+Symbol table: 
+b -> bool(true)
+c -> int(100)
+Output list: 
+int(100)
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+c=int(200)
+print(c)
+Symbol table: 
+b -> bool(true)
+c -> int(100)
+Output list: 
+int(100)
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+c=int(200)
+print(c)
+Symbol table: 
+b -> bool(true)
+c -> int(100)
+Output list: 
+int(100)
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+print(c)
+Symbol table: 
+b -> bool(true)
+c -> int(200)
+Output list: 
+int(100)
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+print(c)
+Symbol table: 
+b -> bool(true)
+c -> int(200)
+Output list: 
+int(100)
+File table:
+Heap memory:
+
+Id: 15
+Execution stack: 
+Symbol table: 
+b -> bool(true)
+c -> int(200)
+Output list: 
+int(100)
+int(200)
+File table:
+Heap memory:
+

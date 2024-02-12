@@ -1,0 +1,373 @@
+Id: 2
+Execution stack: 
+(varf is string|(varf='test.in'|(OpenReadFile(varf)|(varc is int|(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf)))))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 2
+Execution stack: 
+varf is string
+(varf='test.in'|(OpenReadFile(varf)|(varc is int|(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf))))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 2
+Execution stack: 
+varf is string
+(varf='test.in'|(OpenReadFile(varf)|(varc is int|(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf))))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 2
+Execution stack: 
+(varf='test.in'|(OpenReadFile(varf)|(varc is int|(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf))))))))
+Symbol table: 
+varf -> ''
+Output list: 
+File table:
+Heap memory:
+
+Id: 2
+Execution stack: 
+(varf='test.in'|(OpenReadFile(varf)|(varc is int|(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf))))))))
+Symbol table: 
+varf -> ''
+Output list: 
+File table:
+Heap memory:
+
+Id: 2
+Execution stack: 
+varf='test.in'
+(OpenReadFile(varf)|(varc is int|(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf)))))))
+Symbol table: 
+varf -> ''
+Output list: 
+File table:
+Heap memory:
+
+Id: 2
+Execution stack: 
+varf='test.in'
+(OpenReadFile(varf)|(varc is int|(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf)))))))
+Symbol table: 
+varf -> ''
+Output list: 
+File table:
+Heap memory:
+
+Id: 2
+Execution stack: 
+(OpenReadFile(varf)|(varc is int|(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf)))))))
+Symbol table: 
+varf -> 'test.in'
+Output list: 
+File table:
+Heap memory:
+
+Id: 2
+Execution stack: 
+(OpenReadFile(varf)|(varc is int|(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf)))))))
+Symbol table: 
+varf -> 'test.in'
+Output list: 
+File table:
+Heap memory:
+
+Id: 2
+Execution stack: 
+OpenReadFile(varf)
+(varc is int|(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf))))))
+Symbol table: 
+varf -> 'test.in'
+Output list: 
+File table:
+Heap memory:
+
+Id: 2
+Execution stack: 
+OpenReadFile(varf)
+(varc is int|(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf))))))
+Symbol table: 
+varf -> 'test.in'
+Output list: 
+File table:
+Heap memory:
+
+Id: 2
+Execution stack: 
+(varc is int|(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf))))))
+Symbol table: 
+varf -> 'test.in'
+Output list: 
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+(varc is int|(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf))))))
+Symbol table: 
+varf -> 'test.in'
+Output list: 
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+varc is int
+(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf)))))
+Symbol table: 
+varf -> 'test.in'
+Output list: 
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+varc is int
+(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf)))))
+Symbol table: 
+varf -> 'test.in'
+Output list: 
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf)))))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(0)
+Output list: 
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+(ReadFile(varf, varc)|(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf)))))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(0)
+Output list: 
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+ReadFile(varf, varc)
+(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf))))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(0)
+Output list: 
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+ReadFile(varf, varc)
+(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf))))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(0)
+Output list: 
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf))))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(15)
+Output list: 
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+(print(varc)|(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf))))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(15)
+Output list: 
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+print(varc)
+(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf)))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(15)
+Output list: 
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+print(varc)
+(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf)))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(15)
+Output list: 
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf)))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(15)
+Output list: 
+int(15)
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+(ReadFile(varf, varc)|(print(varc)|CloseReadFile(varf)))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(15)
+Output list: 
+int(15)
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+ReadFile(varf, varc)
+(print(varc)|CloseReadFile(varf))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(15)
+Output list: 
+int(15)
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+ReadFile(varf, varc)
+(print(varc)|CloseReadFile(varf))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(15)
+Output list: 
+int(15)
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+(print(varc)|CloseReadFile(varf))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(50)
+Output list: 
+int(15)
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+(print(varc)|CloseReadFile(varf))
+Symbol table: 
+varf -> 'test.in'
+varc -> int(50)
+Output list: 
+int(15)
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+print(varc)
+CloseReadFile(varf)
+Symbol table: 
+varf -> 'test.in'
+varc -> int(50)
+Output list: 
+int(15)
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+print(varc)
+CloseReadFile(varf)
+Symbol table: 
+varf -> 'test.in'
+varc -> int(50)
+Output list: 
+int(15)
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+CloseReadFile(varf)
+Symbol table: 
+varf -> 'test.in'
+varc -> int(50)
+Output list: 
+int(15)
+int(50)
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+CloseReadFile(varf)
+Symbol table: 
+varf -> 'test.in'
+varc -> int(50)
+Output list: 
+int(15)
+int(50)
+File table:
+test.in
+Heap memory:
+
+Id: 2
+Execution stack: 
+Symbol table: 
+varf -> 'test.in'
+varc -> int(50)
+Output list: 
+int(15)
+int(50)
+File table:
+Heap memory:
+

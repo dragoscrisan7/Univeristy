@@ -1,0 +1,828 @@
+Id: 5
+Execution stack: 
+(v is int|(v=int(0)|(while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}|(sleep(5)|print(v * int(10))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+v is int
+(v=int(0)|(while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}|(sleep(5)|print(v * int(10)))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+v is int
+(v=int(0)|(while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}|(sleep(5)|print(v * int(10)))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+(v=int(0)|(while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}|(sleep(5)|print(v * int(10)))))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+(v=int(0)|(while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}|(sleep(5)|print(v * int(10)))))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+v=int(0)
+(while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}|(sleep(5)|print(v * int(10))))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+v=int(0)
+(while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}|(sleep(5)|print(v * int(10))))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+(while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}|(sleep(5)|print(v * int(10))))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+(while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}|(sleep(5)|print(v * int(10))))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+(Fork((print(v)|v=v + int(1)))|v=v + int(1))
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+(Fork((print(v)|v=v + int(1)))|v=v + int(1))
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+Fork((print(v)|v=v + int(1)))
+v=v + int(1)
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+Fork((print(v)|v=v + int(1)))
+v=v + int(1)
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+v=v + int(1)
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 6
+Execution stack: 
+(print(v)|v=v + int(1))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+v=v + int(1)
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 6
+Execution stack: 
+(print(v)|v=v + int(1))
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(1)
+Output list: 
+File table:
+Heap memory:
+
+Id: 6
+Execution stack: 
+print(v)
+v=v + int(1)
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(1)
+Output list: 
+File table:
+Heap memory:
+
+Id: 6
+Execution stack: 
+print(v)
+v=v + int(1)
+Symbol table: 
+v -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+(Fork((print(v)|v=v + int(1)))|v=v + int(1))
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(1)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 6
+Execution stack: 
+v=v + int(1)
+Symbol table: 
+v -> int(0)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+(Fork((print(v)|v=v + int(1)))|v=v + int(1))
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(1)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 6
+Execution stack: 
+v=v + int(1)
+Symbol table: 
+v -> int(0)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+Fork((print(v)|v=v + int(1)))
+v=v + int(1)
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(1)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 6
+Execution stack: 
+Symbol table: 
+v -> int(1)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+Fork((print(v)|v=v + int(1)))
+v=v + int(1)
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(1)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+v=v + int(1)
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(1)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 7
+Execution stack: 
+(print(v)|v=v + int(1))
+Symbol table: 
+v -> int(1)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+v=v + int(1)
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(1)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 7
+Execution stack: 
+(print(v)|v=v + int(1))
+Symbol table: 
+v -> int(1)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 7
+Execution stack: 
+print(v)
+v=v + int(1)
+Symbol table: 
+v -> int(1)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 7
+Execution stack: 
+print(v)
+v=v + int(1)
+Symbol table: 
+v -> int(1)
+Output list: 
+int(0)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+(Fork((print(v)|v=v + int(1)))|v=v + int(1))
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 7
+Execution stack: 
+v=v + int(1)
+Symbol table: 
+v -> int(1)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+(Fork((print(v)|v=v + int(1)))|v=v + int(1))
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 7
+Execution stack: 
+v=v + int(1)
+Symbol table: 
+v -> int(1)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+Fork((print(v)|v=v + int(1)))
+v=v + int(1)
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 7
+Execution stack: 
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+Fork((print(v)|v=v + int(1)))
+v=v + int(1)
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+v=v + int(1)
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 8
+Execution stack: 
+(print(v)|v=v + int(1))
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+v=v + int(1)
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 8
+Execution stack: 
+(print(v)|v=v + int(1))
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 8
+Execution stack: 
+print(v)
+v=v + int(1)
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+while(v < int(3)){(Fork((print(v)|v=v + int(1)))|v=v + int(1))}
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 8
+Execution stack: 
+print(v)
+v=v + int(1)
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+int(1)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 8
+Execution stack: 
+v=v + int(1)
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+(sleep(5)|print(v * int(10)))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 8
+Execution stack: 
+v=v + int(1)
+Symbol table: 
+v -> int(2)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+sleep(5)
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 8
+Execution stack: 
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+sleep(5)
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+sleep(4)
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+sleep(4)
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+sleep(3)
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+sleep(3)
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+sleep(2)
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+sleep(2)
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+sleep(1)
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+sleep(1)
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+sleep(0)
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+sleep(0)
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+print(v * int(10))
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 5
+Execution stack: 
+Symbol table: 
+v -> int(3)
+Output list: 
+int(0)
+int(1)
+int(2)
+int(30)
+File table:
+Heap memory:
+

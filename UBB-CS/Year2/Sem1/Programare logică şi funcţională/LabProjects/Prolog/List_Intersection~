@@ -1,0 +1,9 @@
+L_I([H|T],L,R):-
+    nr_occ(L,H,O),
+    O=:=0,
+    L_I(T,L,R).
+L_I([H|T),L,R):-
+    nr_occ(L,H,O),
+    O>0,
+    L_I(T,L,RT),
+    R=[H|RT].

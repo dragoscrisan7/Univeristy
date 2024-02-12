@@ -1,0 +1,6 @@
+(defun tree-depth (tree)
+  "Return the depth of the given TREE."
+  (if (atom tree) 0
+    (1+ (apply 'max (mapcar 'tree-depth (cdr tree))))))
+
+(print(tree-depth '(1 (2 3) (4 (5 6)))))

@@ -1,0 +1,12 @@
+nr_occ([],_,0).
+
+nr_occ([H|T], E, NR):-
+	H =:=E,
+	nr_occ(T,E,NR1),
+	NR is NR1 + 1.
+
+nr_occ([H|T], E, NR):-
+	H=\=E,
+	nr_occ(T,E,NR).
+
+mainNOC(L,E):- nr_occ(L,E,O).

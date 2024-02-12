@@ -1,0 +1,429 @@
+Id: 10
+Execution stack: 
+(a is int|(b is int|(c is int|(a=int(1)|(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300)))))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+a is int
+(b is int|(c is int|(a=int(1)|(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300))))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+a is int
+(b is int|(c is int|(a=int(1)|(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300))))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(b is int|(c is int|(a=int(1)|(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300))))))))
+Symbol table: 
+a -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(b is int|(c is int|(a=int(1)|(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300))))))))
+Symbol table: 
+a -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+b is int
+(c is int|(a=int(1)|(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300)))))))
+Symbol table: 
+a -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+b is int
+(c is int|(a=int(1)|(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300)))))))
+Symbol table: 
+a -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(c is int|(a=int(1)|(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300)))))))
+Symbol table: 
+a -> int(0)
+b -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(c is int|(a=int(1)|(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300)))))))
+Symbol table: 
+a -> int(0)
+b -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+c is int
+(a=int(1)|(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300))))))
+Symbol table: 
+a -> int(0)
+b -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+c is int
+(a=int(1)|(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300))))))
+Symbol table: 
+a -> int(0)
+b -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(a=int(1)|(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300))))))
+Symbol table: 
+a -> int(0)
+b -> int(0)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(a=int(1)|(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300))))))
+Symbol table: 
+a -> int(0)
+b -> int(0)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+a=int(1)
+(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300)))))
+Symbol table: 
+a -> int(0)
+b -> int(0)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+a=int(1)
+(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300)))))
+Symbol table: 
+a -> int(0)
+b -> int(0)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300)))))
+Symbol table: 
+a -> int(1)
+b -> int(0)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(b=int(2)|(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300)))))
+Symbol table: 
+a -> int(1)
+b -> int(0)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+b=int(2)
+(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300))))
+Symbol table: 
+a -> int(1)
+b -> int(0)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+b=int(2)
+(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300))))
+Symbol table: 
+a -> int(1)
+b -> int(0)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300))))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(c=int(5)|(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300))))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+c=int(5)
+(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300)))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+c=int(5)
+(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300)))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(0)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300)))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}|print(int(300)))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}
+print(int(300))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+switch(a * int(10)){(case(b * c): (print(a)|print(b)))(case(int(10)): (print(int(100))|print(int(200))))(default: print(int(300)))}
+print(int(300))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(IF(a * int(10) == b * c) THEN((print(a)|print(b)))ELSE((IF(a * int(10) == int(10)) THEN((print(int(100))|print(int(200))))ELSE(print(int(300))))))
+print(int(300))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(IF(a * int(10) == b * c) THEN((print(a)|print(b)))ELSE((IF(a * int(10) == int(10)) THEN((print(int(100))|print(int(200))))ELSE(print(int(300))))))
+print(int(300))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(print(a)|print(b))
+print(int(300))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+(print(a)|print(b))
+print(int(300))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+print(a)
+print(b)
+print(int(300))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+print(a)
+print(b)
+print(int(300))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+print(b)
+print(int(300))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+int(1)
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+print(b)
+print(int(300))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+int(1)
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+print(int(300))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+print(int(300))
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+int(1)
+int(2)
+File table:
+Heap memory:
+
+Id: 10
+Execution stack: 
+Symbol table: 
+a -> int(1)
+b -> int(2)
+c -> int(5)
+Output list: 
+int(1)
+int(2)
+int(300)
+File table:
+Heap memory:
+

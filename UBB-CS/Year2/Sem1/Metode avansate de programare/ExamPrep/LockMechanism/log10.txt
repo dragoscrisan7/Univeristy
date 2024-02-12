@@ -1,0 +1,2389 @@
+Id: 1
+Execution stack: 
+(v1 is Ref(int)|(v2 is Ref(int)|(x is int|(q is int|(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))))))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+v1 is Ref(int)
+(v2 is Ref(int)|(x is int|(q is int|(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+v1 is Ref(int)
+(v2 is Ref(int)|(x is int|(q is int|(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))))))))
+Symbol table: 
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+(v2 is Ref(int)|(x is int|(q is int|(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))))))))
+Symbol table: 
+v1 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+(v2 is Ref(int)|(x is int|(q is int|(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))))))))
+Symbol table: 
+v1 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+v2 is Ref(int)
+(x is int|(q is int|(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))))))))
+Symbol table: 
+v1 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+v2 is Ref(int)
+(x is int|(q is int|(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))))))))
+Symbol table: 
+v1 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+(x is int|(q is int|(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))))))))
+Symbol table: 
+v1 -> (0, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+(x is int|(q is int|(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))))))))
+Symbol table: 
+v1 -> (0, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+x is int
+(q is int|(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))))))
+Symbol table: 
+v1 -> (0, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+x is int
+(q is int|(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))))))
+Symbol table: 
+v1 -> (0, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+(q is int|(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))))))
+Symbol table: 
+x -> int(0)
+v1 -> (0, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+(q is int|(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))))))
+Symbol table: 
+x -> int(0)
+v1 -> (0, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+q is int
+(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))))))
+Symbol table: 
+x -> int(0)
+v1 -> (0, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+q is int
+(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))))))
+Symbol table: 
+x -> int(0)
+v1 -> (0, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(0)
+v1 -> (0, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+(New(v1, int(20))|(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(0)
+v1 -> (0, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+New(v1, int(20))
+(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(0)
+v1 -> (0, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+New(v1, int(20))
+(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(0)
+v1 -> (0, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+Lock Table:
+
+Id: 1
+Execution stack: 
+(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(0)
+v1 -> (1, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+Lock Table:
+
+Id: 1
+Execution stack: 
+(New(v2, int(30))|(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(0)
+v1 -> (1, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+Lock Table:
+
+Id: 1
+Execution stack: 
+New(v2, int(30))
+(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(0)
+v1 -> (1, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+Lock Table:
+
+Id: 1
+Execution stack: 
+New(v2, int(30))
+(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(0)
+v1 -> (1, int)
+v2 -> (0, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+Lock Table:
+
+Id: 1
+Execution stack: 
+(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(0)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+
+Id: 1
+Execution stack: 
+(newLock(x)|(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(0)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+
+Id: 1
+Execution stack: 
+newLock(x)
+(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(0)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+
+Id: 1
+Execution stack: 
+newLock(x)
+(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(0)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+
+Id: 1
+Execution stack: 
+(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+
+Id: 1
+Execution stack: 
+(Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))|(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+
+Id: 1
+Execution stack: 
+Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))
+(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+
+Id: 1
+Execution stack: 
+Fork((Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))))
+(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+
+Id: 1
+Execution stack: 
+(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+
+Id: 2
+Execution stack: 
+(Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x))))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+
+Id: 1
+Execution stack: 
+(newLock(q)|(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+
+Id: 2
+Execution stack: 
+(Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))|(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x))))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+
+Id: 1
+Execution stack: 
+newLock(q)
+(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+
+Id: 2
+Execution stack: 
+Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))
+(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+
+Id: 1
+Execution stack: 
+newLock(q)
+(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+
+Id: 2
+Execution stack: 
+Fork((lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x))))
+(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+
+Id: 1
+Execution stack: 
+(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 2
+Execution stack: 
+(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 3
+Execution stack: 
+(lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x)))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 1
+Execution stack: 
+(Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))|(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 2
+Execution stack: 
+(lock(x)|(WriteHeap(v1, v1 * int(10))|unlock(x)))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 3
+Execution stack: 
+(lock(x)|(WriteHeap(v1, v1 - int(1))|unlock(x)))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 1
+Execution stack: 
+Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))
+(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 2
+Execution stack: 
+lock(x)
+(WriteHeap(v1, v1 * int(10))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 3
+Execution stack: 
+lock(x)
+(WriteHeap(v1, v1 - int(1))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 1
+Execution stack: 
+Fork((Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))))
+(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 2
+Execution stack: 
+lock(x)
+(WriteHeap(v1, v1 * int(10))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 3
+Execution stack: 
+lock(x)
+(WriteHeap(v1, v1 - int(1))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 1
+Execution stack: 
+(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 2
+Execution stack: 
+lock(x)
+(WriteHeap(v1, v1 * int(10))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 3
+Execution stack: 
+(WriteHeap(v1, v1 - int(1))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 4
+Execution stack: 
+(Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 1
+Execution stack: 
+(com.example.pain.model.statement.NopStmt@2d3f5cfc|(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 2
+Execution stack: 
+lock(x)
+(WriteHeap(v1, v1 * int(10))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 3
+Execution stack: 
+(WriteHeap(v1, v1 - int(1))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 4
+Execution stack: 
+(Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))|(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 1
+Execution stack: 
+com.example.pain.model.statement.NopStmt@2d3f5cfc
+(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 2
+Execution stack: 
+lock(x)
+(WriteHeap(v1, v1 * int(10))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 3
+Execution stack: 
+WriteHeap(v1, v1 - int(1))
+unlock(x)
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 4
+Execution stack: 
+Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))
+(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 1
+Execution stack: 
+com.example.pain.model.statement.NopStmt@2d3f5cfc
+(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 2
+Execution stack: 
+lock(x)
+(WriteHeap(v1, v1 * int(10))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 3
+Execution stack: 
+WriteHeap(v1, v1 - int(1))
+unlock(x)
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 4
+Execution stack: 
+Fork((lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q))))
+(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(20)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 1
+Execution stack: 
+(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 2
+Execution stack: 
+lock(x)
+(WriteHeap(v1, v1 * int(10))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 3
+Execution stack: 
+unlock(x)
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 4
+Execution stack: 
+(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 5
+Execution stack: 
+(lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q)))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 1
+Execution stack: 
+(com.example.pain.model.statement.NopStmt@76d7e839|(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 2
+Execution stack: 
+lock(x)
+(WriteHeap(v1, v1 * int(10))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 3
+Execution stack: 
+unlock(x)
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 4
+Execution stack: 
+(lock(q)|(WriteHeap(v2, v2 * int(10))|unlock(q)))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 5
+Execution stack: 
+(lock(q)|(WriteHeap(v2, v2 + int(5))|unlock(q)))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 3
+2 -> -1
+
+Id: 1
+Execution stack: 
+com.example.pain.model.statement.NopStmt@76d7e839
+(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> -1
+
+Id: 2
+Execution stack: 
+(WriteHeap(v1, v1 * int(10))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> -1
+
+Id: 3
+Execution stack: 
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> -1
+
+Id: 4
+Execution stack: 
+lock(q)
+(WriteHeap(v2, v2 * int(10))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> -1
+
+Id: 5
+Execution stack: 
+lock(q)
+(WriteHeap(v2, v2 + int(5))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> -1
+
+Id: 1
+Execution stack: 
+com.example.pain.model.statement.NopStmt@76d7e839
+(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> -1
+
+Id: 2
+Execution stack: 
+(WriteHeap(v1, v1 * int(10))|unlock(x))
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> -1
+
+Id: 4
+Execution stack: 
+lock(q)
+(WriteHeap(v2, v2 * int(10))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> -1
+
+Id: 5
+Execution stack: 
+lock(q)
+(WriteHeap(v2, v2 + int(5))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> -1
+
+Id: 1
+Execution stack: 
+(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 2
+Execution stack: 
+WriteHeap(v1, v1 * int(10))
+unlock(x)
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 4
+Execution stack: 
+(WriteHeap(v2, v2 * int(10))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 5
+Execution stack: 
+lock(q)
+(WriteHeap(v2, v2 + int(5))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 1
+Execution stack: 
+(com.example.pain.model.statement.NopStmt@1163ae2|(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 2
+Execution stack: 
+WriteHeap(v1, v1 * int(10))
+unlock(x)
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 4
+Execution stack: 
+(WriteHeap(v2, v2 * int(10))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 5
+Execution stack: 
+lock(q)
+(WriteHeap(v2, v2 + int(5))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(19)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 1
+Execution stack: 
+com.example.pain.model.statement.NopStmt@1163ae2
+(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 2
+Execution stack: 
+unlock(x)
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 4
+Execution stack: 
+WriteHeap(v2, v2 * int(10))
+unlock(q)
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 5
+Execution stack: 
+lock(q)
+(WriteHeap(v2, v2 + int(5))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 1
+Execution stack: 
+com.example.pain.model.statement.NopStmt@1163ae2
+(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 2
+Execution stack: 
+unlock(x)
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 4
+Execution stack: 
+WriteHeap(v2, v2 * int(10))
+unlock(q)
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 5
+Execution stack: 
+lock(q)
+(WriteHeap(v2, v2 + int(5))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(30)
+Lock Table:
+1 -> 2
+2 -> 4
+
+Id: 1
+Execution stack: 
+(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 4
+
+Id: 2
+Execution stack: 
+Symbol table: 
+q -> int(0)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 4
+
+Id: 4
+Execution stack: 
+unlock(q)
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 4
+
+Id: 5
+Execution stack: 
+lock(q)
+(WriteHeap(v2, v2 + int(5))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 4
+
+Id: 1
+Execution stack: 
+(com.example.pain.model.statement.NopStmt@50278823|(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 4
+
+Id: 4
+Execution stack: 
+unlock(q)
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 4
+
+Id: 5
+Execution stack: 
+lock(q)
+(WriteHeap(v2, v2 + int(5))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 4
+
+Id: 1
+Execution stack: 
+com.example.pain.model.statement.NopStmt@50278823
+(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 4
+Execution stack: 
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 5
+Execution stack: 
+lock(q)
+(WriteHeap(v2, v2 + int(5))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 1
+Execution stack: 
+com.example.pain.model.statement.NopStmt@50278823
+(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 5
+Execution stack: 
+lock(q)
+(WriteHeap(v2, v2 + int(5))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 1
+Execution stack: 
+(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 5
+
+Id: 5
+Execution stack: 
+(WriteHeap(v2, v2 + int(5))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 5
+
+Id: 1
+Execution stack: 
+(lock(x)|(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q))))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 5
+
+Id: 5
+Execution stack: 
+(WriteHeap(v2, v2 + int(5))|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 5
+
+Id: 1
+Execution stack: 
+lock(x)
+(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 5
+
+Id: 5
+Execution stack: 
+WriteHeap(v2, v2 + int(5))
+unlock(q)
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 5
+
+Id: 1
+Execution stack: 
+lock(x)
+(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 5
+
+Id: 5
+Execution stack: 
+WriteHeap(v2, v2 + int(5))
+unlock(q)
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(300)
+Lock Table:
+1 -> -1
+2 -> 5
+
+Id: 1
+Execution stack: 
+(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> 1
+2 -> 5
+
+Id: 5
+Execution stack: 
+unlock(q)
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> 1
+2 -> 5
+
+Id: 1
+Execution stack: 
+(print(v1)|(unlock(x)|(lock(q)|(print(v2)|unlock(q)))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> 1
+2 -> 5
+
+Id: 5
+Execution stack: 
+unlock(q)
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> 1
+2 -> 5
+
+Id: 1
+Execution stack: 
+print(v1)
+(unlock(x)|(lock(q)|(print(v2)|unlock(q))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> 1
+2 -> -1
+
+Id: 5
+Execution stack: 
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> 1
+2 -> -1
+
+Id: 1
+Execution stack: 
+print(v1)
+(unlock(x)|(lock(q)|(print(v2)|unlock(q))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> 1
+2 -> -1
+
+Id: 1
+Execution stack: 
+(unlock(x)|(lock(q)|(print(v2)|unlock(q))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> 1
+2 -> -1
+
+Id: 1
+Execution stack: 
+(unlock(x)|(lock(q)|(print(v2)|unlock(q))))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> 1
+2 -> -1
+
+Id: 1
+Execution stack: 
+unlock(x)
+(lock(q)|(print(v2)|unlock(q)))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> 1
+2 -> -1
+
+Id: 1
+Execution stack: 
+unlock(x)
+(lock(q)|(print(v2)|unlock(q)))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> 1
+2 -> -1
+
+Id: 1
+Execution stack: 
+(lock(q)|(print(v2)|unlock(q)))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 1
+Execution stack: 
+(lock(q)|(print(v2)|unlock(q)))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 1
+Execution stack: 
+lock(q)
+(print(v2)|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 1
+Execution stack: 
+lock(q)
+(print(v2)|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> -1
+2 -> -1
+
+Id: 1
+Execution stack: 
+(print(v2)|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> -1
+2 -> 1
+
+Id: 1
+Execution stack: 
+(print(v2)|unlock(q))
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> -1
+2 -> 1
+
+Id: 1
+Execution stack: 
+print(v2)
+unlock(q)
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> -1
+2 -> 1
+
+Id: 1
+Execution stack: 
+print(v2)
+unlock(q)
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> -1
+2 -> 1
+
+Id: 1
+Execution stack: 
+unlock(q)
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+int(305)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> -1
+2 -> 1
+
+Id: 1
+Execution stack: 
+unlock(q)
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+int(305)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> -1
+2 -> 1
+
+Id: 1
+Execution stack: 
+Symbol table: 
+q -> int(2)
+x -> int(1)
+v1 -> (1, int)
+v2 -> (2, int)
+Output list: 
+int(190)
+int(305)
+File table:
+Heap memory:
+1 -> int(190)
+2 -> int(305)
+Lock Table:
+1 -> -1
+2 -> -1
+

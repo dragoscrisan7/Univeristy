@@ -1,0 +1,6 @@
+member(X,[X|_]).
+member(X,[_|Y]):-
+    member(X,Y).
+
+intersection([H|T],L,NL):-mem
+

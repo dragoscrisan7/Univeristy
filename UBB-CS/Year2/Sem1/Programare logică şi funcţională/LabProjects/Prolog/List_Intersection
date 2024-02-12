@@ -1,0 +1,10 @@
+li([],_,_).
+li([H|T],L,R):-
+    nr_occ(L,H,O),
+    O=:=0,
+    li(T,L,R).
+li([H|T],L,R):-
+    nr_occ(L,H,O),
+    O>0,
+    li(T,L,RT),
+    R=[H|RT].
