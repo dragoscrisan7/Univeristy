@@ -1,0 +1,19 @@
+Flaguri de compilator care pot fi setate (in Visual Studio) care pot spori securitatea codului generat:
+
+
+
+a) /W4 si /WX (warning level 4, treat warnings as errors)
+
+b) /GS (Buffer security checks) - not for debug (C/C++ - Code Generation)
+
+c) /SAFESEH (safe exception handling) - linker; only x86 (only new versions of Visual Studio)
+
+d) /RTC1 (/RTC + /RTCu) - compiler; only for debug (C/C++ - Code Generation)
+
+e) /NXCOMPAT (support for hardware enforced DEP) - linker
+
+f) /DYNAMICBASE (ASLR - image base randomization) - linker
+
+g) /SDL - additional SDL runtime checks (de la VS2012/2013)
+
+h) /CFG - Control Flow Guard - runtime checks for ROP protection (VS2015+)

