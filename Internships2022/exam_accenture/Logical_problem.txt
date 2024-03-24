@@ -1,0 +1,11 @@
+the average size of a 2L bottle is 23.5 in height and 10cm in the diameter of the base of the bottle.
+by this we will try to calculate how many bottles we can transport in 1 trip, which cannot be a perfect number since 
+the bottles cant always be put in the perfect position to be transported.
+
+this will result us in having approximatelly 22 500 bottles on one level, with the ability to store approximatelly 80 levels
+of bottles that would be 1 800 000 bottles in one cargo, which means the 6 000 000 bottles would require 4 trips. 
+This is of course keeping in mind that all bottles are 2L and have the average size and height.
+Although this seems like it would need 4 trips, I on the other hand believe only 1 would be necesarry. Taking into consideration 
+that these are plastic bottles, empty and we only need the material to recycle and it doesnt matter in what shape it comes,
+i believe the bottles should be 'pressed' / 'squished' before beeing stored in the cargo. If this is achievable, either through
+a press or multiple people working toughether, the water bottles should need only one trip to be transported

@@ -1,0 +1,20 @@
+I would start by saying that i dont know how much liberty I got for coming up with ideas for this so i would assume for a start of an ideea i can ignore
+factors like budget.
+
+In my opinion one of the best solutions for this issue is one that is already beeing implemented and tested. I am talking about the drone system that Steve Jobs
+is working on to deliver packages from amazon. Of course this would imply that there needs to be an advanced software for the drones. They would need acces
+to the satelite and a program that would get coordinates for the location of the delivery and head to that direction. The drone would first need a program to lift
+it up, then it would travel through the air and then it would need a carefully implemented program for slowly going down untill the drone hits the soul.
+After that, the drone could have a button that would reliese the supplies. When that button is pressed, the package is being let down and at the same time
+the drone communicates to the system that the the person got the package and updates the status to "received" so that it doesnt deliver twice to the same person.
+This would also require a complex database that has a location for each persons home and saves the coordinates of this place. I dont think the odds of 2 drones hitting
+each other mid-air are that high, but there could be implemented a code regarding the order of the deliveries in such way that they have the smallest chance of 
+colliding. This would also remove the contact problem, as the drones are not people that can get infected. For safety measures the button for "receiving the package" 
+can be desinfected after each delivery.
+
+For the better function of the system the people should select pick-up points on the map as safe as possible, not on the road, not above a tree, etc.
+
+This solution would remove most of the code of the interface, as all it needs is to receive the message from te drone that the package was delivered and to
+update into the system the status of the population, which people received and which didnt. But in return, it would require a really complex code for the drones.
+All in all, I believe investing time and money into a project like this is worth it as it can be used for any type of delivery, not just the supplies during the
+pandemic, and it would fix some of the traffic in high circulated cities. 
