@@ -1,0 +1,67 @@
+[
+  {
+    "sha": "",
+    "filename": "\\SocketHandler\\SocketHandler.cpp",
+    "url": "",
+    "lines": "28:4-44:5",
+    "title": "Simplification Opportunity",
+    "comment": "The logic for determining the port based on the protocol could be simplified by using a ternary operator instead of an if-else statement. This would improve code readability and reduce complexity.",
+    "priority": 1,
+    "category": "Best Practices",
+    "additional": "",
+    "id": "678c6eac-7fc4-4566-8979-26e015e7dc31",
+    "private": 0
+  },
+  {
+    "sha": "",
+    "filename": "\\SocketHandler\\SocketHandler.cpp",
+    "url": "",
+    "lines": "17:0-17:62",
+    "title": "Refactoring suggestion",
+    "comment": "The connectToServer method is responsible for both establishing a connection and determining the server address. Consider separating these responsibilities into two separate methods to adhere to the single responsibility principle and improve maintainability.",
+    "priority": 2,
+    "category": "Maintainability",
+    "additional": "",
+    "id": "4ba9f338-71b5-475b-8373-999e081103d7",
+    "private": 0
+  },
+  {
+    "sha": "",
+    "filename": "\\SocketHandler\\SocketHandler.cpp",
+    "url": "",
+    "lines": "122:4-122:56",
+    "title": "Redundant comment",
+    "comment": "The comment is redundant and adds noise to the code. Consider removing it to improve code clarity and maintainability.",
+    "priority": 1,
+    "category": "Code-Style",
+    "additional": "",
+    "id": "c6f4969b-1de4-4450-9525-6395e27f96e4",
+    "private": 0
+  },
+  {
+    "sha": "",
+    "filename": "\\SocketHandler\\SocketHandler.cpp",
+    "url": "",
+    "lines": "153:4-153:32",
+    "title": "Potential Performance Enhancement",
+    "comment": "Consider using a larger buffer size to improve performance and reduce the number of read operations. This would minimize overhead and enhance the efficiency of content reception.",
+    "priority": 2,
+    "category": "Performance",
+    "additional": "",
+    "id": "c6f82d57-5718-4873-9aea-d63cd86ea831",
+    "private": 0
+  },
+  {
+    "sha": "",
+    "filename": "\\SocketHandler\\SocketHandler.cpp",
+    "url": "",
+    "lines": "81:4-101:19",
+    "title": "Error Handling Improvement",
+    "comment": "The error handling in the receiveHttpHeader method could be enhanced by providing more \ninformative error messages for parsing errors or unexpected header formats. \nThis would facilitate easier debugging and troubleshooting.",
+    "priority": 1,
+    "category": "Error Handling",
+    "additional": "",
+    "id": "5011d4b7-7f0a-408a-9e0c-0223e8ebd1e0",
+    "private": 0
+  }
+]

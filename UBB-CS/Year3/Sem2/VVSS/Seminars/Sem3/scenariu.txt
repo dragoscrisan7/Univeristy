@@ -1,0 +1,32 @@
+Hello, I am Dragos Crisan and today I will present the utility of the Code Review extention.
+
+First thing first, the instalation process is really easy. All you have to do is go to extentions,
+type code review and click on the first option from d-koppenhagen. Then click install. It only takes
+a few moments to install and it is ready to use. As you can see mine is already installed.
+
+I will now proceed to the utilisation process.
+To use the tool all we need to do is select a portion of the code, right click and search for 
+"Code Review: Add Note". WE are now met with an interface for creating the review, where we can
+pick a title, category, description and we can select the priority with an easy interface. I will
+now create a review as an example. 
+
+We choose the title, for category we have a dropdown, we type the description and choose the color
+for our priority.
+
+Title: Error Handling Improvement
+
+Category: Error Handling
+Description: The error handling in the receiveHttpHeader method could be enhanced by providing more 
+informative error messages for parsing errors or unexpected header formats. 
+This would facilitate easier debugging and troubleshooting.
+
+We can also modify or delete the code reviews. This is simplified by the menu provided in the app on the left
+where we can see all code reviews with their priority. 
+
+After we are done with the code reviews we can export them through various methods, like html, markdown, 
+github, json, etc. 
+
+This tool provides a new method to write code reviews that is easy to use, with an intuitive interface
+and with the option to export the code reviews in various formats that are easy to read. 
+
+Thank you for your attention, this was my introduction video for the tool.

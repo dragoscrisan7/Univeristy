@@ -1,0 +1,58 @@
+Started by user [8mha:////4Jikxv8wZWqGtCE/EHBJViYz1/q5Tns5Q8J+RCYjVWayAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL94pLSlNS8EgDnZMOBwgAAAA==[0mStudent
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/931_CrisanDragosCiamaAndreea_Job
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/931_CrisanDragosCiamaAndreea_Job/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/dragoscrisan7/SSVV_Lab.git # timeout=10
+Fetching upstream changes from https://github.com/dragoscrisan7/SSVV_Lab.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+ > git fetch --tags --force --progress -- https://github.com/dragoscrisan7/SSVV_Lab.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 4f22d2d94609814e7083d6e0d43978a627d399aa (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 4f22d2d94609814e7083d6e0d43978a627d399aa # timeout=10
+Commit message: "import"
+ > git rev-list --no-walk 4f22d2d94609814e7083d6e0d43978a627d399aa # timeout=10
+[931_CrisanDragosCiamaAndreea_Job] $ mvn compile
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------< [0;36mssvv.example:Project[0;1m >------------------------[m
+[[1;34mINFO[m] [1mBuilding Project 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mProject[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /var/jenkins_home/workspace/931_CrisanDragosCiamaAndreea_Job/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36mProject[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;34mINFO[m] Compiling 27 source files to /var/jenkins_home/workspace/931_CrisanDragosCiamaAndreea_Job/target/classes
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] Source option 5 is no longer supported. Use 7 or later.
+[[1;31mERROR[m] Target option 5 is no longer supported. Use 7 or later.
+[[1;34mINFO[m] 2 errors 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  9.429 s
+[[1;34mINFO[m] Finished at: 2024-03-25T15:53:12Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.1:compile[m [1m(default-compile)[m on project [36mProject[m: [1;31mCompilation failure[m: Compilation failure: 
+[[1;31mERROR[m] Source option 5 is no longer supported. Use 7 or later.
+[[1;31mERROR[m] Target option 5 is no longer supported. Use 7 or later.
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Archiving artifacts
+Finished: FAILURE

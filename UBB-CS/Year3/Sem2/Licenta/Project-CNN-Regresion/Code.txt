@@ -1,0 +1,37 @@
+import numpy as np
+import pandas as pd
+import missingno as msno
+import matplotlib.pyplot as plt
+import seaborn as sns
+import warnings 
+warnings.filterwarnings("ignore")
+
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.metrics import mean_squared_error, r2_score
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+
+df_crop_production = pd.read_csv("../Datasets/OpDataset/crop_production_data.csv")
+df_soil_analysis = pd.read_csv("../Datasets/OpDataset/soil_analysis_data.csv")
+df_water_usage = pd.read_csv("../Datasets/OpDataset/water_usage_data.csv")
+
+df_crop_production.info()
+df_soil_analysis.info()
+df_water_usage.info()
+
+merge_soil_crop_production = df_crop_production.merge(df_soil_analysis, on = ['District'])
+merge_water_soil_crop_production = merge_soil_crop_production.merge(df_water_usage, on = ['District', 'Crop'])
+
+database = merge_water_soil_crop_production.copy()
+database = database.drop(columns = ['Production (metric tons)', 'Water Consumption (liters/hectare)'], axis = 1)
+database.head()
+District	Crop	Season	Area (hectares)	Yield (quintals)	Soil Type	pH Level	Organic Matter (%)	Nitrogen Content (kg/ha)	Phosphorus Content (kg/ha)	Potassium Content (kg/ha)	Irrigation Method	Water Availability (liters/hectare)
+0	Jodhpur	Wheat	Kharif	16490.142459	30.691986	Sandy	7.453182	2.662898	23.564182	13.014409	37.082003	Sprinkler Irrigation	10557.488279
+1	Jodhpur	Wheat	Kharif	16490.142459	30.691986	Sandy	7.453182	2.662898	23.564182	13.014409	37.082003	Sprinkler Irrigation	14448.126887
+2	Jodhpur	Wheat	Kharif	16490.142459	30.691986	Sandy	7.453182	2.662898	23.564182	13.014409	37.082003	Drip Irrigation	8512.323275
+3	Jodhpur	Wheat	Kharif	16490.142459	30.691986	Sandy	7.453182	2.662898	23.564182	13.014409	37.082003	Sprinkler Irrigation	9434.989877
+4	Jodhpur	Wheat	Kharif	16490.142459	30.691986	Chalky (Calcareous)	7.305740	2.095212	32.246094	17.450967	40.172205	Sprinkler Irrigation	10557.488279
+
+database.duplicated().sum()
+0

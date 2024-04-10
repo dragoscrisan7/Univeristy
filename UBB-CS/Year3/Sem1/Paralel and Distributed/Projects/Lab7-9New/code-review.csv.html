@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Code Review</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* basic style */
+    body {
+      font-family: Helvetica;
+    }
+
+    h1 {
+      font-size: 24px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: green;
+    }
+
+    h3 {
+      font-size: 16px;
+      padding-left: 5px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      white-space: pre-wrap;
+      margin: 0;
+    }
+
+    pre {
+      margin: 0
+    }
+
+    code {
+      border: 1px solid #999;
+      display: block;
+      white-space: pre-wrap;
+    }
+
+    /* links in headlines */
+    h3.lines-headline>a {
+      color: #005bbb;
+      text-decoration: none;
+    }
+
+    h3.lines-headline>a:hover {
+      text-decoration: underline;
+    }
+
+    /* table style */
+    table.review-table {
+      font-size: 14px;
+      padding-left: 10px;
+    }
+
+    table.review-table .caption {
+      font-weight: bold;
+      vertical-align: top;
+    }
+
+    table.review-table tr>td:first-child {
+      width: 120px
+    }
+
+    /* priority indicator */
+    .text>span:before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 5px;
+      margin-left: -15px;
+    }
+
+    .text>span.prio-high:before {
+      background: #FF4500;
+    }
+
+    .text>span.prio-medium:before {
+      background: #FFD700;
+    }
+
+    .text>span.prio-low:before {
+      background: #9ACD32;
+    }
+
+    .text>span.prio-none:before {
+      background: #D3D3D3;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="main-headline">Code Review Results</h1>
+  <section class="file-section">
+    <h2 class="file-section-headline">\SocketHandler\SocketHandler.cpp</h2>
+    <h3 class="lines-headline">
+      <a href="">Position: 17:0-17:62</a>
+    </h3>
+    <table class="review-table">
+      <tr class="row-priority">
+        <td class="caption">Priority</td>
+        <td class="text">
+          <span class="prio-2">2</span>
+        </td>
+      </tr>
+      <tr class="row-title">
+        <td class="caption">Title</td>
+        <td class="text">Refactoring suggestion</td>
+      </tr>
+      <tr class="row-category">
+        <td class="caption">Category</td>
+        <td class="text">Maintainability</td>
+      </tr>
+      <tr class="row-description">
+        <td class="caption">Description</td>
+        <td class="text">
+          <p>The connectToServer method is responsible for both establishing a connection and determining the server address. Consider separating these responsibilities into two separate methods to adhere to the single responsibility principle and improve maintainability.</p>
+        </td>
+      </tr>
+    </table>
+    <h3 class="lines-headline">
+      <a href="">Position: 28:4-44:5</a>
+    </h3>
+    <table class="review-table">
+      <tr class="row-priority">
+        <td class="caption">Priority</td>
+        <td class="text">
+          <span class="prio-1">1</span>
+        </td>
+      </tr>
+      <tr class="row-title">
+        <td class="caption">Title</td>
+        <td class="text">Simplification Opportunity</td>
+      </tr>
+      <tr class="row-category">
+        <td class="caption">Category</td>
+        <td class="text">Best Practices</td>
+      </tr>
+      <tr class="row-description">
+        <td class="caption">Description</td>
+        <td class="text">
+          <p>The logic for determining the port based on the protocol could be simplified by using a ternary operator instead of an if-else statement. This would improve code readability and reduce complexity.</p>
+        </td>
+      </tr>
+    </table>
+    <h3 class="lines-headline">
+      <a href="">Position: 81:4-101:19</a>
+    </h3>
+    <table class="review-table">
+      <tr class="row-priority">
+        <td class="caption">Priority</td>
+        <td class="text">
+          <span class="prio-1">1</span>
+        </td>
+      </tr>
+      <tr class="row-title">
+        <td class="caption">Title</td>
+        <td class="text">Error Handling Improvement</td>
+      </tr>
+      <tr class="row-category">
+        <td class="caption">Category</td>
+        <td class="text">Error Handling</td>
+      </tr>
+      <tr class="row-description">
+        <td class="caption">Description</td>
+        <td class="text">
+          <p>The error handling in the receiveHttpHeader method could be enhanced by providing more 
+informative error messages for parsing errors or unexpected header formats. 
+This would facilitate easier debugging and troubleshooting.</p>
+        </td>
+      </tr>
+    </table>
+    <h3 class="lines-headline">
+      <a href="">Position: 122:4-122:56</a>
+    </h3>
+    <table class="review-table">
+      <tr class="row-priority">
+        <td class="caption">Priority</td>
+        <td class="text">
+          <span class="prio-1">1</span>
+        </td>
+      </tr>
+      <tr class="row-title">
+        <td class="caption">Title</td>
+        <td class="text">Redundant comment</td>
+      </tr>
+      <tr class="row-category">
+        <td class="caption">Category</td>
+        <td class="text">Code-Style</td>
+      </tr>
+      <tr class="row-description">
+        <td class="caption">Description</td>
+        <td class="text">
+          <p>The comment is redundant and adds noise to the code. Consider removing it to improve code clarity and maintainability.</p>
+        </td>
+      </tr>
+    </table>
+    <h3 class="lines-headline">
+      <a href="">Position: 153:4-153:32</a>
+    </h3>
+    <table class="review-table">
+      <tr class="row-priority">
+        <td class="caption">Priority</td>
+        <td class="text">
+          <span class="prio-2">2</span>
+        </td>
+      </tr>
+      <tr class="row-title">
+        <td class="caption">Title</td>
+        <td class="text">Potential Performance Enhancement</td>
+      </tr>
+      <tr class="row-category">
+        <td class="caption">Category</td>
+        <td class="text">Performance</td>
+      </tr>
+      <tr class="row-description">
+        <td class="caption">Description</td>
+        <td class="text">
+          <p>Consider using a larger buffer size to improve performance and reduce the number of read operations. This would minimize overhead and enhance the efficiency of content reception.</p>
+        </td>
+      </tr>
+    </table>
+  </section>
+</body>
+
+</html>
