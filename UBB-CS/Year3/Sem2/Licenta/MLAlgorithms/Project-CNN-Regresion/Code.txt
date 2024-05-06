@@ -1,0 +1,90 @@
+import numpy as np
+import pandas as pd
+import missingno as msno
+import matplotlib.pyplot as plt
+import seaborn as sns
+import warnings 
+warnings.filterwarnings("ignore")
+
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.metrics import mean_squared_error, r2_score
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+
+df_crop_production = pd.read_csv("../../Datasets/OpDataset/crop_production_data.csv")
+df_soil_analysis = pd.read_csv("../../Datasets/OpDataset/soil_analysis_data.csv")
+df_water_usage = pd.read_csv("../../Datasets/OpDataset/water_usage_data.csv")
+
+df_crop_production.info()
+df_soil_analysis.info()
+df_water_usage.info()
+
+merge_soil_crop_production = df_crop_production.merge(df_soil_analysis, on = ['District'])
+merge_water_soil_crop_production = merge_soil_crop_production.merge(df_water_usage, on = ['District', 'Crop'])
+
+database = merge_water_soil_crop_production.copy()
+database = database.drop(columns = ['Production (metric tons)', 'Water Consumption (liters/hectare)'], axis = 1)
+database.head()
+	District	Crop	Season	Area (hectares)	Yield (quintals)	Soil Type	pH Level	Organic Matter (%)	Nitrogen Content (kg/ha)	Phosphorus Content (kg/ha)	Potassium Content (kg/ha)	Irrigation Method	Water Availability (liters/hectare)
+0	Jodhpur	Wheat	Kharif	16490.142459	30.691986	Sandy	7.453182	2.662898	23.564182	13.014409	37.082003	Sprinkler Irrigation	10557.488279
+1	Jodhpur	Wheat	Kharif	16490.142459	30.691986	Sandy	7.453182	2.662898	23.564182	13.014409	37.082003	Sprinkler Irrigation	14448.126887
+2	Jodhpur	Wheat	Kharif	16490.142459	30.691986	Sandy	7.453182	2.662898	23.564182	13.014409	37.082003	Drip Irrigation	8512.323275
+3	Jodhpur	Wheat	Kharif	16490.142459	30.691986	Sandy	7.453182	2.662898	23.564182	13.014409	37.082003	Sprinkler Irrigation	9434.989877
+4	Jodhpur	Wheat	Kharif	16490.142459	30.691986	Chalky (Calcareous)	7.305740	2.095212	32.246094	17.450967	40.172205	Sprinkler Irrigation	10557.488279
+
+database.duplicated().sum()
+0
+
+database['Productivity'] = database['Yield (quintals)'] / database['Area (hectares)']
+database = database.drop(columns=['Yield (quintals)', 'Area (hectares)'])
+
+X = database.drop(columns=['Nitrogen Content (kg/ha)', 'Phosphorus Content (kg/ha)', 'Potassium Content (kg/ha)'])
+y = database[['Nitrogen Content (kg/ha)', 'Phosphorus Content (kg/ha)', 'Potassium Content (kg/ha)']]
+
+encoder = OneHotEncoder()
+X_encoded = encoder.fit_transform(X[['District', 'Crop', 'Season', 'Soil Type', 'Irrigation Method']])
+feature_names = encoder.get_feature_names_out(['District', 'Crop', 'Season', 'Soil Type', 'Irrigation Method'])
+X_categorical = pd.DataFrame(X_encoded.toarray(), columns=feature_names)
+X_numeric = X.drop(columns=['District', 'Crop', 'Season', 'Soil Type', 'Irrigation Method'])
+
+X_processed = pd.concat([X_categorical, X_numeric], axis=1)
+
+X_train_val, X_test, y_train_val, y_test = train_test_split(X_processed, y, test_size=0.2, random_state=42)
+
+scaler = StandardScaler()
+X_train_val_scaled = scaler.fit_transform(X_train_val)
+X_test_scaled = scaler.transform(X_test)
+
+print("X_train_val_scaled:", X_train_val_scaled.shape)
+print("X_test_scaled:", X_test_scaled.shape)
+
+model = Sequential([
+    Dense(64, activation='relu', input_shape=(X_train_val.shape[1],)),
+    Dense(64, activation='relu'),
+    Dense(3)  # Output layer with 3 nodes for predicting N, P, and K levels
+])
+
+model.compile(optimizer='adam', loss='mse')
+
+history = model.fit(X_train_val_scaled, y_train_val, epochs=20, batch_size=32, validation_split=0.2, verbose=1)
+
+mse = model.evaluate(X_test_scaled, y_test, verbose=0)
+predictions = model.predict(X_test_scaled)
+r2_test = r2_score(y_test, predictions)
+
+print(f"Mean Square Error: {mse:.4f}")
+print(f"Root Mean Square Error: {np.sqrt(mse):.4f}")
+print(f"R2 Score: {r2_test:.4f}")
+
+plt.figure(figsize=(8, 6))
+plt.scatter(y_test, predictions, alpha=0.5)
+plt.plot(y_test, y_test, color='red', label='Ideal Predictions')
+plt.title('Actual vs. Predicted Nutrient Levels')
+plt.xlabel('Actual Nutrient Levels')
+plt.ylabel('Predicted Nutrient Levels')
+plt.legend()
+plt.grid(True)
+plt.show()
+
+model.save('Rmodel.h5')  # Save the entire model
