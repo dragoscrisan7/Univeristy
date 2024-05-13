@@ -1,14 +1,21 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; // Import BrowserRouter and other necessary components from 'react-router-dom'
-import HomePage from './components/HomePage'; // Import the HomePage component
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, NavLink, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage'; 
+import ChemicalComponentPage from './pages/ChemicalComponentPage';
+import CropYieldPage from './pages/CropYieldPage';
 
 function App() {
+  useEffect(() => {
+    localStorage.removeItem('token');
+  }, []);
+
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact component={HomePage} /> {/* Define a route for the HomePage component */}
-        {/* Add more routes here for other components/pages */}
-      </Switch>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/crop-yield" element={<CropYieldPage />} /> 
+        <Route path="/chemical-component" element={<ChemicalComponentPage />} /> 
+      </Routes>
     </Router>
   );
 }

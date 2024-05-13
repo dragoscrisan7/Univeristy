@@ -1,6 +1,7 @@
 from sqlite3 import OperationalError
 
 import pandas as pd
+import jwt
 from fastapi import FastAPI, HTTPException, Depends
 from sqlalchemy import select, text
 from sqlalchemy.exc import SQLAlchemyError
@@ -9,6 +10,7 @@ from sqlalchemy.orm import Session
 from ML_loaders import cnn_model, rcnn_model, scaler, rscaler, encoder, xgb_model
 from DataAccessLayer import get_db, engine
 import Models
+from fastapi.responses import JSONResponse
 
 
 app = FastAPI()
@@ -17,10 +19,10 @@ app = FastAPI()
 @app.get("/ping")
 def ping():
     try:
-        # Attempt to execute a simple query to check database connectivity
         with engine.connect() as connection:
             connection.execute(text("SELECT 1"))
-        return {"message": "Ping successful. Database connection is established."}
+        return JSONResponse(content={"message": "Ping successful. Database connection is established."},
+                            headers={"Access-Control-Allow-Origin": "*"})
     except OperationalError as e:
         return {"error": f"Database connection error: {str(e)}"}
 
@@ -30,11 +32,14 @@ def login(user: Models.PUser, db: Session = Depends(get_db)):
     user_db = db.query(Models.User).filter(Models.User.username == user.username).first()
     db.close()
     if user_db and user_db.password == user.password:
-        return Models.LoginResponse(message="Login successful")
+        payload = {"username": user_db.username, "user_id": user_db.id}
+
+        token = jwt.encode(payload, "your-secret-key", algorithm="HS256")
+
+        return JSONResponse(content={"token": token}, headers={"Access-Control-Allow-Origin": "*"})
     raise HTTPException(status_code=401, detail="Invalid username or password")
 
 
-# Endpoint for user registration
 @app.post("/register")
 def register(user: Models.PUser, db: Session = Depends(get_db)):
     user_db = db.execute(select(Models.User).filter(Models.User.username == user.username)).first()
@@ -44,19 +49,25 @@ def register(user: Models.PUser, db: Session = Depends(get_db)):
     db.add(Models.User(**user.dict()))
     db.commit()
     db.close()
-    return Models.RegisterResponse(message="Registration successful")
+    return JSONResponse(content={"message": "Registration successful"}, headers={"Access-Control-Allow-Origin": "*"})
 
 
-# Endpoint for retrieving names of a specific type
-@app.get("/retrieve-names/{DDtype}")
-def retrieve_names(DDtype: str, db: Session = Depends(get_db)):
+@app.get("/retrieve-names")
+def retrieve_names(db: Session = Depends(get_db)):
     try:
-        results = db.query(Models.DropDown).filter(Models.DropDown.type == DDtype).all()
-        names = [result.name for result in results]  # Ensure 'name' attribute is available in the result object
-        return {"names": names}
+        results = db.query(Models.DropDown).all()
+
+        names_by_type = {}
+
+        for result in results:
+            type_key = result.type.replace(' ', '_')
+            if type_key not in names_by_type:
+                names_by_type[type_key] = []
+            names_by_type[type_key].append(result.name)
+
+        return JSONResponse(content={"names_by_type": names_by_type}, headers={"Access-Control-Allow-Origin": "*"})
     except SQLAlchemyError as e:
-        # Log the error or handle it appropriately
-        return {"error": str(e)}
+        raise HTTPException(status_code=500, detail=str(e))
     finally:
         db.close()
 
@@ -66,7 +77,6 @@ def cnn_predict(input_data: Models.PredictYieldData):
     try:
         input_dict = input_data.dict()
 
-        # Define mapping dictionary for column names
         column_mapping = {
             'Area_hectares': 'Area (hectares)',
             'Soil_Type': 'Soil Type',
@@ -79,33 +89,25 @@ def cnn_predict(input_data: Models.PredictYieldData):
             'Irrigation_Method': 'Irrigation Method'
         }
 
-        # Rename keys to match the column names used in the model
         input_dict = {column_mapping.get(key, key): value for key, value in input_dict.items()}
 
-        # Create a DataFrame with a single row containing the input data
         input_df = pd.DataFrame([input_dict])
 
-        # Encode categorical columns using the pre-trained encoder
         X_encoded = encoder.transform(input_df[['District', 'Crop', 'Season', 'Soil Type', 'Irrigation Method']])
         feature_names = encoder.get_feature_names_out(['District', 'Crop', 'Season', 'Soil Type', 'Irrigation Method'])
         X_categorical = pd.DataFrame(X_encoded.toarray(), columns=feature_names)
 
-        # Drop categorical columns from the input DataFrame
         X_numeric = input_df.drop(columns=['District', 'Crop', 'Season', 'Soil Type', 'Irrigation Method'])
 
-        # Scale numerical columns using the pre-trained scaler
         X_processed = pd.concat([X_categorical, X_numeric], axis=1)
 
-        # Combine the encoded categorical columns and the scaled numerical columns
         X_processed_scaled = scaler.transform(X_processed)
 
-        # Reshape the input data to match the expected shape of the model input
         X_reshaped = X_processed_scaled.reshape(X_processed_scaled.shape[0], X_processed_scaled.shape[1], 1)
 
-        # Make predictions using the loaded model
         prediction = cnn_model.predict(X_reshaped)
 
-        return {'prediction': prediction.tolist()}
+        return JSONResponse(content={"prediction": prediction.tolist()}, headers={"Access-Control-Allow-Origin": "*"})
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -127,24 +129,19 @@ def rcnn_predict(input_data: Models.PredictChemicalData):
 
         input_df = pd.DataFrame([input_dict])
 
-        # Encode categorical columns using the pre-trained encoder
         X_encoded = encoder.transform(input_df[['District', 'Crop', 'Season', 'Soil Type', 'Irrigation Method']])
         feature_names = encoder.get_feature_names_out(['District', 'Crop', 'Season', 'Soil Type', 'Irrigation Method'])
         X_categorical = pd.DataFrame(X_encoded.toarray(), columns=feature_names)
 
-        # Drop categorical columns from the input DataFrame
         X_numeric = input_df.drop(columns=['District', 'Crop', 'Season', 'Soil Type', 'Irrigation Method'])
 
-        # Combine the encoded categorical columns and the numerical columns
         X_processed = pd.concat([X_categorical, X_numeric], axis=1)
 
-        # Scale numerical columns using the pre-trained scaler
         X_processed_scaled = rscaler.transform(X_processed)
 
-        # Make predictions using the loaded model
-        predictions = rcnn_model.predict(X_processed_scaled)
+        prediction = rcnn_model.predict(X_processed_scaled)
 
-        return {'predictions': predictions.tolist()}
+        return JSONResponse(content={"prediction": prediction.tolist()}, headers={"Access-Control-Allow-Origin": "*"})
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -168,20 +165,16 @@ def xgb_predict(input_data: Models.PredictYieldData):
 
         input_dict = {column_mapping.get(key, key): value for key, value in input_dict.items()}
 
-        # Create a DataFrame with a single row using the input data
         input_df = pd.DataFrame([input_dict])
 
-        # Transform categorical columns to category data type
         cat_cols = ['District', 'Crop', 'Season', 'Soil Type', 'Irrigation Method']
         input_df[cat_cols] = input_df[cat_cols].astype("category")
 
-        # Drop any unnecessary columns (if needed)
         input_df.drop(columns=['Production (metric tons)', 'Water Consumption (liters/hectare)'], inplace=True,
                       errors='ignore')
 
-        # Predict using the XGBoost model
         prediction = xgb_model.predict(input_df)
 
-        return {'predicted_yield': prediction.tolist()}
+        return JSONResponse(content={"prediction": prediction.tolist()}, headers={"Access-Control-Allow-Origin": "*"})
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
