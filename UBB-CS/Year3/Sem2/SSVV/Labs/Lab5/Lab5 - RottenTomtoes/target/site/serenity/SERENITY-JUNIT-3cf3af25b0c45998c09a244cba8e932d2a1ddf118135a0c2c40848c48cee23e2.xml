@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="org.example.features.search.SearchByInvalidKeywordStory" skipped="0" tests="1" time="7.26" timestamp="2024-05-13 05:03:12"><testcase classname="org.example.features.search.SearchByInvalidKeywordStory" name="Searching by keyword should display the corresponding information ddt"/></testsuite>

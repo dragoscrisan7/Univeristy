@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="org.example.features.search.SearchValid" skipped="0" tests="1" time="19.89" timestamp="2024-05-22 08:35:23"><testcase classname="org.example.features.search.SearchValid" name="Searching by keyword should display the corresponding information ddt"><error message="Expected condition failed: waiting for Expecting element is displayed: By.cssSelector: search-page-manager (tried for 5 second(s) with 50 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-810AP8O', ip: '172.23.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-810AP8O', ip: '172.23.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'&#10;Driver info: driver.version: unknown&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-810AP8O', ip: '172.23.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.TimeoutException">Expected condition failed: waiting for Expecting element is displayed: By.cssSelector: search-page-manager (tried for 5 second(s) with 50 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-810AP8O', ip: '172.23.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-810AP8O', ip: '172.23.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-810AP8O', ip: '172.23.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: driver.version: unknown</error><system-err>Expected condition failed: waiting for Expecting element is displayed: By.cssSelector: search-page-manager (tried for 5 second(s) with 50 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-810AP8O', ip: '172.23.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-810AP8O', ip: '172.23.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: driver.version: unknown
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-810AP8O', ip: '172.23.192.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: driver.version: unknown&#13;
+org.example.pages.RottenTomatoesPage.getList(RottenTomatoesPage.java:44)&#13;
+org.example.steps.serenity.EndUserSteps.should_see_search_information(EndUserSteps.java:86)&#13;
+org.example.features.search.SearchValid.searching_by_keyword_should_display_the_corresponding_information_ddt(SearchValid.java:52)&#13;
+</system-err></testcase></testsuite>

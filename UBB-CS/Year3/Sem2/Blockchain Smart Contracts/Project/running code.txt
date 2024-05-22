@@ -1,0 +1,11 @@
+let university = await University.deployed();
+
+let personAddress = "<person_address>"; // Replace with the address of the person
+let degreeName = "Bachelor of Science"; // Replace with the desired degree name
+let dateOfIssuance = Math.floor(Date.now() / 1000); // Current timestamp
+
+let academicCredentialAddress = await university.issueAcademicCredential(personAddress, degreeName, dateOfIssuance);
+
+let academicCredential = await AcademicCredential.at(academicCredentialAddress);
+let degreeName = await academicCredential.degreeName();
+let dateOfIssuance = await academicCredential.dateOfIssuance();
