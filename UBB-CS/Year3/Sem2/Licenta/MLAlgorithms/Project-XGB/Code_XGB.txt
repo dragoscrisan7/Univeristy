@@ -1,11 +1,14 @@
 import numpy as np
 import pandas as pd
 import missingno as msno
+import os
 #import matplotlib
 #matplotlib.use('agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
 import warnings 
+import joblib
+import missingno as msno
 warnings.filterwarnings("ignore")
 
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
@@ -19,9 +22,9 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 print("Successfully Imported!")
 
-df_crop_production = pd.read_csv("../Datasets/OpDataset/crop_production_data.csv")
-df_soil_analysis = pd.read_csv("../Datasets/OpDataset/soil_analysis_data.csv")
-df_water_usage = pd.read_csv("../Datasets/OpDataset/water_usage_data.csv")
+df_crop_production = pd.read_csv("../../Datasets/OpDataset/crop_production_data.csv")
+df_soil_analysis = pd.read_csv("../../Datasets/OpDataset/soil_analysis_data.csv")
+df_water_usage = pd.read_csv("../../Datasets/OpDataset/water_usage_data.csv")
 
 df_crop_production.info()
 
@@ -41,6 +44,32 @@ num_cols = ['Area (hectares)', 'pH Level', 'Organic Matter (%)', 'Nitrogen Conte
 cat_cols = ['District', 'Crop', 'Season', 'Soil Type', 'Irrigation Method']
 encoder = OneHotEncoder()
 database[cat_cols] = database[cat_cols].astype("category")
+
+
+cwd = os.getcwd()
+plt.figure(figsize=(14, 20))
+
+for i, col in enumerate(num_cols):
+    plt.subplot(7, 2, 2*i + 1)
+    sns.histplot(database[col], kde=True, color='blue', alpha=0.3, bins=20)
+    plt.title(f'Histogram of {col}')
+    plt.xlabel(col)
+    plt.ylabel('Frequency')
+
+    plt.subplot(7, 2, 2*i + 2)
+    sns.boxplot(x=database[col], color='green')
+    plt.title(f'Box Plot of {col}')
+    plt.xlabel(col)
+
+plt.tight_layout()
+plt.savefig(os.path.join(cwd, "histogram_boxplot.png"))
+plt.show()
+
+plt.figure(figsize = (10,10))
+sns.heatmap(database[num_cols + ['Yield (quintals)']].corr(), cmap = 'Blues', square = True, annot = True, linewidths = 0.5)
+
+
+
 
 X = database.drop(columns=['Yield (quintals)'], axis=1)
 y = database['Yield (quintals)']

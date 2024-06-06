@@ -12,10 +12,10 @@ origins = [
 
 api.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,  # You can specify origins instead of "*" for more security
+    allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE"],  # Add more HTTP methods as needed
-    allow_headers=["*"],  # You can specify headers instead of "*" for more security
+    allow_methods=["GET", "POST", "PUT", "DELETE"],
+    allow_headers=["*"],
 )
 
 app.mount("/", api)
