@@ -2,34 +2,34 @@
 <ul>
   <li>:open_file_folder: Semester 1
     <ul>
-      <li>
+      <li> :1234:
         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Algebra"> 
-          :clubs:  Algebra 
+          Algebra 
         </a>
       </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Logica%20Computationala"> 
-          :trollface:  Computational Logic 
+      <li> :speech_balloon:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Communication%20and%20Personal%20Development"> 
+          Comumunication and Personal Development
         </a>
       </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Arhitectura%20Sistemelor%20de%20Calcul"> 
-          :warning:  Computer Systems Architecture 
+      <li> :mag:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Computation%20Logic"> 
+          Computational Logic 
         </a>
       </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Comunicare%20si%20dezsv%20profesionala"> 
-          :warning:  Comumunication and Personal Development
+      <li> :classical_building:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Computer%20Systems%20Architecture"> 
+          Computer Systems Architecture 
         </a>
       </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Fundamentele%20Programarii"> 
-          :snake:  Fundamental of Programming 
+      <li> :computer:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Fundamentals%20of%20Programming"> 
+          Fundamental of Programming 
         </a>
       </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Analiza"> 
-          :sparkling_heart:  Mathematical Analysis
+      <li> :bar_chart:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Mathematical%20Analysis"> 
+          Mathematical Analysis
         </a>
       </li>
     </ul>
