@@ -13,6 +13,16 @@
         </a>
       </li>
       <li>
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Arhitectura%20Sistemelor%20de%20Calcul"> 
+          :warning:  Computer Systems Architecture 
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Comunicare%20si%20dezsv%20profesionala"> 
+          :warning:  Comumunication and Personal Development
+        </a>
+      </li>
+      <li>
         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Fundamentele%20Programarii"> 
           :snake:  Fundamental of Programming 
         </a>
@@ -20,16 +30,6 @@
       <li>
         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Analiza"> 
           :sparkling_heart:  Mathematical Analysis
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Arhitectura%20Sistemelor%20de%20Calcul"> 
-          :warning:  Computer Systems Architecture 
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Comunicare%20si%20dezsv%20profesionala"> 
-          :warning:  Comunicare si dezvoltare profesionala
         </a>
       </li>
     </ul>
