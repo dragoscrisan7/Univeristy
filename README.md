@@ -161,31 +161,36 @@
       </li>
     </ul>
   </li>
-  <li>:open_file_folder: Semester 6
+  <li>:open_file_folder: Year 3 Sem 2
     <ul>
-      <li> :anger:
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem2/Blockchain%20Smart%20Contracts">
-          Blockchain
-        </a>
-      </li>
-      <li> :grey_question:
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem2/Gestiunea%20proiectelor%20soft">
-          Gestiunea Proiectelor de Soft
-        </a>
-      </li>
-      <li> :scroll:
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem2/Licenta">
+      <li> :page_with_curl:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem2/Bachelors">
           Bachelors
         </a>
       </li>
-      <li> :sos:
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem2/Calcul%20numeric">
+      <li> :link:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem2/Blockchain%20Smart%20Contracts">
+          Blockchain and Smart Contracts
+        </a>
+      </li>
+      <li> :mantelpiece_clock:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem2/Informatics%20History">
+          Informatics History
+        </a>
+      </li>
+      <li> :calculator:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem2/Numerical%20Calculus">
           Numerical Calculus
         </a>
       </li>
-      <li> :shipit:
+      <li> :heavy_check_mark:
         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem2/SSVV">
           Software Systems Verification and Validation
+        </a>
+      </li>
+      <li> :clipboard:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem2/Soft%20Project%20Management">
+          Soft Project Management
         </a>
       </li>
     </ul>
