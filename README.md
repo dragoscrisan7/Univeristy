@@ -102,28 +102,28 @@
       </li>
     </ul>
   </li>
-  <li>:open_file_folder: Semester 4
+  <li>:open_file_folder: Year 2 Semester 2
     <ul>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem2/Sisteme%20de%20gestiune%20a%20bazelor%20de%20date">
-          :nut_and_bolt:  Database Management Systems
+      li> :robot:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem2/Artificial%20Intelligence">
+          Artificial Intelligence
       </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem2/Programare%20Web">
-          :newspaper:  Web Programming
+      <li> :card_file_box:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem2/Database%20Management%20Systems">
+          Database Management Systems
       </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem2/Medii%20de%20proiectare%20%C8%99i%20programare">
-          :zap:  Systems for Design and Implementation
-      </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem2/Inteligen%C8%9B%C4%83%20artificial%C4%83">
-          :ferris_wheel:  Artificial Intelligence
-      </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem2/Ingineria%20sistemelor%20de%20soft">
-          :ambulance:  Software Engineering
+      <li> :technologist:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem2/Software%20Engineering">
+          Software Engineering
         </a>
+      </li>
+      <li> :toolbox:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem2/Systems%20for%20Design%20and%20Implementation">
+          Systems for Design and Implementation
+      </li>
+      <li> :earth_africa:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem2/Web%20Programming">
+          Web Programming
       </li>
     </ul>
   </li>
