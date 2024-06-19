@@ -198,7 +198,7 @@
 </ul>
 
 <br>
-<img src="http://www.chem.ubbcluj.ro/romana/conferinte/MEEMB/archive/pictures/ubb.gif" />
+<img src="https://www.google.com/imgres?q=ubb%20faculty%20of%20mathematics%20and%20informatics&imgurl=https%3A%2F%2Fwww.cs.ubbcluj.ro%2Fwp-content%2Fthemes%2FCSUBB%2Fimages%2Flogo_en.png&imgrefurl=https%3A%2F%2Fwww.cs.ubbcluj.ro%2Fen%2F&docid=4T7O9f9sxwIWpM&tbnid=AKdSeKUHWh6sxM&vet=12ahUKEwjCt_-YrOiGAxW_g_0HHQ5SCfgQM3oECBsQAA..i&w=1880&h=320&hcb=2&ved=2ahUKEwjCt_-YrOiGAxW_g_0HHQ5SCfgQM3oECBsQAA" />
 <a href="http://www.cs.ubbcluj.ro">
 <p> Babeş-Bolyai University of Cluj Napoca </p>
 <p> Faculty of Mathematics and Computer Science </p>
