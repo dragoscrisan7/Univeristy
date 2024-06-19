@@ -127,21 +127,21 @@
       </li>
     </ul>
   </li>
-  <li>:open_file_folder: Semester 5
+  <li>:open_file_folder: Year 3 Sem 1
     <ul>
-      <li> :musical_score:
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem1/Cryptografie%20cu%20cheie%20publica">
+      <li> :lock:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem1/Cryotography">
           Cryptography
         </a>
       </li>
-      <li> :pencil:
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem1/LFTC">
-          Formal Languages and Compiler Design
+      <li> :bulb:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem1/DIP">
+          Designing Innovative Programs
         </a>
       </li>
-      <li> :chart_with_downwards_trend:
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem1/Securitate%20Software">
-          Software Security
+      <li> :symbols:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem1/FLCD">
+          Formal Languages and Compiler Design
         </a>
       </li>
       <li> :iphone:
@@ -149,14 +149,14 @@
           Mobile Application Programming
         </a>
       </li>
-      <li> :black_joker:
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem1/Paralel%20and%20Distributed">
+      <li> :arrows_counterclockwise:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem1/Paralel%20and%20Distributed%20Programming">
           Parallel and Distributed Programming
         </a>
       </li>
-      <li> :black_joker:
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem1/DPI">
-          Proiectarea produselor inovative
+      <li> :shield:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem1/Software%20Security">
+          Software Security
         </a>
       </li>
     </ul>
