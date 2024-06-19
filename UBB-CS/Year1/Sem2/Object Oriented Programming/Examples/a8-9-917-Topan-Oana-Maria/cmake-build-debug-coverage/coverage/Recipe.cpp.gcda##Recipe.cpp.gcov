@@ -1,0 +1,432 @@
+        -:    0:Source:C:/Users/Oana/Documents/GitHub/oop-work/a5-6-917-Topan-Oana-Maria/domain/Recipe.cpp
+        -:    0:Graph:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\domain\Recipe.cpp.gcno
+        -:    0:Data:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\domain\Recipe.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Oana on 3/20/2022.
+        -:    3://
+        -:    4:
+        -:    5:#include "Recipe.h"
+        -:    6:
+function _ZN6RecipeC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_i8Duration called 40 returned 100% blocks executed 64%
+       40:    7:Recipe::Recipe(std::string _title, std::string _chef, std::string _link, int _nr_of_likes,
+       40:    8:               Duration _duration) {
+       40:    8-block  0
+call    0 returned 40
+call    1 returned 40
+call    2 returned 40
+call    3 returned 40
+branch  4 taken 40 (fallthrough)
+branch  5 taken 0 (throw)
+        -:    9:
+       40:   10:    title=_title;
+       40:   10-block  0
+call    0 returned 40
+branch  1 taken 40 (fallthrough)
+branch  2 taken 0 (throw)
+       40:   11:    chef= _chef;
+       40:   11-block  0
+call    0 returned 40
+branch  1 taken 40 (fallthrough)
+branch  2 taken 0 (throw)
+       40:   12:    link = _link;
+       40:   12-block  0
+call    0 returned 40
+branch  1 taken 40 (fallthrough)
+branch  2 taken 0 (throw)
+       40:   13:    number_of_likes = _nr_of_likes;
+       40:   14:    duration = _duration;
+       40:   15:}
+       40:   15-block  0
+    $$$$$:   15-block  1
+call    0 never executed
+    $$$$$:   15-block  2
+call    1 never executed
+    $$$$$:   15-block  3
+call    2 never executed
+        -:   16:
+function _ZN6RecipeC2Ev called 954 returned 100% blocks executed 67%
+      954:   17:Recipe::Recipe() {
+      954:   17-block  0
+call    0 returned 954
+call    1 returned 954
+call    2 returned 954
+call    3 returned 954
+branch  4 taken 954 (fallthrough)
+branch  5 taken 0 (throw)
+      954:   18:    title="";
+      954:   18-block  0
+call    0 returned 954
+branch  1 taken 954 (fallthrough)
+branch  2 taken 0 (throw)
+      954:   19:    chef="";
+      954:   19-block  0
+call    0 returned 954
+branch  1 taken 954 (fallthrough)
+branch  2 taken 0 (throw)
+      954:   20:    duration= Duration();
+      954:   20-block  0
+call    0 returned 954
+branch  1 taken 954 (fallthrough)
+branch  2 taken 0 (throw)
+      954:   21:    link = "";
+      954:   21-block  0
+call    0 returned 954
+branch  1 taken 954 (fallthrough)
+branch  2 taken 0 (throw)
+      954:   22:    number_of_likes=0;
+      954:   23:}
+      954:   23-block  0
+    $$$$$:   23-block  1
+call    0 never executed
+    $$$$$:   23-block  2
+call    1 never executed
+    $$$$$:   23-block  3
+call    2 never executed
+        -:   24:
+function _ZN6RecipeC2ERKS_ called 131 returned 100% blocks executed 64%
+      131:   25:Recipe::Recipe(const Recipe &copy) {
+      131:   25-block  0
+call    0 returned 131
+call    1 returned 131
+call    2 returned 131
+call    3 returned 131
+branch  4 taken 131 (fallthrough)
+branch  5 taken 0 (throw)
+      131:   26:    this->title = copy.title;
+      131:   26-block  0
+call    0 returned 131
+branch  1 taken 131 (fallthrough)
+branch  2 taken 0 (throw)
+      131:   27:    this->chef= copy.chef;
+      131:   27-block  0
+call    0 returned 131
+branch  1 taken 131 (fallthrough)
+branch  2 taken 0 (throw)
+      131:   28:    this->link = copy.link;
+      131:   28-block  0
+call    0 returned 131
+branch  1 taken 131 (fallthrough)
+branch  2 taken 0 (throw)
+      131:   29:    this->number_of_likes = copy.number_of_likes;
+      131:   30:    this->duration = copy.duration;
+      131:   31:}
+      131:   31-block  0
+    $$$$$:   31-block  1
+call    0 never executed
+    $$$$$:   31-block  2
+call    1 never executed
+    $$$$$:   31-block  3
+call    2 never executed
+        -:   32:
+function _ZNK6Recipe9get_titleB5cxx11Ev called 18 returned 100% blocks executed 100%
+       18:   33:std::string Recipe::get_title() const {
+       18:   34:    return this->title;
+       18:   34-block  0
+call    0 returned 18
+        -:   35:}
+        -:   36:
+function _ZNK6Recipe8get_chefB5cxx11Ev called 10 returned 100% blocks executed 100%
+       10:   37:std::string Recipe::get_chef() const {
+       10:   38:    return this->chef;
+       10:   38-block  0
+call    0 returned 10
+        -:   39:}
+        -:   40:
+function _ZNK6Recipe8get_linkB5cxx11Ev called 6 returned 100% blocks executed 100%
+        6:   41:std::string Recipe::get_link() const {
+        6:   42:    return this->link;
+        6:   42-block  0
+call    0 returned 6
+        -:   43:}
+        -:   44:
+function _ZNK6Recipe19get_number_of_likesEv called 6 returned 100% blocks executed 100%
+        6:   45:int Recipe::get_number_of_likes() const {
+        6:   46:    return this->number_of_likes;
+        6:   46-block  0
+        -:   47:}
+        -:   48:
+function _ZNK6Recipe12get_durationEv called 8 returned 100% blocks executed 100%
+        8:   49:Duration Recipe::get_duration() const {
+        8:   50:    return this->duration;
+        8:   50-block  0
+call    0 returned 8
+        -:   51:}
+        -:   52:
+function _ZN6Recipe8set_chefENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 100%
+        1:   53:void Recipe::set_chef(std::string _chef) {
+        1:   54:    this->chef = _chef;
+        1:   54-block  0
+call    0 returned 1
+        1:   55:}
+        -:   56:
+function _ZN6Recipe8set_linkENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 100%
+        1:   57:void Recipe::set_link(std::string _link) {
+        1:   58:    this->link  = _link;
+        1:   58-block  0
+call    0 returned 1
+        1:   59:}
+        -:   60:
+function _ZN6Recipe9set_titleENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 100%
+        1:   61:void Recipe::set_title(std::string _title) {
+        1:   62:    this->title = _title;
+        1:   62-block  0
+call    0 returned 1
+        1:   63:}
+        -:   64:
+function _ZN6Recipe12set_durationE8Duration called 1 returned 100% blocks executed 100%
+        1:   65:void Recipe::set_duration(Duration _duration) {
+        1:   66:    this->duration = _duration;
+        1:   67:}
+        -:   68:
+function _ZN6Recipe19set_number_of_likesEi called 1 returned 100% blocks executed 100%
+        1:   69:void Recipe::set_number_of_likes(int _nr_likes) {
+        1:   70:    this->number_of_likes = _nr_likes;
+        1:   71:}
+        -:   72:
+function _ZN6RecipeeqERKS_ called 129 returned 100% blocks executed 100%
+      129:   73:bool Recipe::operator==(const Recipe &t) {
+      129:   74:    if (title != t.title || t.chef != chef || t.link != link)
+      129:   74-block  0
+call    0 returned 129
+branch  1 taken 15 (fallthrough)
+branch  2 taken 114
+       15:   74-block  1
+call    3 returned 15
+branch  4 taken 15 (fallthrough)
+branch  5 taken 0
+       15:   74-block  2
+call    6 returned 15
+branch  7 taken 0 (fallthrough)
+branch  8 taken 15
+      114:   74-block  3
+       15:   74-block  4
+      129:   74-block  5
+branch  9 taken 114 (fallthrough)
+branch 10 taken 15
+      114:   75:        return false;
+      114:   75-block  0
+       15:   76:    return true;
+       15:   76-block  0
+        -:   77:}
+        -:   78:
+function _ZN6RecipeC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_S5_ called 44 returned 100% blocks executed 67%
+       44:   79:Recipe::Recipe(std::string _title, std::string _chef, std::string _link) {
+       44:   79-block  0
+call    0 returned 44
+call    1 returned 44
+call    2 returned 44
+call    3 returned 44
+branch  4 taken 44 (fallthrough)
+branch  5 taken 0 (throw)
+       44:   80:    title = _title;
+       44:   80-block  0
+call    0 returned 44
+branch  1 taken 44 (fallthrough)
+branch  2 taken 0 (throw)
+       44:   81:    chef = _chef;
+       44:   81-block  0
+call    0 returned 44
+branch  1 taken 44 (fallthrough)
+branch  2 taken 0 (throw)
+       44:   82:    link = _link;
+       44:   82-block  0
+call    0 returned 44
+branch  1 taken 44 (fallthrough)
+branch  2 taken 0 (throw)
+       44:   83:    duration = Duration();
+       44:   83-block  0
+call    0 returned 44
+branch  1 taken 44 (fallthrough)
+branch  2 taken 0 (throw)
+       44:   84:    number_of_likes = 0;
+       44:   85:}
+       44:   85-block  0
+    $$$$$:   85-block  1
+call    0 never executed
+    $$$$$:   85-block  2
+call    1 never executed
+    $$$$$:   85-block  3
+call    2 never executed
+        -:   86:
+function _ZNK6Recipe13recipe_stringB5cxx11Ev called 1 returned 100% blocks executed 47%
+        1:   87:std::string Recipe::recipe_string() const{
+        2:   88:    std::string recipe = "Title: " + get_title() + " by chef " + get_chef() + " with " + std::to_string(number_of_likes) + " likes.\n";
+        1:   88-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   88-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   88-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   88-block  3
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   88-block  4
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   88-block  5
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   88-block  6
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   88-block  7
+call   22 returned 1
+branch 23 taken 1 (fallthrough)
+branch 24 taken 0 (throw)
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+call   31 returned 1
+    $$$$$:   88-block  8
+    $$$$$:   88-block  9
+    $$$$$:   88-block 10
+    $$$$$:   88-block 11
+    $$$$$:   88-block 12
+    $$$$$:   88-block 13
+    $$$$$:   88-block 14
+        1:   89:    return recipe;
+        1:   89-block  0
+        -:   90:}
+        -:   91:
+function _ZNK6Recipe18recipe_long_stringB5cxx11Ev called 1 returned 100% blocks executed 45%
+        1:   92:std::string Recipe::recipe_long_string() const {
+        2:   93:    std::string recipe = "Title: "+ get_title() + " by chef " +get_chef() + ". Duration: "+std::to_string(duration.get_minutes())+":"+std::to_string(duration.get_seconds())+" with "+std::to_string(number_of_likes)+" likes.\n + link("+link+")\n";
+        1:   93-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   93-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   93-block  2
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   93-block  3
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   93-block  4
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   93-block  5
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   93-block  6
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   93-block  7
+call   22 returned 1
+branch 23 taken 1 (fallthrough)
+branch 24 taken 0 (throw)
+        1:   93-block  8
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   93-block  9
+call   28 returned 1
+branch 29 taken 1 (fallthrough)
+branch 30 taken 0 (throw)
+        1:   93-block 10
+call   31 returned 1
+branch 32 taken 1 (fallthrough)
+branch 33 taken 0 (throw)
+        1:   93-block 11
+call   34 returned 1
+branch 35 taken 1 (fallthrough)
+branch 36 taken 0 (throw)
+        1:   93-block 12
+call   37 returned 1
+branch 38 taken 1 (fallthrough)
+branch 39 taken 0 (throw)
+        1:   93-block 13
+call   40 returned 1
+branch 41 taken 1 (fallthrough)
+branch 42 taken 0 (throw)
+        1:   93-block 14
+call   43 returned 1
+branch 44 taken 1 (fallthrough)
+branch 45 taken 0 (throw)
+        1:   93-block 15
+call   46 returned 1
+branch 47 taken 1 (fallthrough)
+branch 48 taken 0 (throw)
+        1:   93-block 16
+call   49 returned 1
+branch 50 taken 1 (fallthrough)
+branch 51 taken 0 (throw)
+        1:   93-block 17
+call   52 returned 1
+branch 53 taken 1 (fallthrough)
+branch 54 taken 0 (throw)
+call   55 returned 1
+call   56 returned 1
+call   57 returned 1
+call   58 returned 1
+call   59 returned 1
+call   60 returned 1
+call   61 returned 1
+call   62 returned 1
+call   63 returned 1
+call   64 returned 1
+call   65 returned 1
+call   66 returned 1
+call   67 returned 1
+call   68 returned 1
+call   69 returned 1
+    $$$$$:   93-block 18
+    $$$$$:   93-block 19
+    $$$$$:   93-block 20
+    $$$$$:   93-block 21
+    $$$$$:   93-block 22
+    $$$$$:   93-block 23
+    $$$$$:   93-block 24
+    $$$$$:   93-block 25
+    $$$$$:   93-block 26
+    $$$$$:   93-block 27
+    $$$$$:   93-block 28
+    $$$$$:   93-block 29
+    $$$$$:   93-block 30
+    $$$$$:   93-block 31
+    $$$$$:   93-block 32
+        1:   94:    return recipe;
+        1:   94-block  0
+        -:   95:}
+        -:   96:
+function _ZNK6Recipe4playEv called 0 returned 0% blocks executed 0%
+    #####:   97:void Recipe::play() const {
+    #####:   98:    ShellExecuteA(NULL, NULL, "chrome.exe", this->get_link().c_str(), NULL, SW_SHOWMAXIMIZED);
+    %%%%%:   98-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:   98-block  1
+call    5 never executed
+    $$$$$:   98-block  2
+call    6 never executed
+    #####:   99:}
+        -:  100:
+        -:  101:
+        -:  102:

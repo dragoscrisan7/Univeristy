@@ -1,0 +1,54 @@
+        -:    0:Source:C:/Users/Oana/Documents/GitHub/oop-work/a5-6-917-Topan-Oana-Maria/repository/Watch_list.cpp
+        -:    0:Graph:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\repository\Watch_list.cpp.gcno
+        -:    0:Data:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\repository\Watch_list.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Oana on 3/20/2022.
+        -:    3://
+        -:    4:
+        -:    5:#include "Watch_list.h"
+        -:    6:
+function _ZN10Watch_listC2Ev called 32 returned 100% blocks executed 100%
+       32:    7:Watch_list::Watch_list() {
+       32:    7-block  0
+call    0 returned 32
+       32:    8:    current_index = 0;
+       32:    9:}
+        -:   10:
+function _ZN10Watch_list10add_recipeERK6Recipe called 14 returned 100% blocks executed 100%
+       14:   11:bool Watch_list::add_recipe(const Recipe& recipe) {
+       14:   12:    return recipes.add_recipe(recipe);
+       14:   12-block  0
+call    0 returned 14
+        -:   13:}
+        -:   14:
+function _ZN10Watch_list13delete_recipeERK6Recipe called 4 returned 100% blocks executed 100%
+        4:   15:bool Watch_list::delete_recipe(const Recipe &recipe) {
+        4:   16:    return recipes.delete_recipe(recipe);
+        4:   16-block  0
+call    0 returned 4
+        -:   17:}
+        -:   18:
+function _ZNK10Watch_list15get_all_recipesEv called 2 returned 100% blocks executed 100%
+        2:   19:Recipe *Watch_list::get_all_recipes() const {
+        2:   20:    return recipes.get_all_recipes();
+        2:   20-block  0
+call    0 returned 2
+        -:   21:}
+        -:   22:
+function _ZNK10Watch_list21get_number_of_recipesEv called 25 returned 100% blocks executed 100%
+       25:   23:int Watch_list::get_number_of_recipes() const {
+       25:   24:    return recipes.get_number_of_recipes();
+       25:   24-block  0
+call    0 returned 25
+        -:   25:}
+        -:   26:
+function _ZNK10Watch_list35get_recipe_from_position_watch_listEi called 2 returned 100% blocks executed 100%
+        2:   27:Recipe Watch_list::get_recipe_from_position_watch_list(int position) const {
+        2:   28:    return recipes.get_recipe_from_position(position);
+        2:   28-block  0
+call    0 returned 2
+        -:   29:}
+        -:   30:
+        -:   31:
+        -:   32:

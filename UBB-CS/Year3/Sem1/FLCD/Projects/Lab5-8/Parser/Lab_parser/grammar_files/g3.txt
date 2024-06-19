@@ -1,0 +1,19 @@
+program := decllist (*this one is added now*)
+decllist := declaration | declaration ";" decllist
+declaration := identifier ":" type
+type1 := "char" | "float" | "string" | "int"
+listdecl := type1 "list" "[" number "]"
+type := type1 | listdecl
+cmpdstmt := "function" stmtlist "end_function"
+stmtlist := simplstmt | structstmt
+simplstmt := assignstmt | iostmt
+assignstmt := identifier "=" expression
+expression := expression "+" term | expression "-" term | term
+term := term "*" factor | term "/" factor | factor
+factor := "(" expression ")" | identifier | number
+iostmt := "read" "(" identifier ")" | "write" "(" identifier ")" | "write" "(" integer ")" | "write" "(" char ")" | "write" "(" string ")"| "write" "(" identifier ")"
+structstmt := cmpdstmt | ifstmt | whilestmt
+ifstmt := "if" "(" condition ")" "then" "{" stmt "}" ["else" "{" stmt "}" ]
+whilestmt := "while" "(" condition ")" "do" stmt
+condition := expression relation expression
+relation := "<" | "<=" | "=" | "!=" | ">=" | ">"

@@ -1,0 +1,100 @@
+        -:    0:Source:C:/Users/Oana/Documents/GitHub/oop-work/a5-6-917-Topan-Oana-Maria/repository/Repository.cpp
+        -:    0:Graph:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\repository\Repository.cpp.gcno
+        -:    0:Data:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\repository\Repository.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Oana on 3/20/2022.
+        -:    3://
+        -:    4:
+        -:    5:#include "Repository.h"
+        -:    6:
+        -:    7:
+function _ZN10RepositoryC2Ev called 64 returned 100% blocks executed 100%
+       64:    8:Repository::Repository() {
+       64:    8-block  0
+call    0 returned 64
+        -:    9:
+       64:   10:}
+        -:   11:
+function _ZNK10Repository15get_all_recipesEv called 5 returned 100% blocks executed 100%
+        5:   12:Recipe *Repository::get_all_recipes() const {
+        5:   13:    return arr.get_all_elems();
+        5:   13-block  0
+call    0 returned 5
+        -:   14:}
+        -:   15:
+function _ZN10Repository10add_recipeERK6Recipe called 58 returned 100% blocks executed 100%
+       58:   16:bool Repository::add_recipe(const Recipe &new_tutorial) {
+       58:   17:    int nr_elements = arr.get_size();
+       58:   17-block  0
+call    0 returned 58
+        -:   18:    //arr.add_element(new_tutorial);
+        -:   19:    //arr.operator+(new_tutorial);
+       58:   20:    arr.add_element(new_tutorial);
+call    0 returned 58
+       58:   21:    if (arr.get_size()-1 == nr_elements)
+call    0 returned 58
+branch  1 taken 52 (fallthrough)
+branch  2 taken 6
+       52:   22:        return true;
+       52:   22-block  0
+        -:   23:    else
+        6:   24:        return false;
+        6:   24-block  0
+        -:   25:}
+        -:   26:
+function _ZN10Repository13delete_recipeERK6Recipe called 8 returned 100% blocks executed 100%
+        8:   27:bool Repository::delete_recipe(const Recipe &to_delete) {
+        8:   28:    int nr_elements = arr.get_size();
+        8:   28-block  0
+call    0 returned 8
+        8:   29:    arr.delete_element(to_delete);
+call    0 returned 8
+        8:   30:    if(nr_elements-1 == arr.get_size())
+call    0 returned 8
+branch  1 taken 4 (fallthrough)
+branch  2 taken 4
+        4:   31:        return true;
+        4:   31-block  0
+        -:   32:    else
+        4:   33:        return false;
+        4:   33-block  0
+        -:   34:}
+        -:   35:
+function _ZN10Repository13update_recipeERK6RecipeS2_ called 5 returned 100% blocks executed 100%
+        5:   36:bool Repository::update_recipe(const Recipe &initial, const Recipe &final) {
+        5:   37:    int pos = arr.position_element(initial);
+        5:   37-block  0
+call    0 returned 5
+        5:   38:    if (pos==-1)
+branch  0 taken 3 (fallthrough)
+branch  1 taken 2
+        3:   39:        return false;
+        3:   39-block  0
+        2:   40:    arr.update_element(initial, final);
+        2:   40-block  0
+call    0 returned 2
+        2:   41:    return true;
+        -:   42:}
+        -:   43:
+function _ZNK10Repository21get_number_of_recipesEv called 63 returned 100% blocks executed 100%
+       63:   44:int Repository::get_number_of_recipes() const {
+       63:   45:    return arr.get_size();
+       63:   45-block  0
+call    0 returned 63
+        -:   46:}
+        -:   47:
+function _ZNK10Repository24get_recipe_from_positionEi called 2 returned 100% blocks executed 100%
+        2:   48:Recipe Repository::get_recipe_from_position(int position) const {
+        2:   49:    return arr.get_element_from_position(position);
+        2:   49-block  0
+call    0 returned 2
+        -:   50:}
+        -:   51:
+function _ZN10RepositoryD2Ev called 73 returned 100% blocks executed 100%
+       73:   52:Repository::~Repository() {
+        -:   53:
+       73:   54:}
+       73:   54-block  0
+call    0 returned 73
+        -:   55:

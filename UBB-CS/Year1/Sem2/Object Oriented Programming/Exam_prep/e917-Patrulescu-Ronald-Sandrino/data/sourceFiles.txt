@@ -1,0 +1,4 @@
+sf4,revised,p3,p4
+sf3,not_revised,p3,
+sf2,revised,p1,p2
+sf1,not_revised,p1,

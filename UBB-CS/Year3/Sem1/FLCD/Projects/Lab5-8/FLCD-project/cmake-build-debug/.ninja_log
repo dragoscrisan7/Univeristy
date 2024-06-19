@@ -1,0 +1,19 @@
+# ninja log v5
+1	221	7267672715043949	build.ninja	1ab8543d334db45b
+1978	5092	7267658641460285	FLCD_project.exe	ef313d4ae946f9fd
+9	3660	7267672189540590	CMakeFiles/FLCD_project.dir/main.cpp.obj	53554cee313f449c
+10	2182	7267654106988233	CMakeFiles/FLCD_project.dir/domain/SymbolTable.cpp.obj	79426097ca676da1
+2445	9518	7267654180198219	CMakeFiles/FLCD_project.dir/domain/Scanner.cpp.obj	4118b0cd349f5b72
+2183	4195	7267654127118242	CMakeFiles/FLCD_project.dir/domain/FA.cpp.obj	7ee86dc76f407f3e
+25	4083	7267672196310613	CMakeFiles/FLCD_project.dir/domain/Parser.cpp.obj	19f89a6e406beb0d
+34	4754	7267672203200606	CMakeFiles/FLCD_project.dir/domain/Grammar.cpp.obj	747209bed3151797
+3661	5421	7267672209920938	CMakeFiles/FLCD_project.dir/domain/Test.cpp.obj	8156e64f79081b4d
+12	5969	7267672788488577	FLCD_project.exe	1f5319784e12a463
+7	1677	7267675058070806	CMakeFiles/FLCD_project.dir/domain/Grammar.cpp.obj	747209bed3151797
+1678	4471	7267675085943690	FLCD_project.exe	1f5319784e12a463
+7	1726	7267676266120506	CMakeFiles/FLCD_project.dir/domain/Grammar.cpp.obj	747209bed3151797
+1727	4912	7267676297930128	FLCD_project.exe	1f5319784e12a463
+5	1778	7270534318844734	CMakeFiles/FLCD_project.dir/main.cpp.obj	53554cee313f449c
+18	1901	7270534320074705	CMakeFiles/FLCD_project.dir/domain/Parser.cpp.obj	19f89a6e406beb0d
+12	2045	7270534321524700	CMakeFiles/FLCD_project.dir/domain/Grammar.cpp.obj	747209bed3151797
+2045	4874	7270534349724660	FLCD_project.exe	1f5319784e12a463

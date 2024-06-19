@@ -1,0 +1,53 @@
+        -:    0:Source:C:/Users/Oana/Documents/GitHub/oop-work/a5-6-917-Topan-Oana-Maria/main.cpp
+        -:    0:Graph:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\main.cpp.gcno
+        -:    0:Data:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\main.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Oana on 3/20/2022.
+        -:    3://
+        -:    4:#include "user_interface/User_interface.h"
+        -:    5:#include "tests/Tests.h"
+        -:    6:
+function main called 1 returned 100% blocks executed 63%
+        1:    7:int main()
+        -:    8:{
+        1:    9:    Test_All t;
+        1:    9-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   10:    t.tests_everything();
+        1:   10-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   11:    Repository repository = Repository();
+        1:   11-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12:    User_interface ui = User_interface(repository);
+        1:   12-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   12-block  2
+        -:   13:
+        1:   14:    ui.start_application();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   15:
+        1:   16:    return 0;
+        1:   17:}
+        1:   17-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   17-block  1
+call    2 never executed
+    $$$$$:   17-block  2
+call    3 never executed

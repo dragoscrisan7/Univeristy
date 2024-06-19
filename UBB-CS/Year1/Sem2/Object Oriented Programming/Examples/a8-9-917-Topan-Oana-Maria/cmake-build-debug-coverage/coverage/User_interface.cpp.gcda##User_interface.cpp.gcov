@@ -1,0 +1,1571 @@
+        -:    0:Source:C:/Users/Oana/Documents/GitHub/oop-work/a5-6-917-Topan-Oana-Maria/user_interface/User_interface.cpp
+        -:    0:Graph:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\user_interface\User_interface.cpp.gcno
+        -:    0:Data:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\user_interface\User_interface.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by Oana on 3/20/2022.
+        -:    3://
+        -:    4:
+        -:    5:#include "User_interface.h"
+        -:    6:#include <iostream>
+        -:    7:#include <string>
+        -:    8:
+function _ZN14User_interfaceC2E10Repository called 1 returned 100% blocks executed 53%
+        1:    9:User_interface::User_interface(Repository repo){
+        1:    9-block  0
+call    0 returned 1
+        1:   10:    service = Service(repo);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   10-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   10-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   10-block  2
+call    9 returned 1
+call   10 returned 1
+    $$$$$:   10-block  3
+call   11 never executed
+    $$$$$:   10-block  4
+    $$$$$:   10-block  5
+call   12 never executed
+    $$$$$:   10-block  6
+        1:   11:    mode = -1;
+        1:   12:}
+    $$$$$:   12-block  0
+call    0 never executed
+        -:   13:
+function _ZN14User_interface17start_applicationEv called 1 returned 100% blocks executed 100%
+        1:   14:void User_interface::start_application() {
+        1:   15:    std::cout << "Welcome to the cooking tutorials \n We have video recipes you can watch.\n";
+        1:   15-block  0
+call    0 returned 1
+        1:   16:    service.initialise_repo();
+call    0 returned 1
+        1:   17:    choose_mode();
+call    0 returned 1
+        1:   18:}
+        -:   19:
+function _ZN14User_interface11choose_modeEv called 1 returned 100% blocks executed 64%
+        1:   20:void User_interface::choose_mode() {
+        1:   21:    std::cout << "Choose a mode: admin or user.\n";
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   22:    std::string mode;
+        1:   22-block  0
+call    0 returned 1
+        1:   23:    std::cin>>mode;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   24:    if (mode == "admin")
+        1:   24-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+        -:   25:    {
+    #####:   26:        this->mode = 0;
+    #####:   27:        start_admin_mode();
+    %%%%%:   27-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   28:    }
+       1*:   29:    else if (mode == "user") {start_user_mode();}
+        1:   29-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   29-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        1:   30:    else if (mode == "exit") {std::cout<<"Goodbye!"; return;}
+        1:   30-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   30-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   30-block  2
+    #####:   31:    else std::cout<<"Mode unavailable.\n";
+    %%%%%:   31-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   32:    choose_mode();
+    %%%%%:   32-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+       1*:   33:}
+    %%%%%:   33-block  0
+        1:   33-block  1
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    $$$$$:   33-block  2
+call    3 never executed
+        -:   34:
+function _ZN14User_interface16start_admin_modeEv called 0 returned 0% blocks executed 0%
+    #####:   35:void User_interface::start_admin_mode() {
+    #####:   36:    print_admin_menu();
+    %%%%%:   36-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   37:    std::cout<<"Choose an option: ";
+    %%%%%:   37-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   38:    std::string choice;
+    %%%%%:   38-block  0
+call    0 never executed
+    #####:   39:    std::cin>>choice;
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   40:    if(choice.find_first_not_of("0123456789") == std::string::npos)
+    %%%%%:   40-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   41:    {
+    #####:   42:        int choice_integer = std::stoi(choice);
+    %%%%%:   42-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   43:        switch(choice_integer){
+    %%%%%:   43-block  0
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   44:            case 1:
+    #####:   45:                add_recipe_admin_mode();
+    %%%%%:   45-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   46:                break;
+    %%%%%:   46-block  0
+    #####:   47:            case 2:
+    #####:   48:                delete_recipe_admin_mode();
+    %%%%%:   48-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   49:                break;
+    %%%%%:   49-block  0
+    #####:   50:            case 3:
+    #####:   51:                update_recipe_admin_mode();
+    %%%%%:   51-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   52:                break;
+    %%%%%:   52-block  0
+    #####:   53:            case 4:
+    #####:   54:                show_recipes_admin_mode();
+    %%%%%:   54-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   55:                break;
+    %%%%%:   55-block  0
+    #####:   56:            case 5:
+    #####:   57:                return;
+    %%%%%:   57-block  0
+    #####:   58:            default:
+    #####:   59:                std::cout<<"Option does not exist.\n";
+    %%%%%:   59-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   60:        }
+        -:   61:    }
+        -:   62:    else
+    #####:   63:        std::cout<<"Option does not exist.\n";
+    %%%%%:   63-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   64:    start_admin_mode();
+    %%%%%:   64-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   65:}
+    %%%%%:   65-block  0
+    %%%%%:   65-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   65-block  2
+call    3 never executed
+        -:   66:
+function _ZN14User_interface16print_admin_menuEv called 0 returned 0% blocks executed 0%
+    #####:   67:void User_interface::print_admin_menu() {
+    #####:   68:    std::cout<<"Admin menu:\n";
+    %%%%%:   68-block  0
+call    0 never executed
+    #####:   69:    std::cout<<"1. Add a recipe.\n";
+call    0 never executed
+    #####:   70:    std::cout<<"2. Delete a recipe.\n";
+call    0 never executed
+    #####:   71:    std::cout<<"3. Update a recipe.\n";
+call    0 never executed
+    #####:   72:    std::cout<<"4. Show all recipes.\n";
+call    0 never executed
+    #####:   73:    std::cout<<"5. Exit application.\n";
+call    0 never executed
+        -:   74:
+    #####:   75:}
+        -:   76:
+function _ZN14User_interface21add_recipe_admin_modeEv called 0 returned 0% blocks executed 0%
+    #####:   77:void User_interface::add_recipe_admin_mode() {
+    #####:   78:    std::cout<<"\nOk so you can add a recipe.\n";
+    %%%%%:   78-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   79:    std::string title_, chef_, link_, number_of_likes_, minutes_, seconds_;
+    %%%%%:   79-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+        -:   80:    int number_of_likes, minutes, seconds;
+    #####:   81:    std::cin.get();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   82:    std::cout<<"Title of video: ";
+    %%%%%:   82-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   83:    std::getline(std::cin, title_);
+    %%%%%:   83-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   84:    std::cout<<"\nChef's name: ";
+    %%%%%:   84-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   85:    std::getline(std::cin, chef_);
+    %%%%%:   85-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   86:    std::cout<<"\nLink to video: ";
+    %%%%%:   86-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   87:    std::getline(std::cin, link_);
+    %%%%%:   87-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   88:    std::cout<<"\nNumber of likes: ";
+    %%%%%:   88-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   89:    std::getline(std::cin, number_of_likes_);
+    %%%%%:   89-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   90:    if (number_of_likes_=="" || number_of_likes_.find_first_not_of("0123456789") != std::string::npos)
+    %%%%%:   90-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   90-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   90-block  2
+    %%%%%:   90-block  3
+    %%%%%:   90-block  4
+branch  6 never executed
+branch  7 never executed
+        -:   91:    {
+    #####:   92:        std::cout<<"Invalid number of likes.\n";
+    %%%%%:   92-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   93:        return;
+    %%%%%:   93-block  0
+        -:   94:    }
+    #####:   95:    number_of_likes = std::stoi(number_of_likes_);
+    %%%%%:   95-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   96:    if (number_of_likes < 0){
+    %%%%%:   96-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:   97:        std::cout<<"Invalid number of likes.\n";
+    %%%%%:   97-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   98:        return;
+    %%%%%:   98-block  0
+        -:   99:    }
+    #####:  100:    std::cout<<"\nDuration:\nMinutes: ";
+    %%%%%:  100-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  101:    std::getline(std::cin, minutes_);
+    %%%%%:  101-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  102:    if (minutes_=="" || minutes_.find_first_not_of("0123456789") != std::string::npos)
+    %%%%%:  102-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  102-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  102-block  2
+    %%%%%:  102-block  3
+    %%%%%:  102-block  4
+branch  6 never executed
+branch  7 never executed
+        -:  103:    {
+    #####:  104:        std::cout<<"Invalid minutes.\n";
+    %%%%%:  104-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  105:        return;
+    %%%%%:  105-block  0
+        -:  106:    }
+    #####:  107:    minutes = std::stoi(minutes_);
+    %%%%%:  107-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  108:    if (minutes<0){
+    %%%%%:  108-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  109:        std::cout<<"Invalid minutes.\n";
+    %%%%%:  109-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  110:        return;
+    %%%%%:  110-block  0
+        -:  111:    }
+        -:  112:
+    #####:  113:    std::cout<<"\nSeconds: ";
+    %%%%%:  113-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  114:    std::getline(std::cin, seconds_);
+    %%%%%:  114-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  115:    if (seconds_=="" || seconds_.find_first_not_of("0123456789") != std::string::npos)
+    %%%%%:  115-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  115-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  115-block  2
+    %%%%%:  115-block  3
+    %%%%%:  115-block  4
+branch  6 never executed
+branch  7 never executed
+        -:  116:    {
+    #####:  117:        std::cout<<"Invalid seconds.\n";
+    %%%%%:  117-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  118:        return;
+    %%%%%:  118-block  0
+        -:  119:    }
+    #####:  120:    seconds = std::stoi(seconds_);
+    %%%%%:  120-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  121:    if (seconds<0 || seconds > 59)
+    %%%%%:  121-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  121-block  1
+branch  2 never executed
+branch  3 never executed
+        -:  122:    {
+    #####:  123:        std::cout<<"Invalid seconds.\n";
+    %%%%%:  123-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  124:        return;
+    %%%%%:  124-block  0
+        -:  125:    }
+    #####:  126:    bool check = service.add_recipe_to_repo(title_, chef_, link_, Duration(minutes,seconds), number_of_likes);
+    %%%%%:  126-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  126-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  126-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  126-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  126-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:  126-block  5
+call   15 never executed
+call   16 never executed
+call   17 never executed
+    $$$$$:  126-block  6
+call   18 never executed
+    $$$$$:  126-block  7
+    $$$$$:  126-block  8
+call   19 never executed
+    $$$$$:  126-block  9
+    $$$$$:  126-block 10
+call   20 never executed
+    $$$$$:  126-block 11
+    $$$$$:  126-block 12
+    #####:  127:    if (check)
+branch  0 never executed
+branch  1 never executed
+    #####:  128:        std::cout<<"\nRecipe added successfully.\n";
+    %%%%%:  128-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  129:    else
+    #####:  130:        std::cout<<"\nError occurred. Recipe is already in the database.\n";
+    %%%%%:  130-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  131:}
+    %%%%%:  131-block  0
+    %%%%%:  131-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  131-block  2
+    %%%%%:  131-block  3
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  131-block  4
+    %%%%%:  131-block  5
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  131-block  6
+    %%%%%:  131-block  7
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  131-block  8
+    %%%%%:  131-block  9
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:  131-block 10
+    %%%%%:  131-block 11
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    $$$$$:  131-block 12
+call   18 never executed
+    $$$$$:  131-block 13
+call   19 never executed
+    $$$$$:  131-block 14
+call   20 never executed
+    $$$$$:  131-block 15
+call   21 never executed
+    $$$$$:  131-block 16
+call   22 never executed
+    $$$$$:  131-block 17
+call   23 never executed
+        -:  132:
+function _ZN14User_interface24delete_recipe_admin_modeEv called 0 returned 0% blocks executed 0%
+    #####:  133:void User_interface::delete_recipe_admin_mode() {
+    #####:  134:    std::cout<<"\nSo you can delete a recipe:\n";
+    %%%%%:  134-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  135:    std::string title_, chef_, link_;
+    %%%%%:  135-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####:  136:    std::cin.get();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  137:    std::cout<<"Title of video: ";
+    %%%%%:  137-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  138:    std::getline(std::cin, title_);
+    %%%%%:  138-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  139:    std::cout<<"\nChef's name: ";
+    %%%%%:  139-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  140:    std::getline(std::cin, chef_);
+    %%%%%:  140-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  141:    std::cout<<"\nLink to video: ";
+    %%%%%:  141-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  142:    std::getline(std::cin, link_);
+    %%%%%:  142-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  143:    bool check = service.delete_recipe_from_repo(title_, chef_, link_);
+    %%%%%:  143-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  143-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  143-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  143-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  143-block  4
+call   12 never executed
+call   13 never executed
+call   14 never executed
+    $$$$$:  143-block  5
+call   15 never executed
+    $$$$$:  143-block  6
+    $$$$$:  143-block  7
+call   16 never executed
+    $$$$$:  143-block  8
+    $$$$$:  143-block  9
+call   17 never executed
+    $$$$$:  143-block 10
+    #####:  144:    if (check)
+branch  0 never executed
+branch  1 never executed
+    #####:  145:        std::cout<<"\nRecipe deleted successfully.\n";
+    %%%%%:  145-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  146:    else
+    #####:  147:        std::cout<<"\nError occurred. Recipe was not in the database.\n";
+    %%%%%:  147-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  148:}
+    %%%%%:  148-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    $$$$$:  148-block  1
+call    3 never executed
+    $$$$$:  148-block  2
+call    4 never executed
+    $$$$$:  148-block  3
+call    5 never executed
+        -:  149:
+function _ZN14User_interface24update_recipe_admin_modeEv called 0 returned 0% blocks executed 0%
+    #####:  150:void User_interface::update_recipe_admin_mode() {
+    #####:  151:    std::string title_initial, chef_initial, link_initial, number_of_likes_final, minutes_final, seconds_final;
+    %%%%%:  151-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+call    5 never executed
+        -:  152:    int number_of_likes, minutes, seconds;
+    #####:  153:    std::cin.get();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  154:    std::cout<<"Initial title of video: ";
+    %%%%%:  154-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  155:    std::getline(std::cin, title_initial);
+    %%%%%:  155-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  156:    std::cout<<"\nInitial chef's name: ";
+    %%%%%:  156-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  157:    std::getline(std::cin, chef_initial);
+    %%%%%:  157-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  158:    std::cout<<"\nInitial link to video: ";
+    %%%%%:  158-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  159:    std::getline(std::cin, link_initial);
+    %%%%%:  159-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  160:    std::string title_final, chef_final, link_final;
+    %%%%%:  160-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####:  161:    std::cout<<"\nFinal title of video: ";
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  162:    std::getline(std::cin, title_final);
+    %%%%%:  162-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  163:    std::cout<<"\nFinal chef's name: ";
+    %%%%%:  163-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  164:    std::getline(std::cin, chef_final);
+    %%%%%:  164-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  165:    std::cout<<"\nFinal link to video: ";
+    %%%%%:  165-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  166:    std::getline(std::cin, link_final);
+    %%%%%:  166-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  167:    std::cout<<"\nFinal number of likes: ";
+    %%%%%:  167-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  168:    std::getline(std::cin, number_of_likes_final);
+    %%%%%:  168-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  169:    if (number_of_likes_final=="" || number_of_likes_final.find_first_not_of("0123456789") != std::string::npos)
+    %%%%%:  169-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  169-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  169-block  2
+    %%%%%:  169-block  3
+    %%%%%:  169-block  4
+branch  6 never executed
+branch  7 never executed
+        -:  170:    {
+    #####:  171:        std::cout<<"Invalid number of likes.\n";
+    %%%%%:  171-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  172:        return;
+    %%%%%:  172-block  0
+        -:  173:    }
+    #####:  174:    number_of_likes = std::stoi(number_of_likes_final);
+    %%%%%:  174-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  175:    if (number_of_likes < 0){
+    %%%%%:  175-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  176:        std::cout<<"Invalid number of likes.\n";
+    %%%%%:  176-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  177:        return;
+    %%%%%:  177-block  0
+        -:  178:    }
+    #####:  179:    std::cout<<"\nFinal duration:\nMinutes: ";
+    %%%%%:  179-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  180:    std::getline(std::cin, minutes_final);
+    %%%%%:  180-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  181:    if (minutes_final=="" || minutes_final.find_first_not_of("0123456789") != std::string::npos)
+    %%%%%:  181-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  181-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  181-block  2
+    %%%%%:  181-block  3
+    %%%%%:  181-block  4
+branch  6 never executed
+branch  7 never executed
+        -:  182:    {
+    #####:  183:        std::cout<<"Invalid minutes.\n";
+    %%%%%:  183-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  184:        return;
+    %%%%%:  184-block  0
+        -:  185:    }
+    #####:  186:    minutes = std::stoi(minutes_final);
+    %%%%%:  186-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  187:    if (minutes<0){
+    %%%%%:  187-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  188:        std::cout<<"Invalid minutes.\n";
+    %%%%%:  188-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  189:        return;
+    %%%%%:  189-block  0
+        -:  190:    }
+        -:  191:
+    #####:  192:    std::cout<<"\nSeconds: ";
+    %%%%%:  192-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  193:    std::getline(std::cin, seconds_final);
+    %%%%%:  193-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  194:    if (seconds_final=="" || seconds_final.find_first_not_of("0123456789") != std::string::npos)
+    %%%%%:  194-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  194-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  194-block  2
+    %%%%%:  194-block  3
+    %%%%%:  194-block  4
+branch  6 never executed
+branch  7 never executed
+        -:  195:    {
+    #####:  196:        std::cout<<"Invalid seconds.\n";
+    %%%%%:  196-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  197:        return;
+    %%%%%:  197-block  0
+        -:  198:    }
+    #####:  199:    seconds = std::stoi(seconds_final);
+    %%%%%:  199-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  200:    if (seconds<0 || seconds > 59)
+    %%%%%:  200-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  200-block  1
+branch  2 never executed
+branch  3 never executed
+        -:  201:    {
+    #####:  202:        std::cout<<"Invalid seconds.\n";
+    %%%%%:  202-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  203:        return;
+    %%%%%:  203-block  0
+        -:  204:    }
+    #####:  205:    bool check = service.update_recipe_in_repo(title_initial,chef_initial,link_initial, title_final,chef_final,link_final,Duration(minutes, seconds), number_of_likes);
+    %%%%%:  205-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  205-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  205-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  205-block  3
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  205-block  4
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:  205-block  5
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:  205-block  6
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:  205-block  7
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    %%%%%:  205-block  8
+call   24 never executed
+call   25 never executed
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+    $$$$$:  205-block  9
+call   30 never executed
+    $$$$$:  205-block 10
+    $$$$$:  205-block 11
+call   31 never executed
+    $$$$$:  205-block 12
+    $$$$$:  205-block 13
+call   32 never executed
+    $$$$$:  205-block 14
+    $$$$$:  205-block 15
+call   33 never executed
+    $$$$$:  205-block 16
+    $$$$$:  205-block 17
+call   34 never executed
+    $$$$$:  205-block 18
+    $$$$$:  205-block 19
+call   35 never executed
+    $$$$$:  205-block 20
+    $$$$$:  205-block 21
+    #####:  206:    if (check)
+branch  0 never executed
+branch  1 never executed
+    #####:  207:        std::cout<<"\nRecipe updated successfully.\n";
+    %%%%%:  207-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  208:    else
+    #####:  209:        std::cout<<"\nError occurred. Initial recipe was not in the database.\n";
+    %%%%%:  209-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  210:}
+    %%%%%:  210-block  0
+    %%%%%:  210-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  210-block  2
+    %%%%%:  210-block  3
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  210-block  4
+    %%%%%:  210-block  5
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  210-block  6
+    %%%%%:  210-block  7
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  210-block  8
+    %%%%%:  210-block  9
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:  210-block 10
+    %%%%%:  210-block 11
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:  210-block 12
+    %%%%%:  210-block 13
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:  210-block 14
+    %%%%%:  210-block 15
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    %%%%%:  210-block 16
+    %%%%%:  210-block 17
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:  210-block 18
+call   27 never executed
+    $$$$$:  210-block 19
+call   28 never executed
+    $$$$$:  210-block 20
+call   29 never executed
+    $$$$$:  210-block 21
+call   30 never executed
+    $$$$$:  210-block 22
+call   31 never executed
+    $$$$$:  210-block 23
+call   32 never executed
+    $$$$$:  210-block 24
+call   33 never executed
+    $$$$$:  210-block 25
+call   34 never executed
+    $$$$$:  210-block 26
+call   35 never executed
+        -:  211:
+function _ZN14User_interface23show_recipes_admin_modeEv called 0 returned 0% blocks executed 0%
+    #####:  212:void User_interface::show_recipes_admin_mode() {
+    #####:  213:    std::cout<<"\nAll recipes in database: \n";
+    %%%%%:  213-block  0
+call    0 never executed
+    #####:  214:    Recipe* all_recipes = service.get_all_recipes();
+call    0 never executed
+    #####:  215:    int number_of_recipes = service.get_number_of_recipes();
+call    0 never executed
+    #####:  216:    for (int i=0;i<number_of_recipes;i++)
+    %%%%%:  216-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  217:        std::cout<<all_recipes[i].recipe_long_string();
+    %%%%%:  217-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  217-block  1
+call    4 never executed
+    $$$$$:  217-block  2
+call    5 never executed
+    #####:  218:}
+    %%%%%:  218-block  0
+        -:  219:
+function _ZN14User_interface15start_user_modeEv called 0 returned 0% blocks executed 0%
+    #####:  220:void User_interface::start_user_mode() {
+    #####:  221:    std::cout<<"Welcome user!\n";
+    %%%%%:  221-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  222:    print_user_menu();
+    %%%%%:  222-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  223:    std::string choice;
+    %%%%%:  223-block  0
+call    0 never executed
+    #####:  224:    std::cin>>choice;
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  225:    if(choice.find_first_not_of("0123456789") == std::string::npos)
+    %%%%%:  225-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  226:    {
+    #####:  227:        int choice_integer = std::stoi(choice);
+    %%%%%:  227-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  228:        switch(choice_integer){
+    %%%%%:  228-block  0
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+    #####:  229:            case 1:
+    #####:  230:                see_recipes_by_a_given_chef_user_mode();
+    %%%%%:  230-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  231:                break;
+    %%%%%:  231-block  0
+    #####:  232:            case 2:
+    #####:  233:                show_recipes_watch_list();
+    %%%%%:  233-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  234:                break;
+    %%%%%:  234-block  0
+    #####:  235:            case 3:
+    #####:  236:                play_watch_list_user_mode();
+    %%%%%:  236-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  237:                break;
+    %%%%%:  237-block  0
+    #####:  238:            case 4:
+    #####:  239:                return;
+    %%%%%:  239-block  0
+    #####:  240:            default:
+    #####:  241:                std::cout<<"Option does not exist.\n";
+    %%%%%:  241-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  242:        }
+        -:  243:    }
+        -:  244:    else
+    #####:  245:        std::cout<<"Option does not exist.\n";
+    %%%%%:  245-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  246:    start_user_mode();
+    %%%%%:  246-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  247:}
+    %%%%%:  247-block  0
+    %%%%%:  247-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  247-block  2
+call    3 never executed
+        -:  248:
+function _ZN14User_interface15print_user_menuEv called 0 returned 0% blocks executed 0%
+    #####:  249:void User_interface::print_user_menu() {
+    #####:  250:    std::cout<<"User menu:\n";
+    %%%%%:  250-block  0
+call    0 never executed
+    #####:  251:    std::cout<<"1. See recipes by a given chef.\n";
+call    0 never executed
+    #####:  252:    std::cout<<"2. See watch list.\n";
+call    0 never executed
+    #####:  253:    std::cout<<"3. Play watch list.\n";
+call    0 never executed
+    #####:  254:    std::cout<<"4. Exit application.\n";
+call    0 never executed
+    #####:  255:}
+        -:  256:
+function _ZN14User_interface23show_recipes_watch_listEv called 0 returned 0% blocks executed 0%
+    #####:  257:void User_interface::show_recipes_watch_list() {
+    #####:  258:    std::cout<<"\nAll recipes in the watch list:\n";
+    %%%%%:  258-block  0
+call    0 never executed
+    #####:  259:    Recipe* all_recipes_in_watch_list = service.get_watchlist_recipes();
+call    0 never executed
+    #####:  260:    int number_of_recipes_in_watch_list = service.get_number_of_recipes_watchlist();
+call    0 never executed
+    #####:  261:    for(int i=0;i<number_of_recipes_in_watch_list;i++)
+    %%%%%:  261-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  262:        std::cout<<all_recipes_in_watch_list[i].recipe_long_string();
+    %%%%%:  262-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  262-block  1
+call    4 never executed
+    $$$$$:  262-block  2
+call    5 never executed
+    #####:  263:}
+    %%%%%:  263-block  0
+        -:  264:
+function _ZN14User_interface37see_recipes_by_a_given_chef_user_modeEv called 0 returned 0% blocks executed 0%
+    #####:  265:void User_interface::see_recipes_by_a_given_chef_user_mode() {
+    #####:  266:    std::cout<<"Choose a chef: ";
+    %%%%%:  266-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  267:    std::string chef;
+    %%%%%:  267-block  0
+call    0 never executed
+    #####:  268:    std::cin.get();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  269:    std::getline(std::cin, chef);
+    %%%%%:  269-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  270:    Recipe* repo_with_chef;
+        -:  271:    int number_of_recipes;
+    #####:  272:    if (!chef.empty())
+    %%%%%:  272-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  273:        repo_with_chef = service.get_all_recipes_by_chef(chef, number_of_recipes);
+    %%%%%:  273-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  273-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  273-block  2
+call    6 never executed
+    $$$$$:  273-block  3
+call    7 never executed
+    $$$$$:  273-block  4
+        -:  274:    else {
+    #####:  275:        repo_with_chef = service.get_all_recipes();
+    %%%%%:  275-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  276:        number_of_recipes = service.get_number_of_recipes();
+    %%%%%:  276-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  276-block  1
+        -:  277:    }
+    #####:  278:    for (int i=0;i<number_of_recipes;i++)
+    %%%%%:  278-block  0
+    %%%%%:  278-block  1
+    %%%%%:  278-block  2
+branch  0 never executed
+branch  1 never executed
+        -:  279:        //std::cout<<repo_with_chef[i].recipe_long_string();
+    #####:  280:        if(play_recipe_for_adding_user_mode(repo_with_chef[i]) == false)
+    %%%%%:  280-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  280-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  280-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    $$$$$:  280-block  3
+call    9 never executed
+    $$$$$:  280-block  4
+    #####:  281:            break;
+    %%%%%:  281-block  0
+        -:  282:        else
+    #####:  283:            if(i==number_of_recipes-1)
+    %%%%%:  283-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  284:                i=-1;
+    %%%%%:  284-block  0
+        -:  285:
+    #####:  286:}
+    %%%%%:  286-block  0
+call    0 never executed
+    $$$$$:  286-block  1
+call    1 never executed
+        -:  287:
+function _ZN14User_interface32play_recipe_for_adding_user_modeE6Recipe called 0 returned 0% blocks executed 0%
+    #####:  288:bool User_interface::play_recipe_for_adding_user_mode(Recipe recipe) {
+    #####:  289:    std::cout<<recipe.recipe_long_string();
+    %%%%%:  289-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  289-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  289-block  2
+call    6 never executed
+    $$$$$:  289-block  3
+call    7 never executed
+    $$$$$:  289-block  4
+    #####:  290:    recipe.play();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  291:    std::string answer;
+    %%%%%:  291-block  0
+call    0 never executed
+        -:  292:    do {
+    #####:  293:        std::cout<<"Do you like the recipe?\n";
+    %%%%%:  293-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  294:        std::getline(std::cin, answer);
+    %%%%%:  294-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  295:    }
+    #####:  296:    while(answer!="yes" && answer!="no");
+    %%%%%:  296-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  296-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  296-block  2
+    %%%%%:  296-block  3
+    %%%%%:  296-block  4
+branch  6 never executed
+branch  7 never executed
+    #####:  297:    if (answer=="yes")
+    %%%%%:  297-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  298:    {
+        -:  299:        do {
+    #####:  300:            std::cout<<"Would you like to add it to your watch list?\n";
+    %%%%%:  300-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  301:            std::getline(std::cin, answer);
+    %%%%%:  301-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  302:        }
+    #####:  303:        while(answer!="yes" && answer!="no");
+    %%%%%:  303-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  303-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  303-block  2
+    %%%%%:  303-block  3
+    %%%%%:  303-block  4
+branch  6 never executed
+branch  7 never executed
+    #####:  304:        if (answer == "yes")
+    %%%%%:  304-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  305:            add_recipe_to_watch_list_user_mode(recipe);
+    %%%%%:  305-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  306:    }
+        -:  307:    do {
+    #####:  308:        std::cout<<"\nWould you like to skip to the next recipe?\n";
+    %%%%%:  308-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  309:        std::getline(std::cin, answer);
+    %%%%%:  309-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  310:    }
+    #####:  311:    while(answer!="yes" && answer!="no");
+    %%%%%:  311-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  311-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  311-block  2
+    %%%%%:  311-block  3
+    %%%%%:  311-block  4
+branch  6 never executed
+branch  7 never executed
+    #####:  312:    if (answer=="yes")
+    %%%%%:  312-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  313:        return true;
+    %%%%%:  313-block  0
+        -:  314:    else
+    #####:  315:        return false;
+    %%%%%:  315-block  0
+    #####:  316:}
+    %%%%%:  316-block  0
+call    0 never executed
+    $$$$$:  316-block  1
+call    1 never executed
+        -:  317:
+function _ZN14User_interface34add_recipe_to_watch_list_user_modeER6Recipe called 0 returned 0% blocks executed 0%
+    #####:  318:void User_interface::add_recipe_to_watch_list_user_mode(Recipe& recipe) {
+    #####:  319:    bool check = service.add_recipe_to_watch_list(recipe);
+    %%%%%:  319-block  0
+call    0 never executed
+    #####:  320:    if (check)
+branch  0 never executed
+branch  1 never executed
+    #####:  321:        std::cout<<"Recipe added successfully to the watch list\n";
+    %%%%%:  321-block  0
+call    0 never executed
+        -:  322:    else
+    #####:  323:        std::cout<<"Error occurred. You cannot add the same recipe multiple times.\n";
+    %%%%%:  323-block  0
+call    0 never executed
+    #####:  324:}
+        -:  325:
+        -:  326:
+        -:  327:
+function _ZN14User_interface25play_watch_list_user_modeEv called 0 returned 0% blocks executed 0%
+    #####:  328:void User_interface::play_watch_list_user_mode() {
+    #####:  329:    std::cout<<"\nPlaying your watch list:\n";
+    %%%%%:  329-block  0
+call    0 never executed
+    #####:  330:    while (service.get_number_of_recipes_watchlist() > 0) {
+    %%%%%:  330-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  331:        play_recipe_watch_list_user_mode(service.get_recipe_position_watch_list(0));
+    %%%%%:  331-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  331-block  1
+call    4 never executed
+    $$$$$:  331-block  2
+call    5 never executed
+        -:  332:    }
+    #####:  333:}
+    %%%%%:  333-block  0
+        -:  334:
+function _ZN14User_interface32play_recipe_watch_list_user_modeE6Recipe called 0 returned 0% blocks executed 0%
+    #####:  335:void User_interface::play_recipe_watch_list_user_mode(Recipe recipe) {
+    #####:  336:    std::cout<<recipe.recipe_long_string();
+    %%%%%:  336-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  336-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  336-block  2
+call    6 never executed
+    $$$$$:  336-block  3
+call    7 never executed
+    $$$$$:  336-block  4
+    #####:  337:    recipe.play();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  338:    std::cout<<"You have finished watching this recipe.\n";
+    %%%%%:  338-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  339:    std::cout<<"The recipe will be deleted from your watch list.\n";
+    %%%%%:  339-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  340:    std::cout<<"Would you like to rate the tutorial? (Give it a like)\n";
+    %%%%%:  340-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  341:    std::string answer;
+    %%%%%:  341-block  0
+call    0 never executed
+    #####:  342:    std::getchar();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  343:    std::getline(std::cin, answer);
+    %%%%%:  343-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  344:    if (answer=="yes")
+    %%%%%:  344-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  345:        modify_database_add_like_to_recipe(recipe);
+    %%%%%:  345-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  346:    service.delete_recipe_from_watch_list(recipe);
+    %%%%%:  346-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  347:    std::cout<<"The recipe has been deleted from your watch list.\n";
+    %%%%%:  347-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  348:}
+    %%%%%:  348-block  0
+call    0 never executed
+    $$$$$:  348-block  1
+call    1 never executed
+        -:  349:
+function _ZN14User_interface34modify_database_add_like_to_recipeER6Recipe called 0 returned 0% blocks executed 0%
+    #####:  350:void User_interface::modify_database_add_like_to_recipe(Recipe &recipe) {
+    #####:  351:    int new_like_count = recipe.get_number_of_likes()+1;
+    %%%%%:  351-block  0
+call    0 never executed
+    #####:  352:    service.update_recipe_in_repo(recipe.get_title(), recipe.get_chef(), recipe.get_link(), recipe.get_title(), recipe.get_chef(), recipe.get_link(), recipe.get_duration(), new_like_count);
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  352-block  0
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  352-block  1
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:  352-block  2
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+    %%%%%:  352-block  3
+call   13 never executed
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  352-block  4
+call   16 never executed
+branch 17 never executed
+branch 18 never executed
+    %%%%%:  352-block  5
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    %%%%%:  352-block  6
+call   22 never executed
+call   23 never executed
+call   24 never executed
+call   25 never executed
+call   26 never executed
+call   27 never executed
+    $$$$$:  352-block  7
+call   28 never executed
+    $$$$$:  352-block  8
+    $$$$$:  352-block  9
+call   29 never executed
+    $$$$$:  352-block 10
+    $$$$$:  352-block 11
+call   30 never executed
+    $$$$$:  352-block 12
+    $$$$$:  352-block 13
+call   31 never executed
+    $$$$$:  352-block 14
+    $$$$$:  352-block 15
+call   32 never executed
+    $$$$$:  352-block 16
+    $$$$$:  352-block 17
+call   33 never executed
+    $$$$$:  352-block 18
+    #####:  353:}
+        -:  354:

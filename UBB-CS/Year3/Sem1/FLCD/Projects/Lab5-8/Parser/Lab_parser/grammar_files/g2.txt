@@ -1,0 +1,23 @@
+program ::= Grammar + ProductionsRulesList
+
+Grammar ::= "G = (" NonTerminals "," Terminals "," ProductionSymbol "," StartSymbol ")"
+ProductionsRulesList ::= "P:" ProductionRules
+
+NonTerminals ::= "{" NonTerminalList "}"
+NonTerminalList ::= NonTerminal | NonTerminal "," NonTerminalList
+NonTerminal ::= "A" | "B" | ... | "Z"
+
+Terminals ::= "{" TerminalList "}"
+TerminalList ::= Terminal | Terminal "," TerminalList
+Terminal ::= "a" | "b" | ... | "z"
+
+ProductionSymbol ::= "P"
+StartSymbol ::= NonTerminal
+
+ProductionRules ::= ProductionRule | ProductionRule ProductionRules
+ProductionRule ::= NonTerminal "->" Production
+Production ::= Rule | Rule "|" Production
+
+Rule ::= NonTerminal Rule | Terminal Rule | Symbol | Empty
+Symbol ::= Terminal | NonTerminal | Symbol
+Empty :== ""

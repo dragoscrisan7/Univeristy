@@ -1,0 +1,53 @@
+        -:    0:Source:C:/Users/Oana/Documents/GitHub/oop-work/a5-6-917-Topan-Oana-Maria/domain/Duration.cpp
+        -:    0:Graph:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\domain\Duration.cpp.gcno
+        -:    0:Data:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\domain\Duration.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Duration.h"
+        -:    2:
+function _ZN8DurationC2Ev called 2170 returned 100% blocks executed 100%
+     2170:    3:Duration::Duration()
+        -:    4:{
+     2170:    5:    this->minutes = 0;
+     2170:    6:    this->seconds = 0;
+     2170:    7:}
+        -:    8:
+function _ZN8DurationC2Eii called 39 returned 100% blocks executed 100%
+       39:    9:Duration::Duration(int minutes, int seconds)
+        -:   10:{
+       39:   11:    this->minutes = minutes;
+       39:   12:    this->seconds = seconds;
+       39:   13:}
+        -:   14:
+function _ZN8DurationC2ERKS_ called 41 returned 100% blocks executed 100%
+       41:   15:Duration::Duration(const Duration& copy)
+        -:   16:{
+       41:   17:    this->minutes = copy.minutes;
+       41:   18:    this->seconds = copy.seconds;
+       41:   19:}
+        -:   20:
+function _ZNK8Duration11get_minutesEv called 7 returned 100% blocks executed 100%
+        7:   21:int Duration::get_minutes() const
+        -:   22:{
+        7:   23:    return minutes;
+        7:   23-block  0
+        -:   24:}
+        -:   25:
+function _ZNK8Duration11get_secondsEv called 7 returned 100% blocks executed 100%
+        7:   26:int Duration::get_seconds() const
+        -:   27:{
+        7:   28:    return seconds;
+        7:   28-block  0
+        -:   29:}
+        -:   30:
+function _ZN8Duration11set_minutesEi called 1 returned 100% blocks executed 100%
+        1:   31:void Duration::set_minutes(int minutes)
+        -:   32:{
+        1:   33:    this->minutes = minutes;
+        1:   34:}
+        -:   35:
+function _ZN8Duration11set_secondsEi called 1 returned 100% blocks executed 100%
+        1:   36:void Duration::set_seconds(int seconds)
+        -:   37:{
+        1:   38:    this->seconds = seconds;
+        1:   39:}
+        -:   40:

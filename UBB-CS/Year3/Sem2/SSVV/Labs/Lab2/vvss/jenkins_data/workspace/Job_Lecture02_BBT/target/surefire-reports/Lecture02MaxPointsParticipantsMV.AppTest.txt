@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Lecture02MaxPointsParticipantsMV.AppTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.216 s - in Lecture02MaxPointsParticipantsMV.AppTest

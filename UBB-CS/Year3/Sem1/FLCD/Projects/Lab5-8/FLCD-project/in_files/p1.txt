@@ -1,0 +1,23 @@
+declaration
+int n , m , o , maximus
+start
+read n , m , o
+if n > m & n > o
+{
+	maximus = n
+}
+else
+{	if m > n & m > o
+	{
+		maximus = m
+	}
+	else
+	{
+		if o > m & o > n
+		{
+			maximus = o
+		}
+	}
+}
+write maximus
+end

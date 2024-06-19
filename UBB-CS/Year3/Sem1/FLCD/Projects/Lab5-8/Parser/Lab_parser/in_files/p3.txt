@@ -1,0 +1,11 @@
+declaration
+int n , suma = 0 , step = 1
+list l
+start
+read n
+while step <= n {
+	suma = suma + l [ step ]
+	step = step + 1
+}
+write suma
+end

@@ -1,0 +1,344 @@
+        -:    0:Source:C:/Users/Oana/Documents/GitHub/oop-work/a5-6-917-Topan-Oana-Maria/repository/DynamicVector.h
+        -:    0:Graph:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\repository\Repository.cpp.gcno
+        -:    0:Data:C:\Users\Oana\Documents\GitHub\oop-work\a5-6-917-Topan-Oana-Maria\cmake-build-debug-coverage\CMakeFiles\a5_6_917_Topan_Oana_Maria.dir\repository\Repository.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#pragma once
+        -:    2:#include "domain/Recipe.h"
+        -:    3:
+        -:    4://typedef Recipe TElement;
+        -:    5:
+        -:    6:template <typename TElement>
+        -:    7:class DynamicVector
+        -:    8:{
+        -:    9:private:
+        -:   10:    TElement* elems;
+        -:   11:    int size;
+        -:   12:    int capacity;
+        -:   13:
+        -:   14:public:
+        -:   15:    // default constructor for a DynamicVector
+        -:   16:    DynamicVector(int capacity = 10);
+        -:   17:
+        -:   18:    // copy constructor for a DynamicVector
+        -:   19:    DynamicVector(const DynamicVector& v);
+        -:   20:    ~DynamicVector();
+        -:   21:
+        -:   22:    // assignment operator for a DynamicVector
+        -:   23:    DynamicVector& operator=(const DynamicVector& v);
+        -:   24:
+        -:   25:    // Adds an element to the current DynamicVector.
+        -:   26:    void add_element(const TElement& e);
+        -:   27:
+        -:   28:    //Deletes an element from the current DynamicVector.
+        -:   29:    void delete_element(const TElement& e);
+        -:   30:
+        -:   31:    //Finds an element and returns its position in the DynamicVector.
+        -:   32:    int position_element(const TElement& e);
+        -:   33:
+        -:   34:    //Updates an element
+        -:   35:    void update_element(const TElement& e, const TElement& new_e);
+        -:   36:
+        -:   37:    //Gets an element from the position
+        -:   38:    TElement get_element_from_position(int position) const;
+        -:   39:
+        -:   40:    int get_size() const;
+        -:   41:    TElement* get_all_elems() const;
+        -:   42:
+        -:   43:    /*
+        -:   44:    DynamicVector& operator+(const TElement& e);
+        -:   45:
+        -:   46:    friend DynamicVector operator+(const TElement& e,const DynamicVector& v)
+        -:   47:    {
+        -:   48:        DynamicVector temp = v;
+        -:   49:        temp.add_element(e);
+        -:   50:        return temp;
+        -:   51:    }
+        -:   52:
+        -:   53:    friend DynamicVector operator+(const DynamicVector& v, const TElement& e);
+        -:   54:     */
+        -:   55:
+        -:   56:private:
+        -:   57:    // Resizes the current DynamicVector, multiplying its capacity by a given factor (real number).
+        -:   58:    void resize(double factor = 2);
+        -:   59:};
+        -:   60:
+        -:   61:/*
+        -:   62:DynamicVector operator+(const TElement& e,const DynamicVector& v)
+        -:   63:{
+        -:   64:    DynamicVector temp = v;
+        -:   65:    temp.add_element(e);
+        -:   66:    return temp;
+        -:   67:}
+        -:   68:
+        -:   69:/*
+        -:   70:DynamicVector operator+(const DynamicVector& v, const TElement& e)
+        -:   71:{
+        -:   72:    DynamicVector temp = v;
+        -:   73:    temp.add_element(e);
+        -:   74:    return temp;
+        -:   75:}
+        -:   76: */
+        -:   77:
+        -:   78:#include "DynamicVector.h"
+        -:   79:
+        -:   80:template <typename TElement>
+function _ZN13DynamicVectorI6RecipeEC1Ei called 64 returned 100% blocks executed 47%
+       64:   81:DynamicVector<TElement>::DynamicVector(int capacity)
+        -:   82:{
+       64:   83:    this->size = 0;
+       64:   84:    this->capacity = capacity;
+     704*:   85:    this->elems = new TElement[capacity];
+       64:   85-block  0
+branch  0 taken 64 (fallthrough)
+branch  1 taken 0
+       64:   85-block  1
+    %%%%%:   85-block  2
+       64:   85-block  3
+call    2 returned 64
+      640:   85-block  4
+call    3 returned 640
+branch  4 taken 640 (fallthrough)
+branch  5 taken 0 (throw)
+      640:   85-block  5
+      704:   85-block  6
+branch  6 taken 640
+branch  7 taken 64 (fallthrough)
+    $$$$$:   85-block  7
+    $$$$$:   85-block  8
+call    8 never executed
+    $$$$$:   85-block  9
+branch  9 never executed
+branch 10 never executed
+    $$$$$:   85-block 10
+    $$$$$:   85-block 11
+    $$$$$:   85-block 12
+call   11 never executed
+       64:   86:}
+       64:   86-block  0
+        -:   87:
+        -:   88:template <typename TElement>
+        -:   89:DynamicVector<TElement>::DynamicVector(const DynamicVector<TElement>& v)
+        -:   90:{
+        -:   91:    this->size = v.size;
+        -:   92:    this->capacity = v.capacity;
+        -:   93:    this->elems = new TElement[this->capacity];
+        -:   94:    for (int i = 0; i < this->size; i++)
+        -:   95:        this->elems[i] = v.elems[i];
+        -:   96:}
+        -:   97:
+        -:   98:template <typename TElement>
+function _ZN13DynamicVectorI6RecipeED1Ev called 73 returned 100% blocks executed 100%
+       73:   99:DynamicVector<TElement>::~DynamicVector()
+        -:  100:{
+      813:  101:    delete[] this->elems;
+       73:  101-block  0
+branch  0 taken 73 (fallthrough)
+branch  1 taken 0
+       73:  101-block  1
+      813:  101-block  2
+branch  2 taken 740 (fallthrough)
+branch  3 taken 73
+      740:  101-block  3
+call    4 returned 740
+       73:  101-block  4
+call    5 returned 73
+       73:  102:}
+        -:  103:
+        -:  104:template <typename TElement>
+        -:  105:DynamicVector<TElement>& DynamicVector<TElement>::operator=(const DynamicVector<TElement>& v)
+        -:  106:{
+        -:  107:    if (this == &v)
+        -:  108:        return *this;
+        -:  109:
+        -:  110:    this->size = v.size;
+        -:  111:    this->capacity = v.capacity;
+        -:  112:
+        -:  113:    delete[] this->elems;
+        -:  114:    this->elems = new TElement[this->capacity];
+        -:  115:    for (int i = 0; i < this->size; i++)
+        -:  116:        this->elems[i] = v.elems[i];
+        -:  117:
+        -:  118:    return *this;
+        -:  119:}
+        -:  120:
+        -:  121:template <typename TElement>
+function _ZN13DynamicVectorI6RecipeE11add_elementERKS0_ called 58 returned 100% blocks executed 100%
+       58:  122:void DynamicVector<TElement>::add_element(const TElement& e)
+        -:  123:{
+       58:  124:    int position = position_element(e);
+       58:  124-block  0
+call    0 returned 58
+       58:  125:    if(position==-1)
+branch  0 taken 52 (fallthrough)
+branch  1 taken 6
+        -:  126:    {
+       52:  127:        if (this->size == this->capacity)
+       52:  127-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 51
+        1:  128:            this->resize();
+        1:  128-block  0
+call    0 returned 1
+       52:  129:        this->elems[this->size] = e;
+       52:  129-block  0
+call    0 returned 52
+       52:  130:        this->size++;
+        -:  131:    }
+       58:  132:}
+        -:  133:
+        -:  134:template <typename TElement>
+function _ZN13DynamicVectorI6RecipeE6resizeEd called 1 returned 100% blocks executed 64%
+        1:  135:void DynamicVector<TElement>::resize(double factor)
+        -:  136:{
+        1:  137:    this->capacity *= static_cast<int>(factor);
+        -:  138:
+      21*:  139:    TElement* els = new TElement[this->capacity];
+        1:  139-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  139-block  1
+    %%%%%:  139-block  2
+        1:  139-block  3
+call    2 returned 1
+       20:  139-block  4
+call    3 returned 20
+branch  4 taken 20 (fallthrough)
+branch  5 taken 0 (throw)
+       20:  139-block  5
+       21:  139-block  6
+branch  6 taken 20
+branch  7 taken 1 (fallthrough)
+    $$$$$:  139-block  7
+    $$$$$:  139-block  8
+call    8 never executed
+    $$$$$:  139-block  9
+branch  9 never executed
+branch 10 never executed
+    $$$$$:  139-block 10
+    $$$$$:  139-block 11
+    $$$$$:  139-block 12
+call   11 never executed
+       11:  140:    for (int i = 0; i < this->size; i++)
+        1:  140-block  0
+       11:  140-block  1
+branch  0 taken 10
+branch  1 taken 1 (fallthrough)
+       10:  141:        els[i] = this->elems[i];
+       10:  141-block  0
+call    0 returned 10
+        -:  142:
+       11:  143:    delete[] this->elems;
+        1:  143-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  143-block  1
+       11:  143-block  2
+branch  2 taken 10 (fallthrough)
+branch  3 taken 1
+       10:  143-block  3
+call    4 returned 10
+        1:  143-block  4
+call    5 returned 1
+        1:  144:    this->elems = els;
+        1:  145:}
+        1:  145-block  0
+        -:  146:
+        -:  147:template <typename TElement>
+function _ZNK13DynamicVectorI6RecipeE13get_all_elemsEv called 5 returned 100% blocks executed 100%
+        5:  148:TElement* DynamicVector<TElement>::get_all_elems() const
+        -:  149:{
+        5:  150:    return this->elems;
+        5:  150-block  0
+        -:  151:}
+        -:  152:
+        -:  153:template <typename TElement>
+function _ZNK13DynamicVectorI6RecipeE8get_sizeEv called 195 returned 100% blocks executed 100%
+      195:  154:int DynamicVector<TElement>::get_size() const
+        -:  155:{
+      195:  156:    return this->size;
+      195:  156-block  0
+        -:  157:}
+        -:  158:
+        -:  159:template <typename TElement>
+function _ZN13DynamicVectorI6RecipeE14delete_elementERKS0_ called 8 returned 100% blocks executed 100%
+        8:  160:void DynamicVector<TElement>::delete_element(const TElement &e) {
+        8:  161:    int position = position_element(e);
+        8:  161-block  0
+call    0 returned 8
+        8:  162:    if (position!=-1)
+branch  0 taken 4 (fallthrough)
+branch  1 taken 4
+        -:  163:    {
+        5:  164:        for (int i=position; i<this->size-1;i++)
+        4:  164-block  0
+        5:  164-block  1
+branch  0 taken 1
+branch  1 taken 4 (fallthrough)
+        1:  165:            this->elems[i] = this->elems[i+1];
+        1:  165-block  0
+call    0 returned 1
+        4:  166:        this->size--;
+        4:  166-block  0
+        -:  167:    }
+        8:  168:}
+        -:  169:
+        -:  170:template <typename TElement>
+function _ZN13DynamicVectorI6RecipeE16position_elementERKS0_ called 73 returned 100% blocks executed 85%
+       73:  171:int DynamicVector<TElement>::position_element(const TElement &e) {
+      187:  172:    for (int i=0;i<this->size;i++)
+       73:  172-block  0
+      114:  172-block  1
+      187:  172-block  2
+branch  0 taken 128
+branch  1 taken 59 (fallthrough)
+      128:  173:        if ((TElement) e == this->elems[i])
+      128:  173-block  0
+call    0 returned 128
+call    1 returned 128
+branch  2 taken 128 (fallthrough)
+branch  3 taken 0 (throw)
+      128:  173-block  1
+call    4 returned 128
+branch  5 taken 14 (fallthrough)
+branch  6 taken 114
+    $$$$$:  173-block  2
+call    7 never executed
+       14:  174:            return i;
+       14:  174-block  0
+       59:  175:    return -1;
+       59:  175-block  0
+        -:  176:}
+        -:  177:
+        -:  178:template <typename TElement>
+function _ZN13DynamicVectorI6RecipeE14update_elementERKS0_S3_ called 2 returned 100% blocks executed 100%
+        2:  179:void DynamicVector<TElement>::update_element(const TElement &e, const TElement& new_e) {
+        2:  180:    int position = position_element(e);
+        2:  180-block  0
+call    0 returned 2
+        2:  181:    if(position!=-1)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        -:  182:    {
+        2:  183:        this->elems[position] = new_e;
+        2:  183-block  0
+call    0 returned 2
+        -:  184:    }
+        2:  185:}
+        -:  186:
+        -:  187:template <typename TElement>
+function _ZNK13DynamicVectorI6RecipeE25get_element_from_positionEi called 2 returned 100% blocks executed 100%
+        2:  188:TElement DynamicVector<TElement>::get_element_from_position(int position) const {
+        2:  189:    return elems[position];
+        2:  189-block  0
+call    0 returned 2
+        -:  190:}
+        -:  191:
+        -:  192:/*
+        -:  193:DynamicVector &DynamicVector::operator+(const TElement& e) {
+        -:  194:    this->add_element(e);
+        -:  195:    return *this;
+        -:  196:}
+        -:  197:*/
+        -:  198:
+        -:  199:
+        -:  200:

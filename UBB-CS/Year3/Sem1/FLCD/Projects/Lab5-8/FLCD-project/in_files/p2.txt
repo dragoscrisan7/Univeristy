@@ -1,0 +1,23 @@
+declaration
+int n , m
+start
+read n , m
+if n == 0 & m != 0 {
+	write m
+}
+else
+if n != 0 & m == 0 {
+		write n
+}
+else {
+while n != m {
+    if n > m {
+        n = n - m
+    }
+    else {
+        m = m - n
+    }
+}
+write n
+}
+end

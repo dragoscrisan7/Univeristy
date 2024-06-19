@@ -1,0 +1,12 @@
+States: p q r
+Alphabet: 0 1
+Initial_state: p
+Final_state: r
+Example: 100
+Transitions:
+p 0 q
+p 1 p
+q 1 p
+q 0 r
+r 0 r
+r 1 r

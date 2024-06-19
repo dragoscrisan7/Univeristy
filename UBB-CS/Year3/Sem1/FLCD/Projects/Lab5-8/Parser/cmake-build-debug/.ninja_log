@@ -1,0 +1,24 @@
+# ninja log v5
+5	1757	7270492011772499	CMakeFiles/Parser.dir/Lab_parser/main.cpp.obj	a5639be29dda7aff
+12	1847	7270492012652500	CMakeFiles/Parser.dir/Lab_parser/domain/Parser.cpp.obj	8951a1eff546c28f
+6	6672	7270310177544133	CMakeFiles/Parser.dir/Lab_parser/domain/Grammar.cpp.obj	68969fbe6ee6e849
+9	1814	7270491073777939	CMakeFiles/Parser.dir/Lab_parser/domain/Test.cpp.obj	f9a313574bafa742
+1848	2283	7270492016985859	Parser.exe	4ca4ac8f0df60554
+14	2568	7270522190465983	CMakeFiles/Parser.dir/Lab_parser/main.cpp.obj	a5afcadeae3a7913
+6	3105	7270522195822066	CMakeFiles/Parser.dir/Lab_parser/domain/Grammar.cpp.obj	a5a2016763b62e48
+2569	4342	7270522208216476	CMakeFiles/Parser.dir/Lab_parser/domain/Parser.cpp.obj	57cdbb68752ad785
+3107	4878	7270522213567316	CMakeFiles/Parser.dir/Lab_parser/domain/Test.cpp.obj	3a8a9b9f891eea20
+4343	5635	7270522221148264	CMakeFiles/Parser.dir/Lab_parser/domain/SymbolTable.cpp.obj	1261624b2cfd4f32
+4878	6622	7270522231018184	CMakeFiles/Parser.dir/Lab_parser/domain/FA.cpp.obj	671b1d4b50e00485
+22	7867	7270522243328157	CMakeFiles/Parser.dir/Lab_parser/domain/Scanner.cpp.obj	31d4e342fd6cbbfc
+7868	10797	7270522272688619	Parser.exe	1d4078705623effb
+6	5574	7270523583639284	CMakeFiles/Parser.dir/Lab_parser/domain/Scanner.cpp.obj	31d4e342fd6cbbfc
+5575	8819	7270523616169255	Parser.exe	1d4078705623effb
+5	5518	7270557073615183	CMakeFiles/Parser.dir/Lab_parser/domain/Scanner.cpp.obj	31d4e342fd6cbbfc
+5519	8833	7270557106825596	Parser.exe	1d4078705623effb
+5	5437	7270559350857945	CMakeFiles/Parser.dir/Lab_parser/domain/Scanner.cpp.obj	31d4e342fd6cbbfc
+5438	8207	7270559378648649	Parser.exe	1d4078705623effb
+6	5376	7270559580422718	CMakeFiles/Parser.dir/Lab_parser/domain/Scanner.cpp.obj	31d4e342fd6cbbfc
+5376	8198	7270559608752742	Parser.exe	1d4078705623effb
+5	6024	7270559862437851	CMakeFiles/Parser.dir/Lab_parser/domain/Scanner.cpp.obj	31d4e342fd6cbbfc
+6025	9051	7270559892747901	Parser.exe	1d4078705623effb
