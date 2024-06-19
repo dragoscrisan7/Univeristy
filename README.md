@@ -36,34 +36,34 @@
   </li>
   <li>:open_file_folder: Semester 2
     <ul>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem2/Data_structures_and_algorithms"> 
-          :candy:  Data Structures and Algorithms 
+      <li> :deciduous_tree:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem2/Data%20Structures%20and%20Algorithms"> 
+          Data Structures and Algorithms 
         </a>
       </li>
-      <li>
-        <a href="[https://github.com/AlexandraBledea/Sem2-OOP](https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem2/Dynamical-Systems)"> 
-          :blue_heart:  Dynamical Systems 
+      <li> :chart_with_upwards_trend:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem2/Dynamical%20Systems"> 
+          Dynamical Systems 
         </a>
       </li>
-      <li>
+      <li> :triangular_ruler:
         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem2/Geometry"> 
-          🔱:  Geometry
+          Geometry
         </a>
       </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem2/Graph_algorithmic"> 
-          🍇:  Graph Algorithms 
+      <li> :globe_with_meridians:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem2/Graph%20Algorithms"> 
+          Graph Algorithms 
         </a>
       </li>
-      <li>
-         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem2/Object_Oriented_Programming"> 
-          :boom: Object Oriented Programming
+      <li> :package:
+         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem2/Object%20Oriented%20Programming"> 
+           Object Oriented Programming
         </a>
       </li>
-      <li>
-         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem2/Operating_systems"> 
-          :boom: Operating Systems
+      <li> :gear:
+         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem2/Operating%20Systems"> 
+           Operating Systems
         </a>
       </li>
     </ul>
