@@ -75,7 +75,7 @@
           Advanced Methods of Programming
         </a>
       </li>
-      <li> :computer_network:
+      <li> :satellite:
         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/Computer%20Networks"> 
           Computer Networks 
         </a>
