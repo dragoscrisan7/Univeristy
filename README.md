@@ -104,7 +104,7 @@
   </li>
   <li>:open_file_folder: Year 2 Semester 2
     <ul>
-      li> :robot:
+      <li> :robot:
         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem2/Artificial%20Intelligence">
           Artificial Intelligence
       </li>
