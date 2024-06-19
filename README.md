@@ -127,7 +127,7 @@
       </li>
     </ul>
   </li>
-  <li>:open_file_folder: Year 3 Sem 1
+  <li>:open_file_folder: Year 3 Semester 1
     <ul>
       <li> :lock:
         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem1/Cryotography">
@@ -161,7 +161,7 @@
       </li>
     </ul>
   </li>
-  <li>:open_file_folder: Year 3 Sem 2
+  <li>:open_file_folder: Year 3 Semester 2
     <ul>
       <li> :page_with_curl:
         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem2/Bachelors">
