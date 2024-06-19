@@ -1,0 +1,3 @@
+C:/Users/Dragos/OneDrive/Facultate/GitHub/a1-dragoscrisan7-1/cmake-build-debug/CMakeFiles/a1_dragoscrisan7_1.dir
+C:/Users/Dragos/OneDrive/Facultate/GitHub/a1-dragoscrisan7-1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dragos/OneDrive/Facultate/GitHub/a1-dragoscrisan7-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

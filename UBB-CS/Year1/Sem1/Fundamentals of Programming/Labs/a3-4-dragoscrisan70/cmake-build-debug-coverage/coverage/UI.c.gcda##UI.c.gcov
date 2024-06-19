@@ -1,0 +1,473 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a3-4-dragoscrisan7/UI.c
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\UI.c.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\UI.c.gcda
+        -:    0:Runs:1
+        -:    1:#include <UI.h>
+        -:    2:#include <stdio.h>
+        -:    3:#include <stdlib.h>
+        -:    4:
+function createUI called 1 returned 100% blocks executed 75%
+        1:    5:Ui* createUI(Service* s)
+        -:    6:{
+        1:    7:    Ui* ui = malloc(sizeof(Ui));
+        1:    8:    if(ui == NULL)
+        1:    8-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:    9:        return NULL;
+    %%%%%:    9-block  0
+        1:   10:    ui->serv = s;
+        -:   11:
+        1:   12:    return ui;
+        1:   12-block  0
+        -:   13:}
+        -:   14:
+function destroyUI called 1 returned 100% blocks executed 80%
+        1:   15:void destroyUI(Ui* ui)
+        -:   16:{
+        1:   17:    if(ui == NULL)
+        1:   17-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   18:        return;
+    %%%%%:   18-block  0
+        1:   19:    destroyService(ui->serv);
+        1:   19-block  0
+call    0 returned 1
+        1:   20:    free(ui);
+        -:   21:}
+        -:   22:
+        -:   23:/*
+        -:   24:	Reads an integer number from the keyboard. Asks for number while read errors encoutered.
+        -:   25:	Input: the message to be displayed when asking the user for input.
+        -:   26:	Returns the number.
+        -:   27:*/
+function readIntegerNumber called 1 returned 100% blocks executed 89%
+        1:   28:int readIntegerNumber(const char* message)
+        -:   29:{
+        1:   30:    char s[16] = { 0 };
+        1:   31:    int res = 0;
+        1:   32:    int flag = 0;
+        -:   33:
+        2:   34:    while (flag == 0)
+        1:   34-block  0
+        2:   34-block  1
+branch  0 taken 1
+branch  1 taken 1 (fallthrough)
+        -:   35:    {
+        1:   36:        printf("%s", message);
+        1:   36-block  0
+call    0 returned 1
+        1:   37:        scanf("%15s", s);
+call    0 returned 1
+        -:   38:
+        1:   39:        int r = sscanf(s, "%d", &res);	// reads data from s and stores them as integer, if possible; returns 1 if successful
+call    0 returned 1
+        1:   40:        flag = (r == 1);
+        1:   41:        if (flag == 0)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   42:            printf("Error reading number!\n");
+    %%%%%:   42-block  0
+call    0 never executed
+        -:   43:    }
+        1:   44:    return res;
+        1:   44-block  0
+        -:   45:}
+        -:   46:
+function add_Ingredient called 0 returned 0% blocks executed 0%
+    #####:   47:int add_Ingredient(Ui* ui)
+        -:   48:{
+        -:   49:    char name[50], supplier[50];
+        -:   50:    int quantity, expiration_date_day, expiration_date_month, expiration_date_year;
+    #####:   51:    printf("Please input name: ");
+    %%%%%:   51-block  0
+call    0 never executed
+    #####:   52:    scanf("%49s", name);
+call    0 never executed
+    #####:   53:    printf("Please input supplier: ");
+call    0 never executed
+    #####:   54:    scanf("%49s", supplier);
+call    0 never executed
+    #####:   55:    quantity = readIntegerNumber("Please input quantity: ");
+call    0 never executed
+    #####:   56:    expiration_date_day = readIntegerNumber("Please input expiration date day: ");
+call    0 never executed
+    #####:   57:    expiration_date_month = readIntegerNumber("Please input expiration date month: ");
+call    0 never executed
+    #####:   58:    expiration_date_year = readIntegerNumber("Please input expiration date year: ");
+call    0 never executed
+        -:   59:
+    #####:   60:    return addIngredient(ui->serv, name, supplier, quantity, expiration_date_day, expiration_date_month,
+call    0 never executed
+        -:   61:                         expiration_date_year);
+        -:   62:}
+function delete_ingredient called 0 returned 0% blocks executed 0%
+    #####:   63:int delete_ingredient(Ui* ui)
+        -:   64:{
+        -:   65:    char name[50], supplier[50];
+        -:   66:    int  expiration_date_day, expiration_date_month, expiration_date_year;
+    #####:   67:    printf("Please input name: ");
+    %%%%%:   67-block  0
+call    0 never executed
+    #####:   68:    scanf("%49s", name);
+call    0 never executed
+    #####:   69:    printf("Please input supplier: ");
+call    0 never executed
+    #####:   70:    scanf("%49s", supplier);
+call    0 never executed
+    #####:   71:    expiration_date_day = readIntegerNumber("Please input expiration date day: ");
+call    0 never executed
+    #####:   72:    expiration_date_month = readIntegerNumber("Please input expiration date month: ");
+call    0 never executed
+    #####:   73:    expiration_date_year = readIntegerNumber("Please input expiration date year: ");
+call    0 never executed
+        -:   74:
+    #####:   75:    return removeIngredient(ui->serv, name, supplier, expiration_date_day, expiration_date_month,
+call    0 never executed
+        -:   76:                            expiration_date_year);
+        -:   77:}
+        -:   78:
+function modify_ingredient called 0 returned 0% blocks executed 0%
+    #####:   79:int modify_ingredient(Ui* ui)
+        -:   80:{
+        -:   81:    char name[50], name2[50], supplier[50], supplier2[50];
+        -:   82:    int expiration_date_day, expiration_date_month, expiration_date_year, expiration_date_day2, expiration_date_month2;
+        -:   83:    int expiration_date_year2, quantity;
+    #####:   84:    printf("Please input name: ");
+    %%%%%:   84-block  0
+call    0 never executed
+    #####:   85:    scanf("%49s", name);
+call    0 never executed
+    #####:   86:    printf("Please input supplier: ");
+call    0 never executed
+    #####:   87:    scanf("%49s", supplier);
+call    0 never executed
+    #####:   88:    expiration_date_day = readIntegerNumber("Please input expiration date day: ");
+call    0 never executed
+    #####:   89:    expiration_date_month = readIntegerNumber("Please input expiration date month: ");
+call    0 never executed
+    #####:   90:    expiration_date_year = readIntegerNumber("Please input expiration date year: ");
+call    0 never executed
+        -:   91:
+    #####:   92:    printf("Please input the modified ingredient: \n");
+call    0 never executed
+    #####:   93:    printf("Please input name: ");
+call    0 never executed
+    #####:   94:    scanf("%49s", name2);
+call    0 never executed
+    #####:   95:    printf("Please input supplier: ");
+call    0 never executed
+    #####:   96:    scanf("%49s", supplier2);
+call    0 never executed
+    #####:   97:    quantity = readIntegerNumber("Please input quantity: ");
+call    0 never executed
+    #####:   98:    expiration_date_day2 = readIntegerNumber("Please input expiration date day: ");
+call    0 never executed
+    #####:   99:    expiration_date_month2 = readIntegerNumber("Please input expiration date month: ");
+call    0 never executed
+    #####:  100:    expiration_date_year2 = readIntegerNumber("Please input expiration date year: ");
+call    0 never executed
+        -:  101:
+    #####:  102:    return modifyIngredient(ui->serv, name, supplier, expiration_date_day, expiration_date_month, expiration_date_year,
+call    0 never executed
+        -:  103:                      name2, supplier2, quantity, expiration_date_day2, expiration_date_month2, expiration_date_year2);
+        -:  104:}
+        -:  105:
+function past_e_date called 0 returned 0% blocks executed 0%
+    #####:  106:void past_e_date(Ui* ui)
+        -:  107:{
+        -:  108:    char string[100];
+    #####:  109:    printf("Enter string to search by: ");
+    %%%%%:  109-block  0
+call    0 never executed
+        -:  110:
+    #####:  111:    scanf("%s", string);
+call    0 never executed
+        -:  112:
+    #####:  113:    Dynamic_array* dyn = past_expiration_date(ui->serv, string);
+call    0 never executed
+    #####:  114:    for(int i=0; i<dyn->length; i++)
+    %%%%%:  114-block  0
+branch  0 never executed
+branch  1 never executed
+        -:  115:    {
+    #####:  116:        toString(dyn->elems[i], string);
+    %%%%%:  116-block  0
+call    0 never executed
+    #####:  117:        printf("%s", string);
+call    0 never executed
+        -:  118:    }
+    #####:  119:    free(dyn);
+    #####:  120:}
+function sorted_quantity called 0 returned 0% blocks executed 0%
+    #####:  121:void sorted_quantity(Ui* ui)
+        -:  122:{
+        -:  123:    char string[100];
+    #####:  124:    printf("Enter supplier: ");
+    %%%%%:  124-block  0
+call    0 never executed
+        -:  125:
+    #####:  126:    scanf("%s", string);
+call    0 never executed
+    #####:  127:    int x = readIntegerNumber("Input minimum quantity: ");
+call    0 never executed
+        -:  128:
+    #####:  129:    Dynamic_array* dyn = ingredients_from_supplier(ui->serv, string, x);
+call    0 never executed
+    #####:  130:    if(dyn == NULL)
+branch  0 never executed
+branch  1 never executed
+    #####:  131:        printf("No ingredients match your search criteria\n");
+    %%%%%:  131-block  0
+call    0 never executed
+        -:  132:    else
+        -:  133:    {
+    #####:  134:        for(int i=0; i<dyn->length; i++)
+    %%%%%:  134-block  0
+    %%%%%:  134-block  1
+branch  0 never executed
+branch  1 never executed
+        -:  135:        {
+    #####:  136:            toString(dyn->elems[i], string);
+    %%%%%:  136-block  0
+call    0 never executed
+    #####:  137:            printf("%s", string);
+call    0 never executed
+        -:  138:        }
+        -:  139:    }
+    #####:  140:    free(dyn);
+    #####:  141:}
+        -:  142:
+function print_array called 0 returned 0% blocks executed 0%
+    #####:  143:void print_array(Ui* ui)
+        -:  144:{
+        -:  145:    char str[150];
+    #####:  146:    IngredientRepo* repo = getRepo(ui->serv);
+    %%%%%:  146-block  0
+call    0 never executed
+        -:  147:    Ingredient* ing;
+    #####:  148:    for(int i=0; i< get_Length(repo); i++)
+    %%%%%:  148-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  149:    {
+    #####:  150:        ing = getIngredientOnPos(repo, i);
+    %%%%%:  150-block  0
+call    0 never executed
+    #####:  151:        toString(ing, str);
+call    0 never executed
+    #####:  152:        printf("%s", str);
+call    0 never executed
+        -:  153:    }
+    #####:  154:}
+function Undo called 0 returned 0% blocks executed 0%
+    #####:  155:int Undo(Ui* ui)
+        -:  156:{
+    #####:  157:    return undo(ui->serv);
+    %%%%%:  157-block  0
+call    0 never executed
+        -:  158:}
+function Redo called 0 returned 0% blocks executed 0%
+    #####:  159:int Redo(Ui* ui)
+        -:  160:{
+    #####:  161:    return redo(ui->serv);
+    %%%%%:  161-block  0
+call    0 never executed
+        -:  162:}
+        -:  163:
+function print_menu called 1 returned 100% blocks executed 100%
+        1:  164:void print_menu()
+        -:  165:{
+        1:  166:    printf("**********************************************************\n");
+        1:  166-block  0
+call    0 returned 1
+        1:  167:    printf("Type 1 to add a new ingredient\nType 2 to delete an ingredient\n"
+call    0 returned 1
+        -:  168:             "Type 3 to modify an ingredient\nType 4 to print all ingredients\nType 5 to print"
+        -:  169:             " all ingredients containing a string past their expiration date\nType 6 to print"
+        -:  170:             " all elements with less quantity than selected from the given supplier\nType 7 to undo last operation\n"
+        -:  171:             "Type 8 to redo last undo'd operation\nType 0 to exit\n");
+        1:  172:    printf("**********************************************************\n");
+call    0 returned 1
+        1:  173:}
+        -:  174:
+function run called 1 returned 100% blocks executed 10%
+        1:  175:void run(Ui* ui)
+        -:  176:{
+        -:  177:    while (1)
+    #####:  178:    {
+    %%%%%:  178-block  0
+        1:  179:        print_menu();
+        1:  179-block  0
+call    0 returned 1
+        1:  180:        int option = readIntegerNumber("Option: ");
+call    0 returned 1
+        1:  181:        if(option == 0)
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  182:            break;
+        1:  182-block  0
+    #####:  183:        switch(option) {
+    %%%%%:  183-block  0
+branch  0 never executed
+branch  1 never executed
+branch  2 never executed
+branch  3 never executed
+branch  4 never executed
+branch  5 never executed
+branch  6 never executed
+branch  7 never executed
+branch  8 never executed
+    #####:  184:            case 1: {
+    #####:  185:                int val = add_Ingredient(ui);
+    %%%%%:  185-block  0
+call    0 never executed
+    #####:  186:                if(val == 0)
+branch  0 never executed
+branch  1 never executed
+    #####:  187:                    printf("Ingredient already exists, quantity modified successfully\n");
+    %%%%%:  187-block  0
+call    0 never executed
+    #####:  188:                else if(val == 1)
+    %%%%%:  188-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  189:                    printf("Ingredient added successfully\n");
+    %%%%%:  189-block  0
+call    0 never executed
+        -:  190:                else
+    #####:  191:                    printf("Error, corrupted repository or dynamic array");
+    %%%%%:  191-block  0
+call    0 never executed
+    #####:  192:                break;
+    %%%%%:  192-block  0
+        -:  193:            }
+    #####:  194:            case 2: {
+    #####:  195:                int val = delete_ingredient(ui);
+    %%%%%:  195-block  0
+call    0 never executed
+    #####:  196:                if(val == 0)
+branch  0 never executed
+branch  1 never executed
+    #####:  197:                    printf("Ingredient could not be found\n");
+    %%%%%:  197-block  0
+call    0 never executed
+    #####:  198:                else if(val == 1)
+    %%%%%:  198-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  199:                    printf("Ingredient successfully deleted\n");
+    %%%%%:  199-block  0
+call    0 never executed
+        -:  200:                else
+    #####:  201:                    printf("Error, corrupted repository or dynamic array");
+    %%%%%:  201-block  0
+call    0 never executed
+    #####:  202:                break;
+    %%%%%:  202-block  0
+        -:  203:            }
+    #####:  204:            case 3: {
+    #####:  205:                int val = modify_ingredient(ui);
+    %%%%%:  205-block  0
+call    0 never executed
+    #####:  206:                if(val == 0)
+branch  0 never executed
+branch  1 never executed
+    #####:  207:                    printf("Ingredient could not be found\n");
+    %%%%%:  207-block  0
+call    0 never executed
+    #####:  208:                else if(val == 1)
+    %%%%%:  208-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  209:                    printf("Ingredient successfully updated\n");
+    %%%%%:  209-block  0
+call    0 never executed
+        -:  210:                else
+    #####:  211:                    printf("Error, corrupted repository or dynamic array");
+    %%%%%:  211-block  0
+call    0 never executed
+    #####:  212:                break;
+    %%%%%:  212-block  0
+        -:  213:            }
+    #####:  214:            case 4: {
+    #####:  215:                print_array(ui);
+    %%%%%:  215-block  0
+call    0 never executed
+        -:  216:
+    #####:  217:                break;
+        -:  218:            }
+    #####:  219:            case 5: {
+    #####:  220:                past_e_date(ui);
+    %%%%%:  220-block  0
+call    0 never executed
+        -:  221:
+    #####:  222:                break;
+        -:  223:            }
+    #####:  224:            case 6: {
+    #####:  225:                sorted_quantity(ui);
+    %%%%%:  225-block  0
+call    0 never executed
+        -:  226:
+    #####:  227:                break;
+        -:  228:            }
+    #####:  229:            case 7: {
+    #####:  230:                int val = Undo(ui);
+    %%%%%:  230-block  0
+call    0 never executed
+    #####:  231:                if(val == 0)
+branch  0 never executed
+branch  1 never executed
+    #####:  232:                    printf("No more operations to undo\n");
+    %%%%%:  232-block  0
+call    0 never executed
+    #####:  233:                else if(val == 1)
+    %%%%%:  233-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  234:                    printf("Operation successfully undo'd\n");
+    %%%%%:  234-block  0
+call    0 never executed
+        -:  235:                else
+    #####:  236:                    printf("Error, corrupted repository or dynamic array");
+    %%%%%:  236-block  0
+call    0 never executed
+        -:  237:
+    #####:  238:                break;
+    %%%%%:  238-block  0
+        -:  239:            }
+    #####:  240:            case 8 :{
+    #####:  241:                int val = Redo(ui);
+    %%%%%:  241-block  0
+call    0 never executed
+    #####:  242:                if(val == 0)
+branch  0 never executed
+branch  1 never executed
+    #####:  243:                    printf("No more operations to redo\n");
+    %%%%%:  243-block  0
+call    0 never executed
+    #####:  244:                else if(val == 1)
+    %%%%%:  244-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  245:                    printf("Operation successfully redo'd\n");
+    %%%%%:  245-block  0
+call    0 never executed
+        -:  246:                else
+    #####:  247:                    printf("Error, corrupted repository or dynamic array");
+    %%%%%:  247-block  0
+call    0 never executed
+        -:  248:
+    #####:  249:                break;
+    %%%%%:  249-block  0
+        -:  250:            }
+    #####:  251:            default:
+    #####:  252:                printf("Wrong input\n");
+    %%%%%:  252-block  0
+call    0 never executed
+    #####:  253:                break;
+        -:  254:        }
+        -:  255:    }
+        1:  256:}

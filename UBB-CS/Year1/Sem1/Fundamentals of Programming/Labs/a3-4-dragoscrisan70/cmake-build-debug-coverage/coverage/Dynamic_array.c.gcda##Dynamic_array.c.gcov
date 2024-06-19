@@ -1,0 +1,142 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a3-4-dragoscrisan7/Dynamic_array.c
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\Dynamic_array.c.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\Dynamic_array.c.gcda
+        -:    0:Runs:1
+        -:    1:#include <Dynamic_array.h>
+        -:    2:#include <stdlib.h>
+        -:    3:
+function createDynamicArray called 7 returned 100% blocks executed 75%
+        7:    4:Dynamic_array* createDynamicArray(DestroyElementFunctionType destroyElemFct)
+        -:    5:{
+        7:    6:    Dynamic_array* v = malloc(sizeof(Dynamic_array));
+        -:    7:    ///make sure that the space was allocated
+        7:    8:    if(v == NULL)
+        7:    8-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 7
+    #####:    9:        return NULL;
+    %%%%%:    9-block  0
+        7:   10:    v->length = 0;
+        7:   11:    v->capacity = 2;
+        -:   12:    ///make space for the elements
+        7:   13:    v->elems = (TElement*)malloc(v->capacity * sizeof(TElement));
+        7:   14:    v->destroyElemFct = destroyElemFct;
+        -:   15:
+        7:   16:    return v;
+        7:   16-block  0
+        -:   17:}
+function destroyDynamicArray called 7 returned 100% blocks executed 88%
+        7:   18:void destroyDynamicArray(Dynamic_array* v)
+        -:   19:{
+        7:   20:    if(v == NULL)
+        7:   20-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 7
+    #####:   21:        return;
+    %%%%%:   21-block  0
+       24:   22:    for(int i=0; i<v->length; i++)
+        7:   22-block  0
+       24:   22-block  1
+branch  0 taken 17
+branch  1 taken 7 (fallthrough)
+       17:   23:        v->destroyElemFct(v->elems[i]);
+       17:   23-block  0
+call    0 returned 17
+        7:   24:    free(v->elems);
+        7:   25:    v->elems = NULL;
+        7:   26:    free(v);
+        7:   27:    v = NULL;
+        7:   27-block  0
+        -:   28:}
+function reallocDynamicArray called 7 returned 100% blocks executed 100%
+        7:   29:void reallocDynamicArray(Dynamic_array* v)
+        -:   30:{
+        7:   31:    v->capacity = v->capacity * v->capacity;
+        7:   32:    TElement* aux = (TElement*) malloc(v->capacity*sizeof(TElement));
+       27:   33:    for(int i=0; i <v->length; i++)
+        7:   33-block  0
+       27:   33-block  1
+branch  0 taken 20
+branch  1 taken 7 (fallthrough)
+       20:   34:        aux[i] = v->elems[i];
+       20:   34-block  0
+        7:   35:    free(v->elems);
+        7:   36:    v->elems = aux;
+        -:   37:
+        7:   38:}
+        -:   39:
+function add_dynamic called 30 returned 100% blocks executed 100%
+       30:   40:void add_dynamic(Dynamic_array* v, TElement* i)
+        -:   41:{
+       30:   42:    if(v->length >= v->capacity)
+       30:   42-block  0
+branch  0 taken 7 (fallthrough)
+branch  1 taken 23
+        7:   43:        reallocDynamicArray(v);
+        7:   43-block  0
+call    0 returned 7
+       30:   44:    v->elems[v->length++] = i;
+       30:   45:}
+function delete_dynamic called 13 returned 100% blocks executed 89%
+       13:   46:void delete_dynamic(Dynamic_array* v, int pos)
+        -:   47:{
+       13:   48:    if(v == NULL || pos < 0 || pos >= v->length)
+       13:   48-block  0
+branch  0 taken 13 (fallthrough)
+branch  1 taken 0
+       13:   48-block  1
+branch  2 taken 13 (fallthrough)
+branch  3 taken 0
+       13:   48-block  2
+branch  4 taken 0 (fallthrough)
+branch  5 taken 13
+    #####:   49:        return;
+    %%%%%:   49-block  0
+        -:   50:
+       13:   51:    v->destroyElemFct(v->elems[pos]);
+       13:   51-block  0
+call    0 returned 13
+        -:   52:
+       13:   53:    if(pos != v->length - 1)
+branch  0 taken 1 (fallthrough)
+branch  1 taken 12
+        1:   54:        v->elems[pos] = v->elems[v->length - 1];
+        1:   54-block  0
+       13:   55:    v->length--;
+       13:   55-block  0
+        -:   56:}
+        -:   57:
+function getLength called 76 returned 100% blocks executed 75%
+       76:   58:int getLength(Dynamic_array* v)
+        -:   59:{
+       76:   60:    if(v == NULL)
+       76:   60-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 76
+    #####:   61:        return -1;
+    %%%%%:   61-block  0
+        -:   62:
+       76:   63:    return v->length;
+       76:   63-block  0
+        -:   64:}
+function get called 72 returned 100% blocks executed 71%
+       72:   65:TElement get(Dynamic_array* v, int pos)
+        -:   66:{
+       72:   67:    if(v == NULL)
+       72:   67-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 72
+    #####:   68:        return NULL;
+    %%%%%:   68-block  0
+       72:   69:    if(pos < 0 || pos >= v->length)
+       72:   69-block  0
+branch  0 taken 72 (fallthrough)
+branch  1 taken 0
+       72:   69-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 72
+    #####:   70:        return NULL;
+    %%%%%:   70-block  0
+       72:   71:    return v->elems[pos];
+       72:   71-block  0
+        -:   72:}

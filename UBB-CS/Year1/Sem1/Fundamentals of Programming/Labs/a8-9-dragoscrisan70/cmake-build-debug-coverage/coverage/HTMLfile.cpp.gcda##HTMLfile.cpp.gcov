@@ -1,0 +1,215 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a8-9-dragoscrisan7/HTMLfile.cpp
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\HTMLfile.cpp.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\HTMLfile.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "HTMLfile.h"
+        -:    2:#include <fstream>
+function _ZN8htmlfile7getSizeEv called 0 returned 0% blocks executed 0%
+    #####:    3:int htmlfile::getSize() {
+    #####:    4:    return this->adopted.size();
+    %%%%%:    4-block  0
+call    0 never executed
+        -:    5:}
+        -:    6:
+function _ZN8htmlfile11getFileNameB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:    7:std::string &htmlfile::getFileName() {
+    #####:    8:    return this->userfilename;
+    %%%%%:    8-block  0
+        -:    9:}
+        -:   10:
+function _ZN8htmlfile6getDogEv called 0 returned 0% blocks executed 0%
+    #####:   11:std::vector<dog> htmlfile::getDog() {
+    #####:   12:    return this->adopted;
+    %%%%%:   12-block  0
+call    0 never executed
+        -:   13:}
+        -:   14:
+function _ZN8htmlfile6addDogERK3dog called 0 returned 0% blocks executed 0%
+    #####:   15:void htmlfile::addDog(const dog &dog1) {
+    #####:   16:    this->adopted.push_back(dog1);
+    %%%%%:   16-block  0
+call    0 never executed
+    #####:   17:    writeToFile();
+call    0 never executed
+    #####:   18:}
+        -:   19:
+function _ZN8htmlfile11writeToFileEv called 0 returned 0% blocks executed 0%
+    #####:   20:void htmlfile::writeToFile() {
+    #####:   21:    std::ofstream fout(this->userfilename);
+    %%%%%:   21-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   22:    fout << "<!DOCTYPE html>\n<html><head><title>Adoption List</title></head><body>\n";
+    %%%%%:   22-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   23:    fout << "<table border=\"1\">\n";
+    %%%%%:   23-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   24:    fout << "<tr><td>Breed</td><td>Name</td><td>Age</td><td>Link</td></tr>\n";
+    %%%%%:   24-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   25:    for(const dog& dog1: this->adopted){
+    %%%%%:   25-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:   25-block  1
+call    2 never executed
+    %%%%%:   25-block  2
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   26:        fout << "<tr><td>" << dog1.get_breed() << "</td>"
+call    0 never executed
+    $$$$$:   26-block  0
+call    1 never executed
+    $$$$$:   26-block  1
+    #####:   27:                << "<td>" << dog1.get_name() << "</td>"
+call    0 never executed
+    $$$$$:   27-block  0
+call    1 never executed
+    $$$$$:   27-block  1
+    #####:   28:                << "<td>" << std::to_string(dog1.get_age()) << "</td>"
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+call    3 never executed
+    $$$$$:   28-block  0
+call    4 never executed
+    $$$$$:   28-block  1
+    #####:   29:                << "<td><a href=\"" << dog1.get_photograph() << "\">"<<dog1.get_photograph()<<">Link</a></td></tr>" << '\n';
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   29-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   29-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:   29-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   29-block  3
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:   29-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   29-block  5
+call   18 never executed
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   29-block  6
+call   21 never executed
+branch 22 never executed
+branch 23 never executed
+    %%%%%:   29-block  7
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    %%%%%:   29-block  8
+call   27 never executed
+    %%%%%:   29-block  9
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    %%%%%:   29-block 10
+call   31 never executed
+branch 32 never executed
+branch 33 never executed
+    %%%%%:   29-block 11
+call   34 never executed
+branch 35 never executed
+branch 36 never executed
+    %%%%%:   29-block 12
+call   37 never executed
+branch 38 never executed
+branch 39 never executed
+    %%%%%:   29-block 13
+call   40 never executed
+branch 41 never executed
+branch 42 never executed
+    %%%%%:   29-block 14
+call   43 never executed
+branch 44 never executed
+branch 45 never executed
+    %%%%%:   29-block 15
+call   46 never executed
+branch 47 never executed
+branch 48 never executed
+    %%%%%:   29-block 16
+call   49 never executed
+branch 50 never executed
+branch 51 never executed
+    %%%%%:   29-block 17
+call   52 never executed
+branch 53 never executed
+branch 54 never executed
+    %%%%%:   29-block 18
+call   55 never executed
+branch 56 never executed
+branch 57 never executed
+    %%%%%:   29-block 19
+call   58 never executed
+call   59 never executed
+call   60 never executed
+    $$$$$:   29-block 20
+call   61 never executed
+    $$$$$:   29-block 21
+    $$$$$:   29-block 22
+call   62 never executed
+    $$$$$:   29-block 23
+        -:   30:    }
+    #####:   31:    fout << "</table></body></html>";
+    %%%%%:   31-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   32:    fout.close();
+    %%%%%:   32-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   33:}
+    %%%%%:   33-block  0
+call    0 never executed
+    $$$$$:   33-block  1
+call    1 never executed
+function _ZN8htmlfileC2ERSt6vectorI3dogSaIS1_EERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   34:htmlfile::htmlfile(std::vector<dog> &adopted, std::string &filename) {
+    %%%%%:   34-block  0
+call    0 never executed
+    #####:   35:    this->adopted = adopted;
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   36:    this->userfilename = filename;
+    %%%%%:   36-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   37:}
+    %%%%%:   37-block  0
+    $$$$$:   37-block  1
+call    0 never executed
+        -:   38:
+function _ZN8htmlfile4openEv called 0 returned 0% blocks executed 0%
+    #####:   39:void htmlfile::open() {
+    #####:   40:    auto * fp = "C:\\Users\\Dragos\\OneDrive\\Facultate\\GitHub\\a8-9-dragoscrisan7\\AdoptedList.html";
+    #####:   41:    ShellExecute(NULL, NULL,fp, NULL, NULL, SW_SHOWNORMAL);
+    %%%%%:   41-block  0
+call    0 never executed
+    #####:   42:}
+        -:   43:

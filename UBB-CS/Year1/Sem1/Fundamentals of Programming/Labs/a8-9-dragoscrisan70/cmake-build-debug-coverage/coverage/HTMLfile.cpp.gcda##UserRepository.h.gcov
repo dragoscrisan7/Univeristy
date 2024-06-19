@@ -1,0 +1,37 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a8-9-dragoscrisan7/UserRepository.h
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\HTMLfile.cpp.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\HTMLfile.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#pragma once
+        -:    2:#include "Dog.h"
+        -:    3:#include <vector>
+        -:    4:#include <windows.h>
+        -:    5:
+        -:    6:class UserRepo{
+        -:    7:protected:
+        -:    8:    std::vector<dog> adopted;
+        -:    9:    std::string userfilename;
+        -:   10:public:
+        -:   11:    //Constructor of the user repository
+        -:   12:    UserRepo();
+        -:   13:    explicit UserRepo(std::vector<dog> &dogs);
+        -:   14:    //Getter for the number of elements in the vector of the repo
+        -:   15:    virtual int getSize() = 0;
+        -:   16:
+        -:   17:    //Function for adding a dog to the user repo
+        -:   18:    virtual void addDog(const dog& d) = 0;
+        -:   19:
+        -:   20:    virtual void writeToFile() = 0;
+        -:   21:
+        -:   22:    virtual std::string& getFileName() = 0;
+        -:   23:
+        -:   24:    virtual std::vector<dog> getDog() = 0;
+        -:   25:
+        -:   26:    virtual void open() = 0;
+        -:   27:
+function _ZN8UserRepoD2Ev called 0 returned 0% blocks executed 0%
+    #####:   28:    ~UserRepo() = default;
+    %%%%%:   28-block  0
+call    0 never executed
+call    1 never executed
+        -:   29:};

@@ -1,0 +1,513 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a3-4-dragoscrisan7/Services.c
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\Services.c.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\Services.c.gcda
+        -:    0:Runs:1
+        -:    1:#include "Services.h"
+        -:    2:#include <stdlib.h>
+        -:    3:#include <string.h>
+        -:    4:
+function createService called 2 returned 100% blocks executed 83%
+        2:    5:Service* createService(IngredientRepo* r)
+        -:    6:{
+        2:    7:    Service* s = (Service*)malloc(sizeof(Service));
+        2:    8:    if(s == NULL)
+        2:    8-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    #####:    9:        return NULL;
+    %%%%%:    9-block  0
+        2:   10:    s->repo = r;
+        2:   11:    s->undoStack = createDynamicArray((DestroyElementFunctionType) &destroyOperation);
+        2:   11-block  0
+call    0 returned 2
+        2:   12:    s->redoStack = createDynamicArray((DestroyElementFunctionType) &destroyOperation);
+call    0 returned 2
+        -:   13:
+        2:   14:    return s;
+        -:   15:}
+        -:   16:
+function destroyService called 2 returned 100% blocks executed 100%
+        2:   17:void destroyService(Service* s)
+        -:   18:{
+        2:   19:    destroyRepo(s->repo);
+        2:   19-block  0
+call    0 returned 2
+        2:   20:    destroyDynamicArray(s->undoStack);
+call    0 returned 2
+        2:   21:    destroyDynamicArray(s->redoStack);
+call    0 returned 2
+        -:   22:
+        2:   23:    free(s);
+        2:   24:}
+        -:   25:
+function addIngredient called 1 returned 100% blocks executed 56%
+        1:   26:int addIngredient(Service* s, char* name, char* supplier, int quantity, int expiration_date_day,
+        -:   27:                  int expiration_date_month, int expiration_date_year)
+        -:   28:{
+        -:   29:    int res;
+        1:   30:    int x = find(s->repo,name, supplier, expiration_date_day, expiration_date_month, expiration_date_year);
+        1:   30-block  0
+call    0 returned 1
+        1:   31:    if(x == -1) {
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   32:        Ingredient *i = create_ingredient(name, supplier, quantity, expiration_date_day, expiration_date_month,
+        1:   32-block  0
+call    0 returned 1
+        -:   33:                                          expiration_date_year);
+        1:   34:        res = add(s->repo, i);
+call    0 returned 1
+        1:   35:        if (res == 1)///the ingredient was added
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        -:   36:        {
+        1:   37:            Operation *op = createOperation(ADD, i, NULL);
+        1:   37-block  0
+call    0 returned 1
+        1:   38:            if (op == NULL) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   39:                return -1;
+    %%%%%:   39-block  0
+        -:   40:
+        -:   41:            }
+        1:   42:            add_dynamic(s->undoStack, (TElement) op);
+        1:   42-block  0
+call    0 returned 1
+        -:   43:        }
+        -:   44:    }
+        -:   45:    else
+        -:   46:    {
+    #####:   47:        Ingredient* i = getIngredientOnPos(s->repo, x);
+    %%%%%:   47-block  0
+call    0 never executed
+    #####:   48:        quantity = quantity + getQuantity(i);
+call    0 never executed
+    #####:   49:        Ingredient *j = create_ingredient(name, supplier, quantity, expiration_date_day, expiration_date_month,
+call    0 never executed
+        -:   50:                                          expiration_date_year);
+        -:   51:
+    #####:   52:        Operation* op = createOperation(MODIFY, j, i);
+call    0 never executed
+    #####:   53:        modify_ing(s->repo, i ,j);
+call    0 never executed
+    #####:   54:        add_dynamic(s->undoStack, (TElement) op);
+call    0 never executed
+        -:   55:
+    #####:   56:        res = 0;
+        -:   57:    }
+        -:   58:
+        1:   59:    return res;
+        1:   59-block  0
+        -:   60:}
+function removeIngredient called 1 returned 100% blocks executed 88%
+        1:   61:int removeIngredient(Service* s,char* name, char* supplier, int expiration_date_day,
+        -:   62:                     int expiration_date_month, int expiration_date_year)
+        -:   63:{
+        1:   64:    int x = find(s->repo, name, supplier, expiration_date_day, expiration_date_month, expiration_date_year);
+        1:   64-block  0
+call    0 returned 1
+        1:   65:    Ingredient* i = getIngredientOnPos(s->repo, x);
+call    0 returned 1
+        1:   66:    Operation* op = createOperation(DELETE, i, NULL);
+call    0 returned 1
+        1:   67:    if(op == NULL)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   68:        return -1;
+    %%%%%:   68-block  0
+        1:   69:    add_dynamic(s->undoStack, (TElement) op);
+        1:   69-block  0
+call    0 returned 1
+        -:   70:
+        1:   71:    return delete_ing(s->repo, name, supplier, expiration_date_day, expiration_date_month, expiration_date_year);
+call    0 returned 1
+        -:   72:}
+function modifyIngredient called 1 returned 100% blocks executed 100%
+        1:   73:int modifyIngredient(Service* s, char* name, char* supplier, int expiration_date_day,
+        -:   74:                     int expiration_date_month, int expiration_date_year, char* name2, char* supplier2, int quantity,
+        -:   75:                     int expiration_date_day2, int expiration_date_month2, int expiration_date_year2) {
+        1:   76:    int pos = find(s->repo, name, supplier, expiration_date_day, expiration_date_month, expiration_date_year);
+        1:   76-block  0
+call    0 returned 1
+        1:   77:    Ingredient* i = getIngredientOnPos(s->repo, pos);
+call    0 returned 1
+        1:   78:    Ingredient* j = create_ingredient(name2, supplier2, quantity, expiration_date_day2,
+call    0 returned 1
+        -:   79:                                      expiration_date_month2, expiration_date_year2);
+        -:   80:
+        1:   81:    Operation* op = createOperation(MODIFY, j, i);
+call    0 returned 1
+        1:   82:    add_dynamic(s->undoStack, (TElement) op);
+call    0 returned 1
+        -:   83:
+        1:   84:    int x = modify_ing(s->repo, i, j);
+call    0 returned 1
+        1:   85:    destroy_ingredient(i);
+call    0 returned 1
+        1:   86:    return x;
+        -:   87:}
+function modifyIngredientWithoutUndo called 2 returned 100% blocks executed 100%
+        2:   88:int modifyIngredientWithoutUndo(Service* s, char* name, char* supplier, int expiration_date_day,
+        -:   89:                                int expiration_date_month, int expiration_date_year, char* name2, char* supplier2, int quantity,
+        -:   90:                                int expiration_date_day2, int expiration_date_month2, int expiration_date_year2) {
+        2:   91:    int pos = find(s->repo, name, supplier, expiration_date_day, expiration_date_month, expiration_date_year);
+        2:   91-block  0
+call    0 returned 2
+        2:   92:    Ingredient* i = getIngredientOnPos(s->repo, pos);
+call    0 returned 2
+        2:   93:    Ingredient* j = create_ingredient(name2, supplier2, quantity, expiration_date_day2,
+call    0 returned 2
+        -:   94:                                      expiration_date_month2, expiration_date_year2);
+        -:   95:
+        2:   96:    int x = modify_ing(s->repo, i, j);
+call    0 returned 2
+        2:   97:    destroy_ingredient(i);
+call    0 returned 2
+        2:   98:    return x;
+        -:   99:}
+function undo called 7 returned 100% blocks executed 90%
+        7:  100:int undo(Service* s)
+        -:  101:{
+        7:  102:    if(s == NULL)
+        7:  102-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 7
+    #####:  103:        return -1;
+    %%%%%:  103-block  0
+        -:  104:
+        7:  105:    int stackSize = getLength(s->undoStack);
+        7:  105-block  0
+call    0 returned 7
+        7:  106:    if(stackSize == 0)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 5
+        2:  107:        return 0;
+        2:  107-block  0
+        5:  108:    Operation* op = get(s->undoStack, stackSize -1);
+        5:  108-block  0
+call    0 returned 5
+        5:  109:    if(op == NULL)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 5
+    #####:  110:        return -1;
+    %%%%%:  110-block  0
+        5:  111:    Ingredient* i = getOpObject(op);
+        5:  111-block  0
+call    0 returned 5
+        5:  112:    if(i == NULL)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 5
+    #####:  113:        return -1;
+    %%%%%:  113-block  0
+        5:  114:    Operation* op2 = NULL;
+        -:  115:
+        5:  116:    if(getOpType(op) == ADD)
+        5:  116-block  0
+call    0 returned 5
+branch  1 taken 2 (fallthrough)
+branch  2 taken 3
+        -:  117:    {
+        2:  118:        op2 = createOperation(ADD, i, NULL);
+        2:  118-block  0
+call    0 returned 2
+        2:  119:        date* date2 = getExpirationDate(i);
+call    0 returned 2
+        2:  120:        delete_ing(s->repo, getName(i), getSupplier(i), date2->day,
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+        -:  121:                   date2->month, date2->year);
+        -:  122:    }
+        3:  123:    else if(getOpType(op) == DELETE)
+        3:  123-block  0
+call    0 returned 3
+branch  1 taken 2 (fallthrough)
+branch  2 taken 1
+        -:  124:    {
+        2:  125:        op2 = createOperation(DELETE, i, NULL);
+        2:  125-block  0
+call    0 returned 2
+        2:  126:        add(s->repo, copyIngredient(i));
+call    0 returned 2
+call    1 returned 2
+        -:  127:    }
+        1:  128:    else if(getOpType(op) == MODIFY)
+        1:  128-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        -:  129:    {
+        1:  130:        Ingredient* j = getOpObject2(op);
+        1:  130-block  0
+call    0 returned 1
+        1:  131:        if(j == NULL)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  132:            return -1;
+    %%%%%:  132-block  0
+        1:  133:        op2 = createOperation(MODIFY, j, i);
+        1:  133-block  0
+call    0 returned 1
+        1:  134:        date* date2 = getExpirationDate(i);
+call    0 returned 1
+        1:  135:        date* date3 = getExpirationDate(j);
+call    0 returned 1
+        1:  136:        modifyIngredientWithoutUndo(s, getName(i), getSupplier(i), date2->day,
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+        -:  137:                         date2->month, date2->year, getName(j),
+        -:  138:                         getSupplier(j), getQuantity(j) ,date3->day,
+        -:  139:                         date3->month, date3->year);
+        -:  140:    }
+        -:  141:
+        5:  142:    add_dynamic(s->redoStack, (TElement) op2);
+        5:  142-block  0
+call    0 returned 5
+        5:  143:    delete_dynamic(s->undoStack, stackSize-1);
+call    0 returned 5
+        5:  144:    return 1;
+        -:  145:}
+function redo called 4 returned 100% blocks executed 90%
+        4:  146:int redo(Service* s)
+        -:  147:{
+        4:  148:    if(s == NULL)
+        4:  148-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 4
+    #####:  149:        return -1;
+    %%%%%:  149-block  0
+        -:  150:
+        4:  151:    int stackSize = getLength(s->redoStack);
+        4:  151-block  0
+call    0 returned 4
+        4:  152:    if(stackSize == 0)
+branch  0 taken 1 (fallthrough)
+branch  1 taken 3
+        1:  153:        return 0;
+        1:  153-block  0
+        3:  154:    Operation* op = get(s->redoStack, stackSize -1);
+        3:  154-block  0
+call    0 returned 3
+        3:  155:    if(op == NULL)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 3
+    #####:  156:        return -1;
+    %%%%%:  156-block  0
+        3:  157:    Ingredient* i = getOpObject(op);
+        3:  157-block  0
+call    0 returned 3
+        3:  158:    if(i == NULL)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 3
+    #####:  159:        return -1;
+    %%%%%:  159-block  0
+        3:  160:    Operation* op2 = NULL;
+        -:  161:
+        3:  162:    if(getOpType(op) == ADD)
+        3:  162-block  0
+call    0 returned 3
+branch  1 taken 1 (fallthrough)
+branch  2 taken 2
+        -:  163:    {
+        1:  164:        op2 = createOperation(ADD, i, NULL);
+        1:  164-block  0
+call    0 returned 1
+        1:  165:        add(s->repo, copyIngredient(i));
+call    0 returned 1
+call    1 returned 1
+        -:  166:    }
+        2:  167:    else if(getOpType(op) == DELETE)
+        2:  167-block  0
+call    0 returned 2
+branch  1 taken 1 (fallthrough)
+branch  2 taken 1
+        -:  168:    {
+        1:  169:        op2 = createOperation(DELETE, i, NULL);
+        1:  169-block  0
+call    0 returned 1
+        1:  170:        date* date2 = getExpirationDate(i);
+call    0 returned 1
+        1:  171:        delete_ing(s->repo, getName(i), getSupplier(i), date2->day,
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+        -:  172:                   date2->month, date2->year);
+        -:  173:    }
+        1:  174:    else if(getOpType(op) == MODIFY)
+        1:  174-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        -:  175:    {
+        1:  176:        Ingredient* j = getOpObject2(op);
+        1:  176-block  0
+call    0 returned 1
+        1:  177:        if(j == NULL)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:  178:            return -1;
+    %%%%%:  178-block  0
+        1:  179:        op2 = createOperation(MODIFY, j, i);
+        1:  179-block  0
+call    0 returned 1
+        1:  180:        date* date2 = getExpirationDate(i);
+call    0 returned 1
+        1:  181:        date* date3 = getExpirationDate(j);
+call    0 returned 1
+        1:  182:        modifyIngredientWithoutUndo(s, getName(i), getSupplier(i), date2->day,
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+        -:  183:                         date2->month, date2->year, getName(j),
+        -:  184:                         getSupplier(j), getQuantity(j) ,date3->day,
+        -:  185:                         date3->month, date3->year);
+        -:  186:    }
+        -:  187:
+        3:  188:    add_dynamic(s->undoStack, (TElement) op2);
+        3:  188-block  0
+call    0 returned 3
+        3:  189:    delete_dynamic(s->redoStack, stackSize-1);
+call    0 returned 3
+        3:  190:    return 1;
+        -:  191:}
+        -:  192:
+        -:  193:
+function past_expiration_date called 0 returned 0% blocks executed 0%
+    #####:  194:Dynamic_array* past_expiration_date(Service* s, const char* str)
+        -:  195:{
+    #####:  196:    Dynamic_array* da = createDynamicArray((DestroyElementFunctionType) destroy_ingredient);
+    %%%%%:  196-block  0
+call    0 never executed
+    #####:  197:    Dynamic_array* dyn = get_dyn_array(s->repo);
+call    0 never executed
+    #####:  198:    for(int i=0; i< getLength(dyn); i++)
+    %%%%%:  198-block  0
+    %%%%%:  198-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  199:    {
+    #####:  200:        if(str[0] == '*' || strstr(getName(dyn->elems[i]), str) != NULL) {
+    %%%%%:  200-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  200-block  1
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    #####:  201:            date *PEDate = getExpirationDate(dyn->elems[i]);
+    %%%%%:  201-block  0
+call    0 never executed
+    #####:  202:            if (PEDate->year > 2022)
+branch  0 never executed
+branch  1 never executed
+    #####:  203:                add_dynamic(da, dyn->elems[i]);
+    %%%%%:  203-block  0
+call    0 never executed
+    #####:  204:            else if (PEDate->year == 2022) {
+    %%%%%:  204-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  205:                if (PEDate->month > 3 || (PEDate->month == 3 && PEDate->day >= 16))
+    %%%%%:  205-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  205-block  1
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  205-block  2
+branch  4 never executed
+branch  5 never executed
+    #####:  206:                    add_dynamic(da, dyn->elems[i]);
+    %%%%%:  206-block  0
+call    0 never executed
+        -:  207:            }
+        -:  208:        }
+        -:  209:    }
+    #####:  210:    return da;
+    %%%%%:  210-block  0
+        -:  211:}
+function ingredients_from_supplier called 0 returned 0% blocks executed 0%
+    #####:  212:Dynamic_array* ingredients_from_supplier(Service* s, const char* str, int quantity)
+        -:  213:{
+    #####:  214:    Dynamic_array* dyn = get_dyn_array(s->repo);
+    %%%%%:  214-block  0
+call    0 never executed
+    #####:  215:    Dynamic_array* da = createDynamicArray((DestroyElementFunctionType) destroy_ingredient);
+call    0 never executed
+    #####:  216:    for(int i=0; i< getLength(dyn); i++)
+    %%%%%:  216-block  0
+    %%%%%:  216-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  217:    {
+    #####:  218:        if(!strcmp(getSupplier(dyn->elems[i]),str) && getQuantity(dyn->elems[i]) <= quantity)
+    %%%%%:  218-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  218-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:  219:            add_dynamic(da, dyn->elems[i]);
+    %%%%%:  219-block  0
+call    0 never executed
+        -:  220:    }
+    #####:  221:    if(getLength(da) == 0)
+    %%%%%:  221-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  222:        return NULL;
+    %%%%%:  222-block  0
+        -:  223:    Ingredient* k;
+    #####:  224:    for(int i=0; i< getLength(da)-1; i++)
+    %%%%%:  224-block  0
+    %%%%%:  224-block  1
+    %%%%%:  224-block  2
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  225:    {
+    #####:  226:        for(int j=i+1; j< getLength(da);j++)
+    %%%%%:  226-block  0
+    %%%%%:  226-block  1
+    %%%%%:  226-block  2
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  227:        {
+    #####:  228:            if(getQuantity(da->elems[i]) > getQuantity(da->elems[j]))
+    %%%%%:  228-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+        -:  229:            {
+    #####:  230:                k = da->elems[i];
+    #####:  231:                da->elems[i] = da->elems[j];
+    #####:  232:                da->elems[j] = k;
+    %%%%%:  232-block  0
+        -:  233:            }
+        -:  234:        }
+        -:  235:    }
+    #####:  236:    return da;
+    %%%%%:  236-block  0
+        -:  237:}
+        -:  238:
+function getRepo called 1 returned 100% blocks executed 100%
+        1:  239:IngredientRepo* getRepo(Service* s)
+        -:  240:{
+        1:  241:    return s->repo;
+        1:  241-block  0
+        -:  242:}

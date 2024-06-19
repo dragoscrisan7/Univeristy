@@ -1,0 +1,25 @@
+# ninja log v5
+74	7211	6724472064172047	CMakeFiles/a8_9_dragoscrisan7.dir/main.cpp.obj	cbbc7d378ca01b51
+15	7487	6724472066906665	CMakeFiles/a8_9_dragoscrisan7.dir/Service.cpp.obj	7f461ca5c12f806a
+93	8493	6724471053430821	CMakeFiles/a8_9_dragoscrisan7.dir/UserRepository.cpp.obj	c7f94097e623a75
+9	7077	6724471038401715	CMakeFiles/a8_9_dragoscrisan7.dir/Repository.cpp.obj	e2372cc5684f8209
+69	7571	6724472068336362	CMakeFiles/a8_9_dragoscrisan7.dir/Test.cpp.obj	1cf381d96183398f
+104	8575	6724471053930965	CMakeFiles/a8_9_dragoscrisan7.dir/UserService.cpp.obj	f831d851012e135e
+79	7719	6724472069861027	CMakeFiles/a8_9_dragoscrisan7.dir/Ui.cpp.obj	21bc6d6b455e0356
+88	8417	6724471052520433	CMakeFiles/a8_9_dragoscrisan7.dir/Dog.cpp.obj	3e45d0c9be4d2a7a
+704	996	6716654897513086	a8_9_dragoscrisan7.exe	112ddd32473ca796
+8493	14871	6724471118166788	CMakeFiles/a8_9_dragoscrisan7.dir/CSVfile.cpp.obj	7943e88002eaa866
+64	8042	6724472073213124	CMakeFiles/a8_9_dragoscrisan7.dir/Validators.cpp.obj	dca7c753f2892592
+8576	15339	6724471122994951	CMakeFiles/a8_9_dragoscrisan7.dir/HTMLfile.cpp.obj	bc7da0a7a4a82589
+6	372	6724472793656896	a8_9_dragoscrisan7.exe	c551f68032fe2314
+123	8646	6739680393899900	CMakeFiles/a8_9_dragoscrisan7.dir/main.cpp.obj	cbbc7d378ca01b51
+132	8680	6739680394399895	CMakeFiles/a8_9_dragoscrisan7.dir/Ui.cpp.obj	21bc6d6b455e0356
+114	9075	6739680397993290	CMakeFiles/a8_9_dragoscrisan7.dir/UserService.cpp.obj	f831d851012e135e
+8	9136	6739680398915713	CMakeFiles/a8_9_dragoscrisan7.dir/Service.cpp.obj	7f461ca5c12f806a
+127	9137	6739680399405194	CMakeFiles/a8_9_dragoscrisan7.dir/Validators.cpp.obj	dca7c753f2892592
+36	5163	6739680751490306	CMakeFiles/a8_9_dragoscrisan7.dir/CSVfile.cpp.obj	7943e88002eaa866
+9	5413	6739680754334721	CMakeFiles/a8_9_dragoscrisan7.dir/UserRepository.cpp.obj	c7f94097e623a75
+40	5502	6739680755235847	CMakeFiles/a8_9_dragoscrisan7.dir/HTMLfile.cpp.obj	bc7da0a7a4a82589
+5502	6543	6739680765574301	a8_9_dragoscrisan7.exe	c551f68032fe2314
+5	2165	6750209892545093	CMakeFiles/a8_9_dragoscrisan7.dir/CSVfile.cpp.obj	7943e88002eaa866
+2167	2769	6750209898535584	a8_9_dragoscrisan7.exe	c551f68032fe2314

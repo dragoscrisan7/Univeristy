@@ -1,0 +1,134 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/Dog.cpp
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a5-6-dragoscrisan7\cmake-build-debug-coverage-coverage\CMakeFiles\a5_6_dragoscrisan7.dir\Dog.cpp.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a5-6-dragoscrisan7\cmake-build-debug-coverage-coverage\CMakeFiles\a5_6_dragoscrisan7.dir\Dog.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Dog.h"
+        -:    2:
+function _ZN3dogC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_RKi called 56 returned 100% blocks executed 62%
+       56:    3:dog::dog(const std::string& breed, const std::string& name, const std::string& photograph, const int& age)
+       56:    3-block  0
+call    0 returned 56
+call    1 returned 56
+call    2 returned 56
+        -:    4:{
+       56:    5:    this->name = name;
+call    0 returned 56
+branch  1 taken 56 (fallthrough)
+branch  2 taken 0 (throw)
+       56:    6:    this->breed = breed;
+       56:    6-block  0
+call    0 returned 56
+branch  1 taken 56 (fallthrough)
+branch  2 taken 0 (throw)
+       56:    7:    this->photograph = photograph;
+       56:    7-block  0
+call    0 returned 56
+branch  1 taken 56 (fallthrough)
+branch  2 taken 0 (throw)
+       56:    8:    this->age = age;
+       56:    9:}
+       56:    9-block  0
+    $$$$$:    9-block  1
+call    0 never executed
+    $$$$$:    9-block  2
+call    1 never executed
+    $$$$$:    9-block  3
+call    2 never executed
+        -:   10:
+function _ZN3dogD2Ev called 243 returned 100% blocks executed 100%
+      243:   11:dog::~dog() = default;
+      243:   11-block  0
+call    0 returned 243
+call    1 returned 243
+call    2 returned 243
+        -:   12:
+function _ZNK3dog8toStringB5cxx11Ev called 1 returned 100% blocks executed 49%
+        1:   13:std::string dog::toString() const {
+        1:   14:    auto str_age = std::to_string(this->age);
+        1:   14-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   15:    return "Breed: " + this->breed + " | Name: " + this->name + " | Age: " + str_age + " | Photograph link: " +
+        1:   15-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   15-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   15-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   15-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   15-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   15-block  5
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:   15-block  6
+call   21 never executed
+    $$$$$:   15-block  7
+    $$$$$:   15-block  8
+call   22 never executed
+    $$$$$:   15-block  9
+    $$$$$:   15-block 10
+call   23 never executed
+    $$$$$:   15-block 11
+    $$$$$:   15-block 12
+call   24 never executed
+    $$$$$:   15-block 13
+    $$$$$:   15-block 14
+call   25 never executed
+    $$$$$:   15-block 15
+    $$$$$:   15-block 16
+call   26 never executed
+    $$$$$:   15-block 17
+        3:   16:           this->photograph;
+        1:   16-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   16-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   16-block  2
+        1:   17:}
+call    0 returned 1
+    $$$$$:   17-block  0
+call    1 never executed
+        -:   18:
+function _ZN3dogeqERKS_ called 6 returned 100% blocks executed 91%
+        6:   19:bool dog::operator==(const dog &other) {
+       6*:   20:    return (age == other.age && name == other.name && photograph == other.photograph && breed == other.breed);
+        6:   20-block  0
+branch  0 taken 6 (fallthrough)
+branch  1 taken 0
+        6:   20-block  1
+call    2 returned 6
+branch  3 taken 6 (fallthrough)
+branch  4 taken 0
+        6:   20-block  2
+call    5 returned 6
+branch  6 taken 6 (fallthrough)
+branch  7 taken 0
+        6:   20-block  3
+call    8 returned 6
+branch  9 taken 6 (fallthrough)
+branch 10 taken 0
+        6:   20-block  4
+    %%%%%:   20-block  5
+        6:   20-block  6
+        -:   21:}

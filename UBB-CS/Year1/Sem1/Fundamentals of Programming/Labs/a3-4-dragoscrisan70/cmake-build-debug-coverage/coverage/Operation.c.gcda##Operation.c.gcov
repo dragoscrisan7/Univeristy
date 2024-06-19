@@ -1,0 +1,83 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a3-4-dragoscrisan7/Operation.c
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\Operation.c.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\Operation.c.gcda
+        -:    0:Runs:1
+        -:    1:#include <Operation.h>
+        -:    2:#include <Bakery.h>
+        -:    3:#include <stdlib.h>
+        -:    4:
+function createOperation called 11 returned 100% blocks executed 100%
+       11:    5:Operation* createOperation(opType type, Ingredient* ing1, Ingredient* ing2)
+        -:    6:{
+       11:    7:    Operation* op = malloc(sizeof(Operation));
+       11:    8:    op->type = type;
+        -:    9:
+       11:   10:    Ingredient* ing = copyIngredient(ing1);
+       11:   10-block  0
+call    0 returned 11
+       11:   11:    op->i = ing;
+       11:   12:    ing = copyIngredient(ing2);
+call    0 returned 11
+       11:   13:    op->j = ing;
+        -:   14:
+       11:   15:    return op;
+        -:   16:}
+        -:   17:
+function destroyOperation called 11 returned 100% blocks executed 83%
+       11:   18:void destroyOperation(Operation* o)
+        -:   19:{
+       11:   20:    if(o == NULL)
+       11:   20-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 11
+    #####:   21:        return;
+    %%%%%:   21-block  0
+        -:   22:
+       11:   23:    destroy_ingredient(o->j);
+       11:   23-block  0
+call    0 returned 11
+       11:   24:    destroy_ingredient(o->i);
+call    0 returned 11
+       11:   25:    free(o);
+        -:   26:}
+        -:   27:
+function getOpType called 17 returned 100% blocks executed 75%
+       17:   28:opType getOpType(Operation* o)
+        -:   29:{
+       17:   30:    if(o == NULL)
+       17:   30-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 17
+    #####:   31:        return -1;
+    %%%%%:   31-block  0
+        -:   32:
+       17:   33:    return o->type;
+       17:   33-block  0
+        -:   34:}
+        -:   35:
+function getOpObject called 9 returned 100% blocks executed 75%
+        9:   36:Ingredient* getOpObject(Operation* o)
+        -:   37:{
+        9:   38:    if(o == NULL)
+        9:   38-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 9
+    #####:   39:        return NULL;
+    %%%%%:   39-block  0
+        -:   40:
+        9:   41:    return o->i;
+        9:   41-block  0
+        -:   42:}
+function getOpObject2 called 2 returned 100% blocks executed 75%
+        2:   43:Ingredient* getOpObject2(Operation* o)
+        -:   44:{
+        2:   45:    if(o == NULL)
+        2:   45-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    #####:   46:        return NULL;
+    %%%%%:   46-block  0
+        -:   47:
+        2:   48:    return o->j;
+        2:   48-block  0
+        -:   49:}

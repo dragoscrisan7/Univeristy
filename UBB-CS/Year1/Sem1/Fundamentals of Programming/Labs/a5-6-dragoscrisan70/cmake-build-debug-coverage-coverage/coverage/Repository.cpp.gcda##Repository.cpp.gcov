@@ -1,0 +1,590 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/Repository.cpp
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a5-6-dragoscrisan7\cmake-build-debug-coverage-coverage\CMakeFiles\a5_6_dragoscrisan7.dir\Repository.cpp.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a5-6-dragoscrisan7\cmake-build-debug-coverage-coverage\CMakeFiles\a5_6_dragoscrisan7.dir\Repository.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Repository.h"
+        -:    2:
+        -:    3:using namespace std;
+        -:    4:
+function _ZN10RepositoryC2EP13DynamicVectorI3dogE called 4 returned 100% blocks executed 100%
+        4:    5:Repository::Repository(DynamicVector<dog> *dyn) {
+        4:    6:    this->dogs = dyn;
+        4:    7:}
+        -:    8:
+function _ZN10Repository6addDogERK3dog called 5 returned 100% blocks executed 71%
+        5:    9:void Repository::addDog(const dog& d) {
+        5:   10:    this->dogs->add(d);
+        5:   10-block  0
+call    0 returned 5
+call    1 returned 5
+branch  2 taken 5 (fallthrough)
+branch  3 taken 0 (throw)
+        5:   10-block  1
+call    4 returned 5
+    $$$$$:   10-block  2
+call    5 never executed
+        5:   11:}
+function _ZN10Repository9deleteDogERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 4 returned 50% blocks executed 89%
+        4:   12:void Repository::deleteDog(const std::string& name) {
+        4:   13:    auto i = find(name);
+        4:   13-block  0
+call    0 returned 4
+        4:   14:    if(i != -1)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 2
+        2:   15:        this->dogs->del(i);
+        2:   15-block  0
+call    0 returned 2
+        -:   16:    else
+        2:   17:        throw std::invalid_argument("Dog not found");
+        2:   17-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   17-block  1
+call    4 returned 0
+    $$$$$:   17-block  2
+call    5 never executed
+        2:   18:}
+function _ZN10Repository4findERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 8 returned 100% blocks executed 100%
+        8:   19:int Repository::find(const std::string& name) {
+       92:   20:    for(int i=0; i < dogs->getSize(); i++){
+        8:   20-block  0
+       84:   20-block  1
+       92:   20-block  2
+call    0 returned 92
+branch  1 taken 88
+branch  2 taken 4 (fallthrough)
+       88:   21:        if((*dogs)[i].get_name() == name)
+       88:   21-block  0
+call    0 returned 88
+call    1 returned 88
+call    2 returned 88
+call    3 returned 88
+branch  4 taken 4 (fallthrough)
+branch  5 taken 84
+        4:   22:            return i;
+        4:   22-block  0
+        -:   23:    }
+        4:   24:    return -1;
+        4:   24-block  0
+        -:   25:}
+function _ZN10Repository9updateDogERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERK3dog called 4 returned 50% blocks executed 73%
+        4:   26:void Repository::updateDog(const std::string& name, const dog& d1) {
+        4:   27:    auto i = find(name);
+        4:   27-block  0
+call    0 returned 4
+        4:   28:    if(i != -1)
+branch  0 taken 2 (fallthrough)
+branch  1 taken 2
+        2:   29:        this->dogs->update(i, d1);
+        2:   29-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   29-block  1
+call    4 returned 2
+    $$$$$:   29-block  2
+call    5 never executed
+    $$$$$:   29-block  3
+call    6 never executed
+        -:   30:    else
+        2:   31:        throw std::invalid_argument("Dog not found");
+        2:   31-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   31-block  1
+call    4 returned 0
+    $$$$$:   31-block  2
+call    5 never executed
+        2:   32:}
+        2:   32-block  0
+function _ZN10Repository14initialiseRepoEv called 4 returned 100% blocks executed 41%
+        4:   33:void Repository::initialiseRepo() {
+        8:   34:    dog dog1("German Shepherd", "Bond", "https://www.wowwow.ro/ciobanesc-german-caine/2145#",1);
+        4:   34-block  0
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   34-block  1
+call    4 returned 4
+call    5 returned 4
+branch  6 taken 4 (fallthrough)
+branch  7 taken 0 (throw)
+        4:   34-block  2
+call    8 returned 4
+call    9 returned 4
+branch 10 taken 4 (fallthrough)
+branch 11 taken 0 (throw)
+        4:   34-block  3
+call   12 returned 4
+branch 13 taken 4 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 4
+call   16 returned 4
+call   17 returned 4
+call   18 returned 4
+call   19 returned 4
+    $$$$$:   34-block  4
+    $$$$$:   34-block  5
+    $$$$$:   34-block  6
+    $$$$$:   34-block  7
+    $$$$$:   34-block  8
+    $$$$$:   34-block  9
+    $$$$$:   34-block 10
+        8:   35:    dog dog2("Husky", "Yoda", "https://www.wowwow.ro/husky-caine/2152", 5);
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   35-block  0
+call    4 returned 4
+call    5 returned 4
+branch  6 taken 4 (fallthrough)
+branch  7 taken 0 (throw)
+        4:   35-block  1
+call    8 returned 4
+call    9 returned 4
+branch 10 taken 4 (fallthrough)
+branch 11 taken 0 (throw)
+        4:   35-block  2
+call   12 returned 4
+branch 13 taken 4 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 4
+call   16 returned 4
+call   17 returned 4
+call   18 returned 4
+call   19 returned 4
+    $$$$$:   35-block  3
+    $$$$$:   35-block  4
+    $$$$$:   35-block  5
+    $$$$$:   35-block  6
+    $$$$$:   35-block  7
+    $$$$$:   35-block  8
+    $$$$$:   35-block  9
+        8:   36:    dog dog3("Golden Retriever", "Murray", "https://www.wowwow.ro/golden-retriever-caine/2151", 3);
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   36-block  0
+call    4 returned 4
+call    5 returned 4
+branch  6 taken 4 (fallthrough)
+branch  7 taken 0 (throw)
+        4:   36-block  1
+call    8 returned 4
+call    9 returned 4
+branch 10 taken 4 (fallthrough)
+branch 11 taken 0 (throw)
+        4:   36-block  2
+call   12 returned 4
+branch 13 taken 4 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 4
+call   16 returned 4
+call   17 returned 4
+call   18 returned 4
+call   19 returned 4
+    $$$$$:   36-block  3
+    $$$$$:   36-block  4
+    $$$$$:   36-block  5
+    $$$$$:   36-block  6
+    $$$$$:   36-block  7
+    $$$$$:   36-block  8
+    $$$$$:   36-block  9
+        8:   37:    dog dog4("Poodle", "Baby", "https://www.wowwow.ro/pudel-standard-%28caniche%29-caine/2163", 2);
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   37-block  0
+call    4 returned 4
+call    5 returned 4
+branch  6 taken 4 (fallthrough)
+branch  7 taken 0 (throw)
+        4:   37-block  1
+call    8 returned 4
+call    9 returned 4
+branch 10 taken 4 (fallthrough)
+branch 11 taken 0 (throw)
+        4:   37-block  2
+call   12 returned 4
+branch 13 taken 4 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 4
+call   16 returned 4
+call   17 returned 4
+call   18 returned 4
+call   19 returned 4
+    $$$$$:   37-block  3
+    $$$$$:   37-block  4
+    $$$$$:   37-block  5
+    $$$$$:   37-block  6
+    $$$$$:   37-block  7
+    $$$$$:   37-block  8
+    $$$$$:   37-block  9
+        8:   38:    dog dog5("Husky", "Ice", "https://www.wowwow.ro/husky-caine/2152", 7);
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   38-block  0
+call    4 returned 4
+call    5 returned 4
+branch  6 taken 4 (fallthrough)
+branch  7 taken 0 (throw)
+        4:   38-block  1
+call    8 returned 4
+call    9 returned 4
+branch 10 taken 4 (fallthrough)
+branch 11 taken 0 (throw)
+        4:   38-block  2
+call   12 returned 4
+branch 13 taken 4 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 4
+call   16 returned 4
+call   17 returned 4
+call   18 returned 4
+call   19 returned 4
+    $$$$$:   38-block  3
+    $$$$$:   38-block  4
+    $$$$$:   38-block  5
+    $$$$$:   38-block  6
+    $$$$$:   38-block  7
+    $$$$$:   38-block  8
+    $$$$$:   38-block  9
+        8:   39:    dog dog6("Samoyed", "Bear", "https://www.wowwow.ro/samoyed-caine/2298", 0);
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   39-block  0
+call    4 returned 4
+call    5 returned 4
+branch  6 taken 4 (fallthrough)
+branch  7 taken 0 (throw)
+        4:   39-block  1
+call    8 returned 4
+call    9 returned 4
+branch 10 taken 4 (fallthrough)
+branch 11 taken 0 (throw)
+        4:   39-block  2
+call   12 returned 4
+branch 13 taken 4 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 4
+call   16 returned 4
+call   17 returned 4
+call   18 returned 4
+call   19 returned 4
+    $$$$$:   39-block  3
+    $$$$$:   39-block  4
+    $$$$$:   39-block  5
+    $$$$$:   39-block  6
+    $$$$$:   39-block  7
+    $$$$$:   39-block  8
+    $$$$$:   39-block  9
+        8:   40:    dog dog7("Husky", "Hudson", "https://www.wowwow.ro/husky-caine/2152", 10);
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   40-block  0
+call    4 returned 4
+call    5 returned 4
+branch  6 taken 4 (fallthrough)
+branch  7 taken 0 (throw)
+        4:   40-block  1
+call    8 returned 4
+call    9 returned 4
+branch 10 taken 4 (fallthrough)
+branch 11 taken 0 (throw)
+        4:   40-block  2
+call   12 returned 4
+branch 13 taken 4 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 4
+call   16 returned 4
+call   17 returned 4
+call   18 returned 4
+call   19 returned 4
+    $$$$$:   40-block  3
+    $$$$$:   40-block  4
+    $$$$$:   40-block  5
+    $$$$$:   40-block  6
+    $$$$$:   40-block  7
+    $$$$$:   40-block  8
+    $$$$$:   40-block  9
+        8:   41:    dog dog8("Akita Inu", "Dash", "https://www.wowwow.ro/akita-inu-caine/2131", 3);
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   41-block  0
+call    4 returned 4
+call    5 returned 4
+branch  6 taken 4 (fallthrough)
+branch  7 taken 0 (throw)
+        4:   41-block  1
+call    8 returned 4
+call    9 returned 4
+branch 10 taken 4 (fallthrough)
+branch 11 taken 0 (throw)
+        4:   41-block  2
+call   12 returned 4
+branch 13 taken 4 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 4
+call   16 returned 4
+call   17 returned 4
+call   18 returned 4
+call   19 returned 4
+    $$$$$:   41-block  3
+    $$$$$:   41-block  4
+    $$$$$:   41-block  5
+    $$$$$:   41-block  6
+    $$$$$:   41-block  7
+    $$$$$:   41-block  8
+    $$$$$:   41-block  9
+        8:   42:    dog dog9("Akita Inu", "Geo", "https://www.wowwow.ro/akita-inu-caine/2131", 6);
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   42-block  0
+call    4 returned 4
+call    5 returned 4
+branch  6 taken 4 (fallthrough)
+branch  7 taken 0 (throw)
+        4:   42-block  1
+call    8 returned 4
+call    9 returned 4
+branch 10 taken 4 (fallthrough)
+branch 11 taken 0 (throw)
+        4:   42-block  2
+call   12 returned 4
+branch 13 taken 4 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 4
+call   16 returned 4
+call   17 returned 4
+call   18 returned 4
+call   19 returned 4
+    $$$$$:   42-block  3
+    $$$$$:   42-block  4
+    $$$$$:   42-block  5
+    $$$$$:   42-block  6
+    $$$$$:   42-block  7
+    $$$$$:   42-block  8
+    $$$$$:   42-block  9
+        8:   43:    dog dog10("Corgi", "Jedi", "https://www.wowwow.ro/welsh-corgi-pembroke-caine/2332", 1);
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   43-block  0
+call    4 returned 4
+call    5 returned 4
+branch  6 taken 4 (fallthrough)
+branch  7 taken 0 (throw)
+        4:   43-block  1
+call    8 returned 4
+call    9 returned 4
+branch 10 taken 4 (fallthrough)
+branch 11 taken 0 (throw)
+        4:   43-block  2
+call   12 returned 4
+branch 13 taken 4 (fallthrough)
+branch 14 taken 0 (throw)
+call   15 returned 4
+call   16 returned 4
+call   17 returned 4
+call   18 returned 4
+call   19 returned 4
+    $$$$$:   43-block  3
+    $$$$$:   43-block  4
+    $$$$$:   43-block  5
+    $$$$$:   43-block  6
+    $$$$$:   43-block  7
+    $$$$$:   43-block  8
+    $$$$$:   43-block  9
+        4:   44:    this->dogs->add(dog1);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   44-block  0
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   44-block  1
+call    6 returned 4
+    $$$$$:   44-block  2
+call    7 never executed
+    $$$$$:   44-block  3
+        4:   45:    this->dogs->add(dog2);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   45-block  0
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   45-block  1
+call    6 returned 4
+    $$$$$:   45-block  2
+call    7 never executed
+    $$$$$:   45-block  3
+        4:   46:    this->dogs->add(dog3);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   46-block  0
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   46-block  1
+call    6 returned 4
+    $$$$$:   46-block  2
+call    7 never executed
+    $$$$$:   46-block  3
+        4:   47:    this->dogs->add(dog4);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   47-block  0
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   47-block  1
+call    6 returned 4
+    $$$$$:   47-block  2
+call    7 never executed
+    $$$$$:   47-block  3
+        4:   48:    this->dogs->add(dog5);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   48-block  0
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   48-block  1
+call    6 returned 4
+    $$$$$:   48-block  2
+call    7 never executed
+    $$$$$:   48-block  3
+        4:   49:    this->dogs->add(dog6);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   49-block  0
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   49-block  1
+call    6 returned 4
+    $$$$$:   49-block  2
+call    7 never executed
+    $$$$$:   49-block  3
+        4:   50:    this->dogs->add(dog7);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   50-block  0
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   50-block  1
+call    6 returned 4
+    $$$$$:   50-block  2
+call    7 never executed
+    $$$$$:   50-block  3
+        4:   51:    this->dogs->add(dog8);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   51-block  0
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   51-block  1
+call    6 returned 4
+    $$$$$:   51-block  2
+call    7 never executed
+    $$$$$:   51-block  3
+        4:   52:    this->dogs->add(dog9);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   52-block  0
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   52-block  1
+call    6 returned 4
+    $$$$$:   52-block  2
+call    7 never executed
+    $$$$$:   52-block  3
+        4:   53:    this->dogs->add(dog10);
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   53-block  0
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   53-block  1
+call    6 returned 4
+    $$$$$:   53-block  2
+call    7 never executed
+    $$$$$:   53-block  3
+        4:   54:}
+call    0 returned 4
+call    1 returned 4
+call    2 returned 4
+call    3 returned 4
+call    4 returned 4
+call    5 returned 4
+call    6 returned 4
+call    7 returned 4
+call    8 returned 4
+call    9 returned 4
+    $$$$$:   54-block  0
+call   10 never executed
+    $$$$$:   54-block  1
+call   11 never executed
+    $$$$$:   54-block  2
+call   12 never executed
+    $$$$$:   54-block  3
+call   13 never executed
+    $$$$$:   54-block  4
+call   14 never executed
+    $$$$$:   54-block  5
+call   15 never executed
+    $$$$$:   54-block  6
+call   16 never executed
+    $$$$$:   54-block  7
+call   17 never executed
+    $$$$$:   54-block  8
+call   18 never executed
+    $$$$$:   54-block  9
+call   19 never executed
+function _ZN10Repository7getSizeEv called 7 returned 100% blocks executed 100%
+        7:   55:int Repository::getSize() {
+        7:   56:    return this->dogs->getSize();
+        7:   56-block  0
+call    0 returned 7
+        -:   57:}
+function _ZN10Repository10getAllRepoEv called 32 returned 100% blocks executed 100%
+       32:   58:DynamicVector<dog>* Repository::getAllRepo() {
+       32:   59:    return this->dogs;
+       32:   59-block  0
+        -:   60:}

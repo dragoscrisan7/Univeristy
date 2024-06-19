@@ -1,0 +1,260 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a8-9-dragoscrisan7/Dog.cpp
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\Dog.cpp.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\Dog.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Dog.h"
+        -:    2:#include <Windows.h>
+        -:    3:#include <shellapi.h>
+        -:    4:///#include <Utils.h>
+        -:    5:
+        -:    6:using namespace std;
+        -:    7:
+function _ZN3dogC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_RKi called 17 returned 100% blocks executed 62%
+       17:    8:dog::dog(const string &name, const string &breed, const string &photograph, const int &age) {
+       17:    8-block  0
+call    0 returned 17
+call    1 returned 17
+call    2 returned 17
+       17:    9:    this->breed = breed;
+call    0 returned 17
+branch  1 taken 17 (fallthrough)
+branch  2 taken 0 (throw)
+       17:   10:    this->name = name;
+       17:   10-block  0
+call    0 returned 17
+branch  1 taken 17 (fallthrough)
+branch  2 taken 0 (throw)
+       17:   11:    this->photograph = photograph;
+       17:   11-block  0
+call    0 returned 17
+branch  1 taken 17 (fallthrough)
+branch  2 taken 0 (throw)
+       17:   12:    this->age = age;
+       17:   13:}
+       17:   13-block  0
+    $$$$$:   13-block  1
+call    0 never executed
+    $$$$$:   13-block  2
+call    1 never executed
+    $$$$$:   13-block  3
+call    2 never executed
+function _ZN3dogC2Ev called 4 returned 100% blocks executed 48%
+        4:   14:dog::dog() : breed(""), name(""), photograph(""), age(0){}
+        4:   14-block  0
+call    0 returned 4
+call    1 returned 4
+branch  2 taken 4 (fallthrough)
+branch  3 taken 0 (throw)
+        4:   14-block  1
+call    4 returned 4
+call    5 returned 4
+call    6 returned 4
+branch  7 taken 4 (fallthrough)
+branch  8 taken 0 (throw)
+        4:   14-block  2
+call    9 returned 4
+call   10 returned 4
+call   11 returned 4
+branch 12 taken 4 (fallthrough)
+branch 13 taken 0 (throw)
+        4:   14-block  3
+call   14 returned 4
+    $$$$$:   14-block  4
+call   15 never executed
+    $$$$$:   14-block  5
+call   16 never executed
+    $$$$$:   14-block  6
+call   17 never executed
+    $$$$$:   14-block  7
+    $$$$$:   14-block  8
+call   18 never executed
+    $$$$$:   14-block  9
+    $$$$$:   14-block 10
+call   19 never executed
+    $$$$$:   14-block 11
+call   20 never executed
+function _ZN3dogD2Ev called 83 returned 100% blocks executed 100%
+       83:   15:dog::~dog() = default;
+       83:   15-block  0
+call    0 returned 83
+call    1 returned 83
+call    2 returned 83
+        -:   16:
+function _ZNK3dog4openEv called 0 returned 0% blocks executed 0%
+    #####:   17:void dog::open() const{
+    #####:   18:    ShellExecuteA(nullptr, nullptr, "chrome.exe", this->get_photograph().c_str(), nullptr, SW_SHOWMAXIMIZED);
+    %%%%%:   18-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:   18-block  1
+call    5 never executed
+    $$$$$:   18-block  2
+call    6 never executed
+    #####:   19:}
+        -:   20:
+function _ZrsRSiR3dog called 13 returned 100% blocks executed 90%
+       13:   21:std::istream & operator>>(std::istream& is, dog& dog1) {
+       13:   22:    if (is.eof())
+       13:   22-block  0
+call    0 returned 13
+branch  1 taken 1 (fallthrough)
+branch  2 taken 12
+        1:   23:        is.setstate(ios_base::failbit);
+        1:   23-block  0
+call    0 returned 1
+        -:   24:    else{
+       12:   25:        std::string age;
+       12:   25-block  0
+call    0 returned 12
+       12:   26:        getline(is,dog1.name,',');
+call    0 returned 12
+branch  1 taken 12 (fallthrough)
+branch  2 taken 0 (throw)
+       12:   27:        getline(is,dog1.breed,',');
+       12:   27-block  0
+call    0 returned 12
+branch  1 taken 12 (fallthrough)
+branch  2 taken 0 (throw)
+       12:   28:        getline(is,age,',');
+       12:   28-block  0
+call    0 returned 12
+branch  1 taken 12 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   29:        try{
+       12:   30:            dog1.age = stoi(age);
+       12:   30-block  0
+call    0 returned 12
+branch  1 taken 9 (fallthrough)
+branch  2 taken 3 (throw)
+        9:   30-block  1
+        -:   31:        }
+        3:   32:        catch (...){}
+        3:   32-block  0
+        3:   32-block  1
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+       12:   33:        getline(is,dog1.photograph,'\n');
+       12:   33-block  0
+call    0 returned 12
+branch  1 taken 12 (fallthrough)
+branch  2 taken 0 (throw)
+       12:   34:    }
+       12:   34-block  0
+call    0 returned 12
+    $$$$$:   34-block  1
+call    1 never executed
+       13:   35:    return is;
+       13:   35-block  0
+       13:   35-block  1
+        -:   36:}
+        -:   37:
+function _ZlsRSoR3dog called 24 returned 100% blocks executed 100%
+       24:   38:std::ostream & operator<<(ostream &os, dog &dog1) {
+       24:   39:    os << dog1.name << "," << dog1.breed << "," << dog1.age << "," << dog1.photograph;
+       24:   39-block  0
+call    0 returned 24
+call    1 returned 24
+call    2 returned 24
+call    3 returned 24
+call    4 returned 24
+call    5 returned 24
+call    6 returned 24
+       24:   40:    return os;
+        -:   41:}
+        -:   42:
+function _ZNK3dog8toStringB5cxx11Ev called 1 returned 100% blocks executed 49%
+        1:   43:std::string dog::toString() const {
+        1:   44:    auto str_age = std::to_string(this->age);
+        1:   44-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   45:    return "Breed: " + this->breed + " | Name: " + this->name + " | Age: " + str_age + " | Photograph link: " +
+        1:   45-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   45-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   45-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   45-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   45-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   45-block  5
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+    $$$$$:   45-block  6
+call   21 never executed
+    $$$$$:   45-block  7
+    $$$$$:   45-block  8
+call   22 never executed
+    $$$$$:   45-block  9
+    $$$$$:   45-block 10
+call   23 never executed
+    $$$$$:   45-block 11
+    $$$$$:   45-block 12
+call   24 never executed
+    $$$$$:   45-block 13
+    $$$$$:   45-block 14
+call   25 never executed
+    $$$$$:   45-block 15
+    $$$$$:   45-block 16
+call   26 never executed
+    $$$$$:   45-block 17
+        3:   46:           this->photograph;
+        1:   46-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   46-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   46-block  2
+        1:   47:}
+call    0 returned 1
+    $$$$$:   47-block  0
+call    1 never executed
+        -:   48:
+function _ZN3dogeqERKS_ called 6 returned 100% blocks executed 100%
+        6:   49:bool dog::operator==(const dog &other) {
+        6:   50:    return (this->name==other.name && this->breed==other.breed && this->photograph == other.photograph && this->age == other.age);
+        6:   50-block  0
+call    0 returned 6
+branch  1 taken 3 (fallthrough)
+branch  2 taken 3
+        3:   50-block  1
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0
+        3:   50-block  2
+call    6 returned 3
+branch  7 taken 3 (fallthrough)
+branch  8 taken 0
+        3:   50-block  3
+branch  9 taken 3 (fallthrough)
+branch 10 taken 0
+        3:   50-block  4
+        3:   50-block  5
+        6:   50-block  6
+        -:   51:}
+        -:   52:

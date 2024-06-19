@@ -1,0 +1,12 @@
+# ninja log v5
+60	856	6696563943838063	CMakeFiles/a3_4_dragoscrisan7.dir/Test.c.obj	8c6746db492abb0a
+249	1845	6696102122033061	CMakeFiles/a3_4_dragoscrisan7.dir/Bakery.c.obj	d9ea3c62412abd46
+1058	1447	6697396151385958	a3_4_dragoscrisan7.exe	72620eed48eff1cb
+32	557	6688217830796395	CMakeFiles/a3_4_dragoscrisan7.dir/Validators.c.obj	3cc520bc211b1422
+969	3617	6694232736924573	CMakeFiles/a3_4_dragoscrisan7.dir/Dynamic_array.c.obj	3566eee1f25fdefb
+6	834	6696563943338752	CMakeFiles/a3_4_dragoscrisan7.dir/main.c.obj	c70629cbb0f45df6
+269	1916	6696102122960337	CMakeFiles/a3_4_dragoscrisan7.dir/Operation.c.obj	7b6acb808e22261d
+2	455	6696618961457251	CMakeFiles/a3_4_dragoscrisan7.dir/Services.c.obj	ad4ef5e18e897e4
+5	1057	6697396146318853	CMakeFiles/a3_4_dragoscrisan7.dir/UI.c.obj	e2ef0ac5b8aa77bc
+5	519	6696563673829999	CMakeFiles/a3_4_dragoscrisan7.dir/Bakery_repository.c.obj	c2e625e5eacaaad2
+1	757	6714654527018366	build.ninja	bb0af3e362f7d947

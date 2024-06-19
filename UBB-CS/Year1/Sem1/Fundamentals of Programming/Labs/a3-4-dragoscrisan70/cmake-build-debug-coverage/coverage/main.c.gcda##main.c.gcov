@@ -1,0 +1,32 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a3-4-dragoscrisan7/main.c
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\main.c.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\main.c.gcda
+        -:    0:Runs:1
+        -:    1:#include "UI.h"
+        -:    2:#include "Test.h"
+        -:    3:
+function main called 1 returned 100% blocks executed 100%
+        1:    4:int main()
+        -:    5:{
+        1:    6:    run_tests();
+        1:    6-block  0
+call    0 returned 1
+        -:    7:
+        1:    8:    IngredientRepo* repo = createIngredientRepo();
+call    0 returned 1
+        1:    9:    Service* srv = createService(repo);
+call    0 returned 1
+        1:   10:    Ui* ui = createUI(srv);
+call    0 returned 1
+        -:   11:
+        -:   12:
+        -:   13:    ///TODO add some inputs to begin with in the repo
+        -:   14:
+        1:   15:    run(ui);
+call    0 returned 1
+        -:   16:
+        1:   17:    destroyUI(ui);
+call    0 returned 1
+        -:   18:
+        1:   19:    return 0;
+        -:   20:}

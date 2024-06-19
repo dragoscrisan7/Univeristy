@@ -1,0 +1,196 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a8-9-dragoscrisan7/UserService.cpp
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\UserService.cpp.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\UserService.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "UserService.h"
+        -:    2:#include <algorithm>
+        -:    3:
+        -:    4:using namespace std;
+        -:    5:
+function _ZN11UserServiceC2EP8UserRepoP10Repository called 0 returned 0% blocks executed 0%
+    #####:    6:UserService::UserService(UserRepo *urepo, Repository *repo) {
+    #####:    7:    this->urepo = urepo;
+    #####:    8:    this->repo = repo;
+    #####:    9:}
+        -:   10:
+function _ZN11UserService7getRepoEv called 2 returned 100% blocks executed 100%
+        2:   11:UserRepo *UserService::getRepo() {
+        2:   12:    return this->urepo;
+        2:   12-block  0
+        -:   13:}
+        -:   14:
+function _ZN11UserService15add_adopted_dogERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_i called 2 returned 100% blocks executed 75%
+        2:   15:void UserService::add_adopted_dog(const std::string &name, const std::string &breed, const std::string &photograph,
+        -:   16:                                  int age) {
+        2:   17:    dog dog1(name, breed, photograph, age);
+        2:   17-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   18:    this->urepo->addDog(dog1);
+        2:   18-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   19:    this->repo->delDog(name, breed);
+        2:   19-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   20:}
+        2:   20-block  0
+call    0 returned 2
+    $$$$$:   20-block  1
+call    1 never executed
+        -:   21:
+function _ZN11UserService16get_all_filteredERSt6vectorI3dogSaIS1_EERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEi called 1 returned 100% blocks executed 71%
+        1:   22:int UserService::get_all_filtered(std::vector<dog> &valid_dogs, const std::string &breed, int age) {
+        1:   23:    const auto &list = repo->getDog();
+        1:   23-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+function _ZZN11UserService16get_all_filteredERSt6vectorI3dogSaIS1_EERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiENKUlRKS1_E_clESE_ called 2 returned 100% blocks executed 80%
+        3:   24:    copy_if(list.begin(), list.end(), back_inserter(valid_dogs),[breed, age](const dog &dog1){return (dog1.get_breed() == breed && dog1.get_age()<age);});
+        1:   24-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   24-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   24-block  2
+call    6 returned 1
+call    7 returned 1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   24-block  3
+call   11 returned 1
+    $$$$$:   24-block  4
+call   12 never executed
+    $$$$$:   24-block  5
+        2:   24-block  6
+call   13 returned 2
+branch 14 taken 2 (fallthrough)
+branch 15 taken 0 (throw)
+        2:   24-block  7
+call   16 returned 2
+branch 17 taken 1 (fallthrough)
+branch 18 taken 1
+        1:   24-block  8
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0
+        1:   24-block  9
+        1:   24-block 10
+        2:   24-block 11
+branch 22 taken 2 (fallthrough)
+branch 23 taken 0
+        2:   24-block 12
+call   24 returned 2
+        2:   24-block 13
+        2:   24-block 14
+    $$$$$:   24-block 15
+branch 25 never executed
+branch 26 never executed
+    $$$$$:   24-block 16
+call   27 never executed
+        2:   25:    return valid_dogs.size();
+call    0 returned 1
+        1:   25-block  0
+        -:   26:
+        1:   27:}
+call    0 returned 1
+    $$$$$:   27-block  0
+call    1 never executed
+        -:   28:
+function _ZN11UserService14getFileServiceB5cxx11Ev called 0 returned 0% blocks executed 0%
+    #####:   29:std::string &UserService::getFileService() {
+    #####:   30:    return this->urepo->getFileName();
+    %%%%%:   30-block  0
+call    0 never executed
+        -:   31:}
+        -:   32:
+function _ZN11UserServiceC2EP10Repository called 2 returned 100% blocks executed 100%
+        2:   33:UserService::UserService(Repository *repo) {
+        2:   34:    this->repo = repo;
+        2:   35:}
+        -:   36:
+function _ZN11UserService8repoTypeEi called 2 returned 100% blocks executed 29%
+        2:   37:void UserService::repoType(int fileType) {
+        2:   38:    if (fileType == 1) {
+        2:   38-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:   39:        std::vector<dog> userVector;
+        2:   39-block  0
+call    0 returned 2
+        2:   40:        std::string userFile = R"(C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\AdoptedList.csv)";
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   40-block  0
+        2:   41:        auto * repo = new csvfile{ userVector, userFile};
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   41-block  0
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   41-block  1
+call    6 never executed
+        2:   42:        this->urepo = repo;
+       2*:   43:    }else if (fileType == 2) {
+        2:   43-block  0
+call    0 returned 2
+call    1 returned 2
+    %%%%%:   43-block  1
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   43-block  2
+call    4 never executed
+    $$$$$:   43-block  3
+call    5 never executed
+    #####:   44:        std::vector<dog> userVector ;
+    %%%%%:   44-block  0
+call    0 never executed
+    #####:   45:        std::string userFile = R"(C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\AdoptedList.html)";
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   45-block  0
+    #####:   46:        auto * repo = new htmlfile{userVector, userFile};
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   46-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    $$$$$:   46-block  1
+call    6 never executed
+    #####:   47:        this->urepo = repo;
+    #####:   48:    }
+    %%%%%:   48-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:   48-block  1
+call    2 never executed
+    $$$$$:   48-block  2
+call    3 never executed
+        2:   49:}
+        2:   49-block  0
+        -:   50:
+function _ZN11UserService8openFileEv called 0 returned 0% blocks executed 0%
+    #####:   51:void UserService::openFile() {
+    #####:   52:    this->urepo->open();
+    %%%%%:   52-block  0
+call    0 never executed
+    #####:   53:}
+        -:   54:
+        -:   55:

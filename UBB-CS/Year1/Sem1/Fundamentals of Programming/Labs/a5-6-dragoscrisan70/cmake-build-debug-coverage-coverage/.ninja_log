@@ -1,0 +1,10 @@
+# ninja log v5
+48	4103	6715515125261354	CMakeFiles/a5_6_dragoscrisan7.dir/UserRepo.cpp.obj	9dda6a67784de3c1
+6	4396	6715515128311387	CMakeFiles/a5_6_dragoscrisan7.dir/Dog.cpp.obj	f9e0ed668fe159ae
+43	4463	6715515128711358	CMakeFiles/a5_6_dragoscrisan7.dir/UserService.cpp.obj	fa3d56ad084d9542
+53	4016	6715515124211344	CMakeFiles/a5_6_dragoscrisan7.dir/Service.cpp.obj	131af1ec00f20694
+38	4464	6715515128631368	CMakeFiles/a5_6_dragoscrisan7.dir/Repository.cpp.obj	260a9ce163dc2fa8
+60	4736	6715515132251355	CMakeFiles/a5_6_dragoscrisan7.dir/UI.cpp.obj	7c65377217cff47e
+4104	6248	6715515147441360	CMakeFiles/a5_6_dragoscrisan7.dir/main.cpp.obj	45c10b1e51622f4
+4018	6804	6715515153520328	CMakeFiles/a5_6_dragoscrisan7.dir/Test.cpp.obj	b458ef2cf759f00f
+6805	7306	6715515159164396	a5_6_dragoscrisan7.exe	78cbd9d5328f9666

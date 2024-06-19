@@ -1,0 +1,829 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a3-4-dragoscrisan7/Test.c
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\Test.c.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\Test.c.gcda
+        -:    0:Runs:1
+        -:    1:#import "Test.h"
+        -:    2:#import <assert.h>
+        -:    3:#import <string.h>
+        -:    4:
+function test_Domain called 1 returned 100% blocks executed 61%
+        1:    5:void test_Domain()
+        -:    6:{
+        1:    7:    Ingredient* i2 = NULL;
+       1*:    8:    assert(getName(i2) == NULL);
+        1:    8-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:    8-block  1
+call    3 never executed
+        1:    8-block  2
+       1*:    9:    assert(getSupplier(i2) == NULL);
+        1:    9-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:    9-block  1
+call    3 never executed
+        1:    9-block  2
+       1*:   10:    assert(getQuantity(i2) == -1);
+        1:   10-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   10-block  1
+call    3 never executed
+        1:   10-block  2
+       1*:   11:    assert(getExpirationDate(i2) == NULL);
+        1:   11-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   11-block  1
+call    3 never executed
+        1:   11-block  2
+        1:   12:    destroy_ingredient(i2);
+        1:   12-block  0
+call    0 returned 1
+        -:   13:
+        1:   14:    Ingredient* ing = create_ingredient("ala", "bala", 20, 3,
+call    0 returned 1
+        -:   15:                                        3, 2022);
+       1*:   16:    assert(!strcmp(getName(ing),"ala"));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   16-block  0
+call    3 never executed
+        1:   16-block  1
+       1*:   17:    assert(!strcmp(getSupplier(ing),"bala"));
+        1:   17-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   17-block  1
+call    3 never executed
+        1:   17-block  2
+       1*:   18:    assert(getQuantity(ing) == 20);
+        1:   18-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   18-block  1
+call    3 never executed
+        1:   18-block  2
+        1:   19:    date* date2 = getExpirationDate(ing);
+        1:   19-block  0
+call    0 returned 1
+       1*:   20:    assert(date2->day == 3);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   20-block  0
+call    2 never executed
+        1:   20-block  1
+       1*:   21:    assert(date2->month == 3);
+        1:   21-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   21-block  1
+call    2 never executed
+        1:   21-block  2
+       1*:   22:    assert(date2->year == 2022);
+        1:   22-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   22-block  1
+call    2 never executed
+        1:   22-block  2
+        -:   23:
+        1:   24:    setName(ing,"brr");
+        1:   24-block  0
+call    0 returned 1
+        1:   25:    setSupplier(ing,"grr");
+call    0 returned 1
+        1:   26:    setQuantity(ing, 10);
+call    0 returned 1
+        1:   27:    setExpirationDate(ing, 5,0,2023);
+call    0 returned 1
+        -:   28:
+       1*:   29:    assert(!strcmp(getName(ing),"brr"));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   29-block  0
+call    3 never executed
+        1:   29-block  1
+       1*:   30:    assert(!strcmp(getSupplier(ing),"grr"));
+        1:   30-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   30-block  1
+call    3 never executed
+        1:   30-block  2
+       1*:   31:    assert(getQuantity(ing) == 10);
+        1:   31-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   31-block  1
+call    3 never executed
+        1:   31-block  2
+        1:   32:    date2 = getExpirationDate(ing);
+        1:   32-block  0
+call    0 returned 1
+       1*:   33:    assert(date2->day == 5);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   33-block  0
+call    2 never executed
+        1:   33-block  1
+       1*:   34:    assert(date2->month == 3);
+        1:   34-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   34-block  1
+call    2 never executed
+        1:   34-block  2
+       1*:   35:    assert(date2->year == 2023);
+        1:   35-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   35-block  1
+call    2 never executed
+        1:   35-block  2
+        -:   36:
+        -:   37:    char str[200];
+        1:   38:    toString(ing, str);
+        1:   38-block  0
+call    0 returned 1
+       1*:   39:    assert(!strcmp(str,"Ingredient is brr from the supplier grr with the quantity 10 and the expiration date 5/3/2023\n"));
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   39-block  0
+call    2 never executed
+        1:   39-block  1
+        -:   40:
+        1:   41:    Ingredient* i3 = copyIngredient(ing);
+        1:   41-block  0
+call    0 returned 1
+       1*:   42:    assert(!strcmp(getName(i3),"brr"));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   42-block  0
+call    3 never executed
+        1:   42-block  1
+       1*:   43:    assert(!strcmp(getSupplier(i3),"grr"));
+        1:   43-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   43-block  1
+call    3 never executed
+        1:   43-block  2
+       1*:   44:    assert(getQuantity(i3) == 10);
+        1:   44-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   44-block  1
+call    3 never executed
+        1:   44-block  2
+        1:   45:    date2 = getExpirationDate(i3);
+        1:   45-block  0
+call    0 returned 1
+       1*:   46:    assert(date2->day == 5);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   46-block  0
+call    2 never executed
+        1:   46-block  1
+       1*:   47:    assert(date2->month == 3);
+        1:   47-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   47-block  1
+call    2 never executed
+        1:   47-block  2
+       1*:   48:    assert(date2->year == 2023);
+        1:   48-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   48-block  1
+call    2 never executed
+        1:   48-block  2
+        -:   49:
+        1:   50:    destroy_ingredient(ing);
+        1:   50-block  0
+call    0 returned 1
+        1:   51:    destroy_ingredient(i3);
+call    0 returned 1
+        1:   52:}
+        -:   53:
+function test_Repo called 1 returned 100% blocks executed 64%
+        1:   54:void test_Repo()
+        -:   55:{
+        1:   56:    IngredientRepo* repo = createIngredientRepo();
+        1:   56-block  0
+call    0 returned 1
+       1*:   57:    assert(get_Length(repo) == 5);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   57-block  0
+call    3 never executed
+        1:   57-block  1
+        -:   58:
+        1:   59:    Ingredient* ing = getIngredientOnPos(repo, 1);
+        1:   59-block  0
+call    0 returned 1
+       1*:   60:    assert(!strcmp(getName(ing),"yoghurt"));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   60-block  0
+call    3 never executed
+        1:   60-block  1
+       1*:   61:    assert(!strcmp(getSupplier(ing),"Napolact"));
+        1:   61-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   61-block  1
+call    3 never executed
+        1:   61-block  2
+       1*:   62:    assert(getQuantity(ing) == 5);
+        1:   62-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   62-block  1
+call    3 never executed
+        1:   62-block  2
+        1:   63:    date* date2 = getExpirationDate(ing);
+        1:   63-block  0
+call    0 returned 1
+       1*:   64:    assert(date2->day == 5);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   64-block  0
+call    2 never executed
+        1:   64-block  1
+       1*:   65:    assert(date2->month == 5);
+        1:   65-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   65-block  1
+call    2 never executed
+        1:   65-block  2
+       1*:   66:    assert(date2->year == 2023);
+        1:   66-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   66-block  1
+call    2 never executed
+        1:   66-block  2
+        -:   67:
+        -:   68:
+        1:   69:    delete_ing(repo, getName(ing), getSupplier(ing), date2->day,
+        1:   69-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+        -:   70:               date2->month, date2->year);
+       1*:   71:    assert(get_Length(repo) == 4);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   71-block  0
+call    3 never executed
+        1:   71-block  1
+        -:   72:
+        1:   73:    ing = getIngredientOnPos(repo, 0);
+        1:   73-block  0
+call    0 returned 1
+        1:   74:    Ingredient* i = create_ingredient("a", "a", 10, 3, 3,
+call    0 returned 1
+        -:   75:                                      2023);
+        1:   76:    modify_ing(repo, ing, i);
+call    0 returned 1
+        1:   77:    destroy_ingredient(ing);
+call    0 returned 1
+        -:   78:
+        1:   79:    ing = getIngredientOnPos(repo, 0);
+call    0 returned 1
+       1*:   80:    assert(!strcmp(getName(ing),"a"));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   80-block  0
+call    3 never executed
+        1:   80-block  1
+       1*:   81:    assert(!strcmp(getSupplier(ing),"a"));
+        1:   81-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   81-block  1
+call    3 never executed
+        1:   81-block  2
+       1*:   82:    assert(getQuantity(ing) == 10);
+        1:   82-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   82-block  1
+call    3 never executed
+        1:   82-block  2
+        1:   83:    date2 = getExpirationDate(ing);
+        1:   83-block  0
+call    0 returned 1
+       1*:   84:    assert(date2->day == 3);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   84-block  0
+call    2 never executed
+        1:   84-block  1
+       1*:   85:    assert(date2->month == 3);
+        1:   85-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   85-block  1
+call    2 never executed
+        1:   85-block  2
+       1*:   86:    assert(date2->year == 2023);
+        1:   86-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:   86-block  1
+call    2 never executed
+        1:   86-block  2
+        -:   87:
+        1:   88:    destroyRepo(repo);
+        1:   88-block  0
+call    0 returned 1
+        1:   89:}
+        -:   90:
+function test_service called 1 returned 100% blocks executed 62%
+        1:   91:void test_service()
+        -:   92:{
+        1:   93:    IngredientRepo* r = createIngredientRepo();
+        1:   93-block  0
+call    0 returned 1
+        1:   94:    Service* s = createService(r);
+call    0 returned 1
+        -:   95:
+        1:   96:    addIngredient(s,"iaurt", "Napolact", 5, 5, 10, 2023);
+call    0 returned 1
+        1:   97:    IngredientRepo* repo = getRepo(s);
+call    0 returned 1
+       1*:   98:    assert(get_Length(repo) == 6);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   98-block  0
+call    3 never executed
+        1:   98-block  1
+        -:   99:
+        1:  100:    Ingredient* i = getIngredientOnPos(repo, 5);
+        1:  100-block  0
+call    0 returned 1
+       1*:  101:    assert(!strcmp(getName(i),"iaurt"));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  101-block  0
+call    3 never executed
+        1:  101-block  1
+       1*:  102:    assert(!strcmp(getSupplier(i),"Napolact"));
+        1:  102-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  102-block  1
+call    3 never executed
+        1:  102-block  2
+       1*:  103:    assert(getQuantity(i) == 5);
+        1:  103-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  103-block  1
+call    3 never executed
+        1:  103-block  2
+        1:  104:    date* eDate = getExpirationDate(i);
+        1:  104-block  0
+call    0 returned 1
+       1*:  105:    assert(eDate->day == 5);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  105-block  0
+call    2 never executed
+        1:  105-block  1
+       1*:  106:    assert(eDate->month == 10);
+        1:  106-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  106-block  1
+call    2 never executed
+        1:  106-block  2
+       1*:  107:    assert(eDate->year == 2023);
+        1:  107-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  107-block  1
+call    2 never executed
+        1:  107-block  2
+        -:  108:
+       1*:  109:    assert(getLength(s->undoStack) == 1);
+        1:  109-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  109-block  1
+call    3 never executed
+        1:  109-block  2
+        1:  110:    Operation* op = get(s->undoStack, 0);
+        1:  110-block  0
+call    0 returned 1
+       1*:  111:    assert(getOpType(op) == ADD);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  111-block  0
+call    3 never executed
+        1:  111-block  1
+        1:  112:    Ingredient* j = getOpObject(op);
+        1:  112-block  0
+call    0 returned 1
+       1*:  113:    assert(!strcmp(getName(j),"iaurt"));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  113-block  0
+call    3 never executed
+        1:  113-block  1
+        -:  114:
+        1:  115:    removeIngredient(s, "iaurt", "Napolact", 5, 10, 2023);
+        1:  115-block  0
+call    0 returned 1
+       1*:  116:    assert(getLength(s->undoStack) == 2);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  116-block  0
+call    3 never executed
+        1:  116-block  1
+        1:  117:    op = get(s->undoStack, 1);
+        1:  117-block  0
+call    0 returned 1
+       1*:  118:    assert(getOpType(op) == DELETE);
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  118-block  0
+call    3 never executed
+        1:  118-block  1
+        -:  119:
+       1*:  120:    assert(undo(s) == 1);
+        1:  120-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  120-block  1
+call    3 never executed
+        1:  120-block  2
+       1*:  121:    assert(getLength(s->undoStack) == 1);
+        1:  121-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  121-block  1
+call    3 never executed
+        1:  121-block  2
+       1*:  122:    assert(get_Length(s->repo) == 6);
+        1:  122-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  122-block  1
+call    3 never executed
+        1:  122-block  2
+       1*:  123:    assert(undo(s) == 1);
+        1:  123-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  123-block  1
+call    3 never executed
+        1:  123-block  2
+       1*:  124:    assert(get_Length(s->repo) == 5);
+        1:  124-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  124-block  1
+call    3 never executed
+        1:  124-block  2
+       1*:  125:    assert(undo(s) == 0);
+        1:  125-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  125-block  1
+call    3 never executed
+        1:  125-block  2
+        -:  126:
+       1*:  127:    assert(getLength(s->redoStack) == 2);
+        1:  127-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  127-block  1
+call    3 never executed
+        1:  127-block  2
+       1*:  128:    assert(redo(s) == 1);
+        1:  128-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  128-block  1
+call    3 never executed
+        1:  128-block  2
+       1*:  129:    assert(get_Length(s->repo) == 6);
+        1:  129-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  129-block  1
+call    3 never executed
+        1:  129-block  2
+       1*:  130:    assert(redo(s) == 1);
+        1:  130-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  130-block  1
+call    3 never executed
+        1:  130-block  2
+       1*:  131:    assert(get_Length(s->repo) == 5);
+        1:  131-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  131-block  1
+call    3 never executed
+        1:  131-block  2
+       1*:  132:    assert(redo(s) == 0);
+        1:  132-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  132-block  1
+call    3 never executed
+        1:  132-block  2
+        -:  133:
+       1*:  134:    assert(undo(s) == 1);
+        1:  134-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  134-block  1
+call    3 never executed
+        1:  134-block  2
+       1*:  135:    assert(getLength(s->undoStack) == 1);
+        1:  135-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  135-block  1
+call    3 never executed
+        1:  135-block  2
+       1*:  136:    assert(get_Length(s->repo) == 6);
+        1:  136-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  136-block  1
+call    3 never executed
+        1:  136-block  2
+       1*:  137:    assert(undo(s) == 1);
+        1:  137-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  137-block  1
+call    3 never executed
+        1:  137-block  2
+       1*:  138:    assert(get_Length(s->repo) == 5);
+        1:  138-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  138-block  1
+call    3 never executed
+        1:  138-block  2
+       1*:  139:    assert(undo(s) == 0);
+        1:  139-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  139-block  1
+call    3 never executed
+        1:  139-block  2
+        -:  140:
+        1:  141:    j = getIngredientOnPos(s->repo, 1);
+        1:  141-block  0
+call    0 returned 1
+        1:  142:    eDate = getExpirationDate(j);
+call    0 returned 1
+        1:  143:    modifyIngredient(s, getName(j), getSupplier(j), eDate->day, eDate->month,
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+        -:  144:                     eDate->year, "a", "a", 10, 3, 3,
+        -:  145:                     2023);
+        1:  146:    i = getIngredientOnPos(s->repo, 1);
+call    0 returned 1
+       1*:  147:    assert(!strcmp(getName(i),"a"));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  147-block  0
+call    3 never executed
+        1:  147-block  1
+       1*:  148:    assert(!strcmp(getSupplier(i),"a"));
+        1:  148-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  148-block  1
+call    3 never executed
+        1:  148-block  2
+       1*:  149:    assert(getQuantity(i) == 10);
+        1:  149-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  149-block  1
+call    3 never executed
+        1:  149-block  2
+        1:  150:    eDate = getExpirationDate(i);
+        1:  150-block  0
+call    0 returned 1
+       1*:  151:    assert(eDate->day == 3);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  151-block  0
+call    2 never executed
+        1:  151-block  1
+       1*:  152:    assert(eDate->month == 3);
+        1:  152-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  152-block  1
+call    2 never executed
+        1:  152-block  2
+       1*:  153:    assert(eDate->year == 2023);
+        1:  153-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  153-block  1
+call    2 never executed
+        1:  153-block  2
+        -:  154:
+       1*:  155:    assert(undo(s) == 1);
+        1:  155-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  155-block  1
+call    3 never executed
+        1:  155-block  2
+        1:  156:    Ingredient* ing = getIngredientOnPos(s->repo, 1);
+        1:  156-block  0
+call    0 returned 1
+       1*:  157:    assert(!strcmp(getName(ing),"yoghurt"));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  157-block  0
+call    3 never executed
+        1:  157-block  1
+       1*:  158:    assert(!strcmp(getSupplier(ing),"Napolact"));
+        1:  158-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  158-block  1
+call    3 never executed
+        1:  158-block  2
+       1*:  159:    assert(getQuantity(ing) == 5);
+        1:  159-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  159-block  1
+call    3 never executed
+        1:  159-block  2
+        1:  160:    date* date2 = getExpirationDate(ing);
+        1:  160-block  0
+call    0 returned 1
+       1*:  161:    assert(date2->day == 5);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  161-block  0
+call    2 never executed
+        1:  161-block  1
+       1*:  162:    assert(date2->month == 5);
+        1:  162-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  162-block  1
+call    2 never executed
+        1:  162-block  2
+       1*:  163:    assert(date2->year == 2023);
+        1:  163-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  163-block  1
+call    2 never executed
+        1:  163-block  2
+        -:  164:
+       1*:  165:    assert(redo(s) == 1);
+        1:  165-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  165-block  1
+call    3 never executed
+        1:  165-block  2
+        1:  166:    i = getIngredientOnPos(s->repo, 1);
+        1:  166-block  0
+call    0 returned 1
+       1*:  167:    assert(!strcmp(getName(i),"a"));
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  167-block  0
+call    3 never executed
+        1:  167-block  1
+       1*:  168:    assert(!strcmp(getSupplier(i),"a"));
+        1:  168-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  168-block  1
+call    3 never executed
+        1:  168-block  2
+       1*:  169:    assert(getQuantity(i) == 10);
+        1:  169-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  169-block  1
+call    3 never executed
+        1:  169-block  2
+        1:  170:    eDate = getExpirationDate(i);
+        1:  170-block  0
+call    0 returned 1
+       1*:  171:    assert(eDate->day == 3);
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  171-block  0
+call    2 never executed
+        1:  171-block  1
+       1*:  172:    assert(eDate->month == 3);
+        1:  172-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  172-block  1
+call    2 never executed
+        1:  172-block  2
+       1*:  173:    assert(eDate->year == 2023);
+        1:  173-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    %%%%%:  173-block  1
+call    2 never executed
+        1:  173-block  2
+        -:  174:
+        -:  175:
+        -:  176:
+        1:  177:    destroyService(s);
+        1:  177-block  0
+call    0 returned 1
+        1:  178:}
+        -:  179:
+function run_tests called 1 returned 100% blocks executed 100%
+        1:  180:void run_tests()
+        -:  181:{
+        1:  182:    test_Domain();
+        1:  182-block  0
+call    0 returned 1
+        1:  183:    test_Repo();
+call    0 returned 1
+        1:  184:    test_service();
+call    0 returned 1
+        1:  185:}

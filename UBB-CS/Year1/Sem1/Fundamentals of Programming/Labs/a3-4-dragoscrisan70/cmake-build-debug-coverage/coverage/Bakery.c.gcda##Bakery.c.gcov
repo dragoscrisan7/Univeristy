@@ -1,0 +1,180 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a3-4-dragoscrisan7/Bakery.c
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\Bakery.c.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\Bakery.c.gcda
+        -:    0:Runs:1
+        -:    1:#include <stdio.h>
+        -:    2:#include <string.h>
+        -:    3:#include <stdlib.h>
+        -:    4:#include <Bakery.h>
+        -:    5:
+function create_ingredient called 39 returned 100% blocks executed 75%
+       39:    6:Ingredient* create_ingredient(char* name, char* supplier, int quantity, int expiration_date_day,
+        -:    7:                            int expiration_date_month, int expiration_date_year)
+        -:    8:{
+       39:    9:    Ingredient* i = malloc(sizeof(Ingredient));
+       39:   10:    if(i == NULL)
+       39:   10-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 39
+    #####:   11:        return NULL;
+    %%%%%:   11-block  0
+       39:   12:    i->name = malloc(sizeof(char) * ((strlen(name))+1));
+       39:   13:    strcpy(i->name, name);
+        -:   14:
+       39:   15:    i->supplier = malloc(sizeof(char) * ((strlen(supplier))+1));
+       39:   16:    strcpy(i->supplier, supplier);
+       39:   17:    i->quantity = quantity;
+       39:   18:    i->expiration_date = malloc(sizeof(date));
+       39:   19:    i->expiration_date->day = expiration_date_day;
+       39:   20:    i->expiration_date->month = expiration_date_month;
+       39:   21:    i->expiration_date->year = expiration_date_year;
+        -:   22:
+       39:   23:    return i;
+       39:   23-block  0
+        -:   24:}
+function destroy_ingredient called 48 returned 100% blocks executed 100%
+       48:   25:void destroy_ingredient(Ingredient* i)
+        -:   26:{
+       48:   27:    if(i == NULL)
+       48:   27-block  0
+branch  0 taken 9 (fallthrough)
+branch  1 taken 39
+        9:   28:        return;
+        9:   28-block  0
+        -:   29:
+        -:   30:    /// free the memory which was allocated for the component fields
+       39:   31:    free(i->name);
+       39:   32:    free(i->supplier);
+       39:   33:    free(i->expiration_date);
+        -:   34:    /// free the memory which was allocated for the planet structure
+       39:   35:    free(i);
+       39:   35-block  0
+        -:   36:}
+        -:   37:
+function getName called 74 returned 100% blocks executed 100%
+       74:   38:char* getName(Ingredient* i)
+        -:   39:{
+       74:   40:    if(i == NULL)
+       74:   40-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 73
+        1:   41:        return NULL;
+        1:   41-block  0
+       73:   42:    return i->name;
+       73:   42-block  0
+        -:   43:}
+function setName called 1 returned 100% blocks executed 100%
+        1:   44:void setName(Ingredient* i, char const* name)
+        -:   45:{
+        1:   46:    free(i->name);
+        -:   47:
+        1:   48:    i->name = malloc(sizeof(char) * ((strlen(name))+1));
+        1:   49:    strcpy(i->name, name);
+        1:   50:}
+        -:   51:
+function getSupplier called 36 returned 100% blocks executed 100%
+       36:   52:char* getSupplier(Ingredient* i)
+        -:   53:{
+       36:   54:    if(i == NULL)
+       36:   54-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 35
+        1:   55:        return NULL;
+        1:   55-block  0
+       35:   56:    return i->supplier;
+       35:   56-block  0
+        -:   57:}
+function setSupplier called 1 returned 100% blocks executed 100%
+        1:   58:void setSupplier(Ingredient* i, char const* supplier)
+        -:   59:{
+        1:   60:    free(i->supplier);
+        -:   61:
+        1:   62:    i->supplier = malloc(sizeof(char) * ((strlen(supplier))+1));
+        1:   63:    strcpy(i->supplier, supplier);
+        1:   64:}
+        -:   65:
+function getQuantity called 12 returned 100% blocks executed 100%
+       12:   66:int getQuantity(Ingredient* i)
+        -:   67:{
+       12:   68:    if(i == NULL)
+       12:   68-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 11
+        1:   69:        return -1;
+        1:   69-block  0
+        -:   70:
+       11:   71:    return i->quantity;
+       11:   71-block  0
+        -:   72:}
+function setQuantity called 1 returned 100% blocks executed 100%
+        1:   73:void setQuantity(Ingredient* i, int quantity)
+        -:   74:{
+        1:   75:    i->quantity = quantity;
+        1:   76:}
+        -:   77:
+function getExpirationDate called 72 returned 100% blocks executed 100%
+       72:   78:date* getExpirationDate(Ingredient* i)
+        -:   79:{
+       72:   80:    if(i == NULL)
+       72:   80-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 71
+        1:   81:        return NULL;
+        1:   81-block  0
+       71:   82:    return i->expiration_date;
+       71:   82-block  0
+        -:   83:}
+function setExpirationDate called 1 returned 100% blocks executed 86%
+        1:   84:void setExpirationDate(Ingredient* i, int day, int month, int year)
+        -:   85:{
+        1:   86:    if(day != 0)
+        1:   86-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   87:        i->expiration_date->day = day;
+        1:   87-block  0
+        1:   88:    if(month != 0)
+        1:   88-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   89:        i->expiration_date->month = month;
+    %%%%%:   89-block  0
+        1:   90:    if(year != 0)
+        1:   90-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   91:        i->expiration_date->year = year;
+        1:   91-block  0
+        1:   92:}
+        -:   93:
+function toString called 1 returned 100% blocks executed 75%
+        1:   94:void toString(Ingredient* i, char* str)
+        -:   95:{
+        1:   96:    if(i == NULL)
+        1:   96-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+    #####:   97:        return;
+    %%%%%:   97-block  0
+        1:   98:    sprintf(str, "Ingredient is %s from the supplier %s with the quantity %d and the expiration date"
+        1:   99:                 " %d/%d/%d\n", i->name, i->supplier, i->quantity, i->expiration_date->day, i->expiration_date->month,
+        1:  100:                 i->expiration_date->year);
+        1:  100-block  0
+call    0 returned 1
+        -:  101:}
+        -:  102:
+function copyIngredient called 26 returned 100% blocks executed 100%
+       26:  103:Ingredient* copyIngredient(Ingredient* i)
+        -:  104:{
+       26:  105:    if(i == NULL)
+       26:  105-block  0
+branch  0 taken 8 (fallthrough)
+branch  1 taken 18
+        8:  106:        return NULL;
+        8:  106-block  0
+       18:  107:    return create_ingredient(i->name, i->supplier, i->quantity,
+       18:  108:                             i->expiration_date->day, i->expiration_date->month,
+       18:  109:                             i->expiration_date->year);
+       18:  109-block  0
+call    0 returned 18
+        -:  110:}

@@ -1,0 +1,420 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a8-9-dragoscrisan7/Repository.cpp
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\Repository.cpp.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\Repository.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Repository.h"
+        -:    2:#include <fstream>
+        -:    3:#include <string>
+        -:    4:#include <algorithm>
+        -:    5:
+        -:    6:using namespace std;
+        -:    7:
+function _ZN10RepositoryC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 4 returned 100% blocks executed 67%
+        4:    8:Repository::Repository(const std::string &filename) {
+        4:    8-block  0
+call    0 returned 4
+call    1 returned 4
+        4:    9:    this->filename = filename;
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   10:    this->readFromFile();
+        4:   10-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   11:}
+        4:   11-block  0
+    $$$$$:   11-block  1
+call    0 never executed
+    $$$$$:   11-block  2
+call    1 never executed
+        -:   12:
+function _ZN10Repository18findByNameAndBreedERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_ called 3 returned 100% blocks executed 75%
+        3:   13:dog Repository::findByNameAndBreed(const std::string &name,const std::string &breed) {
+function _ZZN10Repository18findByNameAndBreedERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_ENKUlR3dogE_clES9_ called 5 returned 100% blocks executed 68%
+        8:   14:    auto it = find_if(dogs.begin(), dogs.end(), [name, breed](dog& d){return (d.get_name() == name && d.get_breed() == breed);});
+        3:   14-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   14-block  1
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+        3:   14-block  2
+call    6 returned 3
+call    7 returned 3
+call    8 returned 3
+branch  9 taken 3 (fallthrough)
+branch 10 taken 0 (throw)
+        3:   14-block  3
+call   11 returned 3
+    $$$$$:   14-block  4
+call   12 never executed
+    $$$$$:   14-block  5
+        5:   14-block  6
+call   13 returned 5
+branch 14 taken 5 (fallthrough)
+branch 15 taken 0 (throw)
+        5:   14-block  7
+call   16 returned 5
+branch 17 taken 3 (fallthrough)
+branch 18 taken 2
+        3:   14-block  8
+call   19 returned 3
+branch 20 taken 3 (fallthrough)
+branch 21 taken 0 (throw)
+        3:   14-block  9
+call   22 returned 3
+branch 23 taken 3 (fallthrough)
+branch 24 taken 0
+        3:   14-block 10
+        2:   14-block 11
+        5:   14-block 12
+branch 25 taken 3 (fallthrough)
+branch 26 taken 2
+        3:   14-block 13
+call   27 returned 3
+        5:   14-block 14
+branch 28 taken 5 (fallthrough)
+branch 29 taken 0
+        5:   14-block 15
+call   30 returned 5
+        5:   14-block 16
+        5:   14-block 17
+    $$$$$:   14-block 18
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   14-block 19
+call   33 never executed
+    $$$$$:   14-block 20
+    $$$$$:   14-block 21
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   14-block 22
+call   36 never executed
+        3:   15:    if (it == dogs.end())
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 0 (fallthrough)
+branch  3 taken 3
+    #####:   16:        return dog{};
+    %%%%%:   16-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   17:    else
+        3:   18:        return *it;
+        3:   18-block  0
+call    0 returned 3
+call    1 returned 3
+branch  2 taken 3 (fallthrough)
+branch  3 taken 0 (throw)
+        -:   19:}
+        -:   20:
+function _ZN10Repository6addDogERK3dog called 9 returned 100% blocks executed 100%
+        9:   21:void Repository::addDog(const dog& dog1) {
+        9:   22:    this->dogs.push_back(dog1);
+        9:   22-block  0
+call    0 returned 9
+        9:   23:    this->writeToFile();
+call    0 returned 9
+        9:   24:}
+        -:   25:
+function _ZN10Repository6delDogERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_ called 9 returned 100% blocks executed 73%
+        9:   26:void Repository::delDog(const string &name, const string &breed) {
+function _ZZN10Repository6delDogERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_ENKUlR3dogE_clES9_ called 10 returned 100% blocks executed 68%
+       19:   27:    auto it2 = find_if(this->dogs.begin(), this->dogs.end(),[name, breed](dog& d){return (d.get_name() == name && d.get_breed() == breed);});
+        9:   27-block  0
+call    0 returned 9
+branch  1 taken 9 (fallthrough)
+branch  2 taken 0 (throw)
+        9:   27-block  1
+call    3 returned 9
+branch  4 taken 9 (fallthrough)
+branch  5 taken 0 (throw)
+        9:   27-block  2
+call    6 returned 9
+call    7 returned 9
+call    8 returned 9
+branch  9 taken 9 (fallthrough)
+branch 10 taken 0 (throw)
+        9:   27-block  3
+call   11 returned 9
+    $$$$$:   27-block  4
+call   12 never executed
+    $$$$$:   27-block  5
+       10:   27-block  6
+call   13 returned 10
+branch 14 taken 10 (fallthrough)
+branch 15 taken 0 (throw)
+       10:   27-block  7
+call   16 returned 10
+branch 17 taken 9 (fallthrough)
+branch 18 taken 1
+        9:   27-block  8
+call   19 returned 9
+branch 20 taken 9 (fallthrough)
+branch 21 taken 0 (throw)
+        9:   27-block  9
+call   22 returned 9
+branch 23 taken 9 (fallthrough)
+branch 24 taken 0
+        9:   27-block 10
+        1:   27-block 11
+       10:   27-block 12
+branch 25 taken 9 (fallthrough)
+branch 26 taken 1
+        9:   27-block 13
+call   27 returned 9
+       10:   27-block 14
+branch 28 taken 10 (fallthrough)
+branch 29 taken 0
+       10:   27-block 15
+call   30 returned 10
+       10:   27-block 16
+       10:   27-block 17
+    $$$$$:   27-block 18
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   27-block 19
+call   33 never executed
+    $$$$$:   27-block 20
+    $$$$$:   27-block 21
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   27-block 22
+call   36 never executed
+        9:   28:    this->dogs.erase(it2);
+call    0 returned 9
+call    1 returned 9
+branch  2 taken 9 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   28-block  0
+        9:   29:    this->writeToFile();
+        9:   29-block  0
+call    0 returned 9
+branch  1 taken 9 (fallthrough)
+branch  2 taken 0 (throw)
+        9:   30:}
+        9:   30-block  0
+function _ZN10Repository6modDogERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_RK3dog called 2 returned 100% blocks executed 79%
+        2:   31:void Repository::modDog(const string &name, const string &breed, const dog& dog1) {
+function _ZZN10Repository6modDogERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_RK3dogENKUlRS8_E_clESB_ called 3 returned 100% blocks executed 68%
+        5:   32:    auto it2 = find_if(this->dogs.begin(), this->dogs.end(),[name, breed](dog& d){return (d.get_name() == name && d.get_breed() == breed);});
+        2:   32-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   32-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   32-block  2
+call    6 returned 2
+call    7 returned 2
+call    8 returned 2
+branch  9 taken 2 (fallthrough)
+branch 10 taken 0 (throw)
+        2:   32-block  3
+call   11 returned 2
+    $$$$$:   32-block  4
+call   12 never executed
+    $$$$$:   32-block  5
+        3:   32-block  6
+call   13 returned 3
+branch 14 taken 3 (fallthrough)
+branch 15 taken 0 (throw)
+        3:   32-block  7
+call   16 returned 3
+branch 17 taken 2 (fallthrough)
+branch 18 taken 1
+        2:   32-block  8
+call   19 returned 2
+branch 20 taken 2 (fallthrough)
+branch 21 taken 0 (throw)
+        2:   32-block  9
+call   22 returned 2
+branch 23 taken 2 (fallthrough)
+branch 24 taken 0
+        2:   32-block 10
+        1:   32-block 11
+        3:   32-block 12
+branch 25 taken 2 (fallthrough)
+branch 26 taken 1
+        2:   32-block 13
+call   27 returned 2
+        3:   32-block 14
+branch 28 taken 3 (fallthrough)
+branch 29 taken 0
+        3:   32-block 15
+call   30 returned 3
+        3:   32-block 16
+        3:   32-block 17
+    $$$$$:   32-block 18
+branch 31 never executed
+branch 32 never executed
+    $$$$$:   32-block 19
+call   33 never executed
+    $$$$$:   32-block 20
+    $$$$$:   32-block 21
+branch 34 never executed
+branch 35 never executed
+    $$$$$:   32-block 22
+call   36 never executed
+        2:   33:    (*it2) = dog1;
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   34:    this->writeToFile();
+        2:   34-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   35:}
+        2:   35-block  0
+        -:   36:
+function _ZN10Repository12readFromFileEv called 4 returned 100% blocks executed 68%
+        4:   37:void Repository::readFromFile() {
+        4:   38:    ifstream file(this->filename);
+        4:   38-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   39:
+        4:   40:    if(!file.good())
+        4:   40-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   40-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 4
+    #####:   41:        throw exception();
+    %%%%%:   41-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+        -:   42:
+        4:   43:    if(!file.eof()) {
+        4:   43-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   43-block  1
+branch  3 taken 4 (fallthrough)
+branch  4 taken 0
+        4:   44:        dog d1;
+        4:   44-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+       13:   45:        while (file >> d1)
+        4:   45-block  0
+       13:   45-block  1
+call    0 returned 13
+branch  1 taken 13 (fallthrough)
+branch  2 taken 0 (throw)
+       13:   45-block  2
+call    3 returned 13
+branch  4 taken 13 (fallthrough)
+branch  5 taken 0 (throw)
+       13:   45-block  3
+branch  6 taken 9
+branch  7 taken 4 (fallthrough)
+        9:   46:            this->dogs.push_back(d1);
+        9:   46-block  0
+call    0 returned 9
+branch  1 taken 9 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   47:    }
+        4:   47-block  0
+call    0 returned 4
+    $$$$$:   47-block  1
+call    1 never executed
+        -:   48:
+        4:   49:    file.close();
+        4:   49-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   50:}
+        4:   50-block  0
+call    0 returned 4
+    $$$$$:   50-block  1
+call    1 never executed
+        -:   51:
+function _ZN10Repository11writeToFileEv called 20 returned 100% blocks executed 77%
+       20:   52:void Repository::writeToFile(){
+       20:   53:    ofstream file(this->filename);
+       20:   53-block  0
+call    0 returned 20
+branch  1 taken 20 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   54:
+       20:   55:    if(!file.is_open())
+       20:   55-block  0
+call    0 returned 20
+branch  1 taken 20 (fallthrough)
+branch  2 taken 0 (throw)
+       20:   55-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 20
+    #####:   56:        throw exception();
+    %%%%%:   56-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+       29:   57:    for(auto iter = this->dogs.begin(); iter < this->dogs.end()-1; iter++){
+       20:   57-block  0
+call    0 returned 20
+        9:   57-block  1
+call    1 returned 9
+       29:   57-block  2
+call    2 returned 29
+call    3 returned 29
+call    4 returned 29
+branch  5 taken 9
+branch  6 taken 20 (fallthrough)
+        9:   58:        file << *iter << "\n";
+        9:   58-block  0
+call    0 returned 9
+call    1 returned 9
+branch  2 taken 9 (fallthrough)
+branch  3 taken 0 (throw)
+        9:   58-block  1
+call    4 returned 9
+branch  5 taken 9 (fallthrough)
+branch  6 taken 0 (throw)
+        -:   59:    }
+       20:   60:    if(this->dogs.size()!=0)
+       20:   60-block  0
+call    0 returned 20
+branch  1 taken 15 (fallthrough)
+branch  2 taken 5
+       15:   61:        file << this->dogs.back();
+       15:   61-block  0
+call    0 returned 15
+call    1 returned 15
+branch  2 taken 15 (fallthrough)
+branch  3 taken 0 (throw)
+        -:   62:
+       20:   63:    file.close();
+       20:   63-block  0
+call    0 returned 20
+branch  1 taken 20 (fallthrough)
+branch  2 taken 0 (throw)
+       20:   64:}
+       20:   64-block  0
+call    0 returned 20
+    $$$$$:   64-block  1
+call    1 never executed
+        -:   65:
+function _ZN10Repository7getSizeEv called 3 returned 100% blocks executed 100%
+        3:   66:int Repository::getSize() {
+        3:   67:    return this->dogs.size();
+        3:   67-block  0
+call    0 returned 3
+        -:   68:}

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="a5_6_dragoscrisan7"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="a5_6_dragoscrisan7">
+				<Option output="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/a5_6_dragoscrisan7" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 a5_6_dragoscrisan7"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="a5_6_dragoscrisan7/fast">
+				<Option output="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/a5_6_dragoscrisan7" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/."/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 a5_6_dragoscrisan7/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/Dog.cpp">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/Dog.h">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/Dynamic_array.h">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/Repository.cpp">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/Repository.h">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/Service.cpp">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/Service.h">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/Test.cpp">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/Test.h">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/UI.cpp">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/UI.h">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/UserRepo.cpp">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/UserRepo.h">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/UserService.cpp">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/UserService.h">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/main.cpp">
+			<Option target="a5_6_dragoscrisan7"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

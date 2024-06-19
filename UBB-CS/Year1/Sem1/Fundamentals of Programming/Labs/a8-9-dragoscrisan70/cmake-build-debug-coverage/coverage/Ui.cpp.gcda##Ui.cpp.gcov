@@ -1,0 +1,1313 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a8-9-dragoscrisan7/Ui.cpp
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\Ui.cpp.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\Ui.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include "Ui.h"
+        -:    2:#include <iostream>
+        -:    3:#include <unistd.h>
+        -:    4:
+        -:    5:using namespace std;
+        -:    6:
+function _ZN2uiC2EP7ServiceP11UserService called 1 returned 100% blocks executed 100%
+        1:    7:ui::ui(Service *service, UserService* uservice) {
+        1:    8:    this->srv = service;
+        1:    9:    this->usrv = uservice;
+        1:   10:}
+function _ZN2ui10print_menuEv called 1 returned 100% blocks executed 100%
+        1:   11:void ui::print_menu() {
+        1:   12:    cout<<"1. Administrator mode"<<endl;
+        1:   12-block  0
+call    0 returned 1
+call    1 returned 1
+        1:   13:    cout<<"2. User mode"<<endl;
+call    0 returned 1
+call    1 returned 1
+        1:   14:    cout<<"0. Exit"<<endl;
+call    0 returned 1
+call    1 returned 1
+        1:   15:}
+function _ZN2ui24print_administrator_menuEv called 0 returned 0% blocks executed 0%
+    #####:   16:void ui::print_administrator_menu() {
+    #####:   17:    cout<<"1. Add a dog"<<endl;
+    %%%%%:   17-block  0
+call    0 never executed
+call    1 never executed
+    #####:   18:    cout<<"2. Delete a dog"<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   19:    cout<<"3. Modify a dog"<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   20:    cout<<"4. See list of dogs"<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   21:    cout<<"0. Return to menu"<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   22:}
+function _ZN2ui15print_user_menuEv called 0 returned 0% blocks executed 0%
+    #####:   23:void ui::print_user_menu() {
+    #####:   24:    cout<<"1. See all dogs"<<endl;
+    %%%%%:   24-block  0
+call    0 never executed
+call    1 never executed
+    #####:   25:    cout<<"2. See dogs of given breed and under given age"<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   26:    cout<<"3. See adoption list"<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   27:    cout<<"4. Open file containing adoption list"<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   28:    cout<<"0.Return to menu"<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   29:}
+function _ZN2ui14selection_menuEv called 0 returned 0% blocks executed 0%
+    #####:   30:void ui::selection_menu() {
+    #####:   31:    cout<<"\n1. Adopt dog"<<endl;
+    %%%%%:   31-block  0
+call    0 never executed
+call    1 never executed
+    #####:   32:    cout<<"2. Next dog"<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   33:    cout<<"0. Exit"<<endl;
+call    0 never executed
+call    1 never executed
+    #####:   34:}
+function _ZN2ui14validateStringERNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   35:bool ui::validateString(std::string& input) {
+    #####:   36:    for(int i = 0; i <input.length(); i++)
+    %%%%%:   36-block  0
+    %%%%%:   36-block  1
+    %%%%%:   36-block  2
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   37:        if (isdigit(input[i]) != false)
+    %%%%%:   37-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   38:            return false;
+    %%%%%:   38-block  0
+    #####:   39:    return true;
+    %%%%%:   39-block  0
+        -:   40:}
+        -:   41:
+function _ZN2ui7add_dogEv called 0 returned 0% blocks executed 0%
+    #####:   42:void ui::add_dog() {
+    #####:   43:    cout<<"Dog name: ";
+    %%%%%:   43-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   44:    std::string name;
+    %%%%%:   44-block  0
+call    0 never executed
+    #####:   45:    getline(cin,name);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   46:    cout<<"Dog breed: ";
+    %%%%%:   46-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   47:    std::string breed;
+    %%%%%:   47-block  0
+call    0 never executed
+    #####:   48:    getline(cin, breed);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   49:    cout<<"Dog Photograph: ";
+    %%%%%:   49-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   50:    std::string photograph;
+    %%%%%:   50-block  0
+call    0 never executed
+    #####:   51:    getline(cin, photograph);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   52:    cout<<"Dog age: ";
+    %%%%%:   52-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   53:    int age;
+    #####:   54:    cin>>age;
+    %%%%%:   54-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   55:    cin.ignore();
+    %%%%%:   55-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   56:    dog dog1(name, breed, photograph, age);
+    %%%%%:   56-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   57:    srv->addDoggo(name, breed,photograph,age);
+    %%%%%:   57-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   58:}
+    %%%%%:   58-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+    $$$$$:   58-block  1
+call    4 never executed
+    $$$$$:   58-block  2
+call    5 never executed
+    $$$$$:   58-block  3
+call    6 never executed
+    $$$$$:   58-block  4
+call    7 never executed
+        -:   59:
+function _ZN2ui7del_dogEv called 0 returned 0% blocks executed 0%
+    #####:   60:void ui::del_dog() {
+    #####:   61:    cout<<"Dog name: ";
+    %%%%%:   61-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   62:    std::string name;
+    %%%%%:   62-block  0
+call    0 never executed
+    #####:   63:    getline(cin,name);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   64:    cout<<"Dog breed: ";
+    %%%%%:   64-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   65:    std::string breed;
+    %%%%%:   65-block  0
+call    0 never executed
+    #####:   66:    getline(cin, breed);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   67:
+    #####:   68:    srv->delDoggo(name,breed);
+    %%%%%:   68-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   69:}
+    %%%%%:   69-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:   69-block  1
+call    2 never executed
+    $$$$$:   69-block  2
+call    3 never executed
+        -:   70:
+function _ZN2ui10modify_dogEv called 0 returned 0% blocks executed 0%
+    #####:   71:void ui::modify_dog() {
+    #####:   72:    cout<<"Dog name: ";
+    %%%%%:   72-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   73:    std::string name;
+    %%%%%:   73-block  0
+call    0 never executed
+    #####:   74:    getline(cin,name);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   75:    cout<<"Dog breed: ";
+    %%%%%:   75-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   76:    std::string breed;
+    %%%%%:   76-block  0
+call    0 never executed
+    #####:   77:    getline(cin, breed);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   78:
+    #####:   79:    cout<<"Dog name: ";
+    %%%%%:   79-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   80:    std::string name2;
+    %%%%%:   80-block  0
+call    0 never executed
+    #####:   81:    getline(cin,name2);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   82:    cout<<"Dog breed: ";
+    %%%%%:   82-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   83:    std::string breed2;
+    %%%%%:   83-block  0
+call    0 never executed
+    #####:   84:    getline(cin, breed2);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   85:    cout<<"Dog Photograph: ";
+    %%%%%:   85-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   86:    std::string photograph2;
+    %%%%%:   86-block  0
+call    0 never executed
+    #####:   87:    getline(cin, photograph2);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   88:    cout<<"Dog age: ";
+    %%%%%:   88-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   89:    int age2;
+    #####:   90:    cin>>age2;
+    %%%%%:   90-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   91:    cin.ignore();
+    %%%%%:   91-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   92:
+    #####:   93:    srv->updateDoggo(name,breed,name2,breed2,photograph2,age2);
+    %%%%%:   93-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   94:}
+    %%%%%:   94-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+    $$$$$:   94-block  1
+call    5 never executed
+    $$$$$:   94-block  2
+call    6 never executed
+    $$$$$:   94-block  3
+call    7 never executed
+    $$$$$:   94-block  4
+call    8 never executed
+    $$$$$:   94-block  5
+call    9 never executed
+        -:   95:
+function _ZN2ui9list_dogsEv called 0 returned 0% blocks executed 0%
+    #####:   96:void ui::list_dogs() {
+    #####:   97:    Repository* repo = srv->getRepo();
+    %%%%%:   97-block  0
+call    0 never executed
+    #####:   98:    for(int i =0; i< repo->getSize(); i++)
+    %%%%%:   98-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   99:    {
+    #####:  100:        cout<<repo->getDog()[i].toString()<<endl;
+    %%%%%:  100-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:  100-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:  100-block  2
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:  100-block  3
+call   11 never executed
+call   12 never executed
+    $$$$$:  100-block  4
+call   13 never executed
+    $$$$$:  100-block  5
+    $$$$$:  100-block  6
+call   14 never executed
+        -:  101:    }
+    #####:  102:}
+    %%%%%:  102-block  0
+        -:  103:
+function _ZN2ui9user_listEv called 0 returned 0% blocks executed 0%
+    #####:  104:void ui::user_list() {
+    #####:  105:    Repository* repo = srv->getRepo();
+    %%%%%:  105-block  0
+call    0 never executed
+    #####:  106:    int i = 0;
+        -:  107:    while(true)
+        -:  108:    {
+    #####:  109:        cout<<repo->getDog()[i].toString();
+    %%%%%:  109-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  109-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  109-block  2
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:  109-block  3
+call   10 never executed
+call   11 never executed
+    $$$$$:  109-block  4
+call   12 never executed
+    $$$$$:  109-block  5
+    $$$$$:  109-block  6
+call   13 never executed
+    $$$$$:  109-block  7
+    #####:  110:        selection_menu();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  111:        int command = { 0 };
+    #####:  112:        cout<<"Input command: ";
+    %%%%%:  112-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  113:        cin>>command;
+    %%%%%:  113-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  114:        cin.ignore();
+    %%%%%:  114-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  115:        if(command == 0)
+    %%%%%:  115-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  116:            break;
+    %%%%%:  116-block  0
+    #####:  117:        else if(repo->getSize() == 0) {
+    %%%%%:  117-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  117-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:  118:            cout<<"All dogs were adopted"<<endl;
+    %%%%%:  118-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  118-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:  119:            break;
+    %%%%%:  119-block  0
+        -:  120:        }
+    #####:  121:        else if(command == 1) {
+    %%%%%:  121-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  122:            usrv->add_adopted_dog(repo->getDog()[i].get_name(), repo->getDog()[i].get_breed(),
+call    0 never executed
+    %%%%%:  122-block  0
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  122-block  1
+call    4 never executed
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:  122-block  2
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:  122-block  3
+call   11 never executed
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    %%%%%:  122-block  4
+call   15 never executed
+branch 16 never executed
+branch 17 never executed
+    %%%%%:  122-block  5
+call   18 never executed
+call   19 never executed
+call   20 never executed
+call   21 never executed
+    $$$$$:  122-block  6
+call   22 never executed
+    $$$$$:  122-block  7
+    $$$$$:  122-block  8
+call   23 never executed
+    $$$$$:  122-block  9
+    $$$$$:  122-block 10
+call   24 never executed
+    $$$$$:  122-block 11
+    $$$$$:  122-block 12
+call   25 never executed
+    $$$$$:  122-block 13
+    #####:  123:                                  repo->getDog()[i].get_photograph(), repo->getDog()[i].get_age());
+    %%%%%:  123-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  123-block  1
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  123-block  2
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+call   11 never executed
+call   12 never executed
+call   13 never executed
+    $$$$$:  123-block  3
+call   14 never executed
+    $$$$$:  123-block  4
+    $$$$$:  123-block  5
+call   15 never executed
+    $$$$$:  123-block  6
+    $$$$$:  123-block  7
+call   16 never executed
+    $$$$$:  123-block  8
+    #####:  124:            cout<<"Dog successfully adopted"<<endl;
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  124-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:  125:            sleep(1);
+    %%%%%:  125-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  126:            if(i >= repo->getSize()-1)
+    %%%%%:  126-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  126-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:  127:                i = 0;
+    %%%%%:  127-block  0
+        -:  128:        }
+    #####:  129:        else if(command == 2){
+    %%%%%:  129-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  130:            if(i >= repo->getSize()-1)
+    %%%%%:  130-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  130-block  1
+branch  3 never executed
+branch  4 never executed
+    #####:  131:                i = 0;
+    %%%%%:  131-block  0
+        -:  132:            else
+    #####:  133:                i++;
+    %%%%%:  133-block  0
+        -:  134:        }
+        -:  135:        else
+    #####:  136:            cout<<"Wrong input";
+    %%%%%:  136-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  137:    }
+    %%%%%:  137-block  0
+    #####:  138:}
+    %%%%%:  138-block  0
+function _ZN2ui12adopted_listEv called 0 returned 0% blocks executed 0%
+    #####:  139:void ui::adopted_list(){
+    #####:  140:    UserRepo* urepo = usrv->getRepo();
+    %%%%%:  140-block  0
+call    0 never executed
+    #####:  141:    for(int i =0; i< urepo->getSize(); i++)
+    %%%%%:  141-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  142:    {
+    #####:  143:        cout<<urepo->getDog()[i].toString()<<endl;
+    %%%%%:  143-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:  143-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:  143-block  2
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:  143-block  3
+call   11 never executed
+call   12 never executed
+    $$$$$:  143-block  4
+call   13 never executed
+    $$$$$:  143-block  5
+    $$$$$:  143-block  6
+call   14 never executed
+        -:  144:    }
+    #####:  145:}
+    %%%%%:  145-block  0
+function _ZN2ui18user_filtered_listEv called 0 returned 0% blocks executed 0%
+    #####:  146:void ui::user_filtered_list()
+        -:  147:{
+    #####:  148:    cout<<"Dog breed: ";
+    %%%%%:  148-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  149:    std::string breed;
+    %%%%%:  149-block  0
+call    0 never executed
+    #####:  150:    getline(cin, breed);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  151:    if ((!validateString(breed)) || (breed.length() == 0))
+    %%%%%:  151-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  151-block  1
+branch  3 never executed
+branch  4 never executed
+    %%%%%:  151-block  2
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:  151-block  3
+    %%%%%:  151-block  4
+    %%%%%:  151-block  5
+branch  8 never executed
+branch  9 never executed
+    #####:  152:        throw std::invalid_argument("Breed input not valid!");
+    %%%%%:  152-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  152-block  1
+call    4 never executed
+    $$$$$:  152-block  2
+call    5 never executed
+    #####:  153:    cout<<"Dog age: ";
+    %%%%%:  153-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  154:    int age2;
+    #####:  155:    cin>>age2;
+    %%%%%:  155-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  156:    cin.ignore();
+    %%%%%:  156-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  157:    if(age2 < 0)
+    %%%%%:  157-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  158:        throw std::invalid_argument("Age cannot be lower than 0");
+    %%%%%:  158-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  158-block  1
+call    4 never executed
+    $$$$$:  158-block  2
+call    5 never executed
+    #####:  159:    vector<dog> valid_dogs;
+    %%%%%:  159-block  0
+call    0 never executed
+        -:  160:    ///auto* valid_dogs = new dog [srv->getRepo()->getSize()];
+    #####:  161:    int length = usrv->get_all_filtered(valid_dogs, breed, age2);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  162:    auto it = valid_dogs.begin();
+    %%%%%:  162-block  0
+call    0 never executed
+    #####:  163:    if(length == 0)
+branch  0 never executed
+branch  1 never executed
+    #####:  164:        cout<<"No dogs match your criteria"<<endl;
+    %%%%%:  164-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  164-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        -:  165:    else{
+        -:  166:        while(true)
+        -:  167:        {
+    #####:  168:            cout<<(*it).toString();
+    %%%%%:  168-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  168-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  168-block  2
+call    7 never executed
+    $$$$$:  168-block  3
+call    8 never executed
+    $$$$$:  168-block  4
+    #####:  169:            selection_menu();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  170:            int command = { 0 };
+    #####:  171:            cout<<"Input command: ";
+    %%%%%:  171-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  172:            cin>>command;
+    %%%%%:  172-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  173:            cin.ignore();
+    %%%%%:  173-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  174:            if(command == 0)
+    %%%%%:  174-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  175:                break;
+    %%%%%:  175-block  0
+    %%%%%:  175-block  1
+    #####:  176:            else if(length == 0) {
+    %%%%%:  176-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  177:                cout<<"All dogs in this criteria are already adopted"<<endl;
+    %%%%%:  177-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  177-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:  178:                break;
+    %%%%%:  178-block  0
+        -:  179:            }
+    #####:  180:            else if(command == 1) {
+    %%%%%:  180-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  181:                usrv->add_adopted_dog((*it).get_name(), (*it).get_breed(),
+call    0 never executed
+    %%%%%:  181-block  0
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:  181-block  1
+call    5 never executed
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  181-block  2
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  181-block  3
+call   12 never executed
+call   13 never executed
+    $$$$$:  181-block  4
+call   14 never executed
+    $$$$$:  181-block  5
+    $$$$$:  181-block  6
+call   15 never executed
+    $$$$$:  181-block  7
+    #####:  182:                                       (*it).get_photograph(), (*it).get_age());
+    %%%%%:  182-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+call    5 never executed
+    $$$$$:  182-block  1
+call    6 never executed
+    $$$$$:  182-block  2
+    #####:  183:                valid_dogs.erase(it);
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:  183-block  0
+    #####:  184:                cout<<"Dog successfully adopted"<<endl;
+    %%%%%:  184-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  184-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:  185:                length--;
+    #####:  186:                sleep(1);
+    %%%%%:  186-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  187:                if(it >= valid_dogs.end())
+    %%%%%:  187-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:  188:                    it = valid_dogs.begin();
+    %%%%%:  188-block  0
+call    0 never executed
+        -:  189:            }
+    #####:  190:            else if(command == 2){
+    %%%%%:  190-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  191:                it++;
+    %%%%%:  191-block  0
+call    0 never executed
+    #####:  192:                if(it >= valid_dogs.end())
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:  193:                    it = valid_dogs.begin();
+    %%%%%:  193-block  0
+call    0 never executed
+        -:  194:            }
+        -:  195:            else
+    #####:  196:                cout<<"Wrong input";
+    %%%%%:  196-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  197:            sleep(1);
+    %%%%%:  197-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  198:            if(length == 0) {
+    %%%%%:  198-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  199:                cout << "All dogs in this criteria are already adopted" << endl;
+    %%%%%:  199-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  199-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:  200:                break;
+    %%%%%:  200-block  0
+        -:  201:            }
+    #####:  202:        }
+    %%%%%:  202-block  0
+        -:  203:    }
+    #####:  204:}
+    %%%%%:  204-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:  204-block  1
+call    2 never executed
+    $$$$$:  204-block  2
+call    3 never executed
+        -:  205:
+function _ZN2ui8openFileEv called 0 returned 0% blocks executed 0%
+    #####:  206:void ui::openFile() {
+    #####:  207:    if(usrv->getRepo()->getSize() == 0)
+    %%%%%:  207-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    #####:  208:        cout<<"There are no dogs adopted yet"<<endl;
+    %%%%%:  208-block  0
+call    0 never executed
+call    1 never executed
+        -:  209:    else
+    #####:  210:        usrv->openFile();
+    %%%%%:  210-block  0
+call    0 never executed
+    #####:  211:}
+        -:  212:
+function _ZN2ui3runEv called 1 returned 100% blocks executed 14%
+        1:  213:void ui::run() {
+        1:  214:    cout<<"Welcome to Keep calm and adopt a pet, or more"<<endl;
+        1:  214-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  214-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  215:    std::cout<<"Please choose the file destination: 1.csv or 2.html\n";
+        1:  215-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  216:    int type;
+        1:  217:    std::cin>>type;
+        1:  217-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  218:    std::cin.ignore();
+        1:  218-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  219:    string filetype;
+        1:  219-block  0
+call    0 returned 1
+        1:  220:    usrv->repoType(type);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  221:    sleep(1);
+        1:  221-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  222:    while(true)
+        -:  223:    {
+        1:  224:        ui::print_menu();
+        1:  224-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  225:        int command = { 0 };
+        1:  226:        cout<<"Input command: ";
+        1:  226-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  227:        cin>>command;
+        1:  227-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  228:        cin.ignore();
+        1:  228-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  229:        if(command == 0)
+        1:  229-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:  230:            break;
+        1:  230-block  0
+    #####:  231:        else if(command == 1)
+    %%%%%:  231-block  0
+branch  0 never executed
+branch  1 never executed
+        -:  232:        {
+        -:  233:            while(true)
+        -:  234:            {
+    #####:  235:                print_administrator_menu();
+    %%%%%:  235-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  236:                int command2 = { 0 };
+    #####:  237:                cout<<"Input command: ";
+    %%%%%:  237-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  238:                cin>>command2;
+    %%%%%:  238-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  239:                cin.ignore();
+    %%%%%:  239-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  240:                if(command2 == 0)
+    %%%%%:  240-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  241:                    break;
+    %%%%%:  241-block  0
+    %%%%%:  241-block  1
+    #####:  242:                else if (command2 == 1)
+    %%%%%:  242-block  0
+branch  0 never executed
+branch  1 never executed
+        -:  243:                {
+        -:  244:                    try{
+    #####:  245:                        ui::add_dog();
+    %%%%%:  245-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  246:                    }
+    =====:  247:                    catch (std::invalid_argument& e){
+    $$$$$:  247-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  247-block  1
+call    2 never executed
+    =====:  248:                        std::cerr << e.what() << std::endl;
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:  248-block  0
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    =====:  249:                    }
+    $$$$$:  249-block  0
+call    0 never executed
+    $$$$$:  249-block  1
+call    1 never executed
+        -:  250:                }
+    #####:  251:                else if (command2 == 2)
+    %%%%%:  251-block  0
+branch  0 never executed
+branch  1 never executed
+        -:  252:                {
+        -:  253:                    try{
+    #####:  254:                        ui::del_dog();
+    %%%%%:  254-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  255:                    }
+    =====:  256:                    catch (std::invalid_argument& e){
+    $$$$$:  256-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  256-block  1
+call    2 never executed
+    =====:  257:                        std::cerr << e.what() << std::endl;
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:  257-block  0
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    =====:  258:                    }
+    $$$$$:  258-block  0
+call    0 never executed
+    $$$$$:  258-block  1
+call    1 never executed
+        -:  259:
+        -:  260:                }
+    #####:  261:                else if (command2 == 3)
+    %%%%%:  261-block  0
+branch  0 never executed
+branch  1 never executed
+        -:  262:                {
+        -:  263:                    try{
+    #####:  264:                        ui::modify_dog();
+    %%%%%:  264-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  265:                    }
+    =====:  266:                    catch (std::invalid_argument& e){
+    $$$$$:  266-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  266-block  1
+call    2 never executed
+    =====:  267:                        std::cerr << e.what() << std::endl;
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:  267-block  0
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    =====:  268:                    }
+    $$$$$:  268-block  0
+call    0 never executed
+    $$$$$:  268-block  1
+call    1 never executed
+        -:  269:                }
+    #####:  270:                else if (command2 == 4)
+    %%%%%:  270-block  0
+branch  0 never executed
+branch  1 never executed
+        -:  271:                {
+    #####:  272:                    ui::list_dogs();
+    %%%%%:  272-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  273:                }
+        -:  274:                else {
+    #####:  275:                    cout << "Wrong input" << endl;
+    %%%%%:  275-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  275-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        -:  276:                }
+    #####:  277:                sleep(1);
+    %%%%%:  277-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  278:            }
+    %%%%%:  278-block  0
+        -:  279:        }
+    #####:  280:        else if(command == 2)
+    %%%%%:  280-block  0
+branch  0 never executed
+branch  1 never executed
+        -:  281:        {
+        -:  282:            while(true)
+        -:  283:            {
+    #####:  284:                ui::print_user_menu();
+    %%%%%:  284-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  285:                int command2 = { 0 };
+    #####:  286:                cout<<"Input command: ";
+    %%%%%:  286-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  287:                cin>>command2;
+    %%%%%:  287-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  288:                cin.ignore();
+    %%%%%:  288-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  289:                if(command2 == 0)
+    %%%%%:  289-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  290:                    break;
+    %%%%%:  290-block  0
+    %%%%%:  290-block  1
+    #####:  291:                else if (command2 == 1)
+    %%%%%:  291-block  0
+branch  0 never executed
+branch  1 never executed
+        -:  292:                {
+        -:  293:                    try{
+    #####:  294:                        ui::user_list();
+    %%%%%:  294-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  295:                    }
+    =====:  296:                    catch (std::invalid_argument& e){
+    $$$$$:  296-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  296-block  1
+call    2 never executed
+    =====:  297:                        std::cerr << e.what() << std::endl;
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:  297-block  0
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    =====:  298:                    }
+    $$$$$:  298-block  0
+call    0 never executed
+    $$$$$:  298-block  1
+call    1 never executed
+        -:  299:
+        -:  300:                }
+    #####:  301:                else if (command2 == 2)
+    %%%%%:  301-block  0
+branch  0 never executed
+branch  1 never executed
+        -:  302:                {
+        -:  303:                    try{
+    #####:  304:                        ui::user_filtered_list();
+    %%%%%:  304-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  305:                    }
+    =====:  306:                    catch (std::invalid_argument& e){
+    $$$$$:  306-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  306-block  1
+call    2 never executed
+    =====:  307:                        std::cerr << e.what() << std::endl;
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:  307-block  0
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    =====:  308:                    }
+    $$$$$:  308-block  0
+call    0 never executed
+    $$$$$:  308-block  1
+call    1 never executed
+        -:  309:                }
+    #####:  310:                else if (command2 == 3)
+    %%%%%:  310-block  0
+branch  0 never executed
+branch  1 never executed
+        -:  311:                {
+        -:  312:                    try{
+    #####:  313:                        ui::adopted_list();
+    %%%%%:  313-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  314:                    }
+    =====:  315:                    catch (std::invalid_argument& e){
+    $$$$$:  315-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  315-block  1
+call    2 never executed
+    =====:  316:                        std::cerr << e.what() << std::endl;
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:  316-block  0
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    =====:  317:                    }
+    $$$$$:  317-block  0
+call    0 never executed
+    $$$$$:  317-block  1
+call    1 never executed
+        -:  318:                }
+    #####:  319:                else if ( command2 == 4){
+    %%%%%:  319-block  0
+branch  0 never executed
+branch  1 never executed
+    #####:  320:                    ui::openFile();
+    %%%%%:  320-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  321:                }
+        -:  322:                else
+        -:  323:                {
+    #####:  324:                    cout<<"Wrong input"<<endl;
+    %%%%%:  324-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  324-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        -:  325:                }
+    #####:  326:                sleep(1);
+    %%%%%:  326-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  327:            }
+    %%%%%:  327-block  0
+        -:  328:        }
+        -:  329:        else
+    #####:  330:            cout<<"Wrong input"<<endl;
+    %%%%%:  330-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  330-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:  331:    }
+    %%%%%:  331-block  0
+        1:  332:}
+        1:  332-block  0
+call    0 returned 1
+    $$$$$:  332-block  1
+call    1 never executed

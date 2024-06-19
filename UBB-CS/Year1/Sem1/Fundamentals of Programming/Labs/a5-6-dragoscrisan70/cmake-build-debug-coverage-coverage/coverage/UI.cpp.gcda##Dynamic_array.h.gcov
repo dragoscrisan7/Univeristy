@@ -1,0 +1,143 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/Dynamic_array.h
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a5-6-dragoscrisan7\cmake-build-debug-coverage-coverage\CMakeFiles\a5_6_dragoscrisan7.dir\UI.cpp.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a5-6-dragoscrisan7\cmake-build-debug-coverage-coverage\CMakeFiles\a5_6_dragoscrisan7.dir\UI.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#ifndef A5_6_DRAGOSCRISAN7_DYNAMIC_ARRAY_H
+        -:    2:#define A5_6_DRAGOSCRISAN7_DYNAMIC_ARRAY_H
+        -:    3:#include "Dog.h"
+        -:    4:
+        -:    5:template <typename T>
+        -:    6:class DynamicVector
+        -:    7:{
+        -:    8:private:
+        -:    9:    T* elems;
+        -:   10:    int size;
+        -:   11:    int capacity{};
+        -:   12:
+        -:   13:    // Resizes the current DynamicVector, multiplying its capacity by a given factor (real number).
+        -:   14:    void resize(double factor = 2);
+        -:   15:public:
+        -:   16:    //default constructor of the dynamic vector
+        -:   17:    DynamicVector(int capacity = 7);
+        -:   18:    //destructor for the dynamic vector
+        -:   19:    ~DynamicVector();
+        -:   20:
+        -:   21:    //assign operator for the dynamic vector
+        -:   22:    DynamicVector& operator=(const DynamicVector& v);
+        -:   23:
+        -:   24:    // Adds an element to the current DynamicVector.
+        -:   25:    void add(T e);
+        -:   26:    // Deletes an element from the current Dynamic Vector.
+        -:   27:    void del(int del_index);
+        -:   28:    // Updates an element from the current Dynamic Vector.
+        -:   29:    void update(int update_index,T e);
+        -:   30:
+        -:   31:    //[] operator for the dynamic vector
+        -:   32:    T& operator[](int index);
+        -:   33:
+        -:   34:    //Returns the size of the current vector(the number of elements it holds)
+        -:   35:    int getSize() const;
+        -:   36:};
+        -:   37:
+        -:   38:
+        -:   39:template <typename T>
+        -:   40:DynamicVector<T>::DynamicVector(int capacity)
+        -:   41:{
+        -:   42:    size = 0;
+        -:   43:    this->capacity = capacity;
+        -:   44:    this->elems = new T[capacity];
+        -:   45:}
+        -:   46:
+        -:   47:template <typename T>
+        -:   48:DynamicVector<T>::~DynamicVector()
+        -:   49:{
+        -:   50:    delete[] this->elems;
+        -:   51:}
+        -:   52:
+        -:   53:template <typename T>
+        -:   54:DynamicVector<T>& DynamicVector<T>::operator=(const DynamicVector<T>& v)
+        -:   55:{
+        -:   56:    if (this == &v)
+        -:   57:        return *this;
+        -:   58:
+        -:   59:    this->size = v.size;
+        -:   60:    this->capacity = v.capacity;
+        -:   61:
+        -:   62:    delete[] this->elems;
+        -:   63:    this->elems = new T[this->capacity];
+        -:   64:    for (int i = 0; i < this->size; i++)
+        -:   65:        this->elems[i] = v.elems[i];
+        -:   66:
+        -:   67:    return *this;
+        -:   68:}
+        -:   69:
+        -:   70:template <typename T>
+        -:   71:void DynamicVector<T>::add(T e)
+        -:   72:{
+        -:   73:    if (this->size == this->capacity)
+        -:   74:        this->resize();
+        -:   75:    this->elems[this->size] = e;
+        -:   76:    this->size++;
+        -:   77:}
+        -:   78:template <typename T>
+        -:   79:void DynamicVector<T>::del(const int del_index)
+        -:   80:{
+        -:   81:    if(del_index == this->size-1)
+        -:   82:        this->size--;
+        -:   83:    else {
+        -:   84:        this->elems[del_index] = this->elems[this->size - 1];
+        -:   85:        this->size--;
+        -:   86:    }
+        -:   87:}
+        -:   88:template <typename T>
+        -:   89:void DynamicVector<T>::update(int update_index,T e)
+        -:   90:{
+        -:   91:    this->elems[update_index] = e;
+        -:   92:}
+        -:   93:
+        -:   94:template <typename T>
+        -:   95:void DynamicVector<T>::resize(double factor)
+        -:   96:{
+        -:   97:    this->capacity *= static_cast<int>(factor);
+        -:   98:
+        -:   99:    T* els = new T[this->capacity];
+        -:  100:    for (int i = 0; i < this->size; i++)
+        -:  101:        els[i] = this->elems[i];
+        -:  102:
+        -:  103:    delete[] this->elems;
+        -:  104:    this->elems = els;
+        -:  105:}
+        -:  106:
+        -:  107:template <typename T>
+        -:  108:int DynamicVector<T>::getSize() const
+        -:  109:{
+        -:  110:    return this->size;
+        -:  111:}
+        -:  112:
+        -:  113:template <typename T>
+function _ZN13DynamicVectorI3dogEixEi called 0 returned 0% blocks executed 0%
+    #####:  114:T& DynamicVector<T>::operator[](int index)
+        -:  115:{
+    #####:  116:    if(index < 0 || index >= this->size)
+    %%%%%:  116-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  116-block  1
+branch  2 never executed
+branch  3 never executed
+    #####:  117:        throw std::out_of_range("index err");
+    %%%%%:  117-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  117-block  1
+call    4 never executed
+    $$$$$:  117-block  2
+call    5 never executed
+    #####:  118:    return this->elems[index];
+    %%%%%:  118-block  0
+    %%%%%:  118-block  1
+        -:  119:}
+        -:  120:
+        -:  121:#endif //A5_6_DRAGOSCRISAN7_DYNAMIC_ARRAY_H

@@ -1,0 +1,32 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a8-9-dragoscrisan7/Repository.h
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\UserService.cpp.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a8-9-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a8_9_dragoscrisan7.dir\UserService.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#pragma once
+        -:    2:#include "Dog.h"
+        -:    3:#include <vector>
+        -:    4:#include <exception>
+        -:    5:
+        -:    6:class Repository{
+        -:    7:private:
+        -:    8:    std::vector<dog> dogs;
+        -:    9:    std::string filename;
+        -:   10:public:
+        -:   11:    Repository(const std::string& filename);
+        -:   12:    Repository() = default;
+        -:   13:
+        -:   14:    void addDog(const dog& dog1);
+        -:   15:    void delDog(const std::string& name, const std::string& breed);
+        -:   16:    void modDog(const std::string& name, const std::string& breed, const dog& dog1);
+        -:   17:
+        -:   18:    dog findByNameAndBreed(const std::string& name,const std::string& breed);
+        -:   19:    int getSize();
+        -:   20:
+function _ZNK10Repository6getDogEv called 10 returned 100% blocks executed 100%
+       10:   21:    std::vector<dog> getDog() const{return dogs;}
+       10:   21-block  0
+call    0 returned 10
+        -:   22:private:
+        -:   23:    void readFromFile();
+        -:   24:    void writeToFile();
+        -:   25:};

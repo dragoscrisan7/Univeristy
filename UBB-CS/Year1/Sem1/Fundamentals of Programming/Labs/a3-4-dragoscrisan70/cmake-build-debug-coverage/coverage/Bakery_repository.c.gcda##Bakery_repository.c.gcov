@@ -1,0 +1,220 @@
+        -:    0:Source:C:/Users/Dragos/OneDrive/Facultate/GitHub/a3-4-dragoscrisan7/Bakery_repository.c
+        -:    0:Graph:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\Bakery_repository.c.gcno
+        -:    0:Data:C:\Users\Dragos\OneDrive\Facultate\GitHub\a3-4-dragoscrisan7\cmake-build-debug-coverage\CMakeFiles\a3_4_dragoscrisan7.dir\Bakery_repository.c.gcda
+        -:    0:Runs:1
+        -:    1:#include <Bakery_Repository.h>
+        -:    2:#include <stdlib.h>
+        -:    3:#include <string.h>
+        -:    4:
+function dynamic_array_default_values called 3 returned 100% blocks executed 100%
+        3:    5:void dynamic_array_default_values(IngredientRepo* v)
+        -:    6:{
+        3:    7:    Ingredient* i = create_ingredient("flour", "Baneasa", 3, 4,
+        3:    7-block  0
+call    0 returned 3
+        -:    8:                                      12, 2023);
+        3:    9:    add(v,i);
+call    0 returned 3
+        3:   10:    i = create_ingredient("yoghurt", "Napolact", 5, 5,
+call    0 returned 3
+        -:   11:                          5, 2023);
+        3:   12:    add(v,i);
+call    0 returned 3
+        3:   13:    i = create_ingredient("rice", "Baneasa",6,6,
+call    0 returned 3
+        -:   14:                          3,2025);
+        3:   15:    add(v,i);
+call    0 returned 3
+        3:   16:    i = create_ingredient("salt", "Pepper",7,20,
+call    0 returned 3
+        -:   17:                          7,2030);
+        3:   18:    add(v,i);
+call    0 returned 3
+        3:   19:    i = create_ingredient("sugar", "Pepper",10,25,
+call    0 returned 3
+        -:   20:                          11,2025);
+        3:   21:    add(v,i);
+call    0 returned 3
+        3:   22:}
+function createIngredientRepo called 3 returned 100% blocks executed 83%
+        3:   23:IngredientRepo* createIngredientRepo()
+        -:   24:{
+        3:   25:    IngredientRepo* repo = (IngredientRepo*)malloc(sizeof(IngredientRepo));
+        3:   26:    if(repo == NULL)
+        3:   26-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 3
+    #####:   27:        return NULL;
+    %%%%%:   27-block  0
+        3:   28:    repo->array = createDynamicArray((DestroyElementFunctionType) &destroy_ingredient);
+        3:   28-block  0
+call    0 returned 3
+        3:   29:    dynamic_array_default_values(repo);
+call    0 returned 3
+        -:   30:
+        3:   31:    return repo;
+        -:   32:}
+function destroyRepo called 3 returned 100% blocks executed 80%
+        3:   33:void destroyRepo(IngredientRepo* v)
+        -:   34:{
+        3:   35:    if(v == NULL)
+        3:   35-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 3
+    #####:   36:        return;
+    %%%%%:   36-block  0
+        3:   37:    destroyDynamicArray(v->array);
+        3:   37-block  0
+call    0 returned 3
+        3:   38:    free(v);
+        -:   39:}
+        -:   40:
+function find called 14 returned 100% blocks executed 100%
+       14:   41:int find(IngredientRepo* r, char const* name, char const* supplier, int expiration_date_day,
+        -:   42:         int expiration_date_month,int expiration_date_year)
+        -:   43:{
+       51:   44:    for(int i=0; i< get_Length(r); i++)
+       14:   44-block  0
+       37:   44-block  1
+       51:   44-block  2
+call    0 returned 51
+branch  1 taken 50
+branch  2 taken 1 (fallthrough)
+        -:   45:    {
+       50:   46:        Ingredient* ing = get(r->array, i);
+       50:   46-block  0
+call    0 returned 50
+       50:   47:        date* eDate = getExpirationDate(ing);
+call    0 returned 50
+       50:   48:        if(!strcmp(getName(ing), name) && !strcmp(getSupplier(ing), supplier) &&
+call    0 returned 50
+branch  1 taken 13 (fallthrough)
+branch  2 taken 37
+       13:   48-block  0
+call    3 returned 13
+branch  4 taken 13 (fallthrough)
+branch  5 taken 0
+       13:   49:           eDate->day == expiration_date_day && eDate->month == expiration_date_month && eDate->year == expiration_date_year)
+       13:   49-block  0
+branch  0 taken 13 (fallthrough)
+branch  1 taken 0
+       13:   49-block  1
+branch  2 taken 13 (fallthrough)
+branch  3 taken 0
+       13:   49-block  2
+branch  4 taken 13 (fallthrough)
+branch  5 taken 0
+       13:   50:            return i;
+       13:   50-block  0
+        -:   51:    }
+        -:   52:
+        1:   53:    return -1;
+        1:   53-block  0
+        -:   54:}
+        -:   55:
+function add called 19 returned 100% blocks executed 83%
+       19:   56:int add(IngredientRepo* v, Ingredient* i)
+        -:   57:{
+       19:   58:    if (v == NULL || i == NULL)
+       19:   58-block  0
+branch  0 taken 19 (fallthrough)
+branch  1 taken 0
+       19:   58-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 19
+    #####:   59:        return -1;
+    %%%%%:   59-block  0
+        -:   60:
+       19:   61:    add_dynamic(v->array, (TElement) i);
+       19:   61-block  0
+call    0 returned 19
+        -:   62:
+       19:   63:    return 1;
+        -:   64:}
+function delete_ing called 5 returned 100% blocks executed 75%
+        5:   65:int delete_ing(IngredientRepo* r, char const* name, char const* supplier, int expiration_date_day,
+        -:   66:               int expiration_date_month,int expiration_date_year)
+        -:   67:{
+        5:   68:    if(r == NULL)
+        5:   68-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 5
+    #####:   69:        return -1;
+    %%%%%:   69-block  0
+        -:   70:
+        5:   71:    int x = find(r, name, supplier, expiration_date_day, expiration_date_month, expiration_date_year);
+        5:   71-block  0
+call    0 returned 5
+        5:   72:    if(x == -1)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 5
+    #####:   73:        return 0;
+    %%%%%:   73-block  0
+        -:   74:
+        5:   75:    delete_dynamic(r->array, x);
+        5:   75-block  0
+call    0 returned 5
+        5:   76:    return 1;
+        -:   77:}
+function modify_ing called 4 returned 100% blocks executed 80%
+        4:   78:int modify_ing(IngredientRepo* r, Ingredient* i, Ingredient* j)
+        -:   79:{
+        4:   80:    if(r == NULL)
+        4:   80-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 4
+    #####:   81:        return -1;
+    %%%%%:   81-block  0
+        -:   82:
+        4:   83:    date* date2 = getExpirationDate(i);
+        4:   83-block  0
+call    0 returned 4
+        4:   84:    int x = find(r, getName(i), getSupplier(i), date2->day,
+call    0 returned 4
+call    1 returned 4
+call    2 returned 4
+        -:   85:                 date2->month, date2->year);
+        4:   86:    if(x == -1)
+branch  0 taken 0 (fallthrough)
+branch  1 taken 4
+    #####:   87:        return 0;
+    %%%%%:   87-block  0
+        -:   88:
+        4:   89:    Dynamic_array* da = r->array;
+        4:   90:    da->elems[x] = j;
+        4:   91:    return 1;
+        4:   91-block  0
+        -:   92:}
+        -:   93:
+function get_Length called 60 returned 100% blocks executed 75%
+       60:   94:int get_Length(IngredientRepo* repo)
+        -:   95:{
+       60:   96:    if(repo->array == NULL)
+       60:   96-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 60
+    #####:   97:        return -1;
+    %%%%%:   97-block  0
+       60:   98:    return getLength(repo->array);
+       60:   98-block  0
+call    0 returned 60
+        -:   99:}
+function getIngredientOnPos called 12 returned 100% blocks executed 75%
+       12:  100:Ingredient* getIngredientOnPos(IngredientRepo* r, int pos)
+        -:  101:{
+       12:  102:    if(r == NULL)
+       12:  102-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 12
+    #####:  103:        return NULL;
+    %%%%%:  103-block  0
+       12:  104:    return get(r->array, pos);
+       12:  104-block  0
+call    0 returned 12
+        -:  105:}
+function get_dyn_array called 0 returned 0% blocks executed 0%
+    #####:  106:Dynamic_array* get_dyn_array(IngredientRepo* repo)
+        -:  107:{
+    #####:  108:    return repo->array;
+    %%%%%:  108-block  0
+        -:  109:}

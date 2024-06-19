@@ -1,0 +1,3 @@
+/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/CMakeFiles/a5_6_dragoscrisan7.dir
+/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Dragos/OneDrive/Facultate/GitHub/a5-6-dragoscrisan7/cmake-build-wsl_debug/CMakeFiles/rebuild_cache.dir
