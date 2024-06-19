@@ -178,7 +178,7 @@
           Informatics History
         </a>
       </li>
-      <li> :calculator:
+      <li> :abacus:
         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year3/Sem2/Numerical%20Calculus">
           Numerical Calculus
         </a>
