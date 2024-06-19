@@ -1,6 +1,6 @@
 # UBB Computer Science
 <ul>
-  <li>:open_file_folder: Semester 1
+  <li>:open_file_folder: Year 1 Semester 1
     <ul>
       <li> :1234:
         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem1/Algebra"> 
@@ -34,7 +34,7 @@
       </li>
     </ul>
   </li>
-  <li>:open_file_folder: Semester 2
+  <li>:open_file_folder: Year 1 Semester 2
     <ul>
       <li> :deciduous_tree:
         <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year1/Sem2/Data%20Structures%20and%20Algorithms"> 
@@ -68,41 +68,36 @@
       </li>
     </ul>
   </li>
-  <li>:open_file_folder: Semester 3
+  <li>:open_file_folder: Year 2 Semester 1
     <ul>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/Metode%20avansate%20de%20programare"> 
-          :outbox_tray:  Advanced Methods of Programming
+      <li>  :rocket:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/Advanced%20Methods%20of%20Programming"> 
+          Advanced Methods of Programming
         </a>
       </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/Re%C8%9Bele%20de%20calculatoare"> 
-          :nut_and_bolt:  Computer Networks 
+      <li> :computer_network:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/Computer%20Networks"> 
+          Computer Networks 
         </a>
       </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/Baze%20de%20date"> 
-          :nut_and_bolt:  Databases 
+      <li> :file_cabinet:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/Databases"> 
+          Databases 
         </a>
       </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/Limba%20englez%C4%83/Lectures"> 
-          :santa:  English
+      <li> :open_book:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/English"> 
+          English
         </a>
       </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/Programare%20logic%C4%83%20%C5%9Fi%20func%C5%A3ional%C4%83"> 
-          :floppy_disk:  Functional and Logic Programming 
+      <li> :brain:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/Functional%20and%20Logical%20Programming"> 
+          Functional and Logic Programming 
         </a>
       </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/Programare%20logic%C4%83%20%C5%9Fi%20func%C5%A3ional%C4%83"> 
-          :nut_and_bolt:  Logical and Functional Programming
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/Probabilit%C4%83%C8%9Bi%20%C8%99i%20statistic%C4%83"> 
-          :chart_with_upwards_trend:  Probability and Statistics
+      <li> :game_die:
+        <a href="https://github.com/dragoscrisan7/Univeristy/tree/main/UBB-CS/Year2/Sem1/Probability%20and%20Statistics"> 
+          Probability and Statistics
         </a>
       </li>
     </ul>
