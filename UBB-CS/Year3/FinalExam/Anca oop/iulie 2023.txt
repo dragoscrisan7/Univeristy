@@ -1,0 +1,86 @@
+#include <iostream>
+#include <list>
+#include <iterator>
+using namespace std;
+
+class MyObject {
+public:
+    virtual void print() = 0;
+};
+
+class MyInteger : public MyObject {
+private:
+    int value;
+public:
+    MyInteger(const int value) : value(value) {}
+    void print() override {
+        cout << value << ' ';
+    }
+};
+
+class MyString : public MyObject {
+private:
+    string value;
+public:
+    MyString(const string value) : value(value) {}
+    void print() override {
+        cout << value << ' ';
+    }
+};
+
+class MyObjectList {
+private:
+    list<MyObject*> objects;
+public:
+    MyObjectList()=default;
+
+    MyObjectList& add(MyObject* o) {
+        objects.push_back(o);
+        return *this;
+    }
+
+    friend class MyListIterator; 
+};
+
+class MyListIterator {
+private:
+    list<MyObject*>::iterator current;
+    list<MyObject*>::iterator end;
+public:
+    MyListIterator(MyObjectList &l) {
+        current = l.objects.begin();
+        end = l.objects.end();
+    }
+
+    bool isValid() const {
+        return current != end;
+    }
+
+    MyObject* element() const {
+        return *current;
+    }
+
+    void next() {
+        ++current;
+    }
+};
+
+void function() {
+    MyObjectList list{};
+    list.add(new MyInteger(2)).add(new MyString("Hi"));
+    MyString* s = new MyString("Bye");
+    list.add(s).add(new MyString("5"));
+
+    MyListIterator i(list);
+    while (i.isValid()) {
+        MyObject* o = i.element();
+        o->print();
+        i.next();
+    }
+    cout << endl;  
+}
+
+int main() {
+    function();
+    return 0;
+}

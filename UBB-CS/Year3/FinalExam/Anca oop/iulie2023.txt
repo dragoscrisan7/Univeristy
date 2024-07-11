@@ -1,0 +1,97 @@
+#include <iostream>
+#include <list>
+#include <functional>
+using namespace std;
+
+class Person{
+    private:
+    string surname;
+    string firstname;
+    int age;
+    public:
+    Person(const string surname, const string firstname, const int age):
+    surname(surname), firstname(firstname), age(age){}
+    string getSurname(){
+        return surname;
+    }
+    string getFirstname(){
+        return firstname;
+    }
+    int getAge(){
+        return age;
+    }
+};
+
+void merge(list<Person*>&people, function<bool(Person&, Person&)> compare, int l, int m, int r){
+    int n1 = m-l+1;
+    int n2 = r-m;
+    list<Person*> left;
+    list<Person*> right;
+    auto it = people.begin();
+    advance(it, l);
+    for (int i = 0; i < n1; i++){
+        left.push_back(*it);
+        it++;
+    }
+    for (int i = 0; i < n2; i++){
+        right.push_back(*it);
+        it++;
+    }
+    
+    auto itl = left.begin(), itr = right.begin();
+    it = people.begin();
+    
+    while(itl != left.end() && itr != right.end()){
+        if (compare(**itl, **itr)){
+            *it = *itl;
+            itl++;
+        }
+        else {
+            *it = *itr;
+            itr ++;
+        }
+        it++;
+    }
+    
+    while (itl!=left.end()){
+        *it = *itl;
+        itl++;
+        it ++;
+    }
+    while (itr != right.end()){
+        *it = *itr;
+        itr++;
+        it++;
+    }
+    
+}
+
+void mergeSort(list<Person*>&people, function<bool(Person&, Person&)> compare, int l, int r){
+    if (l < r){
+        int m = l + (r-l)/ 2;
+        mergeSort(people, compare, l, m);
+        mergeSort(people, compare, m+1, r);
+        
+        merge(people, compare, l, m, r);
+    }
+}
+
+void sortPeople(list<Person*>&people, function<bool(Person&, Person&)> compare){
+    mergeSort(people, compare, 0, people.size() - 1);
+}
+
+
+int main(){
+    list<Person*> people;
+    cout<<"People:\n";
+    Person* p1 = new Person("Ana", "Maria", 38);
+    Person* p2 = new Person("Ion", "Matei", 15);
+    Person* p3 = new Person("Claudia", "Ioana", 22);
+    people.push_back(p1);
+    people.push_back(p2);
+    people.push_back(p3);
+    sortPeople(people,[](Person&p1, Person&p2){return p1.getAge() < p2.getAge();});
+    for(auto p: people){
+        cout << p->getSurname() << ' ';
+    }
+}

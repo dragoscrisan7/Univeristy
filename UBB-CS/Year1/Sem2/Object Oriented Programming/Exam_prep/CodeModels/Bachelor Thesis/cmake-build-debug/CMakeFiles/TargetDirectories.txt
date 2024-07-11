@@ -1,0 +1,5 @@
+C:/Users/Dragos/CLionProjects/Bachelor Thesis/cmake-build-debug/CMakeFiles/Bachelor_Thesis.dir
+C:/Users/Dragos/CLionProjects/Bachelor Thesis/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dragos/CLionProjects/Bachelor Thesis/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Dragos/CLionProjects/Bachelor Thesis/cmake-build-debug/CMakeFiles/Bachelor_Thesis_autogen_timestamp_deps.dir
+C:/Users/Dragos/CLionProjects/Bachelor Thesis/cmake-build-debug/CMakeFiles/Bachelor_Thesis_autogen.dir

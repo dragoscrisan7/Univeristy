@@ -1,5 +1,0 @@
-C:/Users/Dragos/CLionProjects/Questions_and_answers/cmake-build-debug/CMakeFiles/Questions_and_answers.dir
-C:/Users/Dragos/CLionProjects/Questions_and_answers/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Dragos/CLionProjects/Questions_and_answers/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Dragos/CLionProjects/Questions_and_answers/cmake-build-debug/CMakeFiles/Questions_and_answers_autogen_timestamp_deps.dir
-C:/Users/Dragos/CLionProjects/Questions_and_answers/cmake-build-debug/CMakeFiles/Questions_and_answers_autogen.dir

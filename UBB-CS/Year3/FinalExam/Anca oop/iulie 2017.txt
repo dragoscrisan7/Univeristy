@@ -1,0 +1,120 @@
+#include <iostream>
+#include <stdexcept>
+#include <list>
+#include <functional>
+#include <map>
+#include <iterator>
+
+using namespace std;
+
+class Fruit {
+private:
+    bool withSeeds;
+public:
+    Fruit(const bool withSeeds): withSeeds(withSeeds) {}
+    virtual string getDescription() = 0;
+    bool isWithSeeds() const {
+        return withSeeds;
+    }
+};
+
+class MelonLike: public Fruit {
+private:
+    double kg;
+public:
+    MelonLike(const double kg, const bool withSeeds): Fruit(withSeeds), kg(kg) {}
+    string getDescription() override {
+        if (isWithSeeds()) {
+            return to_string(kg) + " kg melon-like fruit with seeds.";
+        }
+        return to_string(kg) + " kg melon-like fruit without seeds.";
+    }
+};
+
+class Melon: public MelonLike {
+public:
+    Melon(const double kg, const bool withSeeds): MelonLike(kg, withSeeds) {}
+    string getDescription() override {
+        return MelonLike::getDescription() + " This is a melon.";
+    }
+};
+
+class Watermelon: public MelonLike {
+public:
+    Watermelon(const double kg, const bool withSeeds): MelonLike(kg, withSeeds) {}
+    string getDescription() override {
+        return MelonLike::getDescription() + " This is a watermelon.";
+    }
+};
+
+int binarySearch(list<Fruit*>& fruits, Fruit* f, int left, int right) {
+    auto it = fruits.begin();
+    advance(it, left);
+    
+    if (left >= right) {
+        if ((*it)->getDescription() <= f->getDescription()) return left + 1;
+        else return left;
+    } else {
+        int m = (left + right) / 2;
+        auto mit = fruits.begin();
+        advance(mit, m);
+        
+        if (f->getDescription() < (*mit)->getDescription())
+            return binarySearch(fruits, f, left, m - 1);
+        else
+            return binarySearch(fruits, f, m + 1, right);
+    }
+}
+
+int insertPosition(list<Fruit*> fruits, Fruit* f) {
+    return binarySearch(fruits, f, 0, fruits.size() - 1);
+}
+
+void insertFruit(list<Fruit*>& fruits, Fruit* f){
+    auto it = fruits.begin();
+    advance(it, insertPosition(fruits, f));
+    fruits.insert(it, f);
+}
+
+void printFruits(bool withSeeds, list<Fruit*> fruits){
+    for (auto* fruit: fruits){
+        if (fruit->isWithSeeds() == withSeeds){
+            cout << fruit-> getDescription()<<endl;
+        }
+    }
+}
+
+int main() {
+    list<Fruit*> fruits;
+    Fruit* watermelon = new Watermelon(6, false);
+    Fruit* melon = new Melon(10, true);
+    Fruit* melonlike = new MelonLike(11, false);
+    Fruit* watermelon2 = new Watermelon(13, true);
+    
+    fruits.push_back(watermelon);
+    fruits.push_back(melon);
+    fruits.push_back(melonlike);
+    fruits.push_back(watermelon2);
+    
+    Fruit* newMelon = new Watermelon(12, false);
+    insertFruit(fruits, newMelon);
+    
+    for (Fruit* fruit : fruits) {
+        cout << fruit->getDescription() << endl;
+    }
+    
+    cout << endl;
+    
+    cout<<"With seeds:\n";
+    printFruits(true, fruits);
+    
+    cout <<"Without seeds:\n";
+    printFruits(false, fruits);
+    
+    
+    for (Fruit* fruit : fruits) {
+        delete fruit;
+    }
+    
+    return 0;
+}

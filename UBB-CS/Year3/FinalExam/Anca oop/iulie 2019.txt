@@ -1,0 +1,108 @@
+#include <iostream>
+using namespace std;
+
+class RailCar{
+    private:
+    string name;
+    RailCar* next;
+    public:
+    RailCar(const string name, const RailCar* next): name(name), next(next){
+        if (name.length() < 2)
+            throw new invalid_argument("Name is too short.");
+    }
+    virtual bool isProfitable() = 0;
+    virtual string toString() =0;
+    RailCar* getNext();
+    void setNext(RailCar* c){
+        next = c;
+    }
+    virtual RailCar* clone() = 0;
+    string getName();
+};
+
+class PassengerCar: public RailCar{
+    private:
+    int capacity;
+    public:
+    PassengerCar(const int capacity, const string name, const RailCar* next):
+    RailCar(name, next), capacity(capacity){
+        if (capacity <= 0)
+        return new invalid_argument("Capacity must be greater than 0.")
+    }
+    bool isProfitable() override{
+        return capacity > 40;
+    }
+    string toString() override{
+        return getName() + to_string(capacity);
+    }
+    RailCar* clone() override{
+        return new PassengerCar(*this);
+    }
+};
+
+class RestaurantCar: public RailCar{
+    private:
+    int numberOfTables;
+    public:
+    RestaurantCar(const int numberOfTables, const string name, const RailCar* next): RailCar(name, next), numberOfTables(numberOfTables)
+    bool isProfitable() override{
+        return numberOfTables >= 20;
+    }
+    string toString() override{
+        return getName() + to_string(numberOfTables);
+    }
+    RailCar* clone() override{
+        return new RestaurantCar(*this);
+    }
+}
+
+class Locomotive{
+    private:
+    RailCar* first;
+    public:
+    void attachRailCar(RailCar* c){
+        if (first == nullptr) first = c;
+        else
+        if (first->getNext() == nullptr)
+            first->setNext(c);
+        else:
+            RailCar* i = first;
+            while (i->getNext() != nullptr){
+                if (i->getName() <= c->getName() && 
+                i->getNext()->getName() >= c->getName()){
+                    RailCar* aux = i->getNext();
+                    c->setNext(aux);
+                    i->setNext(c);
+                    break;
+                }
+                i = i->getNext();
+            }
+    }
+}
+
+void removeNonprofitable(Locomotive& l){
+    Railcar* current = l.getFirstRailcar();
+    Railcar* previous = nullptr;
+    while (current != nullptr){
+        if (!current.isProfitable()){
+            if (previous == nullptr){
+                l.setFirstRailCar(current->getNext());
+                delete current;
+                current = l.getFirstRailcar();
+            }
+            else{
+                previous->setNext(current->getNext());
+                delete current;
+                current = previous->getNext();
+            }
+        }
+        else{
+            previous = current;
+            current = current->getNext();
+        }
+    }
+}
+
+int main() {
+    return 0;
+}

@@ -1,5 +1,0 @@
-C:/Users/Dragos/CLionProjects/uExam/cmake-build-debug/CMakeFiles/uExam.dir
-C:/Users/Dragos/CLionProjects/uExam/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Dragos/CLionProjects/uExam/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Dragos/CLionProjects/uExam/cmake-build-debug/CMakeFiles/uExam_autogen_timestamp_deps.dir
-C:/Users/Dragos/CLionProjects/uExam/cmake-build-debug/CMakeFiles/uExam_autogen.dir

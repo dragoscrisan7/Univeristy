@@ -1,3 +1,0 @@
-Oana,10
-Cipri,7
-Dan,9

@@ -1,7 +1,0 @@
-Steaua5,Ninica,1,1,20
-Steaua4,Lapte,4,5,6
-Steaua3,Lapte,1,2,3
-Steaua2,Ninica,4,5,10
-Steaua1,Ninica,2,3,5
-Iris2,Ninica,2,3,2004
-Iris,Ninica,2,3,1002

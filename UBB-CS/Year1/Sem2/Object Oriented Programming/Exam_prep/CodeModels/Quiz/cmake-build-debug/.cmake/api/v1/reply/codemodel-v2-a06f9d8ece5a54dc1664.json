@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Quiz",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Quiz::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Quiz-Debug-744434d40b7269317d11.json",
+					"name" : "Quiz",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Quiz_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Quiz_autogen-Debug-ec0eea1a0958cfa70938.json",
+					"name" : "Quiz_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Quiz_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Quiz_autogen_timestamp_deps-Debug-14de0faa779daea8c313.json",
+					"name" : "Quiz_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Dragos/CLionProjects/Quiz/cmake-build-debug",
+		"source" : "C:/Users/Dragos/CLionProjects/Quiz"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

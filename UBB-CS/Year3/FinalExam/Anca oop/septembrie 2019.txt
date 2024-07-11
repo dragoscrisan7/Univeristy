@@ -1,0 +1,187 @@
+#include <iostream>
+#include <stdexcept>
+#include <list>
+#include <functional>
+#include <map>
+
+using namespace std;
+
+class Client {
+private:
+    string name;
+    double income;
+
+public:
+    Client(const string &name, const double income) : name(name), income(income) {
+        if (income <= 0 || name.length() <= 3)
+            throw invalid_argument("error");
+    }
+    virtual double totalIncome() {
+        return income;
+    }
+    virtual bool isInterested(class Dwelling *d) = 0; // Pure virtual function to make Client an abstract class
+    string getName() const { return name; }
+};
+
+class Dwelling {
+private:
+    string type;
+    double price;
+    bool profitable;
+
+public:
+    Dwelling(const string &type, const double price, const bool profitable)
+        : type(type), price(price), profitable(profitable) {}
+
+    bool isProfitable() const {
+        return profitable;
+    }
+
+    double getPrice() const {
+        return price;
+    }
+};
+
+class Company : public Client {
+private:
+    double moneyFromInvestments;
+
+public:
+    Company(const string &name, const double income, double moneyFromInvestments)
+        : Client(name, income), moneyFromInvestments(moneyFromInvestments) {}
+
+    double totalIncome() override {
+        return Client::totalIncome() + moneyFromInvestments;
+    }
+
+    bool isInterested(Dwelling *d) override {
+        return (d->getPrice() / 12 < totalIncome() && d->isProfitable());
+    }
+};
+
+class Person : public Client {
+public:
+    Person(const string &name, const double income) : Client(name, income) {}
+
+    bool isInterested(Dwelling *d) override {
+        return (d->getPrice() / 360 < Client::totalIncome() / 2);
+    }
+};
+
+void merge(list<Client*>& clients, function<bool(Client&, Client&)> compare, int l, int m, int r) {
+    int n1 = m - l + 1;
+    int n2 = r - m;
+
+    list<Client*> left;
+    list<Client*> right;
+
+    auto it = clients.begin();
+    advance(it, l);
+    for (int i = 0; i < n1; ++i) {
+        left.push_back(*it);
+        ++it;
+    }
+
+    for (int i = 0; i < n2; ++i) {
+        right.push_back(*it);
+        ++it;
+    }
+
+    auto itL = left.begin();
+    auto itR = right.begin();
+    it = clients.begin();
+    advance(it, l);
+
+    while (itL != left.end() && itR != right.end()) {
+        if (compare(**itL, **itR)) {
+            *it = *itL;
+            ++itL;
+        } else {
+            *it = *itR;
+            ++itR;
+        }
+        ++it;
+    }
+
+    while (itL != left.end()) {
+        *it = *itL;
+        ++itL;
+        ++it;
+    }
+
+    while (itR != right.end()) {
+        *it = *itR;
+        ++itR;
+        ++it;
+    }
+}
+
+void mergeSort(list<Client*>& clients, function<bool(Client&, Client&)> compare, int l, int r) {
+    if (l < r) {
+        int m = l + (r - l) / 2;
+        mergeSort(clients, compare, l, m);
+        mergeSort(clients, compare, m + 1, r);
+        merge(clients, compare, l, m, r);
+    }
+}
+
+void sortClients(list<Client*>& clients, function<bool(Client&, Client&)> compare) {
+    mergeSort(clients, compare, 0, clients.size() - 1);
+}
+
+
+list<Client*> interestedClients(map<string, Client*>& clients, Dwelling* d){
+    list<Client*> c;
+    for(auto& client: clients){
+        if (client.second->isInterested(d)){
+            c.push_back(client.second);
+        }
+    }
+    sortClients(c, [](Client& a, Client& b){return a.getName() < b.getName();});
+    return c;
+}
+
+int main() {
+    list<Client*> clients;
+
+    try {
+        clients.push_back(new Person("Alice", 50000));
+        clients.push_back(new Company("Bob Inc.", 200000, 50000));
+        clients.push_back(new Person("Charlie", 30000));
+        clients.push_back(new Company("Delta Ltd.", 100000, 70000));
+
+        sortClients(clients, [](Client& a, Client& b) {
+            return a.totalIncome() > b.totalIncome(); // Sort clients by total income in descending order
+        });
+
+        for (Client* client : clients) {
+            cout << client->getName() << ": " << client->totalIncome() << endl;
+        }
+
+        Dwelling* dwelling = new Dwelling("Apartment", 600000, true);
+
+        map<string, Client*> clientsMap;
+        clientsMap.insert(make_pair("Alice", new Person("Alice", 50000)));
+
+        list<Client*> interestedClientsList = interestedClients(clientsMap, dwelling);
+
+        for (Client* client : interestedClientsList) {
+            cout << client->getName() << " is interested in the dwelling." << endl;
+        }
+
+        // Clean up dynamically allocated memory
+        for (Client* client : clients) {
+            delete client;
+        }
+
+        for (auto& pair : clientsMap) {
+            delete pair.second;
+        }
+
+        delete dwelling;
+    } catch (const invalid_argument& e) {
+        cout << e.what() << endl;
+    }
+
+    return 0;
+}

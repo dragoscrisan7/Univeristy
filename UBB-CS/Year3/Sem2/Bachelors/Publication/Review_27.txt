@@ -1,0 +1,32 @@
+The authors present some experiments performed for predicting the crop yield. They have build models using XGBoost, CNN and FCNN and compared their performances. The experiments showed that XGBoost performs best with a really high accuracy.
+
+Below you have a long list of observations. In conclusion the research is interesting and seems correct, but there are many modifications which need to be done to make this paper look like a scientific paper. It should be restructured and in some cases more information should be added.
+
+- In the Abstract you mention "This model was trained on a public dataset situated in India" - I don't think the data set is in India, but rather the data was collected in India.
+- The Abstract should contain 1-2 sentences about the performance of the proposed approaches as well.
+- The Introduction needs to be rewritten completely, since currently it sounds too much like a few paragraphs taken directly from your bachelor/dissertation thesis:
+	- The first sentence of the Introduction is problematic: first, there are 3 Sections, not chapters and such a description of the structure of the paper is in general the last paragraph of the Introduction. It sounds really strange to begin with something like that. And you do not need to write "paper" with capital P.
+	- The goal of introduction is to present the approached problem, to explain why it is important, to mention what original contributions the paper brings. None of these is currently present in the Introduction.
+- Short forms (ex. can't, don't) are not used in formal text.
+- In the last paragraph of Section II, it should be "its" not "it's" (this problem appears in multiple places in the paper).
+- At the end of paragraph 2 from section II: "by the raising concerns of food security" it should be "rising concerns". In the same paragraph you have R^2 = 96.33. It is either 96.33% (as percentage) or it should be between 0 and 1 (as it is in the next paragraph).
+- In section II, where you talk about the methods used in paper [2], the "vector machine" isn't actually "support vector machine"? Because I do not know what "vector machine" is.
+- The last paragraph if Section II should not be there, it is not about Related Work. Maybe, it should be better suited in Introduction (with some modification) or in a section discussing the results.
+- First sentence of III.A.1) should be rewritten: as I mentioned, I do not think that the dataset itself is in India and it (the dataset) certainly was not conducted in the years 2018-2019. I do not know the dataset, but I guess the author meant to say something like "the dataset contains data collected from India in the years 2018-2019". 
+- In the description of the dataset all 4 parts should be mentioned and only after the author should describe which part of the dataset they used. Also, it is strange that the first sentence says "it is split in 4" and then "three datasets were merged". I checked the dataset: it contains 4 files (and you should shortly present all 4 of them) out of which the author used 3 (explain which 3) merged together. As mentioned, I think the attributes, the structure, number of instances for the datasets should be presented before presenting the data transformation and analysis.
+- When you reference a Figure or table you need to use the word "Table", "Figure", not just the number, which in itself looks really strange, especially for Figure 1, where it is just (1).
+- Text on the charts from Figure 1 is not really readable. I know that it is not easy to put so many charts on a Figure, but then maybe more explanations should be given about the content of the Figure. Also, what i the benefit of having both a histogram and a box-plot of the same information?
+- In the descriptions of Figure 2, instead of "gradient", I would say "intensity" or "shade".
+- A separate Background section should be created to present the used algorithms, in Section III only the way in which they were used for the approached problem should be presented. Also, the part about XGBoost contains information that XGBoost is better than CNN. Such information should be given in a discussion section after presenting the experiments and their results. 
+- In the last lines on the first column of page 3, there is a "We" which should be "we" since it is not at the beginning of a sentence.
+- In my opinion the presentation of the application (III.5) is not that important, the focus should be on the experiments and the models. And this is not presented properly. The details of the dataset are missing. Explanations about why for some methods 80-10-10 split is used while for others 60-20-20 are needed. If the author would still like to present the application, it is OK, but only after presenting the experiments and the results.
+- I think the results would be easier to understand if they were presented in a Table instead of Figure 7. 
+- The part about hyperparameter tuning for XGBoost sounds strange...it contains one value for each paramter, while the idea of hyperparam tuning is to try out different combinations of hyperparameters.
+- Figures 7 and 9 seem to present the same type of information, but they have different styles. This is strange.
+- The sentence about FCNN having less training data is not clear to me. Also, it should be mentioned how performance evalaution of FCNN was performed in case of the three outputs.
+- Figure 11 seems to be taken from another publication. This should be marked by adding a citation in the caption.
+- Figure 12 is hardly visible and since it is taken from a different paper (you can see its caption in that paper), there should be a citation in the caption.
+- Not removing the red text from the IEEE template suggests that the author did not really visually check the paper before submitting it.
+- Reference [4] does not look good and reference [7] should start with the author.
+
+In conclusion

@@ -1,3 +1,0 @@
-0,Care?,Denis
-1,Cine?,Ciot
-2,Cat am cautat?,Ciot

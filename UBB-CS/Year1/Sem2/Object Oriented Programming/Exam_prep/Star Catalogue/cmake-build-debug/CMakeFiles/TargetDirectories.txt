@@ -1,5 +1,0 @@
-C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/CMakeFiles/Star_Catalogue.dir
-C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/CMakeFiles/Star_Catalogue_autogen_timestamp_deps.dir
-C:/Users/Dragos/CLionProjects/Star Catalogue/cmake-build-debug/CMakeFiles/Star_Catalogue_autogen.dir

@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "exam",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "exam::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exam-Debug-c492fbeb7d18c886ccfe.json",
+					"name" : "exam",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "exam_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exam_autogen-Debug-8fd19d54dc8948d1e66e.json",
+					"name" : "exam_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "exam_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exam_autogen_timestamp_deps-Debug-ea4e7d5ab605f3ab1da9.json",
+					"name" : "exam_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Dragos/CLionProjects/exam/cmake-build-debug",
+		"source" : "C:/Users/Dragos/CLionProjects/exam"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
